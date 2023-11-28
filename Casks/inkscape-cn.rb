@@ -1,9 +1,9 @@
 cask "inkscape-cn" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.3.0"
-  sha256 arm:   "e37b5f8b8995a0ecc41ca7fcae90d79bcd652b7a25d2f6e52c4e2e79aef7fec1",
-         intel: "e97de6804d8811dd2f1bc45d709d87fb6fe45963aae710c24a4ed655ecd8eb8a"
+  version "1.3.2"
+  sha256 arm:   "d3b182d1f6804f01eb13195325c5376ee7147561f2cfd59c3920c34f0e0858d8",
+         intel: "7c3347c274a5f8c9fb8c076b3d745e509b400e21127067edfa77adf4ca40834e"
 
   url "https://mirror.nju.edu.cn/inkscape/Inkscape-#{version}_#{arch}.dmg",
       verified: "mirror.nju.edu.cn/inkscape/"
@@ -17,6 +17,7 @@ cask "inkscape-cn" do
   end
 
   auto_updates true
+
   app "Inkscape.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/inkscape.wrapper.sh"
