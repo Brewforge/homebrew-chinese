@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  # pull_request:
+  #   branches: [main]
+  push:
+    branches: [main]
+  # schedule:
+    # run every 12 hours
+    # - cron: "20 */12 * * *"
+    # Every day at 6am
+    # - cron: "0 6 * * *"
+
+jobs:
+  job1:
+    name: Test Casks
+    if: github.repository == 'ivaquero/homebrew-chinese'
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, macos-12]
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: ivaquero/homebrew-chinese
+          ref: main
+          path: homebrew-chinese
+
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: true
+          cask: true
+          test-bot: false
+
+      - name: Add Tap
+        env:
+          MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+        run: |
+          brew tap ivaquero/chinese
+          brew update
+          brew install ripgrep sd
+          echo "export HOMEBREW_GITHUB_API_TOKEN=$MY_SECRET_KEY" >> /Users/runner/.bash_profile
+          source /Users/runner/.bash_profile
+          echo $HOMEBREW_GITHUB_API_TOKEN
+
+      - name: Bump mirorr casks
+        continue-on-error: true
+        run: |
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
+          for cask in Casks/*-cn.rb; do
+            cask=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
+            echo "Checking $cask"
+            check=$(brew livecheck --cask "$cask")
+            ver=$(echo "$check" | rg -o "\d.+=" | rg -o ".+ ")
+            ver2=$(echo "$check" | rg -o ">.+" | rg -o "\d.+")
+            if [[ "$ver2" != "$ver" ]]; then
+              brew bump-cask-pr $cask --version "$ver2"
+            fi
+          done
+
+  # job2:
+  #   name: Test Formulae
+  #   runs-on: ${{ matrix.os }}
+
+  #   strategy:
+  #     matrix:
+  #       os: [ubuntu-latest, ubuntu-20.04]
+
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         repository: ivaquero/homebrew-chinese
+  #         ref: main
+  #         path: homebrew-chinese
+
+  #     - name: Set up Homebrew
+  #       id: set-up-homebrew
+  #       uses: Homebrew/actions/setup-homebrew@master
+  #       with:
+  #         core: true
+  #         cask: false
+  #         test-bot: false
+
+  #     - name: Add Tap
+  #       run: |
+  #         brew tap ivaquero/chinese
+
+  #     - name: Configure Git user
+  #       uses: Homebrew/actions/git-user-config@master
+  #       with:
+  #         username: ${{ (github.event_name == 'workflow_dispatch' && github.actor) || 'BrewTestBot' }}
+
+  #     - name: Bump formulae
+  #       uses: Homebrew/actions/bump-packages@master
+  #       continue-on-error: true
+  #       with:
+  #         token: ${{ env.HOMEBREW_GITHUB_API_TOKEN }}
+  #         formulae: ${{ env.FORMULAE }}
