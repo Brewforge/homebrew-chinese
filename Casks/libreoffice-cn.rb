@@ -2,9 +2,9 @@ cask "libreoffice-cn" do
   arch arm: "aarch64", intel: "x86-64"
   folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  version "7.6.2"
-  sha256 arm:   "a33ccdea5980a62fe6b5707ea663d5b48e9af9e0dda6f884b7f4585c0b408ff6",
-         intel: "980c0dc4a14bdd7ec260d6f8965132ec61d067e8ca20802e927ed278c31d486d"
+  version "7.6.3"
+  sha256 arm:   "c35a09e8d9182f626a811fa0c8f014c89a17d4dc9adb034a32deb6f1fa9fac1d",
+         intel: "5ed73e3311758191bae70ae2cedf263ed2d0b8385fed5cc9369db1559709e8eb"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/"
@@ -48,4 +48,3 @@ cask "libreoffice-cn" do
     "~/Library/Saved Application State/org.libreoffice.script.savedState",
   ]
 end
-
