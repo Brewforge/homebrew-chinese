@@ -66,8 +66,8 @@ jobs:
             cask=$(echo "ivaquero/chinese/$cask" | sd "/Casks" "" | sd ".rb" "")
             echo "Checking $cask"
             check=$(brew livecheck --cask "$cask")
-            ver=$(echo "$check" | rg -o "\d.+=" | rg -o ".+ ")
-            ver2=$(echo "$check" | rg -o ">.+" | rg -o "\d.+")
+            ver=$(echo "$check" | rg -o "\d.+*=" | rg -o ".+*\d")
+            ver2=$(echo "$check" | rg -o ">.+*" | rg -o "\d.+*")
             if [[ "$ver2" != "$ver" ]]; then
               brew bump-cask-pr $cask --version "$ver2"
             fi
