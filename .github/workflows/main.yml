@@ -69,7 +69,8 @@ jobs:
             ver=$(echo "$check" | rg -o "\d.+*=" | rg -o ".+*\d")
             ver2=$(echo "$check" | rg -o ">.+*" | rg -o "\d.+*")
             if [[ "$ver2" != "$ver" ]]; then
-              brew bump-cask-pr $cask --version "$ver2"
+              echo "Updating $cask from $ver to $ver2"
+              brew bump-cask-pr "$cask" --version "$ver2"
             fi
           done
 
