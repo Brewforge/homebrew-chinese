@@ -4,12 +4,14 @@ on:
   # pull_request:
   #   branches: [main]
   push:
-    branches: [main]
-  # schedule:
+    branches: [main, fix-*]
+  schedule:
     # run every 12 hours
     # - cron: "20 */12 * * *"
     # Every day at 6am
-    # - cron: "0 6 * * *"
+    - cron: "0 6 * * *"
+  # allow run manually
+  workflow_dispatch:
 
 jobs:
   job1:
@@ -20,6 +22,13 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, macos-12]
+
+    # https://github.com/orgs/Homebrew/discussions/4474#discussioncomment-5781752
+    # permissions:
+    #   actions: read
+    #   packages: write
+    #   contents: write
+    #   pull-requests: write
 
     steps:
       - uses: actions/checkout@v2
@@ -38,17 +47,19 @@ jobs:
 
       - name: Add Tap
         env:
-          MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
           brew tap ivaquero/chinese
           brew update
           brew install ripgrep sd
-          echo "export HOMEBREW_GITHUB_API_TOKEN=$MY_SECRET_KEY" >> /Users/runner/.bash_profile
-          source /Users/runner/.bash_profile
+          # echo "export HOMEBREW_GITHUB_API_TOKEN=$MY_SECRET_KEY" >> /Users/runner/.bash_profile
+          # source /Users/runner/.bash_profile
           echo $HOMEBREW_GITHUB_API_TOKEN
 
       - name: Bump mirorr casks
         continue-on-error: true
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese
           for cask in Casks/*-cn.rb; do
