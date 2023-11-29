@@ -12,6 +12,8 @@ cask "lyricsxjh" do
     strategy :github_latest
   end
 
+  conflicts_with cask: "lyricsx"
+
   app "LyricsX.app"
 
   zap trash: [
