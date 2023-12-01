@@ -156,12 +156,11 @@ brew help
 
 ### CLI 软件
 
-|    CLI 名    |      名      |   类型   | 原创 |
-| :----------: | :----------: | :------: | :--: |
-|  alist-cli   |    AList     | 开源软件 |  √   |
-|    bbdown    |    BBDOWN    | 开源软件 |  √   |
-| chatgpt-cli  |   ChatGPT    | 开源软件 |  √   |
-|   ddns-go    |   DDNS-Go    | 开源软件 |  √   |
-|   music-dl   |   Music DL   | 开源软件 |  √   |
-| music-player | Music Player | 开源软件 |  √   |
-|    shurl     |    shurl     | 开源软件 |  √   |
+|   CLI 名    |    名    |   类型   | 原创 |
+| :---------: | :------: | :------: | :--: |
+|  alist-cli  |  AList   | 开源软件 |  ✓   |
+|   bbdown    |  BBDOWN  | 开源软件 |  ✓   |
+| chatgpt-cli | ChatGPT  | 开源软件 |  ✓   |
+|   ddns-go   | DDNS-Go  | 开源软件 |  ✓   |
+|  music-dl   | Music DL | 开源软件 |  ✓   |
+|    shurl    |  shurl   | 开源软件 |  ✓   |
