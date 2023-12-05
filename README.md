@@ -144,7 +144,6 @@ brew help
 |   edrawmax-9   |      [亿图图示 9（固定版本）](http://www.edrawsoft.cn)       | 国产商业软件 |    💰    |
 |    eshelper    |     [西语助手](https://www.eudic.net/v4/es/app/eshelper)     | 国产商业软件 |   🆓💰   |
 |     feige      |             [飞鸽传书](http://www.ipmsg.org.cn)              | 国产商业软件 |    🆓    |
-|     hapogo     |                 [HapiGo](https://hapigo.com)                 | 国产商业软件 |   🆓💰   |
 |    i4tools     |                [爱思助手](https://www.i4.cn)                 | 国产商业软件 |    🆓    |
 |    lingquan    |                [零泉](https://lingquan.cool)                 | 国产商业软件 |   🆓💰   |
 |    linkease    |              [易有云](https://doc.linkease.com)              | 国产商业软件 |    🆓    |
