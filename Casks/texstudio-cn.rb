@@ -6,7 +6,7 @@ cask "texstudio-cn" do
       verified: "mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/"
   name "TeXstudio"
   desc "LaTeX editor"
-  homepage "https://texstudio.org/"
+  homepage "https://github.com/texstudio-org/texstudio/"
 
   livecheck do
     url "https://github.com/texstudio-org/texstudio/"
