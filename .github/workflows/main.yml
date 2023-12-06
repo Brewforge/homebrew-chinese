@@ -57,7 +57,7 @@ jobs:
           echo $HOMEBREW_GITHUB_API_TOKEN
 
       - name: Bump mirorr casks
-        continue-on-error: true
+        # continue-on-error: true
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
@@ -65,12 +65,15 @@ jobs:
           for cask in [b-z]*-cn.rb; do
             cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
             echo "Checking $cask"
-            check=$(brew livecheck --cask "$cask")
-            ver=$(echo "$check" | rg -o "\d.+*=" | rg -o ".+*\d")
-            ver2=$(echo "$check" | rg -o ">.+*" | rg -o "\d.+*")
-            if [[ "$ver2" != "$ver" ]]; then
-              echo "Updating $cask from $ver to $ver2"
-              brew bump-cask-pr "$cask" --version "$ver2"
+
+            # "sed" command not working on github action
+            check=$(echo $(brew livecheck --cask "$cask") | tr -d ' ' | cut -d':' -f2-)
+            fromV=${check%==>*}
+            toV=${check#*==>}
+
+            echo "Updating $cask from $fromV to $toV"
+            if [[ "$fromV" != "$toV" ]]; then
+              brew bump-cask-pr "$cask" --version "$toV"
             fi
           done
 
