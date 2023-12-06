@@ -15,13 +15,20 @@ cask "tts-vue" do
 
   auto_updates true
 
+  container nested: "#{version}/tts-vue-#{version}.dmg"
+
   app "tts-vue.app"
+
+  preflight do
+    system_command "xattr",
+                   args: ["-cr", "#{staged_path}/tts-vue.app"]
+  end
 
   zap trash: [
     "~/Library/Logs/tts-vue",
     "~/Library/Preferences/vip.loker.tts-vue.plist",
     "~/Library/Saved Application State/vip.loker.tts-vue.savedState",
     "~/Library/Application Support/tts-vue",
-    "~/Library/Application Support/tts-vue\logs\2023-12-2.log",
+    "~/Library/Application Support/tts-vue*.log",
   ]
 end
