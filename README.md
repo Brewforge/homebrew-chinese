@@ -1,5 +1,11 @@
 # Homebrew-Chinese
 
+❗⚠️❗ 仓库链接变动提醒 ⏰
+
+由于维护脚本种类的增加，为了吸引到更多有兴趣的协作者，本仓库将迁移到新的组织 [Brewforge](https://github.com/Brewforge) 的目录下，新链接为
+
+https://github.com/Brewforge/homebrew-chinese
+
 [![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml) [![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/license/homebrew-chinese.svg) [![code-size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg) [![repo-size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
 
 一个致力于服务国人的 [Homebrew](https://github.com/Homebrew/brew) 🍺 第三方库
