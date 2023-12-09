@@ -1,0 +1,106 @@
+name: CI
+
+on:
+  # pull_request:
+  #   branches: [main]
+  push:
+    branches: [main, fix-*]
+  schedule:
+    # run every 12 hours
+    # - cron: "20 */12 * * *"
+    # Every day at 6am
+    - cron: "0 6 * * *"
+  # allow run manually
+  workflow_dispatch:
+
+jobs:
+  job1:
+    name: Test Casks
+    if: github.repository == 'ivaquero/homebrew-chinese'
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, macos-12]
+
+    # https://github.com/orgs/Homebrew/discussions/4474#discussioncomment-5781752
+    # permissions:
+    #   actions: read
+    #   packages: write
+    #   contents: write
+    #   pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: ivaquero/homebrew-chinese
+          ref: main
+          path: homebrew-chinese
+
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: true
+          cask: true
+          test-bot: false
+
+      - name: Add Tap
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+        run: |
+          brew tap ivaquero/chinese
+          brew update
+          brew install ripgrep sd
+
+      - name: Bump mirorr casks
+        # continue-on-error: true
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+        run: |
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese/Casks
+          for cask in *.rb; do
+            cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
+            echo "Checking $cask"
+
+            # "sed" command not working on github action,
+            # because of the color code in the output of "brew livecheck --cask" command
+            check=$(echo $(brew livecheck --cask "$cask") | tr -d ' ' | cut -d':' -f2- | sed 's/\x1b[[0-9;]*m//g')
+
+            echo "Check result: $check"
+
+            fromV=${check%==>*}
+            toV=${check#*==>}
+
+            echo "Updating $cask from $fromV to $toV"
+            if [[ "$fromV" != "$toV" ]]; then
+              brew bump-cask-pr "$cask" --version "$toV" --verbose
+            fi
+          done
+
+  # job2:
+  #   name: Test Formulae
+  #   runs-on: ${{ matrix.os }}
+
+  #   strategy:
+  #     matrix:
+  #       os: [ubuntu-latest, ubuntu-20.04]
+
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         repository: ivaquero/homebrew-chinese
+  #         ref: main
+  #         path: homebrew-chinese
+
+  #     - name: Set up Homebrew
+  #       id: set-up-homebrew
+  #       uses: Homebrew/actions/setup-homebrew@master
+  #       with:
+  #         core: true
+  #         cask: false
+  #         test-bot: false
+
+  #     - name: Add Tap
+  #       run: |
+  #         brew tap ivaquero/chinese
