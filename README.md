@@ -111,7 +111,6 @@ brew help
 |  clash-verge-rev  |              [Clash-Verge-Rev](https://github.com/wonfen/clash-verge-rev)               | 开源软件（面向国人） |    🆓    |
 |    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（面向国人） |    🆓    |
 |     copybook      |                  [字帖生成器](https://github.com/xxNull-lsk/Copybook)                   | 开源软件（面向国人） |    🆓    |
-|   goldendict-ng   |              [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)               | 开源软件（面向国人） |    🆓    |
 |      gopeed       |                              [Gopeed](https://gopeed.com/)                              | 开源软件（面向国人） |    🆓    |
 |  m3u8-downloader  |             [M3U8Downloader](https://github.com/HeiSir2014/M3U8-Downloader)             | 开源软件（面向国人） |    🆓    |
 |     messauto      |                     [MessAuto](https://github.com/LeeeSe/MessAuto)                      | 开源软件（面向国人） |    🆓    |
@@ -137,8 +136,6 @@ brew help
 |    ting-en     |   [每日英语听力](http://francochinois.com/v4/en/app/ting)    | 国产商业软件 |   🆓💰   |
 |    ting-es     |   [每日西语听力](http://francochinois.com/v4/es/app/ting)    | 国产商业软件 |   🆓💰   |
 |    ting-fr     |   [每日法语听力](http://francochinois.com/v4/fr/app/ting)    | 国产商业软件 |   🆓💰   |
-|    xnapper     |                [Xnapper](https://xnapper.com)                |   商业软件   |    💰    |
-|    zlibrary    |            [Z-Library](https://zlibrary-asia.se)             |   商业软件   |    🆓    |
 
 ### CLI 软件
 
