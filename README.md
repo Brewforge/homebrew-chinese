@@ -107,7 +107,6 @@ brew help
 | :---------------: | :-------------------------------------------------------------------------------------: | :------------------: | :------: |
 |   alist-desktop   |            [AList 桌面客户端](https://github.com/alist-org/desktop-release)             | 开源软件（面向国人） |   🆓💰   |
 |   alist-helper    | [Alist-Helper](https://github.com/Xmarmalade/alisthelper/blob/master/README_zh-Hans.md) | 开源软件（面向国人） |    🆓    |
-|      chatgpt      |                       [ChatGPT](https://github.com/lencx/ChatGPT)                       | 开源软件（面向国人） |    🆓    |
 |  clash-nyanpasu   |              [Clash-Nyanpasu](https://github.com/keiko233/clash-nyanpasu)               | 开源软件（面向国人） |    🆓    |
 |  clash-verge-rev  |              [Clash-Verge-Rev](https://github.com/wonfen/clash-verge-rev)               | 开源软件（面向国人） |    🆓    |
 |    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（面向国人） |    🆓    |
