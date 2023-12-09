@@ -13,7 +13,7 @@ https://github.com/Brewforge/homebrew-chinese
 本仓库主要收录以下软件：
 
 - 开源软件的国内镜像
-- 国人开发的开源软件（未被 Homebrew 官方收录）
+- 面向国人的开源软件（未被 Homebrew 官方收录）
 - 国产商业软件
 
 ## 开始 🏃
@@ -56,7 +56,7 @@ brew search <app_name>
 brew cask install <app_name>
 ```
 
-- For specific installation
+- 指定安装
 
 ```sh
 brew install chinese/<app_name>
@@ -101,44 +101,26 @@ brew help
 |     vlc-cn     |            [VLC 镜像](https://videolan.org/vlc)             | 开源软件镜像 |
 |  vscodium-cn   |    [VSCodium 镜像](https://github.com/VSCodium/vscodium)    | 开源软件镜像 |
 
-### 开源软件
-
-|     Cask 名     |                               App 名                               |     类型     | 商业模式 |
-| :-------------: | :----------------------------------------------------------------: | :----------: | :------: |
-|      barss      |             [baRSS](https://relikd.de/projects/barss)              |   开源软件   |    🆓    |
-|   corretto-8    |    [Amazon Corretto 8](https://github.com/corretto/corretto-8)     |   开源软件   |    🆓    |
-|     dvc-app     |                      [DVC](https://dvc.org/)                       | 开源软件分支 |    🆓    |
-|  freefilesync   |              [FreeFileSync](https://freefilesync.org)              |   开源软件   |    🆓    |
-|   gridplayer    |        [GridPlayer](https://github.com/vzhd1701/gridplayer)        |   开源软件   |    🆓    |
-|      later      |                   [Later](https://getlater.app)                    |   开源软件   |    🆓    |
-|    lyricsxjh    | [LyricsX JH Fork](https://github.com/JH-Application-Forks/LyricsX) | 开源软件分支 |    🆓    |
-|   openstudio    |          [OpenStudio](https://github.com/NREL/OpenStudio)          |   开源软件   |    🆓    |
-| pareto-security |                [Pareto](https://paretosecurity.com)                |   开源软件   |   🆓💰   |
-|     peazip      |             [PeaZip](https://github.com/peazip/PeaZip)             |   开源软件   |    🆓    |
-|  pixel-perfect  | [Pixel Perfect](https://github.com/cormiertyshawn895/PixelPerfect) |   开源软件   |    🆓    |
-|     ryujinx     |                   [Ryujinx](https://ryujinx.org)                   |   开源软件   |    🆓    |
-|     upscayl     |                   [Upscayl](https://upscayl.org)                   |   开源软件   |    🆓    |
-
-### 开源软件（国人开发）
+### 开源软件（面向国人）
 
 |      Cask 名      |                                         App 名                                          |         类型         | 商业模式 |
 | :---------------: | :-------------------------------------------------------------------------------------: | :------------------: | :------: |
-|   alist-desktop   |            [AList 桌面客户端](https://github.com/alist-org/desktop-release)             | 开源软件（国人开发） |   🆓💰   |
-|   alist-helper    | [Alist-Helper](https://github.com/Xmarmalade/alisthelper/blob/master/README_zh-Hans.md) | 开源软件（国人开发） |    🆓    |
-|      chatgpt      |                       [ChatGPT](https://github.com/lencx/ChatGPT)                       | 开源软件（国人开发） |    🆓    |
-|  clash-nyanpasu   |              [Clash-Nyanpasu](https://github.com/keiko233/clash-nyanpasu)               | 开源软件（国人开发） |    🆓    |
-|  clash-verge-rev  |              [Clash-Verge-Rev](https://github.com/wonfen/clash-verge-rev)               | 开源软件（国人开发） |    🆓    |
-|    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（国人开发） |    🆓    |
-|     copybook      |                  [字帖生成器](https://github.com/xxNull-lsk/Copybook)                   | 开源软件（国人开发） |    🆓    |
-|   goldendict-ng   |              [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)               | 开源软件（国人开发） |    🆓    |
-|      gopeed       |                              [Gopeed](https://gopeed.com/)                              | 开源软件（国人开发） |    🆓    |
-|  m3u8-downloader  |             [M3U8Downloader](https://github.com/HeiSir2014/M3U8-Downloader)             | 开源软件（国人开发） |    🆓    |
-|     messauto      |                     [MessAuto](https://github.com/LeeeSe/MessAuto)                      | 开源软件（国人开发） |    🆓    |
-| openai-translator |            [OpenAI-Translator](https://github.com/yetone/openai-translator)             | 开源软件（国人开发） |    🆓    |
-|     pdf-guru      |                    [Pdf-Guru](https://github.com/kevin2li/PDF-Guru)                     | 开源软件（国人开发） |    🆓    |
-|    pot-desktop    |                  [Pot-Desktop](https://github.com/pot-app/pot-desktop)                  | 开源软件（国人开发） |    🆓    |
-|   squirrel-ime    |                    [鼠鬚管输入法](https://github.com/rime/squirrel)                     | 开源软件（国人开发） |    🆓    |
-|     yank-note     |                        [Yank-Note](https://yank-note.com/zh-CN)                         | 开源软件（国人开发） |    🆓    |
+|   alist-desktop   |            [AList 桌面客户端](https://github.com/alist-org/desktop-release)             | 开源软件（面向国人） |   🆓💰   |
+|   alist-helper    | [Alist-Helper](https://github.com/Xmarmalade/alisthelper/blob/master/README_zh-Hans.md) | 开源软件（面向国人） |    🆓    |
+|      chatgpt      |                       [ChatGPT](https://github.com/lencx/ChatGPT)                       | 开源软件（面向国人） |    🆓    |
+|  clash-nyanpasu   |              [Clash-Nyanpasu](https://github.com/keiko233/clash-nyanpasu)               | 开源软件（面向国人） |    🆓    |
+|  clash-verge-rev  |              [Clash-Verge-Rev](https://github.com/wonfen/clash-verge-rev)               | 开源软件（面向国人） |    🆓    |
+|    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（面向国人） |    🆓    |
+|     copybook      |                  [字帖生成器](https://github.com/xxNull-lsk/Copybook)                   | 开源软件（面向国人） |    🆓    |
+|   goldendict-ng   |              [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)               | 开源软件（面向国人） |    🆓    |
+|      gopeed       |                              [Gopeed](https://gopeed.com/)                              | 开源软件（面向国人） |    🆓    |
+|  m3u8-downloader  |             [M3U8Downloader](https://github.com/HeiSir2014/M3U8-Downloader)             | 开源软件（面向国人） |    🆓    |
+|     messauto      |                     [MessAuto](https://github.com/LeeeSe/MessAuto)                      | 开源软件（面向国人） |    🆓    |
+| openai-translator |            [OpenAI-Translator](https://github.com/yetone/openai-translator)             | 开源软件（面向国人） |    🆓    |
+|     pdf-guru      |                    [Pdf-Guru](https://github.com/kevin2li/PDF-Guru)                     | 开源软件（面向国人） |    🆓    |
+|    pot-desktop    |                  [Pot-Desktop](https://github.com/pot-app/pot-desktop)                  | 开源软件（面向国人） |    🆓    |
+|   squirrel-ime    |                    [鼠鬚管输入法](https://github.com/rime/squirrel)                     | 开源软件（面向国人） |    🆓    |
+|     yank-note     |                        [Yank-Note](https://yank-note.com/zh-CN)                         | 开源软件（面向国人） |    🆓    |
 
 ### 商业软件
 
