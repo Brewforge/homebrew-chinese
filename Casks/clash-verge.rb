@@ -21,7 +21,7 @@ cask "clash-verge" do
 
   preflight do
     system_command "xattr",
-                    args: ["-cr", "#{staged_path}/Clash Verge.app"]
+                   args: ["-cr", "#{staged_path}/Clash Verge.app"]
   end
 
   zap trash: [
