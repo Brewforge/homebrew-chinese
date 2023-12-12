@@ -3,7 +3,7 @@ cask "obs-cn" do
 
   version "30.0.2"
   sha256 arm:   "0675946528f677a45b0b14aca06db69986b37a7f1f60337c3b7f2e458ee6a7d7",
-         intel: "0e87051cd5ee50f9efb9c9052d79a3d598761b154308213c40accacc3c9d0895"
+         intel: "fca9a6324b65ea98c312b1ebd3c30441e74ce0014f873a79f284b57a1962424f"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/OBS-Studio-#{version}-macOS-#{arch}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/"
