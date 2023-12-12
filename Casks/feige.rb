@@ -7,11 +7,6 @@ cask "feige" do
   desc "面向企业、学校、家庭的局域网即时通讯软件"
   homepage "http://www.ipmsg.org.cn/"
 
-  livecheck do
-    url "http://www.ipmsg.org.cn/home/index/download"
-    regex(/(\d\.\d+\.\d+)/i)
-  end
-
   auto_updates true
 
   app "Feige.app"
