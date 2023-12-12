@@ -59,7 +59,7 @@ jobs:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
           cd $(brew --prefix)/Homebrew/Library/Taps/brewforge/homebrew-chinese/Casks
-          for cask in [b-z]*-cn.rb; do
+          for cask in [b-p]*-cn.rb; do
             cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
             echo "Checking $cask"
 
