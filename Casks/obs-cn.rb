@@ -1,11 +1,11 @@
 cask "obs-cn" do
-  arch arm: "arm64", intel: "x86_64"
+  arch arm: "Apple", intel: "Intel"
 
-  version "29.1.3"
-  sha256 arm:   "ad8586d6af8dd4a0039e6074cf92213340f3d2408cf87e3593fa0822cbc8a73a",
+  version "30.0.2"
+  sha256 arm:   "0675946528f677a45b0b14aca06db69986b37a7f1f60337c3b7f2e458ee6a7d7",
          intel: "0e87051cd5ee50f9efb9c9052d79a3d598761b154308213c40accacc3c9d0895"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/obs-studio-#{version}-macos-#{arch}.dmg",
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/OBS-Studio-#{version}-macOS-#{arch}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/"
   name "OBS"
   desc "Open-source software for live streaming and screen recording"

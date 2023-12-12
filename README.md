@@ -1,9 +1,5 @@
 # Homebrew-Chinese
 
-⚠️ 搬家准备就绪，请关注新家地址 👇
-
-https://github.com/Brewforge/homebrew-chinese
-
 <!-- ![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![CI](https://github.com/Brewforge/homebrew-chinese/actions/workflows/main.yml/badge.svg) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese) -->
 
 ![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese)
@@ -15,6 +11,13 @@ https://github.com/Brewforge/homebrew-chinese
 - [x] 开源软件的中文版镜像
 - [x] 面向中国用户的未被官方库收录的软件
 - [x] 面向中国用户的国产商业软件
+
+⚠️ 本仓库的老顾客，请执行如下命令：
+
+```bash
+brew tap brewforge/homebrew-chinese
+rm -rf $(brew --repository)/Library/Taps/ivaquero/homebrew-chinese
+```
 
 ## 📝 太长不看
 
@@ -50,7 +53,7 @@ brew tap brewforge/extras
 🔍 搜索
 
 ```sh
-brew search <formula或cask>
+brew search <formula 或 cask>
 ```
 
 🛒 安装
@@ -63,7 +66,7 @@ brew install --cask <cask>
 🗑️ 卸载
 
 ```sh
-brew rm <formula或cask>
+brew rm <formula 或 cask>
 ```
 
 🧾 列出已安装的软件
