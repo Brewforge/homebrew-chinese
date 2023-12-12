@@ -1,5 +1,6 @@
 cask "obs-cn" do
   arch arm: "Apple", intel: "Intel"
+  livecheck_folder = on_arch_conditional arm: "arm64", intel: "x86_64"
 
   version "30.0.2"
   sha256 arm:   "0675946528f677a45b0b14aca06db69986b37a7f1f60337c3b7f2e458ee6a7d7",
@@ -23,7 +24,7 @@ cask "obs-cn" do
   conflicts_with cask: ["homebrew/cask-versions/obs-beta", "obs"]
   depends_on macos: ">= :catalina"
 
-   app "OBS.app"
+  app "OBS.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/obs.wrapper.sh"
   binary shimscript, target: "obs"
