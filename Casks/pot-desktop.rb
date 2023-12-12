@@ -24,5 +24,6 @@ cask "pot-desktop" do
     "~/Library/Caches/cn.pylogmon.pot",
     "~/Library/Saved Application State/cn.pylogmon.pot.savedState",
     "~/Library/Webkit/cn.pylogmon.pot",
+    "~/Library/WebKit/com.pot-app.desktop",
   ]
 end

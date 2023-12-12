@@ -29,5 +29,6 @@ cask "clash-verge" do
     "~/Library/Caches/top.gydi.clashverge",
     "~/Library/Preferences/top.gydi.clashverge.plist",
     "~/Library/Saved Application State/top.gydi.clashverge.savedState",
+    "~/Library/WebKit/top.gydi.clashverge",
   ]
 end

@@ -26,8 +26,10 @@ cask "clash-verge-rev" do
 
   zap trash: [
     "~/.config/clash-verge",
-    "~/Library/Caches/msedge_crashpad_handler",
-    "~/Library/Preferences/moe.elaina.clash.verge.plist",
-    "~/Library/Saved Application State/moe.elaina.clash.verge.savedState",
+    "~/Library/Application Support/io.github.clash-verge-rev.clash-verge-rev"
+    "~/Library/Caches/io.github.clash-verge-rev.clash-verge-rev",
+    "~/Library/Preferences/io.github.clash-verge-rev.clash-verge-rev.savedState.plist",
+    "~/Library/Saved Application State/io.github.clash-verge-rev.clash-verge-rev.savedState",
+    "~/Library/WebKit/io.github.clash-verge-rev.clash-verge-rev,
   ]
 end

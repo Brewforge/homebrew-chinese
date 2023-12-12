@@ -15,6 +15,7 @@ cask "copybook" do
   app "字帖生成器.app"
 
   zap trash: [
-    "~/Library/Application Scripts/top.mydata.copybook"
+    "~/Library/Application Scripts/top.mydata.copybook",
+    "~/Library/Containers/top.mydata.copybook"
   ]
 end
