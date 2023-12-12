@@ -85,4 +85,8 @@ brew help
 
 请直接发起 [拉取请求](https://github.com/Brewforge/homebrew-chinese/compare) 或 [工单](https://github.com/Brewforge/homebrew-chinese/issues/new/choose) 。
 
+### ⚔️ 揭榜
+
+在 Experimental 文件夹中，还有一些当前维护者未能搞定的 Cask，请各位豪杰出手相助。
+
 <!-- ## ❤️ 赞助者 -->
