@@ -16,7 +16,7 @@ on:
 jobs:
   job1:
     name: Test Casks
-    if: github.repository == 'ivaquero/homebrew-chinese'
+    if: github.repository == 'brewforge/homebrew-chinese'
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -33,7 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: ivaquero/homebrew-chinese
+          repository: brewforge/homebrew-chinese
           ref: main
           path: homebrew-chinese
 
@@ -49,7 +49,7 @@ jobs:
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
-          brew tap ivaquero/chinese
+          brew tap brewforge/chinese
           brew update
           brew install ripgrep sd
 
@@ -58,7 +58,7 @@ jobs:
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
-          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-chinese/Casks
+          cd $(brew --prefix)/Homebrew/Library/Taps/brewforge/homebrew-chinese/Casks
           for cask in [b-z]*.rb; do
             cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
             echo "Checking $cask"
@@ -89,7 +89,7 @@ jobs:
   #   steps:
   #     - uses: actions/checkout@v2
   #       with:
-  #         repository: ivaquero/homebrew-chinese
+  #         repository: brewforge/homebrew-chinese
   #         ref: main
   #         path: homebrew-chinese
 
@@ -103,4 +103,4 @@ jobs:
 
   #     - name: Add Tap
   #       run: |
-  #         brew tap ivaquero/chinese
+  #         brew tap brewforge/chinese
