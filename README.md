@@ -1,147 +1,81 @@
 # Homebrew-Chinese
 
-❗⚠️❗ 仓库链接变动提醒 ⏰
+<!-- ![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![CI](https://github.com/Brewforge/homebrew-chinese/actions/workflows/main.yml/badge.svg) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese) -->
 
-由于维护脚本种类的增加，为了吸引到更多有兴趣的协作者，本仓库将迁移到新的组织 [Brewforge](https://github.com/Brewforge) 的目录下，新链接为
+![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese)
 
-https://github.com/Brewforge/homebrew-chinese
+一个致力于为中国用户提供 [🍺 Homebrew](https://github.com/Homebrew/brew) 支持的中文库
 
-[![CI](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml/badge.svg)](https://github.com/ivaquero/homebrew-chinese/actions/workflows/main.yml) [![license](https://img.shields.io/github/license/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/license/homebrew-chinese.svg) [![code-size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-chinese.svg) [![repo-size](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-chinese.svg)
+本仓库收录：
 
-一个致力于服务国人的 [Homebrew](https://github.com/Homebrew/brew) 🍺 第三方库
+- [x] 开源软件的中文版镜像
+- [x] 面向中国用户的未被官方库收录的软件
+- [x] 面向中国用户的国产商业软件
 
-本仓库主要收录以下软件：
+## 📝 太长不看
 
-- 开源软件的国内镜像
-- 面向国人的开源软件（未被 Homebrew 官方收录）
-- 国产商业软件
+📦 收录列表
 
-## 开始 🏃
+[![面向国人](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?logo=homebrew&labelColor=555555)](./%E5%88%97%E8%A1%A8.md) [![面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?logo=homebrew&labelColor=555555)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
 
-### 安装 Homebrew 🍺 🚴
+## 🏃 准备
 
-在终端中运行以下命令：
+- 🪜 流量有限：🍺 HomebrewCN [Homebrew 国内安装脚本 | Gitee](https://gitee.com/cunkai/HomebrewCN) 🚴
 
-```sh
-/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew tap ivaquero/chinese
-```
-
-国内源
+> 该脚本自动配置了国内源，源码在 Gitee 开源，🍺 HomebrewCN 作者也写了 [常见错误的解决办法](https://gitee.com/cunkai/HomebrewCN/blob/master/error.md) 。
 
 ```sh
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
-brew tap ivaquero/chinese
 ```
 
-更多相关信息，请访问 Homebrew 官方网站 👉 [https://brew.sh/](https://brew.sh/) 👈
-
-### 从本仓库安装应用程序 🚅
-
-- 第 1 步：添加此仓库并进行更新，么么哒~ 💋
-
-在终端中运行以下命令：
+- 🪜 流量无限：[Homebrew 官方安装脚本](https://brew.sh/zh-cn/)
 
 ```sh
-brew tap ivaquero/chinese
-brew update
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-- 步骤 2：安装应用程序 ✈️
+## 🍺 使用
 
-- 通过 brew search 命令检查 App 的确切名称：
+🚰 把本仓库和 [brewforge/extras](https://github.com/Brewforge/homebrew-extras) **拍** 到自己 Mac 上（仅需初次）
+
+```bash
+brew tap brewforge/chinese
+brew tap brewforge/extras
+```
+
+🔍 搜索
 
 ```sh
-brew search <app_name>
-brew cask install <app_name>
+brew search <formula或cask>
 ```
 
-- 指定安装
+🛒 安装
 
 ```sh
-brew install chinese/<app_name>
+brew install <formula>
+brew install --cask <cask>
 ```
 
-### 其他
-
-- 推荐：添加官方仓库 🚀
+🗑️ 卸载
 
 ```sh
-brew tap homebrew/homebrew-cask
-brew update
+brew rm <formula或cask>
 ```
 
-- 用于 Homebrew 命令 📖
+🧾 列出已安装的软件
+
+```sh
+brew ls
+```
+
+🙏 更多帮助
 
 ```sh
 brew help
 ```
 
-## 总结
+## ✨ 一起维护
 
-### 开源软件镜像
+请直接发起 [拉取请求](https://github.com/Brewforge/homebrew-chinese/compare) 或 [工单](https://github.com/Brewforge/homebrew-chinese/issues/new/choose) 。
 
-|    Cask 名     |                           App 名                            |     类型     |
-| :------------: | :---------------------------------------------------------: | :----------: |
-|  basictex-cn   |  [BasicTeX 镜像](https://tug.org/mactex/morepackages.html)  | 开源软件镜像 |
-|   blender-cn   |             [Blender 镜像](https://blender.org)             | 开源软件镜像 |
-|   freecad-cn   |           [FreeCAD 镜像](https://freecadweb.org)            | 开源软件镜像 |
-|    gimp-cn     |                [GIMP 镜像](https://gimp.org)                | 开源软件镜像 |
-|    iina-cn     |                [IINA 镜像](https://iina.io)                 | 开源软件镜像 |
-|  inkscape-cn   |            [Inkscape 镜像](https://inkscape.org)            | 开源软件镜像 |
-|    julia-cn    |             [Julia 镜像](https://julialang.org)             | 开源软件镜像 |
-|    kicad-cn    |               [Kicad 镜像](https://kicad.org)               | 开源软件镜像 |
-| libreoffice-cn |         [LibreOffice 镜像](https://libreoffice.org)         | 开源软件镜像 |
-|     lyx-cn     |                 [Lyx 镜像](https://lyx.org)                 | 开源软件镜像 |
-| mambaforge-cn  | [Mambaforge 镜像](https://github.com/conda-forge/miniforge) | 开源软件镜像 |
-|  miniforge-cn  | [Miniforge 镜像](https://github.com/conda-forge/miniforge)  | 开源软件镜像 |
-|     obs-cn     |          [OBS Studio 镜像](https://obsproject.com)          | 开源软件镜像 |
-| qt-creator-cn  |         [Qt Creator 镜像](https://qt.io/developers)         | 开源软件镜像 |
-|  texstudio-cn  |           [TeXStudio 镜像](https://texstudio.org)           | 开源软件镜像 |
-|     vlc-cn     |            [VLC 镜像](https://videolan.org/vlc)             | 开源软件镜像 |
-|  vscodium-cn   |    [VSCodium 镜像](https://github.com/VSCodium/vscodium)    | 开源软件镜像 |
-
-### 开源软件（面向国人）
-
-|      Cask 名      |                                         App 名                                          |         类型         | 商业模式 |
-| :---------------: | :-------------------------------------------------------------------------------------: | :------------------: | :------: |
-|   alist-desktop   |            [AList 桌面客户端](https://github.com/alist-org/desktop-release)             | 开源软件（面向国人） |   🆓💰   |
-|   alist-helper    | [Alist-Helper](https://github.com/Xmarmalade/alisthelper/blob/master/README_zh-Hans.md) | 开源软件（面向国人） |    🆓    |
-|  clash-nyanpasu   |              [Clash-Nyanpasu](https://github.com/keiko233/clash-nyanpasu)               | 开源软件（面向国人） |    🆓    |
-|  clash-verge-rev  |              [Clash-Verge-Rev](https://github.com/wonfen/clash-verge-rev)               | 开源软件（面向国人） |    🆓    |
-|    clash-verge    |                  [Clash-Verge](https://github.com/zzzgydi/clash-verge)                  | 开源软件（面向国人） |    🆓    |
-|     copybook      |                  [字帖生成器](https://github.com/xxNull-lsk/Copybook)                   | 开源软件（面向国人） |    🆓    |
-|      gopeed       |                              [Gopeed](https://gopeed.com/)                              | 开源软件（面向国人） |    🆓    |
-|  m3u8-downloader  |             [M3U8Downloader](https://github.com/HeiSir2014/M3U8-Downloader)             | 开源软件（面向国人） |    🆓    |
-|     messauto      |                     [MessAuto](https://github.com/LeeeSe/MessAuto)                      | 开源软件（面向国人） |    🆓    |
-| openai-translator |            [OpenAI-Translator](https://github.com/yetone/openai-translator)             | 开源软件（面向国人） |    🆓    |
-|     pdf-guru      |                    [Pdf-Guru](https://github.com/kevin2li/PDF-Guru)                     | 开源软件（面向国人） |    🆓    |
-|    pot-desktop    |                  [Pot-Desktop](https://github.com/pot-app/pot-desktop)                  | 开源软件（面向国人） |    🆓    |
-|   squirrel-ime    |                    [鼠鬚管输入法](https://github.com/rime/squirrel)                     | 开源软件（面向国人） |    🆓    |
-|     yank-note     |                        [Yank-Note](https://yank-note.com/zh-CN)                         | 开源软件（面向国人） |    🆓    |
-
-### 商业软件
-
-|    Cask 名     |                            App 名                            |     类型     | 商业模式 |
-| :------------: | :----------------------------------------------------------: | :----------: | :------: |
-| app-cleaner-cn | [App Cleaner（中文版）](https://nektony.com/mac-app-cleaner) |   商业软件   |    💰    |
-|    e-study     |        [知网研学（原 E-Study）](https://e-study.com)         | 国产商业软件 |   🆓💰   |
-|   easy-to-tv   |   [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)    | 国产开源软件 |    🆓    |
-|   edrawmax-9   |        [亿图图示 9（固定版本）](http://edrawsoft.cn)         | 国产商业软件 |    💰    |
-|    eshelper    |       [西语助手](https://eudic.net/v4/es/app/eshelper)       | 国产商业软件 |   🆓💰   |
-|     feige      |               [飞鸽传书](http://ipmsg.org.cn)                | 国产商业软件 |    🆓    |
-|    i4tools     |                  [爱思助手](https://i4.cn)                   | 国产商业软件 |    🆓    |
-|    lingquan    |                [零泉](https://lingquan.cool)                 | 国产商业软件 |   🆓💰   |
-|    linkease    |              [易有云](https://doc.linkease.com)              | 国产商业软件 |    🆓    |
-|    ting-en     |   [每日英语听力](http://francochinois.com/v4/en/app/ting)    | 国产商业软件 |   🆓💰   |
-|    ting-es     |   [每日西语听力](http://francochinois.com/v4/es/app/ting)    | 国产商业软件 |   🆓💰   |
-|    ting-fr     |   [每日法语听力](http://francochinois.com/v4/fr/app/ting)    | 国产商业软件 |   🆓💰   |
-
-### CLI 软件
-
-|  CLI 名   |    名    |   类型   | 原创 |
-| :-------: | :------: | :------: | :--: |
-| alist-cli |  AList   | 开源软件 |  ✓   |
-|  bbdown   |  BBDOWN  | 开源软件 |  ✓   |
-| music-dl  | Music DL | 开源软件 |  ✓   |
-|   shurl   |  shurl   | 开源软件 |  ✓   |
+<!-- ## ❤️ 赞助者 -->
