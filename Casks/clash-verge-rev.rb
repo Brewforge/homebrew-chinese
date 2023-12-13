@@ -26,10 +26,10 @@ cask "clash-verge-rev" do
 
   zap trash: [
     "~/.config/clash-verge",
-    "~/Library/Application Support/io.github.clash-verge-rev.clash-verge-rev"
+    "~/Library/Application Support/io.github.clash-verge-rev.clash-verge-rev",
     "~/Library/Caches/io.github.clash-verge-rev.clash-verge-rev",
     "~/Library/Preferences/io.github.clash-verge-rev.clash-verge-rev.savedState.plist",
     "~/Library/Saved Application State/io.github.clash-verge-rev.clash-verge-rev.savedState",
-    "~/Library/WebKit/io.github.clash-verge-rev.clash-verge-rev,
+    "~/Library/WebKit/io.github.clash-verge-rev.clash-verge-rev",
   ]
 end
