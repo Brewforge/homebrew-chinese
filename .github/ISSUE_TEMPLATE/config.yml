@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 在讨论区寻找帮助
+    url: https://github.com/orgs/Brewforge/discussions
+    about: 有问题吗？不确定您的问题是否会对每个人都产生影响？获取帮助的最快方式：在讨论区！
