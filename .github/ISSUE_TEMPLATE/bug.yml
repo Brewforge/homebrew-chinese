@@ -9,9 +9,9 @@ body:
       options:
         - label: 我尝试附加 `--force` 后重新运行了终端的代码。
           required: false
-        - label: 我尝试运行 `brew update-reset 和 brew update` 后重新运行了终端的代码。
+        - label: 我尝试运行 `brew update-reset` 和 `brew update` 后重新运行了终端的代码。
           required: false
-        - label: 我尝试运行 `brew doctor`并依照提示执行修复指令后重新运行了终端的代码。
+        - label: 我尝试运行 `brew doctor` 并依照提示执行修复指令后重新运行了终端的代码。
           required: false
   - type: textarea
     attributes:
