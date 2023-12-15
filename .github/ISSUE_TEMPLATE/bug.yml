@@ -1,0 +1,48 @@
+name: \U0001F50D\U0001F41E\U0001F41E\U0001F41E
+description: 哪里出现了什么问题？
+body:
+  - type: checkboxes
+    attributes:
+      label: 请先确认：
+      description: 请确认您已按照以下步骤操作
+      options:
+        - label: 我明白 [发工单必须遵守这些内容](https://github.com/Homebrew/homebrew-cask/blob/master/doc/faq/closing_issues_without_review.md)。
+          required: true
+        - label: 我尝试附加 `--force` 后重新运行了终端的代码。
+          required: false
+        - label: 我尝试运行 `brew update-reset 和 brew update` 后重新运行了终端的代码。
+          required: false
+        - label: 我尝试运行 `brew doctor`并依照提示执行修复指令后重新运行了终端的代码。
+          required: false
+        - label: 我已经尝试在他人发起的 [工单](https://github.com/Brewforge/homebrew-chinese/issues?q=is%3Aopen+is%3Aissue+label%3Abug) 中寻找和我相似的问题。
+          required: true
+        - label: 我已再次确认该问题不是由 [checksum does not match / SHA256 mismatch](https://docs.brew.sh/Common-Issues#cask---checksum-does-not-match) 引起（在尝试发起 PR 修复之前，不要发起工单）。
+          required: true
+  - type: textarea
+    attributes:
+      label: 描述一下错误
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 发生错误前你运行了什么
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 携带参数 `--verbose --debug` 再次运行，以获取详细输出内容
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 运行 `brew doctor` 和 `brew config` 的输出内容
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 运行 `brew tap` 的输出内容
+      render: shell
+    validations:
+      required: true
