@@ -15,7 +15,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: 1
     attributes:
       label: 类型
       options:
@@ -44,7 +43,6 @@ body:
     validations:
       required: false
   - type: dropdown
-    id: 2
     attributes:
       label: 商业模式
       multiple: true
