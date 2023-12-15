@@ -48,7 +48,7 @@ body:
       multiple: true
       options:
         - 免费
-        - 付费
+        - 买断
         - 订阅
     validations:
       required: true
