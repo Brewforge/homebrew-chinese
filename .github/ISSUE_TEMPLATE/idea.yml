@@ -15,9 +15,9 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: 类型
+    id: 1
     attributes:
-      label: 图形化 / 命令行
+      label: 类型
       options:
         - 图形化软件
         - 命令行软件
@@ -41,13 +41,12 @@ body:
   - type: input
     attributes:
       label: 软件下载链接
-      render: shell
     validations:
       required: false
   - type: dropdown
-    id: 商业模式
+    id: 2
     attributes:
-      label: 免费 / 付费 / 订阅
+      label: 商业模式
       multiple: true
       options:
         - 免费
