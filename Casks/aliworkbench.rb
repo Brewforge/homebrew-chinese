@@ -1,6 +1,6 @@
 cask "aliworkbench" do
-  version "9.27.03"
-  sha256 "61caabd57a079e04fd30d4b40702f48704a503c397759cffc22a5cb7d96b4e34"
+  version "9.26.03"
+  sha256 :no_check
 
   url "https://download.alicdn.com/wangwang/AliworkbenchQN_(#{version}QNM).dmg"
   name "aliworkbench"
@@ -16,5 +16,9 @@ cask "aliworkbench" do
 
   app "千牛.app"
 
-  zap trash: []
+  zap trash: [
+    "~/Library/Caches/com.taobao.Aliworkbench",
+    "~/Library/Containers/com.taobao.Aliworkbench",
+    "~/Library/Preferences/com.taobao.Aliworkbench.plist",
+  ]
 end
