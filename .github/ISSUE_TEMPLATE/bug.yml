@@ -1,4 +1,4 @@
-name: \U0001F50D\U0001F41E\U0001F41E\U0001F41E
+name: 错误报告
 description: 哪里出现了什么问题？
 body:
   - type: checkboxes
