@@ -1,14 +1,14 @@
-name: 新软件建议
+name: 软件建议
 description: 你发现了新大陆？
 labels: 改进
 body:
-  - type: checkboxes
-    attributes:
-      label: 请先确认：
-      description: 请确认您已按照以下步骤操作
-      options:
-        - label: 我明白 [发工单必须遵守这些内容](https://github.com/Homebrew/homebrew-cask/blob/master/doc/faq/closing_issues_without_review.md)。
-          required: true
+  # - type: checkboxes
+  #   attributes:
+  #     label: 请先确认：
+  #     description: 请确认您已按照以下步骤操作
+  #     options:
+  #       - label: 我明白 [发工单必须遵守这些内容](https://github.com/Homebrew/homebrew-cask/blob/master/doc/faq/closing_issues_without_review.md)。
+  #         required: true
   - type: input
     attributes:
       label: 软件名
