@@ -1,5 +1,6 @@
 name: 错误报告
 description: 哪里出现了什么问题？
+label: 错误
 body:
   - type: checkboxes
     attributes:
