@@ -1,21 +1,21 @@
 cask "yank-note" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.63.2"
-  sha256 arm:   "fd58db618bbd58e8ea0cc02613e2c4bb394e346056c357fd4f51c0b055a4b8fc",
-         intel: "bfaefe6d01df3e2ba273031d5e19b36be43b7453014c215b0e2c2c820279f411"
+  version "3.65.0"
+  sha256 arm:   "7d6f86e6111920ccc10d16f4a6cb7342116afb498ac99f3de95f98c2ae5505af",
+         intel: "7a16ac1582490ed086a0f16df4e6aa9d6671d8fd37b6571281c2e6e5af630449"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg"
 
   url "#{mirror}#{origin}",
-      verified: "mirror.ghproxy.com"
+      verified: "mirror.ghproxy.com/"
   name "Yank Note"
   desc "高可扩展性 Markdown 笔记软件"
   homepage "https://yank-note.com/zh-CN"
 
   livecheck do
-    url "#{origin}"
+    url origin.to_s
     strategy :github_latest
   end
 
