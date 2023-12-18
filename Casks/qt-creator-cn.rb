@@ -3,7 +3,7 @@ cask "qt-creator-cn" do
   sha256 "77dff1e98eca81fd55a49af32b8565ff1ecc59618c2e153d221fa988b8d2da6f"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg",
-      verified: "www.qt.io/"
+      verified: "mirrors.tuna.tsinghua.edu.cn/"
   name "Qt Creator"
   desc "IDE for application development"
   homepage "https://www.qt.io/developers/"

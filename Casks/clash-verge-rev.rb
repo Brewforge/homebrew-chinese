@@ -5,13 +5,17 @@ cask "clash-verge-rev" do
   sha256 arm:   "8bed897701070b75df29817986904fe54ae0a0521b8961b32b3cf4ecadadb260",
          intel: "841d8f6d5c5b7e997636c51adaeee8a48a64fa22a03a3da064bb885578a01bff"
 
-  url "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v#{version}/Clash.Verge_#{version}_#{arch}.dmg"
+  mirror = "https://mirror.ghproxy.com/"
+  origin = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v#{version}/Clash.Verge_#{version}_#{arch}.dmg"
+
+  url "#{mirror}#{origin}",
+      verified: "mirror.ghproxy.com/"
   name "Clash Verge Rev"
   desc "Clash Verge 接盘项目"
   homepage "https://github.com/clash-verge-rev/clash-verge-rev"
 
   livecheck do
-    url :url
+    url origin.to_s
     strategy :github_latest
   end
 

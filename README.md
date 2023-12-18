@@ -22,6 +22,11 @@ rm -rf $(brew --repository)/Library/Taps/ivaquero/homebrew-chinese
 
 ## 📝 太长不看
 
+🙋‍♂️ 为什么会有本仓库
+
+- 💪 国内用户访问 [Homebrew](https://github.com/Homebrew) 官方仓库比较费劲
+- 🪜 下载过程流量消耗比较多，本仓库对通过 GitHub 发布内容使用 [GitHub Proxy](https://mirror.ghproxy.com) 进行加速
+
 📦 收录列表
 
 [![面向国人](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?logo=homebrew&labelColor=555555)](./%E5%88%97%E8%A1%A8.md) [![面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?logo=homebrew&labelColor=555555)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
@@ -45,6 +50,15 @@ rm -rf $(brew --repository)/Library/Taps/ivaquero/homebrew-chinese
 ## 🍺 使用
 
 🚰 把本仓库和 [brewforge/extras](https://github.com/Brewforge/homebrew-extras) **拍** 到自己 Mac 上（仅需初次）
+
+- 🪜 流量有限：
+
+```bash
+brew tap brewforge/chinese https://mirror.ghproxy.com/https://github.com/Brewforge/homebrew-chinese
+brew tap brewforge/extras https://mirror.ghproxy.com/https://github.com/Brewforge/homebrew-extras
+```
+
+- 🪜 流量无限：
 
 ```bash
 brew tap brewforge/chinese

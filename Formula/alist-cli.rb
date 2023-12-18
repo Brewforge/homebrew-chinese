@@ -7,7 +7,11 @@ class AlistCli < Formula
   arch = Hardware::CPU.arm? ? "arm64" : "amd64"
   os_family = OS.mac? ? "darwin" : "linux"
 
-  url "https://github.com/alist-org/alist/releases/download/v#{version}/alist-#{os_family}-#{arch}.tar.gz"
+  mirror = "https://mirror.ghproxy.com/"
+  origin = "https://github.com/alist-org/alist/releases/download/v#{version}/alist-#{os_family}-#{arch}.tar.gz"
+
+  url "#{mirror}#{origin}",
+      verified: "mirror.ghproxy.com/"
 
   if OS.mac?
     sha256 Hardware::CPU.arm? ?

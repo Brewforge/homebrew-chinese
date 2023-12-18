@@ -5,13 +5,17 @@ cask "pot-desktop" do
   sha256 arm:   "436caf3bf0ff075961992f9962e50b60ee5760b9ba07994f2bd7e46c7b87d5e9",
          intel: "3c623cf7dc89f4ec0cb30db1f2f231ebff48a1496dccadda207a78e86da620a8"
 
-  url "https://github.com/pot-app/pot-desktop/releases/download/#{version}/pot_#{version}_#{arch}.dmg"
+  mirror = "https://mirror.ghproxy.com/"
+  origin = "https://github.com/pot-app/pot-desktop/releases/download/#{version}/pot_#{version}_#{arch}.dmg"
+
+  url "#{mirror}#{origin}",
+      verified: "mirror.ghproxy.com/"
   name "pot"
   desc "Cross-platform translation software"
   homepage "https://github.com/pot-app/pot-desktop"
 
   livecheck do
-    url :url
+    url origin.to_s
     strategy :github_latest
   end
 

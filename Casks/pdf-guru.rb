@@ -4,7 +4,11 @@ cask "pdf-guru" do
   version "1.0.12"
   sha256 :no_check
 
-  url "https://github.com/kevin2li/PDF-Guru/releases/download/v#{version}/pdf-guru-darwin-#{arch}-#{version}.zip"
+  mirror = "https://mirror.ghproxy.com/"
+  origin = "https://github.com/kevin2li/PDF-Guru/releases/download/v#{version}/pdf-guru-darwin-#{arch}-#{version}.zip"
+
+  url "#{mirror}#{origin}",
+      verified: "mirror.ghproxy.com/"
   name "PDF Guru"
   desc "Multi-purpose PDF file processing tool with a nice UI"
   homepage "https://github.com/kevin2li/PDF-Guru/"

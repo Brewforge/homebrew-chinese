@@ -24,7 +24,7 @@ class Bbdown < Formula
   end
 
   livecheck do
-    url :url
+    url origin.to_s
     strategy :github_latest
   end
 

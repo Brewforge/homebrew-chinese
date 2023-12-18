@@ -5,13 +5,17 @@ cask "clash-nyanpasu" do
   sha256 arm:   "c4c28b1d5cc798f8cfca02f6408c13710022b43fe3205f5950a094c2e5bb145f",
          intel: "c4c28b1d5cc798f8cfca02f6408c13710022b43fe3205f5950a094c2e5bb145f"
 
-  url "https://github.com/keiko233/clash-nyanpasu/releases/download/v#{version}/Clash.Nyanpasu_#{version}_#{arch}.dmg"
+  mirror = "https://mirror.ghproxy.com/"
+  origin = "https://github.com/keiko233/clash-nyanpasu/releases/download/v#{version}/Clash.Nyanpasu_#{version}_#{arch}.dmg"
+
+  url "#{mirror}#{origin}",
+      verified: "mirror.ghproxy.com/"
   name "Clash Nyanpasu"
   desc "Cross-Platform Clash GUI based on Tauri"
   homepage "https://github.com/keiko233/clash-nyanpasu"
 
   livecheck do
-    url :url
+    url origin.to_s
     strategy :github_latest
   end
 

@@ -6,7 +6,11 @@ class CloudflareSt < Formula
 
   arch = Hardware::CPU.arm? ? "arm64" : "amd64"
 
-  url "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v#{version}/CloudflareST_darwin_#{arch}.zip"
+  mirror = "https://mirror.ghproxy.com/"
+  origin = "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v#{version}/CloudflareST_darwin_#{arch}.zip"
+
+  url "#{mirror}#{origin}",
+      verified: "mirror.ghproxy.com/"
 
   if Hardware::CPU.arm?
     sha256 "52972db6391bd9247b198e516850f3b270bf24e3d5aca4edc5a6602aefb76dc5"

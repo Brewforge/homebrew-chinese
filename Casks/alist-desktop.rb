@@ -5,14 +5,17 @@ cask "alist-desktop" do
   sha256 arm:   "1e3643afcbebab12c9666fbcc2cde79df52d266e52ad08661ffe33b209f5d7c1",
          intel: "191645958ba2249e8ad2f548ffff1b9e7e8853337693be421d26952654b26146"
 
-  url "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_#{arch}.dmg",
-      verified: "github.com/alist-org/"
+  mirror = "https://mirror.ghproxy.com/"
+  origin = "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_#{arch}.dmg"
+
+  url "#{mirror}#{origin}",
+      verified: "mirror.ghproxy.com/"
   name "AList-Desktop"
   desc "File list program that supports multiple storage, powered by Gin and Solidjs"
   homepage "https://alist.nn.ci/zh/"
 
   livecheck do
-    url :url
+    url origin.to_s
     strategy :github_latest
   end
 
