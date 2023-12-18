@@ -1,9 +1,9 @@
 cask "pot-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.7.1"
-  sha256 arm:   "436caf3bf0ff075961992f9962e50b60ee5760b9ba07994f2bd7e46c7b87d5e9",
-         intel: "3c623cf7dc89f4ec0cb30db1f2f231ebff48a1496dccadda207a78e86da620a8"
+  version "2.7.2"
+  sha256 arm:   "43139a063d2d49341cab83555e38e43dd0346b3e4426bbdef49cd945044ec408",
+         intel: "4e0d4799e62ae432770650834c099bd448d1d6125c058ef8dacbd5d7f39860a7"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/pot-app/pot-desktop/releases/download/#{version}/pot_#{version}_#{arch}.dmg"
