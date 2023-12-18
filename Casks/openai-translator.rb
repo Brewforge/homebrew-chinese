@@ -1,9 +1,9 @@
 cask "openai-translator" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.2.14"
-  sha256 arm:   "fdae4dbc55ce4e74275d6b6cc760bbb59d9e73ed2b9ba7d9f43b4de018d16a44",
-         intel: "847b55cebab6c26ba47a030cfa648d1821e6643e9ab1778d4413cb11caaf459f"
+  version "0.3.4"
+  sha256 arm:   "cca08d5fccb6b0da7612b51733bb2709aafad03fff359d52f0d64ec3e2b864fa",
+         intel: "6dfbcff19b5e229a1302a7f74f20e5da7562ac7242d7530d2edacd20487af619"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/openai-translator/openai-translator/releases/download/v#{version}/OpenAI.Translator_#{version}_#{arch}.dmg"
@@ -12,7 +12,7 @@ cask "openai-translator" do
       verified: "mirror.ghproxy.com/"
   name "OpenAI Translator"
   desc "Cross-platform Translatior based on ChatGPT API"
-  homepage "https://github.com/openai-translator/openai-translator"
+  homepage "https://github.com/openai-translator/openai-translator/blob/main/README-CN.md"
 
   livecheck do
     url origin.to_s
