@@ -1,4 +1,4 @@
-cask "airy" do
+cask "airy-ai" do
   arch arm: "arm64", intel: "64"
 
   version "1.1.1"
