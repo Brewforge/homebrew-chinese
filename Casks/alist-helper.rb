@@ -17,7 +17,6 @@ cask "alist-helper" do
   end
 
   auto_updates true
-
   app "alisthelper.app"
 
   zap trash: [

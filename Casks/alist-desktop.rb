@@ -20,7 +20,6 @@ cask "alist-desktop" do
   end
 
   auto_updates true
-
   app "alist-desktop.app"
 
   zap trash: [

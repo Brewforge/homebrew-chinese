@@ -20,7 +20,6 @@ cask "pdf-guru" do
   end
 
   auto_updates true
-
   app "PDF Guru.app"
 
   zap trash: []

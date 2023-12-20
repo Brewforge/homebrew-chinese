@@ -17,7 +17,6 @@ cask "inkscape-cn" do
   end
 
   auto_updates true
-
   app "Inkscape.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
   shimscript = "#{staged_path}/inkscape.wrapper.sh"

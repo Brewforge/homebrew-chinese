@@ -9,11 +9,10 @@ cask "linkease" do
 
   livecheck do
     url "https://doc.linkease.com/zh/guide/linkease/install/device/support.html"
-    regex(%r{macOS.*?v?(\d+(?:\.\d+)+)}i)
+    regex(/macOS.*?v?(\d+(?:\.\d+)+)/i)
   end
 
   auto_updates true
-
   app "LinkEase.app"
 
   zap trash: [

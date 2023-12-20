@@ -11,7 +11,6 @@ cask "lceda-pro" do
   homepage "https://lceda.cn/"
 
   auto_updates true
-
   app "嘉立创EDA(专业版).app"
 
   # zap trash: [

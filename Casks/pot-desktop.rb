@@ -20,7 +20,6 @@ cask "pot-desktop" do
   end
 
   auto_updates true
-
   app "pot.app"
 
   zap trash: [

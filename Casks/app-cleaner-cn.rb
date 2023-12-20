@@ -13,7 +13,6 @@ cask "app-cleaner-cn" do
   end
 
   auto_updates true
-
   app "App Cleaner 8.app"
 
   zap trash: [

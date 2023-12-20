@@ -17,7 +17,6 @@ cask "gopeed" do
   end
 
   auto_updates true
-
   app "Gopeed.app"
 
   zap trash: [
