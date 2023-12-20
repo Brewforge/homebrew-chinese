@@ -8,7 +8,6 @@ cask "feige" do
   homepage "http://www.ipmsg.org.cn/"
 
   auto_updates true
-
   app "Feige.app"
 
   zap trash: [
