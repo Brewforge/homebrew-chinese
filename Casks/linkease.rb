@@ -1,5 +1,5 @@
 cask "linkease" do
-  version "1.1.9"
+  version "1.2.3"
   sha256 :no_check
 
   url "https://fw8.koolcenter.com:5000/binary/LinkEase/Client/LinkEase.dmg"
