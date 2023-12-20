@@ -4,16 +4,26 @@ cask "opencat" do
 
   url "https://opencat.app/releases/OpenCat-#{version}.dmg"
   name "OpenCat"
-  desc "Native AI chat client, offering a smoother and faster chat experience"
+  desc "OpenAI/Azure OpenAI/Claude/Gemini Pro API 第三方图形化客户端（比应用商店版多 键盘扩展 功能）"
   homepage "https://opencat.app/"
 
   auto_updates true
   app "OpenCat.app"
 
   livecheck do
-    url "https://opencat.app"
+    url :homepage
     regex(/OpenCat[._-]v?(\d+(?:\.\d+)+)/i)
   end
 
-  zap trash: []
+  zap trash: [
+    "~/Library/Preferences/tech.baye.OpenCat.plist",
+    "~/Library/Containers/tech.baye.OpenCat",
+    "~/Library/Group Containers/group.tech.baye.openai",
+    "~/Library/Saved Application State/tech.baye.OpenCat.savedState",
+    "~/Library/HTTPStorages/tech.baye.OpenCat",
+    "~/Library/Application Support/OpenCat",
+    "~/Library/Application Scripts/group.tech.baye.openai",
+    "~/Library/Application Scripts/tech.baye.OpenCat",
+    "~/Library/Application Support/tech.baye.OpenCat",
+  ]
 end
