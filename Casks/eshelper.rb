@@ -1,6 +1,6 @@
 cask "eshelper" do
-  version "4.5.8,1140"
-  sha256 "572e610ec4e16bddcb7fc9d8d04fb735e643db9b7814321b4cac547113a39bf2"
+  version "4.5.9,1141"
+  sha256 "ea89c70af1d9de283d65e59832539dd87876bf385543f54ee2e4f57503049a70"
 
   url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version.csv.second}",
       verified:   "static.frdic.com/",
