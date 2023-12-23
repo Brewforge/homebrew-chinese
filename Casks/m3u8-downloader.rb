@@ -20,7 +20,8 @@ cask "m3u8-downloader" do
   end
 
   auto_updates true
-  app "M3U8-Downloader.app"
+
+  app  "M3U8-Downloader.app"
 
   zap trash: [
     "~/Library/Application Support/M3U8-Downloader",

@@ -13,7 +13,8 @@ cask "linkease" do
   end
 
   auto_updates true
-  app "LinkEase.app"
+
+  app  "LinkEase.app"
 
   zap trash: [
     "~/Library/Caches/com.LinkEase.LinkEase",

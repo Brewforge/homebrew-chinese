@@ -8,7 +8,8 @@ cask "opencat" do
   homepage "https://opencat.app/"
 
   auto_updates true
-  app "OpenCat.app"
+
+  app  "OpenCat.app"
 
   livecheck do
     url :homepage

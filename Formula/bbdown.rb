@@ -24,8 +24,8 @@ class Bbdown < Formula
   end
 
   livecheck do
-    url origin.to_s
-    strategy :github_latest
+    url "https://github.com/nilaoda/BBDown/releases/latest"
+    regex(/^BBDown_(\d+(\.\d+)+_\d+)_osx/i)
   end
 
   def install

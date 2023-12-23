@@ -20,7 +20,8 @@ cask "messauto" do
   end
 
   auto_updates true
-  app "MessAuto.app"
+
+  app  "MessAuto.app"
 
   zap trash: [
     "~/Library/Preferences/com.doe.messauto.plist",

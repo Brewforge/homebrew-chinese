@@ -8,7 +8,8 @@ cask "lceda" do
   homepage "https://lceda.cn/"
 
   auto_updates true
-  app "嘉立创EDA.app"
+
+  app  "嘉立创EDA.app"
 
   # zap trash: [
   # ]

@@ -17,7 +17,8 @@ cask "lingquan" do
   end
 
   auto_updates true
-  app "零泉.app"
+
+  app  "零泉.app"
 
   zap trash: [
     "~/Library/Application Support/lingquan",

@@ -20,7 +20,8 @@ cask "openai-translator" do
   end
 
   auto_updates true
-  app "OpenAI Translator.app"
+
+  app  "OpenAI Translator.app"
 
   zap trash: [
     "~/Library/Application Support/openai-translator",

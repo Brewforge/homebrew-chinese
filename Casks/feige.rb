@@ -8,7 +8,8 @@ cask "feige" do
   homepage "http://www.ipmsg.org.cn/"
 
   auto_updates true
-  app "Feige.app"
+
+  app  "Feige.app"
 
   zap trash: [
     "~/Library/Saved Application State/com.yourcompany.clock.savedState",

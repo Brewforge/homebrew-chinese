@@ -13,7 +13,8 @@ cask "e-study" do
   end
 
   auto_updates true
-  app "知网研学（原E-Study）.app"
+
+  app  "知网研学（原E-Study）.app"
 
   zap trash: [
     "~/Library/Preferences/net.cnki.EStudy.plist",
