@@ -16,7 +16,7 @@ cask "edrawmax-9" do
 
   auto_updates true
 
-  app  "EdrawMax.app"
+  app "EdrawMax.app"
 
   zap trash: [
     "~/Library/Edraw",

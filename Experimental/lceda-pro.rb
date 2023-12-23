@@ -12,7 +12,7 @@ cask "lceda-pro" do
 
   auto_updates true
 
-  app  "嘉立创EDA(专业版).app"
+  app "嘉立创EDA(专业版).app"
 
   # zap trash: [
   # ]

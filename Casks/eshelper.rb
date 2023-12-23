@@ -17,7 +17,7 @@ cask "eshelper" do
 
   auto_updates true
 
-  app  "Eudic_es.app"
+  app "Eudic_es.app"
 
   uninstall quit: [
     "com.eusoft.eshelper",

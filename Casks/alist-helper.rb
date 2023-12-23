@@ -18,7 +18,7 @@ cask "alist-helper" do
 
   auto_updates true
 
-  app  "alisthelper.app"
+  app "alisthelper.app"
 
   zap trash: [
     "~/Library/Preferences/dev.xmarmalade.alisthelper.alisthelper.plist",

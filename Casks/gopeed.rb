@@ -18,7 +18,7 @@ cask "gopeed" do
 
   auto_updates true
 
-  app  "Gopeed.app"
+  app "Gopeed.app"
 
   zap trash: [
     "~/Library/Application Scripts/com.gopeed",

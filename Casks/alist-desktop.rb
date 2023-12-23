@@ -21,7 +21,7 @@ cask "alist-desktop" do
 
   auto_updates true
 
-  app  "alist-desktop.app"
+  app "alist-desktop.app"
 
   zap trash: [
     "~/Library/Application Support/ci.nn.alist",

@@ -9,7 +9,7 @@ cask "feige" do
 
   auto_updates true
 
-  app  "Feige.app"
+  app "Feige.app"
 
   zap trash: [
     "~/Library/Saved Application State/com.yourcompany.clock.savedState",
