@@ -12,10 +12,11 @@ cask "eshelper" do
 
   livecheck do
     url "https://www.eudic.net/update/eshelper_mac.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
+  depends_on macos: ">= :high_sierra"
 
   app "Eudic_es.app"
 
