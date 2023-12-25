@@ -1,6 +1,6 @@
 cask "texstudio-cn" do
-  version "4.7.1"
-  sha256 "9b17928e1a32ca58199b425509ba88cbfa59a1c151b74e99599bb519b683e8c6"
+  version "4.7.2"
+  sha256 "3472b8e285f10d5d7738527a0424195e3894e84276eeeb0eabdad893d75a948a"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/texstudio-#{version}-osx.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/"
@@ -16,6 +16,7 @@ cask "texstudio-cn" do
   auto_updates true
   conflicts_with cask: "texstudio"
   depends_on macos: ">= :big_sur"
+
   app "texstudio.app"
 
   zap trash: [
