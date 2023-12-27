@@ -14,8 +14,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  job1:
-    name: Test Casks
+  casks:
+    name: Bump Casks in parallel
     if: github.repository == 'brewforge/homebrew-chinese'
     runs-on: ${{ matrix.os }}
 
@@ -23,63 +23,22 @@ jobs:
       matrix:
         os: [macos-latest]
 
-    # https://github.com/orgs/Homebrew/discussions/4474#discussioncomment-5781752
-    # permissions:
-    #   actions: read
-    #   packages: write
-    #   contents: write
-    #   pull-requests: write
-
     steps:
-      - uses: actions/checkout@v2
+      # checkout myself.
+      - uses: actions/checkout@v3
+
+      - name: Homebrew env
+        uses: ./.github/actions/homebrew-env
         with:
-          repository: brewforge/homebrew-chinese
-          ref: main
-          path: homebrew-chinese
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
-      - name: Set up Homebrew
-        id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@master
+      - name: Bump casks
+        uses: ./.github/actions/bump-casks
         with:
-          core: true
-          cask: true
-          test-bot: false
-
-      - name: Add Tap
-        env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-        run: |
-          brew tap brewforge/chinese
-          brew update
-          brew install ripgrep sd
 
-      - name: Bump outdated casks b-l
-        # continue-on-error: true
-        env:
-          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-        run: |
-          cd $(brew --prefix)/Homebrew/Library/Taps/brewforge/homebrew-chinese/Casks
-          for cask in [b-l]*.rb; do
-            cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
-            echo "Checking $cask"
-
-            # "sed" command not working on github action,
-            # because of the color code in the output of "brew livecheck --cask" command
-            check=$(echo $(brew livecheck --cask "$cask") | tr -d ' ' | cut -d':' -f2- | sed 's/\x1b[[0-9;]*m//g')
-
-            echo "Check result: $check"
-
-            fromV=${check%==>*}
-            toV=${check#*==>}
-
-            echo "Updating $cask from $fromV to $toV"
-            if [[ "$fromV" != "$toV" ]]; then
-              brew bump-cask-pr "$cask" --version "$toV" --verbose --force
-            fi
-          done
-
-  job2:
-    name: Test Casks
+  formulas:
+    name: Bump Formulas in parallel
     if: github.repository == 'brewforge/homebrew-chinese'
     runs-on: ${{ matrix.os }}
 
@@ -87,57 +46,16 @@ jobs:
       matrix:
         os: [macos-latest]
 
-    # https://github.com/orgs/Homebrew/discussions/4474#discussioncomment-5781752
-    # permissions:
-    #   actions: read
-    #   packages: write
-    #   contents: write
-    #   pull-requests: write
-
     steps:
-      - uses: actions/checkout@v2
+      # checkout myself.
+      - uses: actions/checkout@v3
+
+      - name: Homebrew env
+        uses: ./.github/actions/homebrew-env
         with:
-          repository: brewforge/homebrew-chinese
-          ref: main
-          path: homebrew-chinese
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
-      - name: Set up Homebrew
-        id: set-up-homebrew
-        uses: Homebrew/actions/setup-homebrew@master
+      - name: Bump formulas
+        uses: ./.github/actions/bump-formulas
         with:
-          core: true
-          cask: true
-          test-bot: false
-
-      - name: Add Tap
-        env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-        run: |
-          brew tap brewforge/chinese
-          brew update
-          brew install ripgrep sd
-
-      - name: Bump outdated casks m-z
-        # continue-on-error: true
-        env:
-          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-        run: |
-          cd $(brew --prefix)/Homebrew/Library/Taps/brewforge/homebrew-chinese/Casks
-          for cask in [m-z]*.rb; do
-            cask=$(echo "$cask" | sd "/Casks" "" | sd ".rb" "")
-            echo "Checking $cask"
-
-            # "sed" command not working on github action,
-            # because of the color code in the output of "brew livecheck --cask" command
-            check=$(echo $(brew livecheck --cask "$cask") | tr -d ' ' | cut -d':' -f2- | sed 's/\x1b[[0-9;]*m//g')
-
-            echo "Check result: $check"
-
-            fromV=${check%==>*}
-            toV=${check#*==>}
-
-            echo "Updating $cask from $fromV to $toV"
-            if [[ "$fromV" != "$toV" ]]; then
-              brew bump-cask-pr "$cask" --version "$toV" --verbose
-            fi
-          done
