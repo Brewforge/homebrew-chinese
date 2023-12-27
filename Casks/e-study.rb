@@ -8,8 +8,10 @@ cask "e-study" do
   homepage "https://estudy.cnki.net/"
 
   livecheck do
-    url :homepage
-    regex(/Mac(\d+(\.\d+)+)/i)
+    # url :homepage
+    # regex(/Mac(\d+(\.\d+)+)/i)
+    # strategy :page_match
+    skip "SPA 暂时无解，无法自动更新。具体信息看 https://github.com/Brewforge/homebrew-chinese/pull/32"
   end
 
   auto_updates true
