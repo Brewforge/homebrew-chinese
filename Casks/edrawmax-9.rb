@@ -16,6 +16,10 @@ cask "edrawmax-9" do
 
   auto_updates true
 
+  livecheck do
+    skip "No version information available"
+  end
+
   app "EdrawMax.app"
 
   zap trash: [
