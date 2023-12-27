@@ -24,8 +24,8 @@ class AlistCli < Formula
   end
 
   livecheck do
-    url :homepage
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    url origin.to_s
+    strategy :github_latest
   end
 
   def install
