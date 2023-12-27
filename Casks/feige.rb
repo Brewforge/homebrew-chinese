@@ -9,6 +9,11 @@ cask "feige" do
 
   auto_updates true
 
+  livecheck do
+    url 'http://www.ipmsg.org.cn/home/index/download'
+    regex(/Mac版<\/h3>[^<]*<i>([^<]+)<\/i>/i)
+  end
+
   app "Feige.app"
 
   zap trash: [

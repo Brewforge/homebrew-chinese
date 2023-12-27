@@ -11,10 +11,9 @@ cask "airy-ai" do
   desc "AI 加持的聚焦搜索类工具"
   homepage "https://colink.in/"
 
-  # livecheck do
-  #   url
-  #   strategy
-  # end
+  livecheck do
+    skip "No version information available"
+  end
 
   app "Airy.app"
 
