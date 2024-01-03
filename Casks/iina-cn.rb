@@ -1,5 +1,5 @@
 cask "iina-cn" do
-  version "1.3.3,138"
+  version "1.3.3"
   sha256 "4b3f6c4bed3bb77dbe29c12bf6d5d0959284afb01c7b59a35fd71a3a27088991"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/iina/IINA.v#{version}.dmg",
@@ -10,7 +10,7 @@ cask "iina-cn" do
 
   livecheck do
     url "https://www.iina.io/appcast.xml"
-    strategy :sparkle # IINA sometimes rebuilds with the same short version.
+    strategy :sparkle, &:short_version # IINA sometimes rebuilds with the same short version.
   end
 
   auto_updates true
