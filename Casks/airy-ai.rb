@@ -18,10 +18,10 @@ cask "airy-ai" do
   app "Airy.app"
 
   zap trash: [
+    "~/Library/Application Support/airy",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aloha.airy.sfl3",
     "~/Library/Logs/airy",
     "~/Library/Preferences/com.aloha.airy.plist",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aloha.airy.sfl3",
     "~/Library/Saved Application State/com.aloha.airy.savedState",
-    "~/Library/Application Support/airy",
   ]
 end

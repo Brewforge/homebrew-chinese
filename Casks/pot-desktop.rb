@@ -26,6 +26,7 @@ cask "pot-desktop" do
   zap trash: [
     "~/Library/Application Support/cn.pylogmon.pot/config.toml",
     "~/Library/Caches/cn.pylogmon.pot",
+    "~/Library/Logs/com.pot-app.desktop",
     "~/Library/Saved Application State/cn.pylogmon.pot.savedState",
     "~/Library/Webkit/cn.pylogmon.pot",
     "~/Library/WebKit/com.pot-app.desktop",
