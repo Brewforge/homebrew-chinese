@@ -12,9 +12,8 @@ cask "mambaforge-cn" do
   homepage "https://github.com/conda-forge/miniforge"
 
   livecheck do
-    url :homepage
-    regex(/v?(\d+(?:[.-]\d+)+)/i)
-    strategy :github_latest
+    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
+    regex(/Mambaforge[._-](\d+(?:[.-]\d+)+)[._-]MacOSX[._-]#{arch}\.sh/i)
   end
 
   auto_updates true
