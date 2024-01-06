@@ -8,7 +8,7 @@ cask "aidea" do
   url "#{mirror}#{origin}",
       verified: "mirror.ghproxy.com/"
   name "AIdea"
-  desc "一款支持 GPT 以及国产大语言模型通义千问、文心一言等，支持 Stable Diffusion 文生图、图生图、SDXL1.0、超分辨率、图片上色的全能型 APP"
+  desc "一款支持 GPT 以及国产大语言模型，以及 Stable Diffusion 的全能型 APP"
   homepage "https://ai.aicode.cc/"
 
   livecheck do
