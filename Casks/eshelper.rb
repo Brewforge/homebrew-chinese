@@ -2,7 +2,7 @@ cask "eshelper" do
   version "4.5.9"
   sha256 "ea89c70af1d9de283d65e59832539dd87876bf385543f54ee2e4f57503049a70"
 
-  url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version.csv.second}",
+  url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version}",
       verified:   "static.frdic.com/",
       user_agent: :fake
   name "Eshelper"
