@@ -1,30 +1,25 @@
 class AlistCli < Formula
   desc "A file list program that supports multiple storage, powered by Gin and Solidjs."
   homepage "https://github.com/alist-org/alist"
-  license "GNU GPLv3"
-  version "3.29.1"
+  url "https://github.com/alist-org/alist/archive/refs/tags/v3.29.1.tar.gz", verified: "mirror.ghproxy.com/"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  license "AGPL-3.0"
+  head "https://github.com/alist-org/alist.git", branch: "main"
 
-  arch = Hardware::CPU.arm? ? "arm64" : "amd64"
-  os_family = OS.mac? ? "darwin" : "linux"
-
-  mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/alist-org/alist/releases/download/v#{version}/alist-#{os_family}-#{arch}.tar.gz"
-
-  url "#{mirror}#{origin}",
-      verified: "mirror.ghproxy.com/"
-
-  if OS.mac?
-    sha256 Hardware::CPU.arm? ?
-            "78b6d3071b6ef8afbb8d2c3c4fdc88627f1e0e1fa61e76675fd4731596c2c965" :
-            "64d2fdcab56b35ac8bc2e84def30f883aa3c3b4603f0b921f066af41f45a0a8c"
-  else
-    sha256 Hardware::CPU.arm? ?
-            "606a6bcff1abd25bd5aaaf9663b62bfd3281e575dda9df1852b2e48f23511cae" :
-            "81f66e521fe48cb18daadab2d175116201d3ef6b5d5d7bbac1835493eb6e1c81"
+  bottle do
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:   "78b6d3071b6ef8afbb8d2c3c4fdc88627f1e0e1fa61e76675fd4731596c2c965"
+    sha256 cellar: :any_skip_relocation, arm64_ventura:  "78b6d3071b6ef8afbb8d2c3c4fdc88627f1e0e1fa61e76675fd4731596c2c965"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "78b6d3071b6ef8afbb8d2c3c4fdc88627f1e0e1fa61e76675fd4731596c2c965"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "78b6d3071b6ef8afbb8d2c3c4fdc88627f1e0e1fa61e76675fd4731596c2c965"
+    sha256 cellar: :any_skip_relocation, sonoma:         "64d2fdcab56b35ac8bc2e84def30f883aa3c3b4603f0b921f066af41f45a0a8c"
+    sha256 cellar: :any_skip_relocation, ventura:        "64d2fdcab56b35ac8bc2e84def30f883aa3c3b4603f0b921f066af41f45a0a8c"
+    sha256 cellar: :any_skip_relocation, monterey:       "64d2fdcab56b35ac8bc2e84def30f883aa3c3b4603f0b921f066af41f45a0a8c"
+    sha256 cellar: :any_skip_relocation, big_sur:        "64d2fdcab56b35ac8bc2e84def30f883aa3c3b4603f0b921f066af41f45a0a8c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "81f66e521fe48cb18daadab2d175116201d3ef6b5d5d7bbac1835493eb6e1c81"
   end
 
   livecheck do
-    url origin.to_s
+    url :stable
     strategy :github_latest
   end
 
