@@ -24,6 +24,8 @@ cask "capcut" do
 
   depends_on macos: ">= :mojave"
 
+  auto_updates true
+
   app "CapCut.app"
 
   zap trash: [
