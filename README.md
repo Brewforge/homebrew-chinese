@@ -1,6 +1,6 @@
 # Homebrew-Chinese
 
-![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![CI](https://github.com/Brewforge/homebrew-chinese/actions/workflows/main.yml/badge.svg) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese)
+![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![CI](https://github.com/Brewforge/homebrew-chinese/actions/workflows/schedule.yml/badge.svg) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese)
 
 一个致力于为中国用户提供 [🍺 Homebrew](https://github.com/Homebrew/brew) 支持的中文库
 
@@ -10,7 +10,7 @@
 - [x] 面向中国用户的未被官方库收录的软件
 - [x] 面向中国用户的国产商业软件
 
-⚠️ [原仓库](https://github.com/ivaquero/homebrew-chinese-prior) 的老顾客，请执行如下命令：
+⚠️ [原仓库（ivaquero/homebrew-chinese）](https://github.com/ivaquero/legacy-homebrew-chinese) 的老顾客，请执行如下命令：
 
 ```bash
 brew tap brewforge/chinese
