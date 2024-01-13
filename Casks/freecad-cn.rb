@@ -1,9 +1,9 @@
 cask "freecad-cn" do
   arch arm: "arm64", intel: "intel-x86_64"
 
-  version "0.21.1"
-  sha256 arm:   "b6959ca9e0e2f7cddda2cf1e97a26f3e2e65205f2e8e53b3c5dccd062f0be14f",
-         intel: "633dd754e7732c531a019fe74068e43883f8f329c25fe85bfcc91fa26186451f"
+  version "0.21.2"
+  sha256 arm:   "88f51e816075c586bcde89eab0b5edc4a260294eefc11bf5a917d7818330ad50",
+         intel: "e22dfd804c2b09aa559cd3ec2de6e1d7321022c04a354857fc9936b7b6d2e5bb"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/github-release/FreeCAD/FreeCAD/FreeCAD%20#{version}/FreeCAD-#{version}-macOS-#{arch}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/github-release/FreeCAD/FreeCAD/"
