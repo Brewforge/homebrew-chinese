@@ -12,8 +12,8 @@ cask "freecad-cn" do
   homepage "https://www.freecadweb.org/"
 
   livecheck do
-    url "https://www.freecad.org/downloads.php"
-    regex(/FreeCAD[._-]v?(\d+(?:\.\d+)+)[._-]mac[._-]#{arch}\.dmg/i)
+    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/FreeCAD/FreeCAD/"
+    regex(/FreeCAD v?(\d+(?:\.\d+)+)/i)
   end
 
   auto_updates true
