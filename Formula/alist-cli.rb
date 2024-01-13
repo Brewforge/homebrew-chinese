@@ -1,8 +1,8 @@
 class AlistCli < Formula
   desc "File list program that supports multiple storage, powered by Gin and Solidjs"
   homepage "https://github.com/alist-org/alist"
-  url "https://github.com/alist-org/alist/archive/refs/tags/v3.29.1.tar.gz", verified: "mirror.ghproxy.com/"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  url "https://github.com/alist-org/alist/archive/refs/tags/v3.30.0.tar.gz", verified: "mirror.ghproxy.com/"
+  sha256 "68831d5177cdbae3ab294ce4263b4221c0ff687a72dd48a844d533ccb13c3efb"
   license "AGPL-3.0"
   head "https://github.com/alist-org/alist.git", branch: "main"
 
