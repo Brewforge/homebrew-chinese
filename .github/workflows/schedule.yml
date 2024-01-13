@@ -1,17 +1,19 @@
-name: CI
+name: schedule
 
 on:
-  pull_request:
-    branches: [main, bump-*]
-  push:
-    branches: [fix-*]
+  # pull_request:
+  #   branches: [main]
+  # push:
+  #   branches: [fix-*]
   schedule:
     # run every 12 hours
     # - cron: "20 */12 * * *"
     # Every day at 6am
     - cron: "0 6 * * *"
   # allow run manually
-  workflow_dispatch: {}
+  workflow_dispatch:
+
+permissions: write-all
 
 jobs:
   casks:
@@ -24,11 +26,13 @@ jobs:
         os: [macos-latest]
 
     steps:
-      # checkout myself.
       - uses: actions/checkout@v3
 
       - name: Homebrew env
         uses: ./.github/actions/homebrew-env
+
+      - name: Brew Tap
+        uses: ./.github/actions/brew-tap
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
@@ -44,14 +48,16 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest]
+        os: [macos-latest]
 
     steps:
-      # checkout myself.
       - uses: actions/checkout@v3
 
       - name: Homebrew env
         uses: ./.github/actions/homebrew-env
+
+      - name: Brew Tap
+        uses: ./.github/actions/brew-tap
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
@@ -59,3 +65,28 @@ jobs:
         uses: ./.github/actions/bump-formulas
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+
+  # formulas-linuxbrew:
+  #   name: Bump Formulas in parallel (Linuxbrew)
+  #   if: github.repository == 'brewforge/homebrew-chinese'
+  #   runs-on: ${{ matrix.os }}
+
+  #   strategy:
+  #     matrix:
+  #       os: [ubuntu-latest]
+
+  #   steps:
+  #     - uses: actions/checkout@v3
+
+  #     - name: Linuxbrew env
+  #       uses: ./.github/actions/linuxbrew-env
+
+  #     - name: Brew Tap
+  #       uses: ./.github/actions/brew-tap
+  #       with:
+  #         HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+
+  #     - name: Bump formulas
+  #       uses: ./.github/actions/bump-formulas
+  #       with:
+  #         HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
