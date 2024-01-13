@@ -12,9 +12,14 @@ runs:
     - name: Bump outdated casks
       # continue-on-error: true
       env:
+        HOMEBREW_DEVELOPER: '1'
         HOMEBREW_GITHUB_API_TOKEN: ${{ inputs.HOMEBREW_GITHUB_API_TOKEN }}
-      shell: bash
+      shell: bash -ieo pipefail {0}
+      # https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-authenticated-users
+      # Github Actions: 5000 requests per hour
+      # 1 * 60 * 24 = 1440 (because bump-pr will checkout a new branch and push to remote)
+      # 1 concurrent parallel jobs, 1 second delay between jobs.
       run: |
-        parallel -j0 --group --halt now,fail=1 \
-          './.github/actions/bump-casks/script.sh {}' \
+        parallel -j1 --delay 1s --group --halt now,fail=1 \
+          "./.github/actions/bump-casks/script.sh {}" \
           ::: $(ls $(brew --repository brewforge/chinese)/Casks/*.rb | xargs -I {} basename {} .rb)

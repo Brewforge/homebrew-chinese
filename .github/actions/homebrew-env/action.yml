@@ -1,34 +1,17 @@
 name: Homebrew Action
 
-inputs:
-  HOMEBREW_GITHUB_API_TOKEN:
-    description: 'Homebrew GitHub API Token'
-    required: true
-
 runs:
   using: 'composite'
 
   steps:
     - name: Set up Homebrew
-      id: set-up-homebrew
-      uses: Homebrew/actions/setup-homebrew@master
-      with:
-        core: true
-        cask: true
-        test-bot: false
-
-    - name: Add parallel cli
-      shell: bash
+      shell: bash -ieo pipefail {0}
       run: |
-        brew install parallel
-        # makesure brew livecheck works
-        brew livecheck parallel
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-    - name: Add Tap
-      env:
-        HOMEBREW_GITHUB_API_TOKEN: ${{ inputs.HOMEBREW_GITHUB_API_TOKEN }}
-      shell: bash
+    - name: Add Homebrew to PATH
+      shell: bash -ieo pipefail {0}
       run: |
-        brew tap brewforge/chinese
-        brew update
-        brew install ripgrep sd
+        touch $HOME/.bash_profile
+        (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> $HOME/.bash_profile
+        eval "$(/usr/local/bin/brew shellenv)"
