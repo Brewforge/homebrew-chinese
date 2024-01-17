@@ -1,9 +1,9 @@
 cask "clash-verge-rev" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.4.8"
-  sha256 arm:   "43fabc0a6c54ea3f106fc7bc27a5e7a7f6c575477afcb6f750da2bf7bd6275a7",
-         intel: "6492f5a464824161a540acd842757afe4df5bf02566d3f326f53898d760cf479"
+  version "1.4.9"
+  sha256 arm:   "6c4e634d4b9254b10db6d7044e4fcefb93cd788beee53d149746b9a3e7cc32f0",
+         intel: "c8b17bf536b5589497481fb393765096079ef2fb4af218e04195bc9edccba295"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v#{version}/Clash.Verge_#{version}_#{arch}.dmg"
