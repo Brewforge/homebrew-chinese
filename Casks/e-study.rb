@@ -19,8 +19,8 @@ cask "e-study" do
   app "知网研学（原E-Study）.app"
 
   zap trash: [
-    "~/Library/Preferences/net.cnki.EStudy.plist",
-    "~/Library/HTTPStorages/net.cnki.EStudy.binarycookies",
     "~/Library/HTTPStorages/net.cnki.EStudy",
+    "~/Library/HTTPStorages/net.cnki.EStudy.binarycookies",
+    "~/Library/Preferences/net.cnki.EStudy.plist",
   ]
 end

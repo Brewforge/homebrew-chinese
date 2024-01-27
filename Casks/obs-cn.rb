@@ -1,6 +1,6 @@
 cask "obs-cn" do
   arch arm: "Apple", intel: "Intel"
-  livecheck_folder = on_arch_conditional arm: "arm64", intel: "x86_64"
+  on_arch_conditional arm: "arm64", intel: "x86_64"
 
   version "30.0.2"
   sha256 arm:   "0675946528f677a45b0b14aca06db69986b37a7f1f60337c3b7f2e458ee6a7d7",

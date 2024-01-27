@@ -20,6 +20,6 @@ cask "copybook" do
 
   zap trash: [
     "~/Library/Application Scripts/top.mydata.copybook",
-    "~/Library/Containers/top.mydata.copybook"
+    "~/Library/Containers/top.mydata.copybook",
   ]
 end

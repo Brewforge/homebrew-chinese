@@ -17,7 +17,6 @@ cask "tts-vue" do
   end
 
   auto_updates true
-
   container nested: "#{version}/tts-vue-#{version}.dmg"
 
   app "tts-vue.app"
@@ -28,10 +27,10 @@ cask "tts-vue" do
   end
 
   zap trash: [
+    "~/Library/Application Support/tts-vue",
+    "~/Library/Application Support/tts-vue*.log",
     "~/Library/Logs/tts-vue",
     "~/Library/Preferences/vip.loker.tts-vue.plist",
     "~/Library/Saved Application State/vip.loker.tts-vue.savedState",
-    "~/Library/Application Support/tts-vue",
-    "~/Library/Application Support/tts-vue*.log",
   ]
 end

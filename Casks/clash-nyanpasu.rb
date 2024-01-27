@@ -28,7 +28,5 @@ cask "clash-nyanpasu" do
                    args: ["-cr", "#{staged_path}/Clash Nyanpasu.app"]
   end
 
-  zap trash: [
-    "~/.config/clash",
-  ]
+  zap trash: "~/.config/clash"
 end

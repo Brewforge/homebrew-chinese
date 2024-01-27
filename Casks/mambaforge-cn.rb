@@ -34,8 +34,8 @@ cask "mambaforge-cn" do
   uninstall delete: "#{caskroom_path}/base"
 
   zap trash: [
-    "~/.condarc",
     "~/.conda",
+    "~/.condarc",
   ]
 
   caveats <<~EOS

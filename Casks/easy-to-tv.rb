@@ -18,7 +18,5 @@ cask "easy-to-tv" do
 
   app "easy_to_tv.app"
 
-  zap trash: [
-    "~/Library/Preferences/easy_to_tv.plist",
-  ]
+  zap trash: "~/Library/Preferences/easy_to_tv.plist"
 end

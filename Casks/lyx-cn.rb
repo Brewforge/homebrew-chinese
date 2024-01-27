@@ -1,5 +1,6 @@
 cask "lyx-cn" do
   arch arm: "-arm64", intel: ""
+
   version "2.3.7"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64#{arch}-cocoa.dmg",
@@ -28,8 +29,8 @@ cask "lyx-cn" do
 
   zap trash: [
     "~/Library/Application Support/LyX-#{version.major_minor}",
-    "~/Library/Preferences/org.lyx.LyX-#{version.major_minor}.plist",
     "~/Library/Caches/com.apple.python/Applications/LyX.app",
+    "~/Library/Preferences/org.lyx.LyX-#{version.major_minor}.plist",
     "~/Library/Preferences/org.lyx.lyx.plist",
     "~/Library/Saved Application State/org.lyx.lyx.savedState",
   ]

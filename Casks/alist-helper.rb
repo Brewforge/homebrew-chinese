@@ -20,7 +20,5 @@ cask "alist-helper" do
 
   app "alisthelper.app"
 
-  zap trash: [
-    "~/Library/Preferences/dev.xmarmalade.alisthelper.alisthelper.plist",
-  ]
+  zap trash: "~/Library/Preferences/dev.xmarmalade.alisthelper.alisthelper.plist"
 end

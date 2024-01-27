@@ -14,11 +14,11 @@ cask "edrawmax-9" do
   name "EdrawMax"
   desc "Diagram software"
 
-  auto_updates true
-
   livecheck do
     skip "No version information available"
   end
+
+  auto_updates true
 
   app "EdrawMax.app"
 

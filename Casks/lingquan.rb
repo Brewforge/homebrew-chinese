@@ -22,7 +22,7 @@ cask "lingquan" do
 
   zap trash: [
     "~/Library/Application Support/lingquan",
-    "~/Library/Saved Application State/com.musk.lingquan.savedState",
     "~/Library/Preferences/com.musk.lingquan.plist",
+    "~/Library/Saved Application State/com.musk.lingquan.savedState",
   ]
 end

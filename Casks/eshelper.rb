@@ -28,8 +28,8 @@ cask "eshelper" do
 
   zap trash: [
     "~/Library/Application Support/com.eusoft.eshelper",
-    "~/Library/Caches/com.eusoft.eshelper.LightPeek",
     "~/Library/Caches/com.eusoft.eshelper",
+    "~/Library/Caches/com.eusoft.eshelper.LightPeek",
     "~/Library/Containers/com.eusoft.eshelper.QuickLook",
     "~/Library/Eudb_es",
     "~/Library/Preferences/com.eusoft.eshelper.LightPeek.plist",

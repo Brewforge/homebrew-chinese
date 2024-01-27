@@ -23,8 +23,8 @@ cask "yank-note" do
 
   zap trash: [
     "~/Library/Application Support/yank.note",
-    "~/Library/Saved Application State/yank.note.savedState",
-    "~/Library/Preferences/yank.note.plist",
     "~/Library/Logs/yank.note",
+    "~/Library/Preferences/yank.note.plist",
+    "~/Library/Saved Application State/yank.note.savedState",
   ]
 end
