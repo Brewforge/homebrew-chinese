@@ -29,7 +29,7 @@ rm -rf $(brew --repository)/Library/Taps/ivaquero/homebrew-chinese
 
 📦 收录列表
 
-[![面向国人](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?logo=homebrew&labelColor=555555)](./%E5%88%97%E8%A1%A8.md) [![面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?logo=homebrew&labelColor=555555)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
+[![面向国人](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?logo=homebrew&labelColor=555555)](./%E5%88%97%E8%A1%A8.md) [![面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?logo=homebrew&labelColor=555555)](https://github.com/Brewforge/homebrew-extras/blob/main/List.md)
 
 ## 🏃 准备
 
@@ -99,9 +99,5 @@ brew help
 ## ✨ 一起维护
 
 请直接发起 [拉取请求](https://github.com/Brewforge/homebrew-chinese/compare) 或 [工单](https://github.com/Brewforge/homebrew-chinese/issues/new/choose) 。
-
-### ⚔️ 揭榜
-
-在 Experimental 文件夹中，还有一些当前维护者未能搞定的 Cask，请各位豪杰出手相助。
 
 <!-- ## ❤️ 赞助者 -->
