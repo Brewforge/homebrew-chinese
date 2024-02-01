@@ -1,6 +1,6 @@
 cask "aidea" do
-  version "1.0.11"
-  sha256 "bd389a6bf2b403a34e98fa0504e069452e096b1ec4efe7bbb19e7e92b11a25f1"
+  version "1.0.12"
+  sha256 "60a4b4cff6e6c3a26639818797aafb518704c6d0c2caf99bb55062f73350d8c0"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/mylxsw/aidea/releases/download/#{version}/aidea-#{version}-macos.dmg"
