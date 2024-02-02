@@ -1,6 +1,6 @@
 cask "gopeed" do
-  version "1.5.3"
-  sha256 "4c301612c068c73e5c9df60e8bd4d9034b06366c01ffdaefb8449b3b886811ba"
+  version "1.5.4"
+  sha256 "9af5c63f453ef2036c4432a006df0416b6f1a6fbf80bf58ced3e1d71069d0611"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/GopeedLab/gopeed/releases/download/v#{version}/Gopeed-v#{version}-macos.dmg"
