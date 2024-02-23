@@ -27,6 +27,6 @@ toV=${cleanCheck#*==>}
 
 echo "Updating $cask from $fromV to $toV"
 if [[ "$fromV" != "$toV" ]]; then
-  brew bump-cask-pr "$cask" --version "$toV" --verbose --force
+  brew bump-cask-pr "$cask" --version "$toV" --verbose
 fi
 echo "Done for $cask"
