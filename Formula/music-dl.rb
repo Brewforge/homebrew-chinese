@@ -5,7 +5,7 @@ class MusicDl < Formula
   version "4.1.7"
 
   url "https://github.com/guanguans/music-dl/releases/download/4.1.7/music-dl.phar"
-  sha256 "50155de55d2382b2b8214d0601f1d532c7f529b955d8d72abdf92d49a15b1e24"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
   depends_on "php"
 
