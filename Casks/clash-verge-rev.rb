@@ -19,6 +19,7 @@ cask "clash-verge-rev" do
     strategy :github_latest
   end
 
+  auto_updates true
   conflicts_with cask: "clash-verge"
 
   app "Clash Verge.app"
