@@ -82,6 +82,11 @@ class Bookhunter < Formula
     end
   end
 
+  livecheck do
+    url "https://github.com/bookstairs/bookhunter/releases"
+    strategy :github_latest
+  end
+
   test do
     system "#{bin}/bookhunter", "version"
   end
