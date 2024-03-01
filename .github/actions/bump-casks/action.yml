@@ -21,5 +21,5 @@ runs:
       # 1 concurrent parallel jobs, 1 second delay between jobs.
       run: |
         parallel -j1 --delay 1s --group --halt now,fail=1 \
-          "./.github/actions/bump-casks/script.sh {}" \
+          "./.github/actions/bump-casks/script.sh brewforge/chinese/{}" \
           ::: $(ls $(brew --repository brewforge/chinese)/Casks/*.rb | xargs -I {} basename {} .rb)
