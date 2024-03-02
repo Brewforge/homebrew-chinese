@@ -24,7 +24,10 @@ cask "openai-translator" do
   app "OpenAI Translator.app"
 
   zap trash: [
-    "~/Library/Application Support/openai-translator",
-    "~/Library/Preferences/xyz.yetone.apps.plist",
+    "~/Library/Application Support/xyz.yetone.apps.openai-translator",
+    "~/Library/Caches/xyz.yetone.apps.openai-translator",
+    "~/Library/Logs/DiagnosticReports/OpenAI Translator-2024-03-02-230629.ips",
+    "~/Library/Saved Application State/xyz.yetone.apps.openai-translator.savedState",
+    "~/Library/WebKit/xyz.yetone.apps.openai-translator",
   ]
 end
