@@ -2,7 +2,7 @@ cask "eshelper" do
   version "4.6.2"
   sha256 "066321af699e384d2be5a34a925dc5723ab94592d9ab535312eb51f60d70549c"
 
-  url "https://static.frdic.com/pkg/ehmac.dmg??v=#{version}",
+  url "https://static.eudic.net/pkg/ehmac.dmg?v=#{version}",
       verified:   "static.frdic.com/",
       user_agent: :fake
   name "Eshelper"
@@ -11,7 +11,7 @@ cask "eshelper" do
   homepage "https://www.eudic.net/v4/es/app/eshelper"
 
   livecheck do
-    url "https://www.eudic.net/update/eshelper_mac.xml"
+    url "https://static.eudic.net/pkg/eshelper_mac.xml?noCache=1"
     strategy :sparkle, &:short_version
   end
 
