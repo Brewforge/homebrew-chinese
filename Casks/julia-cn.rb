@@ -16,6 +16,7 @@ cask "julia-cn" do
     regex(/href=.*?julia[._-]v?(\d+(?:\.\d+)+)[._-]mac#{arch.delete_prefix("x")}\.dmg/i)
   end
 
+  auto_updates true
   conflicts_with cask: "julia"
 
   app "Julia-#{version.major_minor}.app"
