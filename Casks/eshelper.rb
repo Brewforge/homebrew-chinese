@@ -3,7 +3,6 @@ cask "eshelper" do
   sha256 "066321af699e384d2be5a34a925dc5723ab94592d9ab535312eb51f60d70549c"
 
   url "https://static.eudic.net/pkg/ehmac.dmg?v=#{version}",
-      verified:   "static.eudic.net/",
       user_agent: :fake
   name "Eshelper"
   name "西语助手"
