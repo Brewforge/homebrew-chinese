@@ -11,7 +11,7 @@ cask "messauto" do
   url "#{mirror}#{origin}",
       verified: "mirror.ghproxy.com/"
   name "MessAuto"
-  desc "MacOS app that automatically extracts and pastes and enters SMS verification codes"
+  desc "Automatically extracts and pastes and enters SMS verification codes"
   homepage "https://github.com/LeeeSe/MessAuto"
 
   livecheck do
