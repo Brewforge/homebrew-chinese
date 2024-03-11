@@ -2,7 +2,7 @@ cask "lingquan" do
   arch arm: "-arm64", intel: ""
   folder = on_arch_conditional arm: "", intel: "/x64"
 
-  version "1.0.1"
+  version "1.0.2"
   sha256 :no_check
 
   url "https://updater-1305474371.cos.ap-guangzhou.myqcloud.com/download#{folder}/%E9%9B%B6%E6%B3%89-#{version}#{arch}.dmg",
