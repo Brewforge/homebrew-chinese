@@ -1,5 +1,5 @@
 cask "ting-fr" do
-  version "2024-01-24"
+  version "2024-03-13"
   sha256 :no_check
 
   # static.frdic.com/ was verified as official when first introduced to the cask
