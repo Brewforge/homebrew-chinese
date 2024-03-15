@@ -2,9 +2,9 @@ cask "obs-cn" do
   arch arm: "Apple", intel: "Intel"
   on_arch_conditional arm: "arm64", intel: "x86_64"
 
-  version "30.0.2"
-  sha256 arm:   "0675946528f677a45b0b14aca06db69986b37a7f1f60337c3b7f2e458ee6a7d7",
-         intel: "fca9a6324b65ea98c312b1ebd3c30441e74ce0014f873a79f284b57a1962424f"
+  version "30.1.0"
+  sha256 arm:   "ff8100aedd2a0be51e7dc016d7f618652263670d8383c659443f659503d14059",
+         intel: "6dab04738b12465c6a88302b59a5d94ceb9b6845dd4f42632b83e46a8f444f88"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/OBS-Studio-#{version}-macOS-#{arch}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/"
