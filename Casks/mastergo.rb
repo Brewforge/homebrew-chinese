@@ -22,9 +22,9 @@ cask "mastergo" do
   app "MasterGo.app"
 
   zap trash: [
-    # "~/Library/Logs/master-desktop",
-    # "~/Library/Preferences/com.electron.master-desktop.plist",
-    # "~/Library/Saved Application State/com.electron.master-desktop.savedState",
-    # "~/Library/Application Support/master-desktop",
+    "~/Library/Logs/master-desktop",
+    "~/Library/Preferences/com.electron.master-desktop.plist",
+    "~/Library/Saved Application State/com.electron.master-desktop.savedState",
+    "~/Library/Application Support/master-desktop",
   ]
 end
