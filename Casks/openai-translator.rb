@@ -12,7 +12,7 @@ cask "openai-translator" do
       verified: "mirror.ghproxy.com/"
   name "OpenAI Translator"
   desc "Cross-platform Translatior based on ChatGPT API"
-  homepage "https://github.com/openai-translator/openai-translator/blob/main/README-CN.md"
+  homepage "https://github.com/openai-translator/openai-translator"
 
   livecheck do
     url origin.to_s
