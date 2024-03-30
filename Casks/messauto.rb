@@ -1,9 +1,9 @@
 cask "messauto" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.7.0"
-  sha256 arm:   "08add0bcea1b5c4cbb1176e51ce60b966bcbc75741b1a8215b7c4ef3069c927b",
-         intel: "8f7801e57b6eb9fb89f793689811dc7e9f7ef19633401abf51c5a97dc8f8e5a0"
+  version "0.8.1"
+  sha256 arm:   "8d974df1f78fb73848c4d46609b1a556a9add0a4c10b2dc69be3e193d826d649",
+         intel: "4886382ab1e3d2765acf134cd4b32fb7f3ff96b90ef407c2110ad1334b763b1d"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/LeeeSe/MessAuto/releases/download/v#{version}/MessAuto_#{arch}.zip"
