@@ -29,7 +29,7 @@ rm -rf $(brew --repository)/Library/Taps/ivaquero/homebrew-chinese
 
 📦 收录列表
 
-[![面向国人](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?logo=homebrew&labelColor=555555)](./%E5%88%97%E8%A1%A8.md) [![面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?logo=homebrew&labelColor=555555)](https://github.com/Brewforge/homebrew-extras/blob/main/List.md)
+[![面向国人](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?logo=homebrew&labelColor=555555)](列表.md) [![面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?logo=homebrew&labelColor=555555)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
 
 ## 🏃 准备
 
