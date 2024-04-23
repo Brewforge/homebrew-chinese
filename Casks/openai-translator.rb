@@ -1,9 +1,9 @@
 cask "openai-translator" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.3.52"
-  sha256 arm:   "55398f4bb00402317e11fc1df7cea4673814e381bbf710922574783e9b840114",
-         intel: "2f22111ec34785ff8205548cb69a419f408b7754016e4dfafb30be6ad34d296d"
+  version "0.4.0"
+  sha256 arm:   "ef945226b7f2c5014448f0ed417d1f9f4eca685f81daba9d49a3e1fc9a5c04a4",
+         intel: "702eb0f096341c783ba277633d299361c491752d3e1b01c657271669ba41979e"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/openai-translator/openai-translator/releases/download/v#{version}/OpenAI.Translator_#{version}_#{arch}.dmg"
