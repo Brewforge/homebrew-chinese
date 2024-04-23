@@ -33,7 +33,8 @@ class NezhaAgent < Formula
     <<~EOS
       请先添加环境变量
       echo 'export HOMEBREW_NEZHA_AGENT_PASSWORD="你的密钥，在你的服务页面获取"' >> ~/.zshrc
-      echo 'export HOMEBREW_NEZHA_AGENT_SERVER="你的服务器和端口，同上"' >> ~/.zshrc
+      echo 'export HOMEBREW_NEZHA_AGENT_SERVER="你的服务器和端口，格式 your.domain:5555 "' >> ~/.zshrc
+      source ~/.zshrc
     EOS
   end
 
