@@ -2,7 +2,7 @@ cask "clash-verge-rev" do
   arch arm: "aarch64", intel: "x64"
 
   version "1.6.0"
-  sha256 arm:   "3580abad81e21f724193c9a1c3487358f9b3c356946e562b1dcfba6c2aedac73",
+  sha256 arm:   "af0a06dce1596c35f404f67b28a38ae6e97998e8e1ea62219bdb2c2b34a444a3",
          intel: "b09e5f585fc6e83ccc9894a1a433f72943274ab7ca39d90cead582da9e724ec6"
 
   mirror = "https://mirror.ghproxy.com/"
