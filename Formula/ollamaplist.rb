@@ -14,4 +14,8 @@ class Ollamaplist < Formula
   def install
     bin.install "ollamaplist"
   end
+
+  def post_install
+    chmod 0555, bin/"ollamaplist"
+  end
 end

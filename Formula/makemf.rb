@@ -14,4 +14,8 @@ class Makemf < Formula
   def install
     bin.install "makemf"
   end
+
+  def post_install
+    chmod 0555, bin/"makemf"
+  end
 end
