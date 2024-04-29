@@ -4,7 +4,7 @@ class Makemf < Formula
   version "13"
 
   url "https://github.com/Mrered/ShellScript/releases/download/v#{version}/makemf.tar.gz"
-  sha256 "56988f3e31578fed52306353fc4bbd8b225fcefdcd5487570856effa2f356e1d"
+  sha256 "381f3bef6c9ada46059edff0ed4946ebfdfaf0240626517b196f722be8026748"
 
   livecheck do
     url "https://github.com/Mrered/ShellScript/releases"
