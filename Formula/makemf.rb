@@ -1,10 +1,10 @@
 class Makemf < Formula
   desc "让 GGUF 在 Ollama 中运行"
   homepage "https://github.com/Mrered/ShellScript"
-  version "0.0.18"
+  version "0.0.19"
 
   url "https://github.com/Mrered/ShellScript/releases/download/v#{version}/makemf_v#{version}.tar.gz"
-  sha256 "1c80e09bd0cee70c0072b8f19b5933be4e0c9c18abba617479e5aea71c2e66c3"
+  sha256 "e631dc39ed9e7483d25a5143f18cdfbf18ac028e1dee477df5e5fbb2a7949d7c"
 
   livecheck do
     url "https://github.com/Mrered/ShellScript/releases"
