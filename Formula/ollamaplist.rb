@@ -3,7 +3,7 @@ class Ollamaplist < Formula
   homepage "https://github.com/Mrered/ShellScript"
   version "0.0.17"
 
-  url "https://github.com/Mrered/ShellScript/releases/download/v#{version}/ollamaplist_#{version}.tar.gz"
+  url "https://github.com/Mrered/ShellScript/releases/download/v#{version}/ollamaplist_v#{version}.tar.gz"
   sha256 "1349c7efec9c3918fe3fe7171fd69e1f7a79b0f5948769cf254c765d9a7abadc"
 
   livecheck do
