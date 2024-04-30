@@ -1,10 +1,10 @@
 class Ollamaplist < Formula
   desc "让 Ollama 监听 0.0.0.0"
   homepage "https://github.com/Mrered/ShellScript"
-  version "0.0.29"
+  version "0.0.30"
 
   url "https://github.com/Mrered/ShellScript/releases/download/v#{version}/ollamaplist_v#{version}.tar.gz"
-  sha256 "d81161acf2d81c01e65eed47dbc36cdfee5ac3dddfea15d81e8bd9f7a163e203"
+  sha256 "85747c5b6a8d13f3c90a569661c85e2e7457d337fb1e7b223be0d50f7d4e9565"
 
   livecheck do
     url "https://github.com/Mrered/ShellScript/releases"
