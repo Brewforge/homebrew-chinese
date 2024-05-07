@@ -32,9 +32,15 @@ class NezhaAgent < Formula
   def caveats
     <<~EOS
       请先添加环境变量
-      echo 'export HOMEBREW_NEZHA_AGENT_PASSWORD="你的密钥，在你的服务页面获取"' >> ~/.zshrc
-      echo 'export HOMEBREW_NEZHA_AGENT_SERVER="你的服务器和端口，格式 your.domain:5555 "' >> ~/.zshrc
-      source ~/.zshrc
+        echo 'export HOMEBREW_NEZHA_AGENT_PASSWORD="你的密钥，在你的服务页面获取"' >> ~/.zshrc
+        echo 'export HOMEBREW_NEZHA_AGENT_SERVER="你的服务器和端口，格式 your.domain:5555 "' >> ~/.zshrc
+        source ~/.zshrc
+      再安装本命令行服务，否则会导致无法向服务配置中初始化密钥和服务器参数。
+
+      若已安装，并遇到错误，则请运行
+        brew services stop nezha-agent
+        brew reinstall nezha-agent
+        brew services start nezha-agent
     EOS
   end
 
