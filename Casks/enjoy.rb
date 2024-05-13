@@ -6,7 +6,7 @@ cask "enjoy" do
          intel: "6010df1646176b964c2ad8fba32f189aff9c0d04018161d330971fa33fe06615"
 
   url "https://github.com/xiaolai/everyone-can-use-english/releases/download/v#{version}/Enjoy-#{version}-#{arch}.dmg",
-      user_agent: :fake
+      verified: "github.com/xiaolai/everyone-can-use-english/"
   name "Enjoy"
   desc "AI 最好的助教"
   homepage "https://1000h.org/enjoy-app/"
