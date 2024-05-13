@@ -1,6 +1,6 @@
 cask "squirrel-ime" do
-  version "0.16.2"
-  sha256 "e08d28fd72445bccbdbccc06b16a9e300c07371f67d576cd4ed35731be9d4ad6"
+  version "0.18"
+  sha256 "467e23babbd1b0c74887a45b299e750aa4398f069f77345b00f436b68c310a3a"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/rime/squirrel/releases/download/#{version}/Squirrel-#{version}.zip"
