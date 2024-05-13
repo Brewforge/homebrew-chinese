@@ -20,5 +20,8 @@ cask "squirrel-ime" do
 
   pkg "Squirrel.pkg"
 
+  uninstall quit:    "com.rime.Squirrel",
+            pkgutil: "com.rime.Squirrel"
+
   zap trash: []
 end
