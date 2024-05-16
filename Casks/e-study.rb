@@ -10,6 +10,7 @@ cask "e-study" do
   livecheck do
     url :homepage
     regex(/Mac(\d+(\.\d+)+)/i)
+    strategy :page_match
   end
 
   auto_updates true

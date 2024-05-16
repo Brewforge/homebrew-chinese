@@ -1,15 +1,15 @@
 cask "ugreennas" do
-  version "5.0.0"
+  version "5.0.0,9670_843a0"
   sha256 "668869e24789d2cc61c6667b71fa23a060fd7e7dd6dcf7dcaa7ff66f4c76653a"
 
-  url "https://ugreen.oss-cn-shenzhen.aliyuncs.com/ugreen/mac/V#{version}/UGREEN_Nas_v#{version}.9670_843a0_release.dmg"
+  url "https://ugreen.oss-cn-shenzhen.aliyuncs.com/ugreen/mac/V#{version.csv.first}/UGREEN_Nas_v#{version.csv.first}.#{version.csv.second}_release.dmg"
   name "绿联私有云"
   desc "绿联 NAS 官方客户端"
   homepage "https://www.lulian.cn/"
 
   livecheck do
     url "https://www.ugnas.com/download"
-    regex(%r{mac/V(\d+(\.\d+)+)}i)
+    regex(%r{href=.*?/UGREEN_Nas_v(\d+(\.\d+)+)\.((\d+)_([\d\w]+))_release\.dmg}i)
   end
 
   auto_updates true
