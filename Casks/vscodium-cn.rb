@@ -11,6 +11,12 @@ cask "vscodium-cn" do
   desc "Binary releases of VS Code without MS branding/telemetry/licensing"
   homepage "https://github.com/VSCodium/vscodium"
 
+  livecheck do
+    # url "https://github.com/VSCodium/vscodium"
+    # strategy :github_latest
+    skip "No version for macOS available"
+  end
+
   auto_updates true
   conflicts_with cask: "vscodium"
 
