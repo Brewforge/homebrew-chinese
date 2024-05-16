@@ -10,7 +10,7 @@ cask "e-study" do
   livecheck do
     # url :homepage
     # regex(/Mac(\d+(\.\d+)+) 客户端下载/i)
-    skip "SPA 暂时无解，无法自动更新。具体信息看 https://github.com/Brewforge/homebrew-chinese/pull/32"
+    skip "本地成功，但 CI 失败，参见 https://github.com/Brewforge/homebrew-chinese/pull/32"
   end
 
   auto_updates true

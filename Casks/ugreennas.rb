@@ -8,8 +8,9 @@ cask "ugreennas" do
   homepage "https://www.lulian.cn/"
 
   livecheck do
-    url "https://www.ugnas.com/download"
-    regex(%r{href=.*?/UGREEN_Nas_v(\d+(\.\d+)+\.(\d+_[\d\w]+))_release\.dmg}i)
+    # url "https://www.ugnas.com/download"
+    # regex(%r{href=.*?/UGREEN_Nas_v(\d+(\.\d+)+\.(\d+_[\d\w]+))_release\.dmg}i)
+    skip "本地成功，但 CI 失败，建议暂时手动更新"
   end
 
   auto_updates true
