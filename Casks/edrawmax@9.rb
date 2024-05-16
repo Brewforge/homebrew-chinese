@@ -1,4 +1,4 @@
-cask "edrawmax-9" do
+cask "edrawmax@9" do
   version "9.2"
   sha256 :no_check
 
@@ -15,7 +15,7 @@ cask "edrawmax-9" do
   desc "Diagram software"
 
   livecheck do
-    skip "No version information available"
+    skip "历史版本，不更新"
   end
 
   auto_updates true
