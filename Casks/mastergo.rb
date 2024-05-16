@@ -11,10 +11,8 @@ cask "mastergo" do
   homepage "https://mastergo.com"
 
   livecheck do
-    # url :homepage
-    # regex(/Mac(\d+(\.\d+)+)/i)
-    # strategy :page_match
-    skip
+    url "https://mastergo.com/resource"
+    regex(%r{href=.*?/MasterGo-(\d+(\.\d+)+).*?}i)
   end
 
   auto_updates true

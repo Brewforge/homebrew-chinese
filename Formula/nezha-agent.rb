@@ -1,7 +1,7 @@
 class NezhaAgent < Formula
   desc "哪吒监控服务"
   homepage "https://nezha.wiki/"
-  version "0.16.5"
+  version "0.16.7"
   license "Apache-2.0"
 
   arch = Hardware::CPU.arm? ? "arm64" : "amd64"
@@ -9,7 +9,7 @@ class NezhaAgent < Formula
   if OS.mac?
     url "https://github.com/nezhahq/agent/releases/download/v#{version}/nezha-agent_darwin_#{arch}.zip"
     if Hardware::CPU.arm?
-      sha256 "975cad66a69310d572dcaaabacb9679cc6dc87041d23d0ae364a47f7f6343c39"
+      sha256 "10336dbd1b9fafe6a8d602cfa328abe78540c30f3027e97477248a8569fb1ecb"
     else
       sha256 "b3ffb7edffb7926df8e053dff4b709e4a599a366f4bbde1c73c1a003c178eb33"
     end
