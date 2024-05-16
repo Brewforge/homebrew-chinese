@@ -1,7 +1,7 @@
 class Bbdown < Formula
   desc "Bilibili Downloader"
   homepage "https://github.com/nilaoda/BBDown"
-  version "1.6.1_20230818"
+  version "1.6.2_20240512"
   license "MIT"
 
   arch = Hardware::CPU.arm? ? "arm64" : "x64"
@@ -9,7 +9,7 @@ class Bbdown < Formula
   if OS.mac?
     url "https://github.com/nilaoda/BBDown/releases/download/#{version.to_s.split("_")[0]}/BBDown_#{version}_osx-#{arch}.zip"
     if Hardware::CPU.arm?
-      sha256 "d0c9a7603833a466eb153a17279748c43a9ca77d10a84df68c0d66bba1ed6d8b"
+      sha256 "65e81ecdf574c2ee8d2d7c36afcc17a67c53e0172acc6f8f642d89da698ed44d"
     else
       sha256 "69e8f1affbbd479847a0d169e23ed4be8051d1627e0067dd9fc1711f72401a6a"
     end
