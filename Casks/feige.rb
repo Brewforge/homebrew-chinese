@@ -1,6 +1,6 @@
 cask "feige" do
   version "7.1"
-  sha256 "bd95bad5c8a31cbaf82fa8e284e2eb719f8963866a81b61ab2f2021d051de878"
+  sha256 "c072ce90c939ea56deeac1c58896b78fccf003f06a8efeef3d286725f9777d85"
 
   url "http://www.ipmsg.org.cn/Download/Feige-#{version}-x86_64.dmg"
   name "Feige"
