@@ -8,8 +8,8 @@ cask "feige" do
   homepage "http://www.ipmsg.org.cn/"
 
   livecheck do
-    url "http://www.ipmsg.org.cn/home/index/download"
-    regex(%r{Mac版</h3>[^<]*<i>([^<]+)</i>}i)
+    url :homepage
+    regex(%r{href=.*?/feige[._-]v?(\d+(?:\.\d+)+)[._-]x86_64\.dmg}i)
   end
 
   auto_updates true
