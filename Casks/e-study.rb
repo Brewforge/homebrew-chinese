@@ -1,5 +1,5 @@
 cask "e-study" do
-  version "4.2.1"
+  version "4.2.2"
   sha256 :no_check
 
   url "https://download.cnki.net/CNKI%20E-Study%20For%20Mac.dmg"
@@ -8,8 +8,9 @@ cask "e-study" do
   homepage "https://estudy.cnki.net/"
 
   livecheck do
-    url :homepage
-    regex(/Mac(\d+(\.\d+)+)客户端下载/i)
+    # url :homepage
+    # regex(/Mac(\d+(\.\d+)+) 客户端下载/i)
+    skip "SPA 暂时无解，无法自动更新。具体信息看 https://github.com/Brewforge/homebrew-chinese/pull/32"
   end
 
   auto_updates true
