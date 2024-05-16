@@ -11,8 +11,9 @@ cask "mastergo" do
   homepage "https://mastergo.com"
 
   livecheck do
-    url "https://mastergo.com/resource"
-    regex(%r{href=.*?/MasterGo-(\d+(\.\d+)+).*?}i)
+    # url "https://mastergo.com/resource"
+    # regex(%r{href=.*?/MasterGo-(\d+(\.\d+)+)\.dmg}i)
+    skip "未找到可用信息"
   end
 
   auto_updates true
