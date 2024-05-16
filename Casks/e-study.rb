@@ -9,8 +9,7 @@ cask "e-study" do
 
   livecheck do
     url :homepage
-    regex(/Mac(\d+(\.\d+)+)/i)
-    strategy :page_match
+    regex(/Mac(\d+(\.\d+)+)客户端下载/i)
   end
 
   auto_updates true
