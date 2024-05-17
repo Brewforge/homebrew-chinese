@@ -10,7 +10,7 @@ cask "app-cleaner-cn" do
   livecheck do
     # url :homepage
     # regex(/版本：?(\d+(\.\d+)+)/)
-    skip "未找到相关版本信息"
+    skip "未找到可用信息"
   end
 
   auto_updates true

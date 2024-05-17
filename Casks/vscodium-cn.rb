@@ -14,7 +14,7 @@ cask "vscodium-cn" do
   livecheck do
     # url "https://github.com/VSCodium/vscodium"
     # strategy :github_latest
-    skip "No version for macOS available"
+    skip "未找到 macOS 版本"
   end
 
   auto_updates true
