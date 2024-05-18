@@ -42,7 +42,7 @@ jobs:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
   formulas:
-    name: Bump Formulas in parallel
+    name: Bump Formulae in parallel
     if: github.repository == 'brewforge/homebrew-chinese'
     runs-on: ${{ matrix.os }}
 
@@ -67,7 +67,7 @@ jobs:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
   # formulas-linuxbrew:
-  #   name: Bump Formulas in parallel (Linuxbrew)
+  #   name: Bump Formulae in parallel (Linuxbrew)
   #   if: github.repository == 'brewforge/homebrew-chinese'
   #   runs-on: ${{ matrix.os }}
 
