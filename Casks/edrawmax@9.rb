@@ -19,6 +19,7 @@ cask "edrawmax@9" do
   end
 
   auto_updates true
+  conflicts_with cask: "edrawmax"
 
   app "EdrawMax.app"
 
