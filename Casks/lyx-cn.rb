@@ -1,5 +1,5 @@
 cask "lyx-cn" do
-  version "2.3.7"
+  version "2.3.8"
   sha256 "36971cd05d0064d00cba95c0943685f06e96777488b500ddb8850df352b2ef45"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64-arm64-cocoa.dmg",
