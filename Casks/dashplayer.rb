@@ -1,9 +1,9 @@
 cask "dashplayer" do
   arch arm: "arm64", intel: "x64"
 
-  version "4.1.0"
-  sha256 arm:   "902d42670853d222b7eb5ba3634f08b66393a4a15a6f8d9dfbd330e645403b41",
-         intel: "6010df1646176b964c2ad8fba32f189aff9c0d04018161d330971fa33fe06615"
+  version "4.2.0"
+  sha256 arm:   "2c6fab656c00962fa048fbd7faa23ffb843e67599d36c3c757675adb633c423a",
+         intel: "2dd05244155d3e665cd050e46e324619968e8eab072a29f758ca6a4fc0aae04f"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/solidSpoon/DashPlayer/releases/download/v#{version}/DashPlayer-#{version}-#{arch}.dmg"
