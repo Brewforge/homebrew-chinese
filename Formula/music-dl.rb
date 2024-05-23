@@ -1,8 +1,8 @@
 class MusicDl < Formula
   desc "Music Searcher and Downloader"
   homepage "https://github.com/guanguans/music-dl"
-  url "https://github.com/guanguans/music-dl/releases/download/4.3.0/music-dl.phar"
-  sha256 "b2faa6336d9855c04d20a023d65008260b6e058ac3482c9fa12c5dc3dd062701"
+  url "https://github.com/guanguans/music-dl/releases/download/4.3.1/music-dl.phar"
+  sha256 "67856f03326942673130aaaf368c43b003e01447834be27a1d4eb408136faef9"
   license "MIT"
 
   depends_on "php"
