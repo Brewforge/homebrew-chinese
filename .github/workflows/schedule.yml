@@ -61,7 +61,7 @@ jobs:
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
-      - name: Bump formulas
+      - name: Bump formulae
         uses: ./.github/actions/bump-formulas
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
@@ -86,7 +86,7 @@ jobs:
   #       with:
   #         HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
-  #     - name: Bump formulas
+  #     - name: Bump formulae
   #       uses: ./.github/actions/bump-formulas
   #       with:
   #         HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}

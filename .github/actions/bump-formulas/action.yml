@@ -1,18 +1,18 @@
-name: Bump formulas
+name: Bump formulae
 
 inputs:
   HOMEBREW_GITHUB_API_TOKEN:
-    description: 'Homebrew GitHub API Token'
+    description: "Homebrew GitHub API Token"
     required: true
 
 runs:
-  using: 'composite'
+  using: "composite"
 
   steps:
     - name: Bump outdated formulas
       # continue-on-error: true
       env:
-        HOMEBREW_DEVELOPER: '1'
+        HOMEBREW_DEVELOPER: "1"
         HOMEBREW_GITHUB_API_TOKEN: ${{ inputs.HOMEBREW_GITHUB_API_TOKEN }}
       shell: bash -ieo pipefail {0}
       # https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-authenticated-users
