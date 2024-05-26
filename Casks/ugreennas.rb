@@ -8,8 +8,9 @@ cask "ugreennas" do
   homepage "https://www.lulian.cn/"
 
   livecheck do
-    url "https://www.ugnas.com/download"
-    regex(/href=.*?\/macOS\/.*?(\d+(?:\.\d+)+-[a-zA-Z0-9]+)/i)
+    # url "https://www.ugnas.com/download"
+    # regex(/href=.*?\/macOS\/.*?(\d+(?:\.\d+)+-[a-zA-Z0-9]+)/i)
+    skip "绿联最近在升级系统，存在两个版本的客户端，暂时无法获取版本信息"
   end
 
   auto_updates true
