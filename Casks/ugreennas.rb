@@ -9,7 +9,7 @@ cask "ugreennas" do
 
   livecheck do
     url "https://www.ugnas.com/download"
-    regex(%r{UGREEN_Nas_v(\d+(\.\d+)+\.\d+_\h+)_release\.dmg}i)
+    regex(/href="[^"]*appVer\/macOS\/[^"]*?(\d+\.\d+\.\d+\.\d+-[a-zA-Z0-9]+)/)
   end
 
   auto_updates true
