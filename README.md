@@ -1,5 +1,7 @@
 # Homebrew-Chinese
 
+<!-- markdownlint-disable MD033 -->
+
 ![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![CI](https://github.com/Brewforge/homebrew-chinese/actions/workflows/schedule.yml/badge.svg) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese)
 
 一个致力于为中国用户提供 [🍺 Homebrew](https://github.com/Homebrew/brew) 支持的中文库
@@ -29,7 +31,14 @@ rm -rf $(brew --repository)/Library/Taps/ivaquero/homebrew-chinese
 
 📦 收录列表
 
-[![面向国人](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?logo=homebrew&labelColor=555555)](列表.md) [![面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?logo=homebrew&labelColor=555555)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
+<div style="text-align: center;">
+  <a href="列表.md" style="margin: 0 10px;">
+    <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向国人">
+  </a>
+  <a href="https://github.com/Brewforge/homebrew-extras/blob/main/list.md" style="margin: 0 10px;">
+    <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向全球">
+  </a>
+</div>
 
 ## 🏃 准备
 
