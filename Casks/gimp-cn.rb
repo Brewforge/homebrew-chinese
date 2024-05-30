@@ -11,10 +11,10 @@ cask "gimp-cn" do
   desc "Free and open-source image editor"
   homepage "https://www.gimp.org/"
 
-  livecheck do
-    url "https://www.gimp.org/downloads/"
-    regex(%r{href=.*?/gimp[._-]v?(\d+(?:\.\d+)+(-\d)?)[._-]#{arch}\.dmg}i)
-  end
+  # livecheck do
+  #   url "https://www.gimp.org/downloads/"
+  #   regex(%r{href=.*?/gimp[._-]v?(\d+(?:\.\d+)+(-\d)?)[._-]#{arch}\.dmg}i)
+  # end
 
   auto_updates true
   conflicts_with cask: ["gimp", "homebrew/cask-versions/gimp-dev"]
