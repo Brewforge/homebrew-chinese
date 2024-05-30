@@ -11,13 +11,13 @@ cask "gimp-cn" do
   desc "Free and open-source image editor"
   homepage "https://www.gimp.org/"
 
-  # livecheck do
-  #   url "https://www.gimp.org/downloads/"
-  #   regex(%r{href=.*?/gimp[._-]v?(\d+(?:\.\d+)+(-\d)?)[._-]#{arch}\.dmg}i)
-  # end
+  livecheck do
+    url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/osx/"
+    regex(/gimp-(\d+(\.\d+)+(-\d)?)-#{arch}\.dmg/i)
+  end
 
   auto_updates true
-  conflicts_with cask: ["gimp", "homebrew/cask-versions/gimp-dev"]
+  conflicts_with cask: ["gimp", "gimp-dev"]
 
   app "GIMP.app"
   shimscript = "#{staged_path}/gimp.wrapper.sh"
