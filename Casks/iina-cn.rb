@@ -1,6 +1,6 @@
 cask "iina-cn" do
-  version "1.3.4"
-  sha256 "7de50f5ad4a2fd5b27bf59a31b2060074c05331c7aafa533ad4adab65028d78c"
+  version "1.3.5"
+  sha256 "3b8b9199f41a18c2aa8b30e5824d0c9daccc1d59176832ea650f533fcbdc6a38"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/iina/IINA.v#{version}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/iina/"
