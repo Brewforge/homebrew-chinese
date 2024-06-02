@@ -61,10 +61,10 @@ jobs:
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
-      - name: Bump formulae
-        uses: ./.github/actions/bump-formulas
-        with:
-          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+      # - name: Bump formulae
+      #   uses: ./.github/actions/bump-formulas
+      #   with:
+      #     HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
   # formulas-linuxbrew:
   #   name: Bump Formulae in parallel (Linuxbrew)

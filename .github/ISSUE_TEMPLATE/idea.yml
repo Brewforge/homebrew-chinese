@@ -1,6 +1,6 @@
 name: 软件建议
 description: 你发现了新大陆？
-labels: 新软件
+labels: [新软件]
 body:
   # - type: checkboxes
   #   attributes:
