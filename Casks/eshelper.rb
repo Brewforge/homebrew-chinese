@@ -1,6 +1,6 @@
 cask "eshelper" do
-  version :latest
-  sha256 :no_check
+  version "4.6.5"
+  sha256 "05b6f9590dae02f338d9355bbe8c5838135575d80988e2ef245abccb81489e5f"
 
   url "https://static.eudic.net/pkg/ehmac.dmg",
       user_agent: :fake
@@ -9,10 +9,10 @@ cask "eshelper" do
   desc "Spanish Chinese dictionary and learning tool"
   homepage "https://www.eudic.net/v4/es/app/eshelper"
 
-  # livecheck do
-  #   url "https://static.eudic.net/pkg/eshelper_mac.xml?noCache=1"
-  #   strategy :sparkle, &:short_version
-  # end
+  livecheck do
+    url "https://static.eudic.net/pkg/eshelper_mac.xml?noCache=1"
+    strategy :sparkle, &:short_version
+  end
 
   auto_updates true
   depends_on macos: ">= :high_sierra"
