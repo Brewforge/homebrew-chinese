@@ -12,9 +12,8 @@ cask "vscodium-cn" do
   homepage "https://github.com/VSCodium/vscodium"
 
   livecheck do
-    # url "https://github.com/VSCodium/vscodium"
-    # strategy :github_latest
-    skip "未找到 macOS 版本"
+    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease"
+    regex(/VSCodium\.#{arch}\.(\d+(\.\d+)+)\.dmg/i)
   end
 
   auto_updates true

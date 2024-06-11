@@ -12,8 +12,8 @@ cask "gimp-cn" do
   homepage "https://www.gimp.org/"
 
   livecheck do
-    url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/osx/"
-    regex(/gimp-(\d+(\.\d+)+(-\d)?)-#{arch}\.dmg/i)
+    url "https://www.gimp.org/downloads/"
+    regex(%r{href=.*?/gimp-(\d+(?:\.\d+)+)-#{arch}(-\d)?\.dmg}i)
   end
 
   auto_updates true

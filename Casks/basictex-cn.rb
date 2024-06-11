@@ -9,7 +9,7 @@ cask "basictex-cn" do
   homepage "https://www.tug.org/mactex/morepackages.html"
 
   livecheck do
-    url "https://ctan.org/texarchive/systems/mac/mactex/"
+    url "https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex"
     strategy :page_match do |page|
       match = page.match(/href=.*?mactex-basictex-(\d{4})(\d{2})(\d{2})\.pkg/)
       next if match.blank?

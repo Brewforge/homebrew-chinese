@@ -13,7 +13,7 @@ cask "miniforge-cn" do
 
   livecheck do
     url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
-    regex(/Miniforge3[._-](\d+(?:[.-]\d+)+)[._-]MacOSX[._-]#{arch}\.sh/i)
+    regex(/Miniforge3-(\d+(?:[.-]\d+)+)-MacOSX-#{arch}\.sh/i)
   end
 
   auto_updates true

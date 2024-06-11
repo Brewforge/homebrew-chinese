@@ -9,8 +9,8 @@ cask "texstudio-cn" do
   homepage "https://github.com/texstudio-org/texstudio/"
 
   livecheck do
-    url "https://github.com/texstudio-org/texstudio/"
-    strategy :github_latest
+    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease"
+    regex(/texstudio-(\d+(\.\d+){2})-osx\.dmg/i)
   end
 
   auto_updates true

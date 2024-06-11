@@ -9,8 +9,8 @@ cask "iina-cn" do
   homepage "https://iina.io/"
 
   livecheck do
-    url "https://www.iina.io/appcast.xml"
-    strategy :sparkle, &:short_version # IINA sometimes rebuilds with the same short version.
+    url "https://mirrors.tuna.tsinghua.edu.cn/iina"
+    regex(/IINA\.v(\d+(\.\d+)+)\.dmg/i)
   end
 
   auto_updates true

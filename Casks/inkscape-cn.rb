@@ -12,8 +12,8 @@ cask "inkscape-cn" do
   homepage "https://inkscape.org/"
 
   livecheck do
-    url "https://inkscape.org/release"
-    strategy :header_match
+    url "https://mirror.nju.edu.cn/inkscape"
+    regex(/Inkscape-(\d+(\.\d+)+)_#{arch}\.dmg/i)
   end
 
   auto_updates true

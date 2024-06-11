@@ -13,7 +13,7 @@ cask "julia-cn" do
 
   livecheck do
     url "https://julialang.org/downloads/"
-    regex(/href=.*?julia[._-]v?(\d+(?:\.\d+)+)[._-]mac#{arch.delete_prefix("x")}\.dmg/i)
+    regex(/href=.*?julia-(\d+(\.\d+){2})-mac#{arch.delete_prefix("x")}\.dmg/i)
   end
 
   auto_updates true

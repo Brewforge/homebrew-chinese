@@ -12,8 +12,8 @@ cask "vlc-cn" do
   homepage "https://www.videolan.org/vlc/"
 
   livecheck do
-    url "https://www.videolan.org/vlc/download-macosx.html"
-    regex(%r{href=.*?/vlc[._-]v?(\d+(?:\.\d+)+)(?:[._-][a-z]\w*)?\.dmg}i)
+    url "https://mirrors.tuna.tsinghua.edu.cn/videolan-ftp/vlc/last/macosx"
+    regex(/vlc-(\d+(\.\d+){2})-#{arch}\.dmg/i)
   end
 
   auto_updates true

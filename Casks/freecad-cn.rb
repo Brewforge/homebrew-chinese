@@ -13,7 +13,7 @@ cask "freecad-cn" do
 
   livecheck do
     url "https://mirrors.tuna.tsinghua.edu.cn/github-release/FreeCAD/FreeCAD/"
-    regex(/FreeCAD v?(\d+(?:\.\d+)+)/i)
+    regex(/FreeCAD v?(\d+(\.\d+){2})/i)
   end
 
   auto_updates true

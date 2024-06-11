@@ -10,7 +10,7 @@ cask "lyx-cn" do
 
   livecheck do
     url "https://www.lyx.org/Download"
-    regex(/LyX[._-]v?(\d+(?:\.\d+)+)\+qt5/i)
+    regex(/LyX-v?(\d+(?:\.\d+)+)\+qt5/i)
   end
 
   auto_updates true
