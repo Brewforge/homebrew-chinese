@@ -9,9 +9,10 @@ cask "i4tools" do
   homepage "https://www.i4.cn/"
 
   livecheck do
-    url :url
-    strategy :header_match
-    regex(/i4Tools[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    # url :url
+    # strategy :header_match
+    # regex(/i4Tools[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    skip "No version information available"
   end
 
   pkg "i4tools.pkg"
