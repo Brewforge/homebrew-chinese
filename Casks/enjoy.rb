@@ -1,9 +1,9 @@
 cask "enjoy" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.14"
-  sha256 arm:   "8d3626b95c48d1ba8518aed6759e68bde18795b929477466abacf394524f0f33",
-         intel: "3594288b1952b8728dbb59052e51bf20de1f83d4d21bea339915cadf0bafaf2c"
+  version "0.3.0"
+  sha256 arm:   "e246db39bce42bfc25d1f65feb2b237cd885dc0e4f939c4678b7f80f085eb26e",
+         intel: "cd8cb975ccd9733d99157217c33d3672dcd4626731a94eeb3de61f5f15094145"
 
   url "https://github.com/xiaolai/everyone-can-use-english/releases/download/v#{version}/Enjoy-#{version}-#{arch}.dmg",
       verified: "github.com/xiaolai/everyone-can-use-english/"
