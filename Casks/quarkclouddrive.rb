@@ -8,7 +8,7 @@ cask "quarkclouddrive" do
   homepage "https://pan.quark.cn/"
 
   livecheck do
-    skip "未找到可用信息"
+    skip "有可用信息，但复杂且混乱，跳过"
   end
 
   auto_updates true
