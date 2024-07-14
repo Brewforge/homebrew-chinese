@@ -8,9 +8,8 @@ cask "e-study" do
   homepage "https://estudy.cnki.net/"
 
   livecheck do
-    # url :homepage
-    # regex(/Mac(\d+(\.\d+)+) 客户端下载/i)
-    skip "本地成功，但 CI 失败，参见 https://github.com/Brewforge/homebrew-chinese/pull/32"
+    url :homepage
+    regex(/Mac(\d+(\.\d+)+)/i)
   end
 
   auto_updates true
