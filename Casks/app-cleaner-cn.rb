@@ -8,9 +8,8 @@ cask "app-cleaner-cn" do
   homepage "https://nektony.com/zh-hans/mac-app-cleaner"
 
   livecheck do
-    # url :homepage
-    # regex(/版本：?(\d+(\.\d+)+)/)
-    skip "未找到可用信息"
+    url "https://nektony.com/downloads"
+    regex(/macOS ?(\d+(\.\d+)+.+\d+)/i)
   end
 
   auto_updates true
