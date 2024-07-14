@@ -1,5 +1,5 @@
 cask "app-cleaner-cn" do
-  version "8.2.7"
+  version "10.13"
   sha256 :no_check
 
   url "https://download.nektony.com/download/app-cleaner-uninstaller/localized/app-cleaner-uninstaller-cn.dmg"
@@ -9,7 +9,7 @@ cask "app-cleaner-cn" do
 
   livecheck do
     url "https://nektony.com/downloads"
-    regex(/macOS ?(\d+(\.\d+)+.+\d+)/i)
+    regex(/macOS ?(\d+(\.\d+)+).+(\d+)/i)
   end
 
   auto_updates true
