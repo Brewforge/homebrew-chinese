@@ -14,7 +14,7 @@ cask "app-cleaner-cn" do
 
   auto_updates true
 
-  app "App Cleaner 8.app"
+  app "App Cleaner & Uninstaller.app"
 
   zap trash: [
     "~/Library/Application Scripts/8DKG4XB37M.group.com.nektony.MacCleaner-PRO-SIII",
