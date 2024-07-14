@@ -2,7 +2,7 @@ cask "frhelper" do
   version "4.6.5"
   sha256 "dc430e493be42e9bf9721d0564ae260873ecc8a73e8a75e632accd2d9fadcb9b"
 
-  url "https://static.eudic.net/pkg/fhmac.dmg",
+  url "https://static.eudic.net/pkg/fhmac.dmg?#{version}",
       user_agent: :fake
   name "Frhelper"
   name "法语助手"
