@@ -1,9 +1,9 @@
 cask "yank-note" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.72.2"
-  sha256 arm:   "5592cec3a194609671f1cb44f96bb6ab91b775052b7e16d64d7da1236a53ca3c",
-         intel: "9d734fbc49964b0ada851a690a47bd891322bd8fef741904b668650007193947"
+  version "3.73.1"
+  sha256 arm:   "76af8a6475323f7057a7112e6b0bce128d38f2986a9e28577213ad3e06c4ae52",
+         intel: "1a0b31c23a20e4ddba8dc4dc04d0b63dcc8d7f01190e3e054fae3cd633f59a2b"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg"
