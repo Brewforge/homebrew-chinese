@@ -35,12 +35,12 @@ body:
   - type: input
     attributes:
       label: 一句话描述软件主要用途
-      description: 如有不同版本多个链接，每行一个
     validations:
       required: true
   - type: textarea
     attributes:
       label: 软件下载链接
+      description: 如有不同版本多个链接，每行一个
     validations:
       required: false
   - type: dropdown
