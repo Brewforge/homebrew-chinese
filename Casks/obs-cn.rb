@@ -6,14 +6,14 @@ cask "obs-cn" do
   sha256 arm:   "160f24804f8c70bd70d88ab0c9c8dcc4e88bc42c5c53e2705ced3216a434be96",
          intel: "0bea96aea2a5cb4fc1ab3b24ae3677ccf5542c10cd2d610264f4a39dd582c67b"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/OBS-Studio-#{version}-macOS-#{arch}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/"
+  url "https://mirrors.bfsu.edu.cn/github-release/obsproject/obs-studio/LatestRelease/OBS-Studio-#{version}-macOS-#{arch}.dmg",
+      verified: "mirrors.bfsu.edu.cn/"
   name "OBS"
   desc "Open-source software for live streaming and screen recording"
   homepage "https://obsproject.com/"
 
   livecheck do
-    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease"
+    url "https://mirrors.bfsu.edu.cn/github-release/obsproject/obs-studio/LatestRelease"
     regex(/OBS-Studio-(\d+(\.\d+){2})-macos-#{arch}\.dmg/i)
   end
 
