@@ -16,8 +16,6 @@ cask "clashx-meta" do
     strategy :github_latest
   end
 
-  auto_updates true
-
   app "ClashX Meta.app"
 
   preflight do
