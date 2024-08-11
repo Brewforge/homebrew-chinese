@@ -28,4 +28,8 @@ cask "edrawmax@9" do
     "~/Library/Preferences/com.edrawsoft.edrawmax.plist",
     "~/Library/Saved Application State/com.edrawsoft.edrawmax.savedState",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end

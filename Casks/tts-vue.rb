@@ -33,4 +33,8 @@ cask "tts-vue" do
     "~/Library/Preferences/vip.loker.tts-vue.plist",
     "~/Library/Saved Application State/vip.loker.tts-vue.savedState",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end

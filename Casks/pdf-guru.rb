@@ -24,4 +24,8 @@ cask "pdf-guru" do
   app "PDF Guru.app"
 
   zap trash: []
+
+  caveats do
+    requires_rosetta
+  end
 end

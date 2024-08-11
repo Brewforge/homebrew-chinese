@@ -22,4 +22,8 @@ cask "copybook" do
     "~/Library/Application Scripts/top.mydata.copybook",
     "~/Library/Containers/top.mydata.copybook",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end
