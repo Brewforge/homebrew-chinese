@@ -26,4 +26,8 @@ cask "i4tools" do
     "~/Library/Preferences/org.example.i4AirPlayer.plist",
     "~/Library/Saved Application State/org.example.i4AirPlayer.savedState",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end
