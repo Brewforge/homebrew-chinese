@@ -1,4 +1,5 @@
 name: Bump formulae
+description: Bump outdated formulae
 
 inputs:
   HOMEBREW_GITHUB_API_TOKEN:

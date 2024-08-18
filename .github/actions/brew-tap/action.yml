@@ -1,12 +1,13 @@
 name: Brew Tap
+description: Homebrew Tap
 
 inputs:
   HOMEBREW_GITHUB_API_TOKEN:
-    description: 'Homebrew GitHub API Token'
+    description: "Homebrew GitHub API Token"
     required: true
 
 runs:
-  using: 'composite'
+  using: "composite"
 
   steps:
     - name: Add Tap
@@ -27,9 +28,9 @@ runs:
     - uses: oleksiyrudenko/gha-git-credentials@v2-latest
       with:
         global: true
-        name: 'Brewforge-Bot'
-        email: 'brewforge-bot@aliyun.com'
-        token: '${{ inputs.HOMEBREW_GITHUB_API_TOKEN }}'
+        name: "Brewforge-Bot"
+        email: "brewforge-bot@aliyun.com"
+        token: "${{ inputs.HOMEBREW_GITHUB_API_TOKEN }}"
 
     - name: show git context
       shell: bash -ieo pipefail {0}

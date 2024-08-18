@@ -1,7 +1,8 @@
 name: Homebrew Action
+description: Homebrew Action
 
 runs:
-  using: 'composite'
+  using: "composite"
 
   steps:
     - name: Set up Homebrew
