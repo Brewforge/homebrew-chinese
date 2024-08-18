@@ -1,5 +1,5 @@
 cask "eshelper" do
-  version "4.6.8"
+  version "2024-07-18"
   sha256 "926b892365d77658d6b0270f5697f58063c92d0a8d39e834c2206347cd61bee8"
 
   url "https://static.eudic.net/pkg/ehmac.dmg?#{version}",
@@ -10,8 +10,8 @@ cask "eshelper" do
   homepage "https://www.eudic.net/v4/es/app/eshelper"
 
   livecheck do
-    url "https://static.eudic.net/pkg/eshelper_mac.xml?noCache=1"
-    strategy :sparkle, &:short_version
+    url "https://www.eudic.net/v4/es/app/download"
+    regex(/href=.*?\.dmg\?v=(\d{4}-\d{2}-\d{2})/i)
   end
 
   auto_updates true
