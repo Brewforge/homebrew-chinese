@@ -10,7 +10,7 @@ cask "frhelper" do
   homepage "https://www.eudic.net/v4/fr/app/frhelper"
 
   livecheck do
-    url "https://static.eudic.net/pkg/frhelper_mac.xml?noCache=1"
+    url "https://static.eudic.net/pkg/frhelper_mac.xml"
     strategy :sparkle, &:short_version
   end
 
