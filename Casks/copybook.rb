@@ -12,8 +12,9 @@ cask "copybook" do
   homepage "https://github.com/xxNull-lsk/Copybook/"
 
   livecheck do
-    url origin.to_s
-    strategy :github_latest
+    # url origin.to_s
+    # strategy :github_latest
+    skip "无 macOS 版本"
   end
 
   app "字帖生成器.app"
