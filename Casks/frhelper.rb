@@ -11,7 +11,8 @@ cask "frhelper" do
 
   livecheck do
     url "https://static.eudic.net/pkg/frhelper_mac.xml"
-    strategy :sparkle, &:short_version
+    # strategy :sparkle, &:short_version
+    regex(/Mac (\d+(\.\d+)+)/i)
   end
 
   depends_on macos: ">= :high_sierra"
