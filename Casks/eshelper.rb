@@ -1,5 +1,5 @@
 cask "eshelper" do
-  version "2024-07-23"
+  version "2024-07-24"
   sha256 "926b892365d77658d6b0270f5697f58063c92d0a8d39e834c2206347cd61bee8"
 
   url "https://static.eudic.net/pkg/ehmac.dmg?#{version}",
