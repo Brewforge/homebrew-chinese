@@ -1,5 +1,5 @@
 cask "frhelper" do
-  version "2024-07-24"
+  version "2024-07-25"
   sha256 "2b82b48b64c5d48410a950148b1ad4dbf6f098f2c2e1e1185750e994cdf77143"
 
   url "https://static.eudic.net/pkg/fhmac.dmg?v=#{version}",
