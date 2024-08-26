@@ -1,12 +1,12 @@
 cask "easytier" do
-  arch arm: "aarch64", intel: "x86_64"
+  arch arm: "aarch64", intel: "x64"
 
-  version "1.2.2"
-  sha256 arm:   "0c33badbd8c55fde6fbe015455eb64d850f680a805ac6bc71aa5fbdf953d477e",
-         intel: "4884589cf6d98a1172765c8ac5212935a516bf2294aaacad550bcc81040ba05f"
+  version "1.2.3"
+  sha256 arm:   "95b00a54ea3f35652b7210a7f663e4c9a854dcc841dbe10cf7916bcde070f82d",
+         intel: "28ce16431de433b940401b7420ee213a03ebcfb27df968b5f1ead613f5a4ed95"
 
   mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/EasyTier/EasyTier/releases/download/v#{version}/easytier-gui-macos-#{arch}-v#{version}.zip"
+  origin = "https://github.com/EasyTier/EasyTier/releases/download/v#{version}/easytier-gui_#{version}_#{arch}.dmg"
 
   url "#{mirror}#{origin}",
       verified: "mirror.ghproxy.com/"
@@ -22,6 +22,6 @@ cask "easytier" do
   app "easytier-gui.app"
 
   zap trash: [
-    "~/Library/Saved Application State/com.kkrainbow.easyiter-client.savedState",
+    "~/Library/Logs/com.kkrainbow.easytier",
   ]
 end
