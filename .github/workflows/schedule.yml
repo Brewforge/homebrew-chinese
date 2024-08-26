@@ -16,8 +16,8 @@ on:
 permissions: write-all
 
 jobs:
-  casks:
-    name: Bump Casks in parallel
+  bump-casks-formulae:
+    name: Bump casks & formulae
     if: github.repository == 'brewforge/homebrew-chinese'
     runs-on: ${{ matrix.os }}
 
@@ -36,35 +36,13 @@ jobs:
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
-      - name: Bump casks
-        uses: ./.github/actions/bump-casks
-        with:
+      - name: Bump
+        env:
+          HOMEBREW_DEVELOPER: "1"
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-
-  formulas:
-    name: Bump Formulae in parallel
-    if: github.repository == 'brewforge/homebrew-chinese'
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [macos-latest]
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Homebrew env
-        uses: ./.github/actions/homebrew-env
-
-      - name: Brew Tap
-        uses: ./.github/actions/brew-tap
-        with:
-          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-
-      # - name: Bump formulae
-      #   uses: ./.github/actions/bump-formulas
-      #   with:
-      #     HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+        shell: bash -ieo pipefail {0}
+        run: |
+          ./.github/actions/bump-pr/script.sh
 
   # formulas-linuxbrew:
   #   name: Bump Formulae in parallel (Linuxbrew)

@@ -21,7 +21,7 @@ runs:
     - name: Install Homebrew's dependencies
       shell: bash -ieo pipefail {0}
       run: |
-        brew install ripgrep sd gcc parallel coreutils
+        brew install ripgrep sd gcc coreutils jq
         brew unlink coreutils && brew link coreutils
         brew install-bundler-gems --groups "audit,style"
 
