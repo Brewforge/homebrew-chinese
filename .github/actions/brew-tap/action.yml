@@ -5,6 +5,10 @@ inputs:
   HOMEBREW_GITHUB_API_TOKEN:
     description: "Homebrew GitHub API Token"
     required: true
+  HOMEBREW_BRANCH:
+    description: "Homebrew Branch"
+    required: false
+    default: "main"
 
 runs:
   using: "composite"
@@ -16,6 +20,9 @@ runs:
       shell: bash -ieo pipefail {0}
       run: |
         brew tap brewforge/chinese
+        cd "$(brew --repository brewforge/chinese)"
+        git checkout ${{ github.head_ref || github.ref_name }}
+        git fetch && git reset --hard origin/${{ github.head_ref || github.ref_name }}
         brew update
 
     - name: Install Homebrew's dependencies

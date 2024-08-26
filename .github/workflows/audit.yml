@@ -1,0 +1,45 @@
+name: audit
+
+on:
+  pull_request:
+    branches:
+      - '**'
+  push:
+    branches:
+      - '**'
+
+permissions: write-all
+
+jobs:
+  audit:
+    name: Audit
+    if: github.repository == 'brewforge/homebrew-chinese'
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Homebrew env
+        uses: ./.github/actions/homebrew-env
+
+      - name: Brew Tap
+        uses: ./.github/actions/brew-tap
+        with:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+          HOMEBREW_BRANCH: ${{ github.head_ref || github.ref_name }}
+
+      - name: Brew Audit
+        shell: bash -ieo pipefail {0}
+        run: |
+          cd "$(brew --repository brewforge/chinese)"
+          git checkout ${{ github.head_ref || github.ref_name }}
+          git fetch && git reset --hard origin/${{ github.head_ref || github.ref_name }}
+
+          brew audit --tap brewforge/chinese -v
+          # TODO: livecheck
+          # TODO: bump-cask-pr dry-run
+          # TODO: bump-formula-pr dry-run

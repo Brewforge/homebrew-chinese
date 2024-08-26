@@ -2,11 +2,10 @@ class Shurl < Formula
   desc "Self-built short chain shortcut based on YOURLS"
   homepage "https://github.com/Mrered/yourlsh"
   license "MIT"
-  version "2.0.0"
   version_scheme 1
 
   mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/Mrered/yourlsh/releases/download/v#{version}/shurl.tar.gz"
+  origin = "https://github.com/Mrered/yourlsh/releases/download/v2.0.0/shurl.tar.gz"
 
   url "#{mirror}#{origin}",
       verified: "mirror.ghproxy.com/"
