@@ -11,9 +11,10 @@ cask "mastergo" do
   homepage "https://mastergo.com"
 
   livecheck do
-    # url "https://mastergo.com/resource"
-    # regex(%r{href=.*?/MasterGo-(\d+(\.\d+)+)\.dmg}i)
-    skip "未找到可用信息"
+    url "https://mastergo.com/api/v1/config"
+    strategy :page_match do |page|
+      JSON.parse(JSON.parse(page)["data"])["electronMac#{Hardware::CPU.intel? ? "" : "M1"}"]
+    end
   end
 
   auto_updates true
