@@ -1,5 +1,5 @@
 cask "eshelper" do
-  version "2024-07-26"
+  version "9.7.0"
   sha256 "926b892365d77658d6b0270f5697f58063c92d0a8d39e834c2206347cd61bee8"
 
   url "https://static.eudic.net/pkg/ehmac.dmg?#{version}",
@@ -10,8 +10,8 @@ cask "eshelper" do
   homepage "https://www.eudic.net/v4/es/app/eshelper"
 
   livecheck do
-    url "https://www.eudic.net/v4/es/app/download"
-    regex(/href=.*?\.dmg\?v=(\d{4}-\d{2}-\d{2})/i)
+    url :homepage
+    regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
   auto_updates true

@@ -1,5 +1,5 @@
 cask "frhelper" do
-  version "2024-07-25"
+  version "9.7.0"
   sha256 "2b82b48b64c5d48410a950148b1ad4dbf6f098f2c2e1e1185750e994cdf77143"
 
   url "https://static.eudic.net/pkg/fhmac.dmg?v=#{version}",
@@ -10,8 +10,8 @@ cask "frhelper" do
   homepage "https://www.eudic.net/v4/fr/app/frhelper"
 
   livecheck do
-    url "https://www.eudic.net/v4/fr/app/download"
-    regex(/href=.*?\.dmg\?v=(\d{4}-\d{2}-\d{2})/i)
+    url :homepage
+    regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
   depends_on macos: ">= :high_sierra"
