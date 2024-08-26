@@ -1,5 +1,6 @@
 cask "mastergo" do
   arch arm: "-arm", intel: ""
+  key = on_arch_conditional arm: "M1", intel: ""
 
   version "1.8.2"
   sha256 arm:   "42e970f0f5a303018cfd7fe7bd4b7aac2cead341464db02e295a48c1307d943b",
@@ -13,12 +14,7 @@ cask "mastergo" do
   livecheck do
     url "https://mastergo.com/api/v1/config"
     strategy :page_match do |page|
-      JSON.parse(JSON.parse(page)["data"])["electronMac#{on_intel do
-                                                           ""
-                                                         end
-                                                         on_arm do
-                                                           "M1"
-                                                         end}"]
+      JSON.parse(JSON.parse(page)["data"])["electronMac#{key}"]
     end
   end
 
