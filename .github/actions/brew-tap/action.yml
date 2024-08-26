@@ -20,10 +20,7 @@ runs:
       shell: bash -ieo pipefail {0}
       run: |
         brew tap brewforge/chinese
-        cd "$(brew --repository brewforge/chinese)"
-        git checkout ${{ github.head_ref || github.ref_name }}
-        git fetch && git reset --hard origin/${{ github.head_ref || github.ref_name }}
-        brew update
+        cp -rf ./* "$(brew --repository brewforge/chinese)"
 
     - name: Install Homebrew's dependencies
       shell: bash -ieo pipefail {0}

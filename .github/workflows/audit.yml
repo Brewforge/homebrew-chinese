@@ -35,10 +35,6 @@ jobs:
       - name: Brew Audit
         shell: bash -ieo pipefail {0}
         run: |
-          cd "$(brew --repository brewforge/chinese)"
-          git checkout ${{ github.head_ref || github.ref_name }}
-          git fetch && git reset --hard origin/${{ github.head_ref || github.ref_name }}
-
           brew audit --tap brewforge/chinese -v
           # TODO: livecheck
           # TODO: bump-cask-pr dry-run
