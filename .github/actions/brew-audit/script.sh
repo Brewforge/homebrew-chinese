@@ -59,11 +59,11 @@ for item in $(echo $items | jq -r '.[] | .formula, .cask'); do
   fi
 
   if [ "$is_cask" != "null" ]; then
-    brew bump-cask-pr $item --version=$item_version_latest --verbose
-    # echo "> TDOO: brew bump-cask-pr $item --version=$item_version_latest --verbose"
+    brew bump-cask-pr $item --version=$item_version_latest --verbose --dry-run
+    # echo "> TDOO: brew bump-cask-pr $item --version=$item_version_latest --verbose --dry-run"
   elif [ "$is_formula" != "null" ]; then
-    # brew bump-formula-pr $item --version=$item_version_latest --verbose
-    echo -e "\033[0;33m> TDOO: brew bump-formula-pr $item --version=$item_version_latest --verbose\033[0m"
+    # brew bump-formula-pr $item --version=$item_version_latest --verbose --dry-run
+    echo -e "\033[0;33m> TDOO: brew bump-formula-pr $item --version=$item_version_latest --verbose --dry-run\033[0m"
   fi
 
   echo "> Done for $item"

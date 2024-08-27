@@ -1,22 +1,14 @@
 name: Brew Tap
 description: Homebrew Tap
 
-inputs:
-  HOMEBREW_GITHUB_API_TOKEN:
-    description: "Homebrew GitHub API Token"
-    required: true
-
 runs:
   using: "composite"
 
   steps:
     - name: Add Tap
-      env:
-        HOMEBREW_GITHUB_API_TOKEN: ${{ inputs.HOMEBREW_GITHUB_API_TOKEN }}
       shell: bash -ieo pipefail {0}
       run: |
         brew tap brewforge/chinese
-        cp -rf ./* "$(brew --repository brewforge/chinese)"
 
     - name: Install Homebrew's dependencies
       shell: bash -ieo pipefail {0}

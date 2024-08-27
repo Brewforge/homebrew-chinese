@@ -8,7 +8,11 @@ on:
     branches:
       - '**'
 
-permissions: write-all
+concurrency:
+  group: ${{ github.head_ref || github.ref_name }}
+  # cancel-in-progress: true
+
+# permissions: write-all
 
 jobs:
   audit:
@@ -30,8 +34,10 @@ jobs:
 
       - name: Brew Audit
         shell: bash -ieo pipefail {0}
+        env:
+          HOMEBREW_DEVELOPER: "1"
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
-          brew audit --tap brewforge/chinese -v
-          # TODO: livecheck
-          # TODO: bump-cask-pr dry-run
-          # TODO: bump-formula-pr dry-run
+          cp -rf ./ "$(brew --repository brewforge/chinese)"
+          cd "$(brew --repository brewforge/chinese)"
+          ./.github/actions/brew-audit/script.sh
