@@ -11,7 +11,7 @@ brew audit --tap brewforge/chinese -v
 # bump dry-run for homebrew
 echo "> Running brew bump dry-run..."
 
-items=$(brew livecheck --tap brewforge/chinese --full-name --json || echo "[]")
+items=$(brew livecheck --tap brewforge/chinese --extract-plist --full-name --json || echo "[]")
 
 for item in $(echo $items | jq -r '.[] | .formula, .cask'); do
   if [ "$item" == "null" ]; then
