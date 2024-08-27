@@ -13,7 +13,7 @@ cask "copybook" do
 
   livecheck do
     url "https://api.github.com/repos/xxNull-lsk/Copybook/releases"
-    match = regex(%r{download/.*?/copybook_(\d+(\.\d+)+)_macos_x64.tar.gz}i)
+    regex(%r{download/.*?/copybook_(\d+(\.\d+)+)_macos_x64.tar.gz}i)
   end
 
   app "字帖生成器.app"
