@@ -1,0 +1,24 @@
+name: Git Credentials
+description: Git Credentials
+
+inputs:
+  HOMEBREW_GITHUB_API_TOKEN:
+    description: "Homebrew GitHub API Token"
+    required: true
+
+runs:
+  using: "composite"
+
+  steps:
+    - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      with:
+        global: true
+        name: "Brewforge-Bot"
+        email: "brewforge-bot@aliyun.com"
+        token: "${{ inputs.HOMEBREW_GITHUB_API_TOKEN }}"
+
+    - name: show git context
+      shell: bash -ieo pipefail {0}
+      run: |
+        cat $HOME/.gitconfig
+        cat $GITHUB_ENV

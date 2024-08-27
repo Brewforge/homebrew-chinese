@@ -13,7 +13,6 @@ permissions: write-all
 jobs:
   audit:
     name: Audit
-    if: github.repository == 'brewforge/homebrew-chinese'
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -28,9 +27,6 @@ jobs:
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
-        with:
-          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-          HOMEBREW_BRANCH: ${{ github.head_ref || github.ref_name }}
 
       - name: Brew Audit
         shell: bash -ieo pipefail {0}

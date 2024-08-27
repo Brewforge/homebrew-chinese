@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # ========================
 # Bump casks for Homebrew
 casks=$(brew livecheck --tap brewforge/chinese --casks --json)

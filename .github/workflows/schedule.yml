@@ -33,6 +33,9 @@ jobs:
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
+
+      - name: Git Cred
+        uses: ./.github/actions/git-cred
         with:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
 
