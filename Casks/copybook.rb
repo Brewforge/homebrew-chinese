@@ -12,9 +12,8 @@ cask "copybook" do
   homepage "https://github.com/xxNull-lsk/Copybook/"
 
   livecheck do
-    # url origin.to_s
-    # strategy :github_latest
-    skip "无 macOS 版本"
+    url "https://api.github.com/repos/xxNull-lsk/Copybook/releases"
+    match = regex(%r{download/.*?/copybook_(\d+(\.\d+)+)_macos_x64.tar.gz}i)
   end
 
   app "字帖生成器.app"
