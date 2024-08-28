@@ -12,9 +12,21 @@ cask "copybook" do
   homepage "https://github.com/xxNull-lsk/Copybook/"
 
   livecheck do
-    url "https://api.github.com/repos/xxNull-lsk/Copybook/releases"
-    matches = regex(%r{download/.*?/copybook_(\d+(\.\d+)+)_macos_x64.tar.gz}i)
-    "#{matches}"
+    url origin.to_s
+    regex(/copybook_([^_]+)_macos_x64.tar.gz/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        matched = release['assets'].map do |asset|
+          match = asset['name'].match(regex)
+          next if match.blank?
+          match[1]
+        end.compact.first
+
+        next if matched.blank?
+
+        matched
+      end.compact.first
+    end
   end
 
   app "字帖生成器.app"
