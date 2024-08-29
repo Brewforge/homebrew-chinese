@@ -31,12 +31,17 @@ cask "copybook" do
 
   app "字帖生成器.app"
 
+  preflight do
+    system_command "xattr",
+                   args: ["-cr", "#{staged_path}/字帖生成器.app"]
+  end
+
   zap trash: [
     "~/Library/Application Scripts/top.mydata.copybook",
     "~/Library/Containers/top.mydata.copybook",
   ]
 
-  caveats do
-    requires_rosetta
-  end
+  # caveats do
+  #   requires_rosetta
+  # end
 end
