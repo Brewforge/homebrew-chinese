@@ -56,6 +56,9 @@ for item in $(echo $items | jq -r '.[] | .formula, .cask'); do
     elif [ -n "$is_formula" ]; then
       cat "$(brew edit $item --print-path)"
     fi
+
+    echo -e "\033[0;31m> Error: version.latest is null\033[0m"
+    continue
   fi
 
   if [ "$is_cask" != "null" ]; then
