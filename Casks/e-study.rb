@@ -1,9 +1,9 @@
 cask "e-study" do
-  version "4.2.2"
+  version "4.3.1,285"
   sha256 :no_check
 
   url "https://download.cnki.net/CNKI%20E-Study%20For%20Mac.dmg",
-    user_agent: :fake
+      user_agent: :fake
   name "e-study"
   desc "Essential Tools for Brainiacs"
   homepage "https://estudy.cnki.net/"
