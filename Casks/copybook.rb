@@ -1,6 +1,6 @@
 cask "copybook" do
-  version "1.0.1096"
-  sha256 "08effb5bdcd1df72b6c246beddd7c308476ebb0016a50c3f1e0f87eb24272987"
+  version "1.0.1102"
+  sha256 "0be7be40aa1010b40ba7554566d68be902bb2ac70bd60180fcdc257d7798f16a"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/xxNull-lsk/Copybook/releases/download/v#{version}/copybook_#{version}_macos_x64.tar.gz"
