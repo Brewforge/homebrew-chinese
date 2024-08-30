@@ -1,32 +1,33 @@
 class NezhaAgent < Formula
   desc "哪吒监控服务"
   homepage "https://nezha.wiki/"
+  url "https://github.com/nezhahq/agent/releases/download/v#{version}/nezha-agent_darwin_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.zip"
   version "0.16.9"
   license "Apache-2.0"
 
-  arch = Hardware::CPU.arm? ? "arm64" : "amd64"
-
-  if OS.mac?
-    url "https://github.com/nezhahq/agent/releases/download/v#{version}/nezha-agent_darwin_#{arch}.zip"
-    if Hardware::CPU.arm?
-      sha256 "b1629dcdc065d847d591548b906cc65021d72be81108650847ff3c52edc635c5"
-    else
-      sha256 "b3ffb7edffb7926df8e053dff4b709e4a599a366f4bbde1c73c1a003c178eb33"
-    end
+  if OS.mac? && Hardware::CPU.arm?
+    sha256 "b1629dcdc065d847d591548b906cc65021d72be81108650847ff3c52edc635c5"
+  elsif OS.mac? && !Hardware::CPU.arm?
+    sha256 "b3ffb7edffb7926df8e053dff4b709e4a599a366f4bbde1c73c1a003c178eb33"
   end
 
   service do
-    run [opt_bin/"nezha-agent", "--password", "#{ENV['HOMEBREW_NEZHA_AGENT_PASSWORD']}", "--server", "#{ENV['HOMEBREW_NEZHA_AGENT_SERVER']}"]
+    run [opt_bin/"nezha-agent", "--password", (ENV["HOMEBREW_NEZHA_AGENT_PASSWORD"]).to_s, "--server",
+         (ENV["HOMEBREW_NEZHA_AGENT_SERVER"]).to_s]
     keep_alive true
     environment_variables({
       HOMEBREW_NEZHA_AGENT_PASSWORD: ENV["HOMEBREW_NEZHA_AGENT_PASSWORD"],
-      HOMEBREW_NEZHA_AGENT_SERVER: ENV["HOMEBREW_NEZHA_AGENT_SERVER"]
+      HOMEBREW_NEZHA_AGENT_SERVER:   ENV["HOMEBREW_NEZHA_AGENT_SERVER"],
     })
   end
 
   livecheck do
     url "https://github.com/nezhahq/agent/releases"
     strategy :github_latest
+  end
+
+  def install
+    bin.install "nezha-agent"
   end
 
   def caveats
@@ -42,9 +43,5 @@ class NezhaAgent < Formula
         brew reinstall nezha-agent
         brew services start nezha-agent
     EOS
-  end
-
-  def install
-    bin.install "nezha-agent"
   end
 end

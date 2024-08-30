@@ -3,12 +3,12 @@
 set -e
 
 # ========================
-# brew audit
+# audit
 echo "> Running brew audit..."
 brew audit --tap brewforge/chinese -v
 
 # ========================
-# bump dry-run for homebrew
+# bump
 echo "> Running brew bump dry-run..."
 
 items=$(brew livecheck --tap brewforge/chinese --extract-plist --full-name --json || echo "[]")
@@ -30,6 +30,11 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
   item_version_latest=$(echo "$item_obj" | jq -r '.version.latest')
   item_outdated=$(echo "$item_obj" | jq -r '.version.outdated')
   item_newer=$(echo "$item_obj" | jq -r '.version.newer_than_upstream')
+
+  # ========================
+  # style
+  echo "* Running brew style $item -v..."
+  brew style "$item" -v
 
   if [ "$item_status" == "skipped" ]; then
     # skipped.
@@ -61,12 +66,22 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
     continue
   fi
 
+  # ========================
+  # dry-run
+  _BUMP_OPTIONS="--no-audit --no-style --dry-run --verbose"
+
   if [ "$is_cask" != "null" ]; then
-    brew bump-cask-pr "$item" --version="$item_version_latest" --verbose --dry-run
-    # echo "> TDOO: brew bump-cask-pr $item --version=$item_version_latest --verbose --dry-run"
+    # is_cask.
+
+    echo "* Running bump-cask-pr..."
+    brew bump-cask-pr "$item" --version="$item_version_latest" $_BUMP_OPTIONS
+    # echo -e "\033[0;32m* TDOO: brew bump-cask-pr $item --version=$item_version_latest $_BUMP_OPTIONS\033[0m"
   elif [ "$is_formula" != "null" ]; then
-    # brew bump-formula-pr $item --version=$item_version_latest --verbose --dry-run
-    echo -e "\033[0;33m> TDOO: brew bump-formula-pr $item --version=$item_version_latest --verbose --dry-run\033[0m"
+    # is_formula.
+
+    echo "* Running brew bump-formula-pr..."
+    # brew bump-formula-pr $item --version=$item_version_latest $_BUMP_OPTIONS
+    echo -e "\033[0;33m* TDOO: brew bump-formula-pr $item --version=$item_version_latest $_BUMP_OPTIONS\033[0m"
   fi
 
   echo "> Done for $item"

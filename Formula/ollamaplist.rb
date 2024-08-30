@@ -1,17 +1,13 @@
 class Ollamaplist < Formula
   desc "给 Ollama CLI 添加环境变量"
   homepage "https://github.com/Mrered/Gobin"
+  url "https://github.com/Mrered/Gobin/releases/download/v#{version}/ollamaplist_#{version}_darwin_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.tar.gz"
   version "0.2.2"
 
-  arch = Hardware::CPU.arm? ? "arm64" : "amd64"
-
-  if OS.mac?
-    url "https://github.com/Mrered/Gobin/releases/download/v#{version}/ollamaplist_#{version}_darwin_#{arch}.tar.gz"
-    if Hardware::CPU.arm?
-      sha256 "9ffa61dfdc430d21c7e675205a3a73768f9a063065e8b8f9a55b3b3b71d24ebf"
-    else
-      sha256 "d311991876899604b5000730e21f0c17c38d34fef4a5d2e6f00ade044250d008"
-    end
+  if OS.mac? && Hardware::CPU.arm?
+    sha256 "9ffa61dfdc430d21c7e675205a3a73768f9a063065e8b8f9a55b3b3b71d24ebf"
+  elsif OS.mac? && !Hardware::CPU.arm?
+    sha256 "d311991876899604b5000730e21f0c17c38d34fef4a5d2e6f00ade044250d008"
   end
 
   livecheck do

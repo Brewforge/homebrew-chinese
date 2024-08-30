@@ -15,17 +15,18 @@ cask "copybook" do
     url origin.to_s
     regex(/copybook_([^_]+)_macos_x64.tar.gz/i)
     strategy :github_releases do |json, regex|
-      json.map do |release|
-        matched = release['assets'].map do |asset|
-          match = asset['name'].match(regex)
+      json.filter_map do |release|
+        matched = release["assets"].filter_map do |asset|
+          match = asset["name"].match(regex)
           next if match.blank?
+
           match[1]
-        end.compact.first
+        end.first
 
         next if matched.blank?
 
         matched
-      end.compact.first
+      end.first
     end
   end
 
