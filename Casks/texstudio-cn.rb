@@ -1,6 +1,6 @@
 cask "texstudio-cn" do
-  version "4.8.1"
-  sha256 "9e547180b3013624a61ea5dbc92deac64ed6573d217f6044ccdf0b442932d513"
+  version "4.8.2"
+  sha256 "30413d952411cd42a68e8766901908dab61f5f4215d6c441b6d57305de6d5ee5"
 
   url "https://mirrors.bfsu.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/texstudio-#{version}-osx.dmg",
       verified: "mirrors.bfsu.edu.cn/github-release/texstudio-org/"
