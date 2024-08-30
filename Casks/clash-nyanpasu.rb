@@ -30,4 +30,8 @@ cask "clash-nyanpasu" do
   end
 
   zap trash: "~/.config/clash"
+
+  caveats do
+    requires_rosetta
+  end
 end
