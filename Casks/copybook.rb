@@ -1,6 +1,6 @@
 cask "copybook" do
-  version "1.0.1096"
-  sha256 "08effb5bdcd1df72b6c246beddd7c308476ebb0016a50c3f1e0f87eb24272987"
+  version "1.0.1102"
+  sha256 "0be7be40aa1010b40ba7554566d68be902bb2ac70bd60180fcdc257d7798f16a"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/xxNull-lsk/Copybook/releases/download/v#{version}/copybook_#{version}_macos_x64.tar.gz"
@@ -15,17 +15,18 @@ cask "copybook" do
     url origin.to_s
     regex(/copybook_([^_]+)_macos_x64.tar.gz/i)
     strategy :github_releases do |json, regex|
-      json.map do |release|
-        matched = release['assets'].map do |asset|
-          match = asset['name'].match(regex)
+      json.filter_map do |release|
+        matched = release["assets"].filter_map do |asset|
+          match = asset["name"].match(regex)
           next if match.blank?
+
           match[1]
-        end.compact.first
+        end.first
 
         next if matched.blank?
 
         matched
-      end.compact.first
+      end.first
     end
   end
 
