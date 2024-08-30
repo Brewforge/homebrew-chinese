@@ -1,9 +1,9 @@
 cask "clash-nyanpasu" do
   arch arm: "x64", intel: "x64"
 
-  version "1.5.1"
-  sha256 arm:   "f2459742d58cb2f991fe3f396728c8c1879a072212a706af9e2a7cbea6fae3a5",
-         intel: "f2459742d58cb2f991fe3f396728c8c1879a072212a706af9e2a7cbea6fae3a5"
+  version "1.6.0"
+  sha256 arm:   "2f1e8d773097c1c61ffa0d1be6c4cbfa9a2d71745cc0d9ac8ed5215a4267b7a4",
+         intel: "2f1e8d773097c1c61ffa0d1be6c4cbfa9a2d71745cc0d9ac8ed5215a4267b7a4"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/keiko233/clash-nyanpasu/releases/download/v#{version}/Clash.Nyanpasu_#{version}_#{arch}.dmg"
