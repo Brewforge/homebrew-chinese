@@ -24,4 +24,8 @@ cask "texstudio-cn" do
     "~/Library/Preferences/texstudio.plist",
     "~/Library/Saved Application State/texstudio.savedState",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end
