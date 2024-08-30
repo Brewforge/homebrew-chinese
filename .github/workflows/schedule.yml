@@ -45,7 +45,7 @@ jobs:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         shell: bash -ieo pipefail {0}
         run: |
-          cp -rf ./ "$(brew --repository brewforge/chinese)"
+          rsync -lrv --exclude=.git "$(pwd)" "$(brew --repository brewforge/chinese)"
           cd "$(brew --repository brewforge/chinese)"
           ./.github/actions/bump-pr/script.sh
 
