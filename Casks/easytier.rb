@@ -21,7 +21,5 @@ cask "easytier" do
 
   app "easytier-gui.app"
 
-  zap trash: [
-    "~/Library/Logs/com.kkrainbow.easytier",
-  ]
+  zap trash: "~/Library/Logs/com.kkrainbow.easytier"
 end

@@ -3,7 +3,7 @@ cask "linkease" do
   sha256 :no_check
 
   url "https://fw8.koolcenter.com:5000/binary/LinkEase/Client/LinkEase.dmg",
-    verified: "fw8.koolcenter.com:5000/"
+      verified: "fw8.koolcenter.com:5000/"
   name "LinkEase"
   desc "一个可以随时随地远程连接个人 文件或设备的私有存储云"
   homepage "https://doc.linkease.com/"

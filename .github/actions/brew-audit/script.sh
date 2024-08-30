@@ -33,23 +33,24 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
 
   # ========================
   # style
-  echo "* Running brew style $item -v..."
+  echo "> Running brew style $item -v..."
   brew style "$item" -v
 
   if [ "$item_status" == "skipped" ]; then
     # skipped.
-    echo -e "$item: \033[0;31m$(echo "$item_obj" | jq -r '.messages[0]')\033[0m"
+    echo -e "> $item: \033[0;31m$(echo "$item_obj" | jq -r '.messages[0]')\033[0m"
     continue
   elif [ "$item_outdated" == "false" ]; then
     # up-to-date.
-    echo -e "$item: \033[0;32mUp-to-date\033[0m"
+    echo -e "> $item: \033[0;32mUp-to-date\033[0m"
     continue
   elif [ "$item_newer" == "true" ]; then
     # newer than upstream.
-    echo -e "$item: \033[0;33mNewer than upstream\033[0m"
+    echo -e "> $item: \033[0;33mNewer than upstream\033[0m"
     continue
   fi
 
+  # ========================
   # bump.
   echo "> Bumping $item from $item_version_current to $item_version_latest..."
 
@@ -66,20 +67,19 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
     continue
   fi
 
-  # ========================
   # dry-run
   _BUMP_OPTIONS="--no-audit --no-style --dry-run --verbose"
 
   if [ "$is_cask" != "null" ]; then
     # is_cask.
 
-    echo "* Running bump-cask-pr..."
+    echo "* Running brew bump-cask-pr "$item" --version="$item_version_latest" $_BUMP_OPTIONS..."
     brew bump-cask-pr "$item" --version="$item_version_latest" $_BUMP_OPTIONS
     # echo -e "\033[0;32m* TDOO: brew bump-cask-pr $item --version=$item_version_latest $_BUMP_OPTIONS\033[0m"
   elif [ "$is_formula" != "null" ]; then
     # is_formula.
 
-    echo "* Running brew bump-formula-pr..."
+    echo "* Running brew bump-formula-pr $item --version=$item_version_latest $_BUMP_OPTIONS..."
     # brew bump-formula-pr $item --version=$item_version_latest $_BUMP_OPTIONS
     echo -e "\033[0;33m* TDOO: brew bump-formula-pr $item --version=$item_version_latest $_BUMP_OPTIONS\033[0m"
   fi
