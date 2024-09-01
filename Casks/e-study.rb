@@ -11,7 +11,6 @@ cask "e-study" do
   livecheck do
     url :url
     strategy :extract_plist
-    # skip "知网限制境外IP访问，详情请查看 https://github.com/Brewforge/homebrew-chinese/pull/349"
   end
 
   auto_updates true
