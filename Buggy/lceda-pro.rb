@@ -1,9 +1,9 @@
 cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.1.59"
-  sha256 arm:   "f8ecc9b8b396fca3988db5eccbc81a8e7260cae55f963074ef492bcc796a3935",
-         intel: "2f7cd5e0dc6b55b1b676927eee53a2e9d0f21294be9d69a48135eecd7683dc84"
+  version "2.2.25.6"
+  sha256 arm: "bce33afcde33c9204c47ec4fe6e59b1593313ee12f71ad112180899aa540aae2",
+         intel: "76859d13679e146e7dee72ebc222c8ed348a946b66e5e3e84600131fab3adb6c"
 
   url "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip"
   name "嘉立创EDA(专业版)"
@@ -12,9 +12,21 @@ cask "lceda-pro" do
 
   auto_updates true
 
+  installer script: {
+    executable: "/usr/local/bin/unzip",
+    args: [
+      "-j",
+      "#{staged_path}/lceda-pro-mac-#{arch}-#{version}.zip",
+      "*.app/*",
+      "-d",
+      "/Applications"
+    ],
+  }
 
-  app "嘉立创EDA(专业版).app"
+  # 不需要 app stanza，因为我们在 preflight 中手动移动了应用
+  # app "LCEDA-Pro.app"
 
-  # zap trash: [
-  # ]
+  zap trash: [
+    # 添加需要清理的文件或目录
+  ]
 end
