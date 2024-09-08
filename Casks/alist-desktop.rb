@@ -1,9 +1,9 @@
 cask "alist-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "3.36.0"
-  sha256 arm:   "a119f592b664e4d04657896a4e83a9704360afad886f68c962e9d30121178711",
-         intel: "7e04d2182ad8740c7ecb876385d212b373c3c4d64278417ee08604bfa26ca7b8"
+  version "3.37.0"
+  sha256 arm:   "ae26347e0920579d5841ce343b0560188f0fba7a95baf693e0ac9e7179fd46a1",
+         intel: "b3bfdbf00812a94a6d4b76ea8d6251228b0c33cbcd04fa717b6a580644b846d9"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_#{arch}.dmg"
