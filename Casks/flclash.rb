@@ -11,7 +11,7 @@ cask "flclash" do
   url "#{mirror}#{origin}",
       verified: "mirror.ghproxy.com/"
   name "FlClash"
-  desc "A multi-platform proxy client based on ClashMeta, simple and easy to use, open-source and ad-free"
+  desc "Multi-platform proxy client based on ClashMeta"
   homepage "https://github.com/chen08209/FlClash"
 
   livecheck do
