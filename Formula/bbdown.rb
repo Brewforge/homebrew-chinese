@@ -1,8 +1,8 @@
 class Bbdown < Formula
   desc "Bilibili Downloader"
   homepage "https://github.com/nilaoda/BBDown"
-  version "1.6.2,20240512"
   url "https://github.com/nilaoda/BBDown/releases/download/#{version.to_s.split(",")[0]}/BBDown_#{version.to_s.tr(",", "_")}_#{OS.mac? ? "osx" : "linux"}-#{Hardware::CPU.arm? ? "arm64" : "x64"}.zip"
+  version "1.6.2,20240512"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
