@@ -2,14 +2,14 @@ cask "basictex-cn" do
   version "2024.0309"
   sha256 "42595c82f36b9271872e917a821b642f83831e867fe86bae5f6ab15f2fea350b"
 
-  url "https://mirrors.bfsu.edu.cn/CTAN/systems/mac/mactex/mactex-basictex-#{version.no_dots}.pkg",
-      verified: "mirrors.bfsu.edu.cn/CTAN/systems/mac/mactex/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex/mactex-basictex-#{version.no_dots}.pkg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex/"
   name "BasicTeX"
   desc "Compact TeX distribution as alternative to the full TeX Live / MacTeX"
   homepage "https://www.tug.org/mactex/morepackages.html"
 
   livecheck do
-    url "https://mirrors.bfsu.edu.cn/CTAN/systems/mac/mactex"
+    url "https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/mac/mactex"
     strategy :page_match do |page|
       match = page.match(/href=.*?mactex-basictex-(\d{4})(\d{2})(\d{2})\.pkg/)
       next if match.blank?

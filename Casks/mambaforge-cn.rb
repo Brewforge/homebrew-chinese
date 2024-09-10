@@ -5,14 +5,14 @@ cask "mambaforge-cn" do
   sha256 arm:   "204be9ff318a5b23f9466f8bbbf18f7e180c6ed393ffc2a9859d8ab06c474248",
          intel: "668e69e89e41c5e9bae4431cf4040346eb6e484831577a28795c44039f70798d"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Mambaforge-#{version}-MacOSX-#{arch}.sh",
-      verified: "mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Mambaforge-#{version}-MacOSX-#{arch}.sh",
+      verified: "mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/"
   name "mambaforge"
   desc "Minimal installer for conda with preinstalled support for Mamba"
   homepage "https://github.com/conda-forge/miniforge"
 
   livecheck do
-    url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
+    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
     regex(/Mambaforge-(\d+(?:[.-]\d+)+)-MacOSX-#{arch}\.sh/i)
   end
 

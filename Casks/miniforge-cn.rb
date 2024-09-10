@@ -5,14 +5,14 @@ cask "miniforge-cn" do
   sha256 arm:   "2de2a2a31964be19ae157b5f93429cb50f8bf3983c580c8b14acefaf3d7e7c5b",
          intel: "03b73291d46199a40cb694a400010de9d737e6397d3eed676f28828fe2df5025"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-MacOSX-#{arch}.sh",
-      verified: "mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-MacOSX-#{arch}.sh",
+      verified: "mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/"
   name "miniforge"
   desc "Minimal installer for conda specific to conda-forge"
   homepage "https://github.com/conda-forge/miniforge"
 
   livecheck do
-    url "https://mirrors.bfsu.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
+    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
     regex(/Miniforge3-(\d+(?:[.-]\d+)+)-MacOSX-#{arch}\.sh/i)
   end
 

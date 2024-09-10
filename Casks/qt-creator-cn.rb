@@ -2,14 +2,14 @@ cask "qt-creator-cn" do
   version "13.0.2"
   sha256 "62b693289102f993d82b39443a783d3b080512b3334db5241c01dcce20b87432"
 
-  url "https://mirrors.bfsu.edu.cn/qt/official_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg",
-      verified: "mirrors.bfsu.edu.cn/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/"
   name "Qt Creator"
   desc "IDE for application development"
   homepage "https://www.qt.io/developers/"
 
   livecheck do
-    url "https://mirrors.bfsu.edu.cn/qt/official_releases/qtcreator/latest/"
+    url "https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/qtcreator/latest/"
     regex(/qt-creator-opensource-mac-x86_64-(.\d+(\.\d+)+)\.dmg/i)
   end
 
