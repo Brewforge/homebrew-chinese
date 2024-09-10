@@ -1,9 +1,9 @@
 cask "chaoxing-cxstudy" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.2.4"
-  sha256 arm:   "0319a3ac650cf7d3e5609b712777f3e7105f8851d2e7f2b43ebd19abb0401b09",
-         intel: "49aaf91f1283b4f6334ff61751b1d036115392a6279d0a08652c7578178ca4d8"
+  version "1.2.5"
+  sha256 arm:   "419384683b511f0db3e6b788f84023e520436baeda9e1f655a23b52b3078b657",
+         intel: "ea004f8fa4db5a02d814261ca4ae232df5c5290dc94c70e60527bbcdf6654349"
 
   url "https://app.chaoxing.com/apis/apk/apk.jspx?apkid=com.chaoxing.cxstudy.#{arch}"
   name "CXStudy"
