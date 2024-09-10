@@ -13,7 +13,7 @@ cask "vscodium-cn" do
 
   livecheck do
     url "https://mirrors.bfsu.edu.cn/github-release/VSCodium/vscodium/LatestRelease"
-    regex(/VSCodium\.#{arch}\.(\d+(\.\d+)+)\.dmg/i)
+    regex(/VScodium\.#{arch}\.v?(\d+(\.\d+)+)\.(dmg|pkg)$/i)
   end
 
   auto_updates true
