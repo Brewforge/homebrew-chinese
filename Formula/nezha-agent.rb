@@ -1,8 +1,8 @@
 class NezhaAgent < Formula
-  version "0.16.9"
   desc "哪吒监控服务"
   homepage "https://nezha.wiki/"
   url "https://github.com/nezhahq/agent/releases/download/v#{version}/nezha-agent_darwin_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.zip"
+  version "0.16.9"
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.arm?

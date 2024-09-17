@@ -1,9 +1,9 @@
 class AlistCli < Formula
-  version "3.33.0"
   desc "File list program that supports multiple storage, powered by Gin and Solidjs"
   homepage "https://github.com/alist-org/alist"
   url "https://mirror.ghproxy.com/https://github.com/alist-org/alist/releases/download/v#{version}/alist-#{OS.mac? ? "darwin" : "linux"}-#{Hardware::CPU.arm? ? "arm64" : "amd64"}.tar.gz",
       verified: "mirror.ghproxy.com/"
+  version "3.33.0"
   license "AGPL-3.0"
 
   if OS.mac? && Hardware::CPU.arm?
