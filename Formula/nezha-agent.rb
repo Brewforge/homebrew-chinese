@@ -1,13 +1,18 @@
 class NezhaAgent < Formula
   desc "哪吒监控服务"
   homepage "https://nezha.wiki/"
-  url "https://github.com/nezhahq/agent/releases/download/v#{version}/nezha-agent_darwin_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.zip"
+
   version "0.16.9"
   license "Apache-2.0"
 
+  mirror = "https://mirror.ghproxy.com/"
   if OS.mac? && Hardware::CPU.arm?
+    url "#{mirror}https://github.com/nezhahq/agent/releases/download/v#{version}/nezha-agent_darwin_arm64.zip",
+      verified: "mirror.ghproxy.com/"
     sha256 "b1629dcdc065d847d591548b906cc65021d72be81108650847ff3c52edc635c5"
   elsif OS.mac? && !Hardware::CPU.arm?
+    url "#{mirror}https://github.com/nezhahq/agent/releases/download/v#{version}/nezha-agent_darwin_amd64.zip",
+      verified: "mirror.ghproxy.com/"
     sha256 "b3ffb7edffb7926df8e053dff4b709e4a599a366f4bbde1c73c1a003c178eb33"
   end
 

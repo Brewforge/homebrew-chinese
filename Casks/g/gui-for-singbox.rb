@@ -11,7 +11,7 @@ cask "gui-for-singbox" do
   url "#{mirror}#{origin}",
       verified: "mirror.ghproxy.com/"
   name "GUI.for.SingBox"
-  desc "GUI for SingBox"
+  desc "SingBox GUI"
   homepage "https://github.com/GUI-for-Cores/GUI.for.SingBox"
 
   livecheck do
