@@ -1,8 +1,8 @@
 class Makemf < Formula
+  version "0.2.2"
   desc "让 GGUF 在 Ollama 中运行"
   homepage "https://github.com/Mrered/Gobin"
   url "https://github.com/Mrered/Gobin/releases/download/v#{version}/makemf_#{version}_#{OS.mac? ? "darwin" : "linux"}_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.tar.gz"
-  version "0.2.2"
 
   if OS.mac? && Hardware::CPU.arm?
     sha256 "d1a4fdd94b56253f76d572cede00dba7e17ebe4bb6d4e0bd2b2d28baa2cda20f"
