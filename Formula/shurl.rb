@@ -6,7 +6,6 @@ class Shurl < Formula
       verified: "mirror.ghproxy.com/"
   sha256 "ae374314f6e87415a008cb035237ba8fef3207bd240de70e783e9619a829227f"
   license "MIT"
-  version_scheme 1
 
   livecheck do
     url :homepage

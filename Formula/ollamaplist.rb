@@ -11,7 +11,7 @@ class Ollamaplist < Formula
   end
 
   livecheck do
-    url "https://github.com/Mrered/Gobin/releases"
+    url :homepage
     strategy :github_latest
   end
 

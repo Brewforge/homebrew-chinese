@@ -16,7 +16,7 @@ class Bbdown < Formula
   end
 
   livecheck do
-    url "https://github.com/nilaoda/BBDown/releases"
+    url :homepage
     regex(/([\.|\d]+_\d{8})/i)
     strategy :github_latest do |json, regex|
       matched = json["assets"].filter_map do |asset|

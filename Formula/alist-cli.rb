@@ -17,7 +17,7 @@ class AlistCli < Formula
   end
 
   livecheck do
-    url "https://github.com/alist-org/alist/releases"
+    url :homepage
     strategy :github_latest
   end
 
