@@ -21,17 +21,17 @@ cask "lceda-pro" do
 
   installer script: {
     executable: "/usr/bin/tar",
-    args: [
+    args:       [
       "-xvf",
       "#{staged_path}/lceda-pro-mac-#{arch}-#{version}.zip",
       "*.app/*",
       "-d",
-      "/Applications"
+      "/Applications",
     ],
   }
   binary "#{appdir}/LCEDA-Pro.app/Contents/MacOS/LCEDA-Pro"
 
-  uninstall delete: "#{caskroom_path}"
+  uninstall delete: caskroom_path.to_s
 
   zap trash: ""
 end
