@@ -17,12 +17,12 @@ cask "lceda-pro" do
 
   auto_updates true
 
-  app "LCEDA-Pro.app"
+  # app "LCEDA-Pro.app"
 
   installer script: {
-    executable: "/usr/bin/unzip",
+    executable: "/usr/bin/tar",
     args: [
-      "-j",
+      "-xvf",
       "#{staged_path}/lceda-pro-mac-#{arch}-#{version}.zip",
       "*.app/*",
       "-d",
@@ -30,7 +30,5 @@ cask "lceda-pro" do
     ],
   }
 
-  zap trash: [
-    # 添加需要清理的文件或目录
-  ]
+  zap trash: ""
 end
