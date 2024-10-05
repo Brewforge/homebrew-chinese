@@ -1,6 +1,6 @@
 cask "clashx-meta" do
-  version "1.4.2"
-  sha256 "760188a15df1ccfde907d5fd0ffbc8ff7ea47e12497950752b7f9c3465561bee"
+  version "1.4.3"
+  sha256 "e8f0b2ef53d73b34d01ec7de1eef4b742cb43afe33a2fbe06986cd06e8ab3e49"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
