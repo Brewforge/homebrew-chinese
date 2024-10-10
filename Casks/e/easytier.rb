@@ -1,9 +1,9 @@
 cask "easytier" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.0.1"
-  sha256 arm:   "524b510cd346b8cb393d2f4cd0179b18b7496eb0db4692088e1aa6322206f3fa",
-         intel: "5918f6f1a76d16e6eb8f0dd390e09373b82ee9e4b4f005c23e62a5fde8b6e0e3"
+  version "2.0.2"
+  sha256 arm:   "22142a82910249d43ea512168bf3145ae396cfb4778cf31e95a0d63301789582",
+         intel: "2e1b94d13ea0431d2bd634af298688791edce0d6a4df34e7de438f7c629ff55a"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/EasyTier/EasyTier/releases/download/v#{version}/easytier-gui_#{version}_#{arch}.dmg"
