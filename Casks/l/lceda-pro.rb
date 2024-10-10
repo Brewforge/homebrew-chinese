@@ -35,5 +35,5 @@ cask "lceda-pro" do
 
   uninstall delete: #{caskroom_path}.to_s
 
-  zap trash: ""
+  zap trash: []
 end
