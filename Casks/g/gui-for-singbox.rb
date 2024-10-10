@@ -1,9 +1,9 @@
 cask "gui-for-singbox" do
   arch arm: "arm64", intel: "amd64"
 
-  version "1.8.6"
-  sha256 arm:   "611bd8cd49809e236a7f973fea4d9b96cbd5af44cd13b03704e677746b517b8c",
-         intel: "4348eb6985a2ab2b8eea510a75b002edb48fde0ae7c2cf353467a49f1a79100c"
+  version "1.8.7"
+  sha256 arm:   "14d6e8c7a5b663fe9804970ce1b7bb69411b9acbf1d9498ee9920be6135317ca",
+         intel: "c0b04a039fcd94c52f17bbf47981a0af29ae697c906a79eaad1f025133d77e7e"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v#{version}/GUI.for.SingBox-darwin-#{arch}.zip"
