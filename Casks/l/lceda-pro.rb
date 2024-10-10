@@ -27,13 +27,13 @@ cask "lceda-pro" do
     args:       [
       "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip",
       "#{staged_path}/lceda-pro-mac-#{arch}-#{version}.zip",
-      appdir.to_s,
+      "#{appdir}",
     ],
   }
 
   # binary "#{appdir}/LCEDA-Pro.app/Contents/MacOS/LCEDA-Pro"
 
-  uninstall delete: #{caskroom_path}.to_s
+  uninstall delete: "#{caskroom_path}"
 
   zap trash: []
 end
