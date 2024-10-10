@@ -33,7 +33,7 @@ cask "lceda-pro" do
 
   # binary "#{appdir}/LCEDA-Pro.app/Contents/MacOS/LCEDA-Pro"
 
-  uninstall delete: caskroom_path.to_s
+  uninstall delete: #{caskroom_path}.to_s
 
   zap trash: ""
 end
