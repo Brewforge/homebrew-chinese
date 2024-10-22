@@ -5,21 +5,21 @@ class Bbdown < Formula
 
   mirror = "https://mirror.ghproxy.com/"
   if OS.mac? && Hardware::CPU.arm?
-    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.2/BBDown_1.6.2_20240512_osx-arm64.zip",
+    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.3/BBDown_1.6.3_20240814_osx-arm64.zip",
       verified: "mirror.ghproxy.com/"
-    sha256 "65e81ecdf574c2ee8d2d7c36afcc17a67c53e0172acc6f8f642d89da698ed44d"
+    sha256 "4df84014d818bd6dff2b365b847645340e8955c4450fe965688f41af89a38baa"
   elsif OS.mac? && !Hardware::CPU.arm?
-    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.2/BBDown_1.6.2_20240512_osx-x64.zip",
+    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.3/BBDown_1.6.3_20240814_osx-x64.zip",
       verified: "mirror.ghproxy.com/"
-    sha256 "69e8f1affbbd479847a0d169e23ed4be8051d1627e0067dd9fc1711f72401a6a"
+    sha256 "262c15ca7890898560d00e5ffd5ada1864fbd9d0d58ac4ee492c9f3e73f3ae5f"
   elsif !OS.mac? && Hardware::CPU.arm?
-    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.2/BBDown_1.6.2_20240512_linux-arm64.zip",
+    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.3/BBDown_1.6.3_20240814_linux-arm64.zip",
       verified: "mirror.ghproxy.com/"
     sha256 "5bb1ab8987a33be08ad07367d2e70ea4f18868ba4538a77019aba48e76ed7892"
   elsif !OS.mac? && !Hardware::CPU.arm?
-    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.2/BBDown_1.6.2_20240512_linux-x64.zip",
+    url "#{mirror}https://github.com/nilaoda/BBDown/releases/download/1.6.3/BBDown_1.6.3_20240814_linux-x64.zip",
       verified: "mirror.ghproxy.com/"
-    sha256 "69e8f1affbbd479847a0d169e23ed4be8051d1627e0067dd9fc1711f72401a6a"
+    sha256 "ec233b7d8d40b1cc4447dac05be343f53a757dc605743a8808abaa8e97e5d10e"
   end
 
   livecheck do
@@ -41,5 +41,9 @@ class Bbdown < Formula
 
   def install
     bin.install "BBDown"
+  end
+
+  test do
+    system bin/"BBDown", "--version"
   end
 end
