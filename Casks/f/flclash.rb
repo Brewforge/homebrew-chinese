@@ -1,9 +1,9 @@
 cask "flclash" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.8.65"
-  sha256 arm:   "5fb8bc58d354e5327354b649a0aac1b598a81a822c92a5d3f6085301481693c1",
-         intel: "9adbccb436e5fa2235011542d57f35bdf58acaaeaf4171dc007abf2d3befe02f"
+  version "0.8.66"
+  sha256 arm:   "21271431695fb07571e8bf4b81952cceab265ab712ba0fa1ed7791e549483d7f",
+         intel: "4ca4e35318f388fe3d9b5eede46105b5d8943d12e0dae4de4892e2ca03185bf7"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/chen08209/FlClash/releases/download/v#{version}/FlClash-#{version}-macos-#{arch}.dmg"
