@@ -1,5 +1,5 @@
 cask "i4tools" do
-  version "3.10.005"
+  version "3.11.005"
   sha256 :no_check
 
   url "https://url.i4.cn/fqIBBbaa"
