@@ -12,14 +12,6 @@
 - [x] 面向中国用户的未被官方库收录的软件
 - [x] 面向中国用户的国产商业软件
 
-⚠️ [原仓库（ivaquero/homebrew-chinese）](https://github.com/ivaquero/legacy-homebrew-chinese) 的老顾客，请执行如下命令：
-
-```bash
-brew tap brewforge/chinese
-brew tap brewforge/extras
-rm -rf $(brew --repository)/Library/Taps/ivaquero/homebrew-chinese
-```
-
 👏 欢迎参与[仓库建设讨论](https://github.com/orgs/Brewforge/discussions) 🎙️
 
 ## 📝 太长不看
