@@ -2,8 +2,8 @@ cask "quarkclouddrive" do
   arch arm: "-arm", intel: ""
   key = on_arch_conditional arm: "ForArmUrl", intel: "DmgUrl"
 
-  version "3.14.1,1975630-20241107135827,ssywxxywustwsu8uw"
-  sha256 "7be07f49f62cb272cfc05a7ce7df8e5aa761f241380a63d058cdaae240e0ea92"
+  version "3.14.2,1983083-20241114122239,uu6yz7yvwuvyuw8wv"
+  sha256 "8fcac2bee0b006e96855b90c8c651aab7ed4d9de82ec75ba4d5700c29347fa7a"
 
   url "https://pdds.quark.cn/download/stfile/#{version.csv.third}/QuarkCloudDrive_v#{version.csv.first}_release2_(Build#{version.csv.second}).dmg"
   name "夸克网盘"
