@@ -1,12 +1,12 @@
 class Alist < Formula
   desc "File list program that supports multiple storage, powered by Gin and Solidjs"
   homepage "https://alist.nn.ci/"
-  version "3.38.0"
+  version "3.40.0"
   license "AGPL-3.0-only"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/AlistGo/alist/releases/download/v#{version}/alist-darwin-arm64.tar.gz"
-    sha256 "2d6678a48344cdc809451ab4795ada27fe60f805e8d5249b84cbf46dadd13163"
+    sha256 "49d4a3797633a2f3c109afe425f11a6d12152601e0bf648aab631ecd4fdff142"
   elsif OS.mac? && !Hardware::CPU.arm?
     url "https://github.com/AlistGo/alist/releases/download/v#{version}/alist-darwin-amd64.tar.gz"
     sha256 "39d43c1f3c70510075e9e9e3e159a647d25bd35461b1c5582a6d3ef88cb51a5f"
