@@ -5,14 +5,14 @@ cask "vscodium-cn" do
   sha256 arm:   "9f595394c745339a8ed95b984f5728e78f6e543d2a244b821b250dad6fdd0d3b",
          intel: "23cc8291acdadc6fcc84ad662ee28f31694e3198f08481e61604c3cdd3689612"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease/VSCodium.#{arch}.#{version}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/github-release/"
+  url "https://mirrors.bfsu.edu.cn/github-release/VSCodium/vscodium/LatestRelease/VSCodium.#{arch}.#{version}.dmg",
+      verified: "mirrors.bfsu.edu.cn/github-release/"
   name "VSCodium"
   desc "Binary releases of VS Code without MS branding/telemetry/licensing"
   homepage "https://github.com/VSCodium/vscodium"
 
   livecheck do
-    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/VSCodium/vscodium/LatestRelease"
+    url "https://mirrors.bfsu.edu.cn/github-release/VSCodium/vscodium/LatestRelease"
     regex(/VScodium\.#{arch}\.v?(\d+(\.\d+)+)\.dmg/i)
   end
 
