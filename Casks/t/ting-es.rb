@@ -7,6 +7,7 @@ cask "ting-es" do
       verified:   "static.frdic.com/",
       user_agent: :fake
   name "每日西语听力"
+  desc "精听细读，更好学西语"
   homepage "http://www.francochinois.com/v4/es/app/ting"
 
   livecheck do
