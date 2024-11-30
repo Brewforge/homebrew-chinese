@@ -42,7 +42,7 @@ cask "copybook" do
     "~/Library/Containers/top.mydata.copybook",
   ]
 
-  # caveats do
-  #   requires_rosetta
-  # end
+  caveats do
+    requires_rosetta
+  end
 end
