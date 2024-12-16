@@ -19,7 +19,7 @@ cask "mimoho-party" do
         strategy :github_latest
     end
 
-    depends_on macos: ">= :mojave"
+    depends_on macos: ">= :big_sur"
 
     pkg "mihomo-party-macos-#{version}-#{arch}.pkg"
 
