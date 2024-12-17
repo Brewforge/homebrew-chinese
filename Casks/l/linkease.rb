@@ -22,4 +22,8 @@ cask "linkease" do
     "~/Library/Preferences/com.LinkEase.LinkEase.plist",
     "~/Library/Webkit/com.LinkEase.LinkEase",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end
