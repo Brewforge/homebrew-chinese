@@ -1,6 +1,6 @@
 cask "alist-helper" do
-  version "0.1.5"
-  sha256 "107fde1e0b9315dbafd36656c09ad434a6bb45474d3d0a60e14d831f5fb7f684"
+  version "0.2.0"
+  sha256 "969f14af3c422b33f9e818689e34401cdd4f0f9eb9f4c72f3a444f0e7ee33825"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/Xmarmalade/alisthelper/releases/download/v#{version}/AlistHelper_app_v#{version}_macos-x86_64.tar.gz"
