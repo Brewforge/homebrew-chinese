@@ -1,6 +1,6 @@
 cask "noteey" do
-  version "1.12.0"
-  sha256 "28971f0fa511bf6457835234f752cecc2b8bb37ed856e6a41433d141c2ab9c64"
+  version "1.13.0"
+  sha256 "9c3d6af86da8927b394a8eab79e3363b68d2c8fe82ab226019c59c17bcd138d7"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/andyyoungm/muenzo/releases/download/v#{version}/Noteey-#{version}.universal.dmg"
