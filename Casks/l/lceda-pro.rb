@@ -1,4 +1,3 @@
-# Example: https://github.com/Homebrew/homebrew-cask/blob/master/Casks/a/anaconda.rb
 cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
