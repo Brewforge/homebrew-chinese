@@ -1,9 +1,9 @@
 cask "easyspider" do
   arch arm: "Apple_Arm", intel: "Intel"
 
-  version "0.6.2"
-  sha256 arm:   "54b6a96de81e8b1456807dc9773973411fdc61653b874cc75c93a91621a759bd",
-         intel: "5633656e9e78fe5590563ce59132320ef228708843f7ac368dd470f535acb8fb"
+  version "0.6.3"
+  sha256 arm:   "9ea5e464d03e3e43b4dc74509ad94d9946f370b1533fdf1a8a8cfdae9cbbd812",
+         intel: "1e5b3d1fa0fccce8c1a137927101d2ace027dfaf1cfad886f7d75309cedf9a29"
 
   url "https://github.com/NaiboWang/EasySpider/releases/download/v#{version}/EasySpider_#{version}_MacOS_#{arch}_Chip.7z",
       verified: "github.com/NaiboWang/EasySpider/"
