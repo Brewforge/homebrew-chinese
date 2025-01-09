@@ -1,7 +1,7 @@
 cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.2.34.8"
+  version "2.2.35.1"
   sha256 arm:   "0adf3ee96c7777cf72f7db11a77b051888648589f89e4050c32ac4fde50fcf23",
          intel: "0adf3ee96c7777cf72f7db11a77b051888648589f89e4050c32ac4fde50fcf23"
 
