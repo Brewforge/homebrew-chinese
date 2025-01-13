@@ -1,9 +1,9 @@
 cask "mimoho-party" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.5.12"
-  sha256 arm:   "4d047be0105e686914d35c77520d89b7b8d86bb9c2c30a66928c4c57632b5ff3",
-         intel: "eb1528be2b251ab7d3457b5758cfe5b4332c4eaff536ed988c7332f4c44e810b"
+  version "1.6.0"
+  sha256 arm:   "fc97e86b73fdc2ae6a6827618d565dc4a9c97606139050bc6d263999cc49e28f",
+         intel: "3dc5653bc8a34249b986e6c74b6dab732b7c930bcf325749a68f565ef7ca7b78"
 
   mirror = "https://mirror.ghproxy.com/"
   origin = "https://github.com/mihomo-party-org/mihomo-party/releases/download/v#{version}/mihomo-party-macos-#{version}-#{arch}.pkg"
