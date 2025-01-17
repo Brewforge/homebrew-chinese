@@ -3,7 +3,12 @@ cask "e-study" do
   sha256 :no_check
 
   url "https://download.cnki.net/CNKI%20E-Study%20For%20Mac.dmg",
-      user_agent: :fake
+      user_agent: :fake,
+      header:     [
+        "Referer: https://estudy.cnki.net/",
+        "CLIENT-IP: 115.239.211.92", # 杭州 IP
+        "X-Forwarded-For: 115.239.211.92", # 杭州 IP
+      ]
   name "e-study"
   desc "Essential Tools for Brainiacs"
   homepage "https://estudy.cnki.net/"
