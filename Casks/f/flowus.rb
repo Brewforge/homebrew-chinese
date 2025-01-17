@@ -9,7 +9,10 @@ cask "flowus" do
          intel: "48a38173a7181bd24f647d162488284a94e5cbf8678b15de8bbe41d5dbad4bd4"
 
   url "https://desktopdownload2.flowus.cn/production/mac/flowus-mac-#{arch}.zip",
-      user_agent: :fake
+      user_agent: :fake,
+      header: [
+        "Referer: https://flowus.cn/"
+      ]
   name "flowus"
   desc "类 Notion 和飞书的笔记协作软件"
   homepage "https://flowus.cn/"
@@ -32,6 +35,11 @@ cask "flowus" do
 
   app "flowus.app"
 
-  # zap trash: [
-  # ]
+  zap trash: [
+    "/Applications/flowus.app",
+    "~/Library/Application Support/FlowUs",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flowus.app.sfl3",
+    "~/Library/Preferences/com.flowus.app.plist",
+    "~/Library/Saved Application State/com.flowus.app.savedState"
+  ]
 end
