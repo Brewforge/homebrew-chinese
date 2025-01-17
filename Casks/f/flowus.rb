@@ -9,6 +9,8 @@ cask "flowus" do
       user_agent: :fake,
       header:     [
         "Referer: https://flowus.cn/",
+        "CLIENT-IP: 115.239.211.92", # 杭州 IP
+        "X-Forwarded-For: 115.239.211.92", # 杭州 IP
       ]
   name "flowus"
   desc "类 Notion 和飞书的笔记协作软件"
