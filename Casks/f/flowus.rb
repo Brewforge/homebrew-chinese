@@ -1,3 +1,6 @@
+require "net/http"
+require "uri"
+
 cask "flowus" do
   arch arm: "arm64", intel: "x64"
 
@@ -6,20 +9,37 @@ cask "flowus" do
          intel: "48a38173a7181bd24f647d162488284a94e5cbf8678b15de8bbe41d5dbad4bd4"
 
   url "https://desktopdownload2.flowus.cn/production/mac/flowus-mac-#{arch}.zip",
-      user_agent: :fake
+      user_agent: :fake,
+      header:     [
+        "Referer: https://flowus.cn/",
+      ]
   name "flowus"
   desc "类 Notion 和飞书的笔记协作软件"
   homepage "https://flowus.cn/"
 
   livecheck do
     url "https://flowus.cn/download"
-    regex(/"(\d{2,3})"/i)
+    strategy :page_match do |page|
+      page.scan(/download-([0-9a-f]+)\.js/).map do |match|
+        uri = URI("https://cdn2.flowus.cn/assets/_next/static/chunks/pages/download-#{match[0]}.js")
+        res = Net::HTTP.get_response(uri)
+
+        next unless res.is_a?(Net::HTTPSuccess)
+
+        res.body.match(/macVersion:"([^"]+)"/)[1]
+      end
+    end
   end
 
   auto_updates true
 
   app "flowus.app"
 
-  # zap trash: [
-  # ]
+  zap trash: [
+    "/Applications/flowus.app",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flowus.app.sfl*",
+    "~/Library/Application Support/FlowUs",
+    "~/Library/Preferences/com.flowus.app.plist",
+    "~/Library/Saved Application State/com.flowus.app.savedState",
+  ]
 end
