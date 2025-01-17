@@ -10,8 +10,8 @@ cask "flowus" do
 
   url "https://desktopdownload2.flowus.cn/production/mac/flowus-mac-#{arch}.zip",
       user_agent: :fake,
-      header: [
-        "Referer: https://flowus.cn/"
+      header:     [
+        "Referer: https://flowus.cn/",
       ]
   name "flowus"
   desc "类 Notion 和飞书的笔记协作软件"
@@ -20,7 +20,7 @@ cask "flowus" do
   livecheck do
     url "https://flowus.cn/download"
     strategy :page_match do |page|
-      page.scan(%r{download-([0-9a-f]+)\.js}).map do |match|
+      page.scan(/download-([0-9a-f]+)\.js/).map do |match|
         uri = URI("https://cdn2.flowus.cn/assets/_next/static/chunks/pages/download-#{match[0]}.js")
         res = Net::HTTP.get_response(uri)
 
@@ -37,9 +37,9 @@ cask "flowus" do
 
   zap trash: [
     "/Applications/flowus.app",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flowus.app.sfl*",
     "~/Library/Application Support/FlowUs",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flowus.app.sfl3",
     "~/Library/Preferences/com.flowus.app.plist",
-    "~/Library/Saved Application State/com.flowus.app.savedState"
+    "~/Library/Saved Application State/com.flowus.app.savedState",
   ]
 end
