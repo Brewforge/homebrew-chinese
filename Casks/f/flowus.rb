@@ -1,3 +1,6 @@
+require "net/http"
+require "uri"
+
 cask "flowus" do
   arch arm: "arm64", intel: "x64"
 
@@ -13,7 +16,16 @@ cask "flowus" do
 
   livecheck do
     url "https://flowus.cn/download"
-    regex(/"(\d{2,3})"/i)
+    strategy :page_match do |page|
+      page.scan(%r{download-([0-9a-f]+)\.js}).map do |match|
+        uri = URI("https://cdn2.flowus.cn/assets/_next/static/chunks/pages/download-#{match[0]}.js")
+        res = Net::HTTP.get_response(uri)
+
+        next unless res.is_a?(Net::HTTPSuccess)
+
+        res.body.match(/macVersion:"([^"]+)"/)[1]
+      end
+    end
   end
 
   auto_updates true
