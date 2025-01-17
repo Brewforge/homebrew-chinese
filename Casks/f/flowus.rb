@@ -4,7 +4,7 @@ require "uri"
 cask "flowus" do
   arch arm: "arm64", intel: "x64"
 
-  version "120"
+  version "1.1.0"
   sha256 arm:   "358af712f5aaffea5b5141e75860e18b57bd6139088a1f5f565d73287777971d",
          intel: "48a38173a7181bd24f647d162488284a94e5cbf8678b15de8bbe41d5dbad4bd4"
 
