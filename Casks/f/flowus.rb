@@ -31,7 +31,7 @@ cask "flowus" do
     #     res.body.match(/macVersion:"([^"]+)"/)[1]
     #   end
     # end
-    skip "header error in PR"
+    skip "无 header，无法通过 PR"
   end
 
   auto_updates true
