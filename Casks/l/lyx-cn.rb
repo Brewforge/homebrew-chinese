@@ -2,8 +2,8 @@ cask "lyx-cn" do
   version "2.4.2.1"
   sha256 "401eb85e5b7754c29764c514ca984d5c3924aa20ed55b53cf5b7f9a480e6ea59"
 
-  url "https://mirrors.bfsu.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64-arm64-cocoa.dmg",
-      verified: "mirrors.bfsu.edu.cn/lyx/bin/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64-arm64-cocoa.dmg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/lyx/bin/"
   name "LyX"
   desc "GUI document processor based on the LaTeX typesetting system"
   homepage "https://www.lyx.org/"
