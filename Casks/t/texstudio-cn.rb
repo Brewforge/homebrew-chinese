@@ -2,7 +2,7 @@ cask "texstudio-cn" do
   version "4.8.4"
   sha256 "43f70201a54d3622983093d99636529935a6d911a5cd99f70637c35f052ccd6e"
 
-  url "https://mirrors.bfsu.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/texstudio-#{version}-osx.dmg",
+  url "https://mirrors.bfsu.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/texstudio-#{version}-osx.zip",
       verified: "mirrors.bfsu.edu.cn/github-release/texstudio-org/"
   name "TeXstudio"
   desc "LaTeX editor"
