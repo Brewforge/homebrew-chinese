@@ -10,7 +10,7 @@ cask "texstudio-cn" do
 
   livecheck do
     url "https://mirrors.bfsu.edu.cn/github-release/texstudio-org/texstudio/LatestRelease"
-    regex(/texstudio-(\d+(\.\d+){2})-osx\.dmg/i)
+    regex(/texstudio-(\d+(\.\d+){2})-osx\.zip/i)
   end
 
   auto_updates true

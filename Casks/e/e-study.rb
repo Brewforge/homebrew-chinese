@@ -1,5 +1,5 @@
 cask "e-study" do
-  version "4.3.1,285"
+  version "4.3.1"
   sha256 :no_check
 
   url "https://download.cnki.net/CNKI%20E-Study%20For%20Mac.dmg",
@@ -14,8 +14,8 @@ cask "e-study" do
   homepage "https://estudy.cnki.net/"
 
   livecheck do
-    url :url
-    strategy :extract_plist
+    url :homepage
+    regex(/Mac(\d+(\.\d+){2})客户端下载/i)
   end
 
   auto_updates true

@@ -13,7 +13,7 @@ cask "lingquan" do
 
   livecheck do
     url "https://help.lingquan.cool/blog/"
-    regex(/\d{2} v(\d+(\.\d+)+)/i)
+    regex(/\d{4}-\d{2}-\d{2} v(\d+(\.\d+){2})/i)
   end
 
   auto_updates true
