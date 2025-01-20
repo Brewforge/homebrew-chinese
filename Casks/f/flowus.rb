@@ -7,7 +7,7 @@ cask "flowus" do
 
   url "https://desktopdownload2.flowus.cn/production/mac/flowus-mac-#{arch}.zip",
       user_agent: :fake,
-      referer: "https://flowus.cn/",
+      referer:    "https://flowus.cn/",
       header:     [
         "CLIENT-IP: 115.239.211.92", # 杭州 IP
         "X-Forwarded-For: 115.239.211.92", # 杭州 IP
