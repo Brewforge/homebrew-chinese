@@ -7,8 +7,8 @@ cask "flowus" do
 
   url "https://desktopdownload2.flowus.cn/production/mac/flowus-mac-#{arch}.zip",
       user_agent: :fake,
+      referer: "https://flowus.cn/",
       header:     [
-        "Referer: https://flowus.cn/",
         "CLIENT-IP: 115.239.211.92", # 杭州 IP
         "X-Forwarded-For: 115.239.211.92", # 杭州 IP
       ]
@@ -18,20 +18,19 @@ cask "flowus" do
 
   livecheck do
     url "https://flowus.cn/download"
-    # strategy :page_match do |page|
-    #   require "net/http"
-    #   require "uri"
+    strategy :page_match do |page|
+      require "net/http"
+      require "uri"
 
-    #   page.scan(/download-([0-9a-f]+)\.js/).map do |match|
-    #     uri = URI("https://cdn2.flowus.cn/assets/_next/static/chunks/pages/download-#{match[0]}.js")
-    #     res = Net::HTTP.get_response(uri)
+      page.scan(/download-([0-9a-f]+)\.js/).map do |match|
+        uri = URI("https://cdn2.flowus.cn/assets/_next/static/chunks/pages/download-#{match[0]}.js")
+        res = Net::HTTP.get_response(uri)
 
-    #     next unless res.is_a?(Net::HTTPSuccess)
+        next unless res.is_a?(Net::HTTPSuccess)
 
-    #     res.body.match(/macVersion:"([^"]+)"/)[1]
-    #   end
-    # end
-    skip "无 header，无法通过 PR"
+        res.body.match(/macVersion:"([^"]+)"/)[1]
+      end
+    end
   end
 
   auto_updates true
