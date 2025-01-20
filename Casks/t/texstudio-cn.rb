@@ -5,14 +5,14 @@ cask "texstudio-cn" do
   sha256 arm:   "dd7b7b2d5918afe10c35ebdb06790b35b72364740faf9e35ef7b78b5dba456fc",
          intel: "1f1925bda6d82003481c1952f8702597dfb71657d2ad774e452af1e9e45036d4"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/texstudio-#{version}-osx#{arch}.zip",
-      verified: "mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/"
+  url "https://mirrors.bfsu.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/texstudio-#{version}-osx#{arch}.zip",
+      verified: "mirrors.bfsu.edu.cn/github-release/texstudio-org/"
   name "TeXstudio"
   desc "LaTeX editor"
   homepage "https://github.com/texstudio-org/texstudio/"
 
   livecheck do
-    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease"
+    url "https://mirrors.bfsu.edu.cn/github-release/texstudio-org/texstudio/LatestRelease"
     regex(/texstudio-(\d+(\.\d+){2})-osx\.zip/i)
   end
 
