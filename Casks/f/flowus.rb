@@ -1,13 +1,13 @@
 cask "flowus" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.1.0"
+  version "1.2.0"
   sha256 arm:   "358af712f5aaffea5b5141e75860e18b57bd6139088a1f5f565d73287777971d",
-         intel: "48a38173a7181bd24f647d162488284a94e5cbf8678b15de8bbe41d5dbad4bd4"
+         intel: "0ceb9a78974f3773b96d54024a89c5777eaadde08d5da5c2a35c0d90d36bf9b6"
 
   url "https://desktopdownload2.flowus.cn/production/mac/flowus-mac-#{arch}.zip",
       user_agent: :fake,
-      referer: "https://flowus.cn/",
+      referer:    "https://flowus.cn/",
       header:     [
         "CLIENT-IP: 115.239.211.92", # 杭州 IP
         "X-Forwarded-For: 115.239.211.92", # 杭州 IP
