@@ -4,7 +4,7 @@ cask "e-study" do
 
   url "https://download.cnki.net/CNKI%20E-Study%20For%20Mac.dmg",
       user_agent: :fake,
-      referer: "https://estudy.cnki.net/",
+      referer:    "https://estudy.cnki.net/",
       header:     [
         "CLIENT-IP: 115.239.211.92", # 杭州 IP
         "X-Forwarded-For: 115.239.211.92", # 杭州 IP
