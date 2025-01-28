@@ -73,7 +73,7 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
   if [ "$is_cask" != "null" ]; then
     # is_cask.
 
-    echo "* Running brew bump-cask-pr "$item" --version="$item_version_latest" $_BUMP_OPTIONS..."
+    echo "* Running brew bump-cask-pr $item --version=$item_version_latest $_BUMP_OPTIONS..."
     # brew bump-cask-pr "$item" --version="$item_version_latest" $_BUMP_OPTIONS
     echo -e "\033[0;32m* skip: brew bump-cask-pr $item --version=$item_version_latest $_BUMP_OPTIONS\033[0m"
   elif [ "$is_formula" != "null" ]; then
