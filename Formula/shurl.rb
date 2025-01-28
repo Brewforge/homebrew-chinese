@@ -1,10 +1,7 @@
 class Shurl < Formula
   desc "Self-built short chain shortcut based on YOURLS"
   homepage "https://github.com/Mrered/yourlsh"
-
-  mirror = "https://mirror.ghproxy.com/"
-  url "#{mirror}https://github.com/Mrered/yourlsh/releases/download/v2.0.0/shurl.tar.gz",
-      verified: "mirror.ghproxy.com/"
+  url "https://github.com/Mrered/yourlsh/releases/download/v2.0.0/shurl.tar.gz"
   sha256 "ae374314f6e87415a008cb035237ba8fef3207bd240de70e783e9619a829227f"
   license "MIT"
 
@@ -15,5 +12,9 @@ class Shurl < Formula
 
   def install
     bin.install "shurl"
+  end
+
+  test do
+    system bin/"shurl", "-h"
   end
 end
