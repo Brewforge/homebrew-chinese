@@ -31,10 +31,6 @@ class NezhaAgent < Formula
     bin.install "nezha-agent"
   end
 
-  test do
-    system bin/"nezha-agent", "-h"
-  end
-
   def caveats
     <<~EOS
       请先添加环境变量
@@ -48,5 +44,9 @@ class NezhaAgent < Formula
         brew reinstall nezha-agent
         brew services start nezha-agent
     EOS
+  end
+
+  test do
+    system bin/"nezha-agent", "-h"
   end
 end
