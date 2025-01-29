@@ -1,21 +1,21 @@
 class Alist < Formula
   desc "File list program that supports multiple storage, powered by Gin and Solidjs"
   homepage "https://alist.nn.ci/"
-  version "3.41.0"
+  version "3.42.0"
   license "AGPL-3.0-only"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/AlistGo/alist/releases/download/v3.41.0/alist-darwin-arm64.tar.gz"
+    url "https://github.com/AlistGo/alist/releases/download/v3.42.0/alist-darwin-arm64.tar.gz"
     sha256 "d2a33d52e95d5b79e02736fe5adba75c8af784848a403508312c16992f983192"
   elsif OS.mac? && !Hardware::CPU.arm?
-    url "https://github.com/AlistGo/alist/releases/download/v3.41.0/alist-darwin-amd64.tar.gz"
-    sha256 "39d43c1f3c70510075e9e9e3e159a647d25bd35461b1c5582a6d3ef88cb51a5f"
+    url "https://github.com/AlistGo/alist/releases/download/v3.42.0/alist-darwin-amd64.tar.gz"
+    sha256 "1d24f20c07a3e03d0b5643313f3f101eada35147d78bb39e06a9d5808a03ee51"
   elsif !OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/AlistGo/alist/releases/download/v3.41.0/alist-linux-arm64.tar.gz"
-    sha256 "1cb865edb99452dfd0fad35c4c4dbee45f9756259c2efda837fa5fdf7d7782f0"
+    url "https://github.com/AlistGo/alist/releases/download/v3.42.0/alist-linux-arm64.tar.gz"
+    sha256 "229fd1604f4a692065a9dd31fc2ddc50e7ec2050392081153807a4f0d411e4cf"
   elsif !OS.mac? && !Hardware::CPU.arm?
-    url "https://github.com/AlistGo/alist/releases/download/v3.41.0/alist-linux-amd64.tar.gz"
-    sha256 "24c034739f241783d844c1b14f4655e1b88d1cca5009c0df7f9de5c366522b4a"
+    url "https://github.com/AlistGo/alist/releases/download/v3.42.0/alist-linux-amd64.tar.gz"
+    sha256 "ae7a73dda8c9c2aff0089b07c240a8c9b98f8dffdd6aa448a51bf3bdf1f8ded0"
   end
 
   livecheck do
