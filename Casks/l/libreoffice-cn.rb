@@ -13,7 +13,7 @@ cask "libreoffice-cn" do
   homepage "https://www.libreoffice.org/"
 
   livecheck do
-    url "https://download.documentfoundation.org/libreoffice/stable/"
+    url "https://mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/"
     regex(%r{href="(\d+(?:\.\d+)+)/"}i)
   end
 
