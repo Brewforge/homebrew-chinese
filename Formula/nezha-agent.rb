@@ -1,15 +1,21 @@
 class NezhaAgent < Formula
   desc "哪吒监控服务"
   homepage "https://nezha.wiki/"
-  version "0.16.9"
+  version "1.6.1"
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/nezhahq/agent/releases/download/v0.16.9/nezha-agent_darwin_arm64.zip"
-    sha256 "b1629dcdc065d847d591548b906cc65021d72be81108650847ff3c52edc635c5"
+    url "https://github.com/nezhahq/agent/releases/download/v1.6.1/nezha-agent_darwin_arm64.zip"
+    sha256 "7cd06ec30054f9ed6194dce1f35af9e840eccb12ac063a46f44c5258c286fc9c"
   elsif OS.mac? && !Hardware::CPU.arm?
-    url "https://github.com/nezhahq/agent/releases/download/v0.16.9/nezha-agent_darwin_amd64.zip"
-    sha256 "b3ffb7edffb7926df8e053dff4b709e4a599a366f4bbde1c73c1a003c178eb33"
+    url "https://github.com/nezhahq/agent/releases/download/v1.6.1/nezha-agent_darwin_amd64.zip"
+    sha256 "9413f14b38662885419ef9b08da268a298f16647a451f6f239370a404fedab21"
+  elsif !OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/nezhahq/agent/releases/download/v1.6.1/nezha-agent_linux_arm64.zip"
+    sha256 "592008995d39aabfb3a313da86ffc4fecc4e2aea8ab0295006c8706d299c5f5b"
+  elsif !OS.mac? && !Hardware::CPU.arm?
+    url "https://github.com/nezhahq/agent/releases/download/v1.6.1/nezha-agent_linux_amd64.zip"
+    sha256 "56a40362b8c8b5b47238932a76dc880d3a7a749c0b1c6626f66549dd5a27381f"
   end
 
   service do
