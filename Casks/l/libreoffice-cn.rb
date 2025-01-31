@@ -13,8 +13,9 @@ cask "libreoffice-cn" do
   homepage "https://www.libreoffice.org/"
 
   livecheck do
-    url "https://mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/"
-    regex(%r{href="(\d+(?:\.\d+)+)/"}i)
+    # url "https://mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/"
+    # regex(%r{href="(\d+(?:\.\d+)+)/"}i)
+    skip "镜像故障，暂时跳过"
   end
 
   auto_updates true
