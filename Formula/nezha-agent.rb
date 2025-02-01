@@ -8,13 +8,13 @@ class NezhaAgent < Formula
     url "https://github.com/nezhahq/agent/releases/download/v1.7.0/nezha-agent_darwin_arm64.zip"
     sha256 "99be61c28d99aceda9f8353ba6f3387f8a1a3f8a71ca4e99b301501de58369a6"
   elsif OS.mac? && !Hardware::CPU.arm?
-    url "https://github.com/nezhahq/agent/releases/download/v1.6.1/nezha-agent_darwin_amd64.zip"
-    sha256 "9413f14b38662885419ef9b08da268a298f16647a451f6f239370a404fedab21"
+    url "https://github.com/nezhahq/agent/releases/download/v1.7.0/nezha-agent_darwin_amd64.zip"
+    sha256 "567a06e8b049e7373f022790d54aa05bcdf9741a37fd01d65a4687a52808a10e"
   elsif !OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/nezhahq/agent/releases/download/v1.6.1/nezha-agent_linux_arm64.zip"
+    url "https://github.com/nezhahq/agent/releases/download/v1.7.0/nezha-agent_linux_arm64.zip"
     sha256 "592008995d39aabfb3a313da86ffc4fecc4e2aea8ab0295006c8706d299c5f5b"
   elsif !OS.mac? && !Hardware::CPU.arm?
-    url "https://github.com/nezhahq/agent/releases/download/v1.6.1/nezha-agent_linux_amd64.zip"
+    url "https://github.com/nezhahq/agent/releases/download/v1.7.0/nezha-agent_linux_amd64.zip"
     sha256 "56a40362b8c8b5b47238932a76dc880d3a7a749c0b1c6626f66549dd5a27381f"
   end
 
