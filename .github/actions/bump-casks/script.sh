@@ -8,17 +8,16 @@ echo "> Running brew bump dry-run..."
 
 items=$(brew livecheck --tap brewforge/chinese --extract-plist --full-name --json || echo "[]")
 
-for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
+for item in $(echo "$items" | jq -r '.[] | .cask'); do
   if [ "$item" == "null" ]; then
     continue
   fi
 
   echo "---" # newline
 
-  item_obj=$(echo "$items" | jq --arg item "$item" '.[] | select(.formula == $item or .cask == $item)')
+  item_obj=$(echo "$items" | jq --arg item "$item" '.[] | select(.cask == $item)')
 
   is_cask=$(echo "$item_obj" | jq -r '.cask')
-  is_formula=$(echo "$item_obj" | jq -r '.formula')
 
   item_status=$(echo "$item_obj" | jq -r '.status')
   item_version_current=$(echo "$item_obj" | jq -r '.version.current')
@@ -40,7 +39,7 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
     continue
   fi
 
-  # bump.
+  # bump
   echo "> Bumping $item from $item_version_current to $item_version_latest..."
 
   if [ "$item_version_latest" == "null" ]; then
@@ -48,8 +47,6 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
 
     if [ -n "$is_cask" ]; then
       cat "$(brew edit --cask "$item" --print-path)"
-    elif [ -n "$is_formula" ]; then
-      cat "$(brew edit "$item" --print-path)"
     fi
 
     echo -e "\033[0;31m> Error: version.latest is null\033[0m"
@@ -66,12 +63,6 @@ for item in $(echo "$items" | jq -r '.[] | .formula, .cask'); do
     echo "* Running brew bump-cask-pr $item --version=$item_version_latest $_BUMP_OPTIONS..."
     brew bump-cask-pr "$item" --version="$item_version_latest" $_BUMP_OPTIONS
     # echo "* TDOO: brew bump-cask-pr $item --version=$item_version_latest $_BUMP_OPTIONS"
-  elif [ "$is_formula" != "null" ]; then
-    # is_formula.
-
-    echo "* Running brew bump-formula-pr $item --version=$item_version_latest $_BUMP_OPTIONS..."
-    brew bump-formula-pr "$item" --version="$item_version_latest" $_BUMP_OPTIONS
-    # echo -e "\033[0;33m* TDOO: brew bump-formula-pr $item --version=$item_version_latest $_BUMP_OPTIONS\033[0m"
   fi
 
   echo "> Done for $item"
