@@ -13,6 +13,9 @@ on:
   # allow run manually
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.head_ref || github.ref_name }}
+
 permissions: write-all
 
 env:
@@ -23,6 +26,32 @@ env:
   HOMEBREW_RELOCATABLE_INSTALL_NAMES: 1
 
 jobs:
+  tap-syntax:
+    if: "!contains(github.event.head_commit.message, 'skip-build')"
+    runs-on: ubuntu-22.04
+    container:
+      image: ghcr.io/homebrew/ubuntu22.04:master
+    env:
+      HOMEBREW_SIMULATE_MACOS_ON_LINUX: 1
+    outputs:
+      testing_formulae: ${{ steps.formulae-detect.outputs.testing_formulae }}
+      added_formulae: ${{ steps.formulae-detect.outputs.added_formulae }}
+      deleted_formulae: ${{ steps.formulae-detect.outputs.deleted_formulae }}
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: true
+          cask: false
+          test-bot: true
+
+      - run: brew test-bot --only-tap-syntax
+
+      - run: brew test-bot --only-formulae-detect
+        if: github.event_name == 'pull_request'
+        id: formulae-detect
+
   bump-casks:
     name: Bump casks
     if: github.repository == 'brewforge/homebrew-chinese'
