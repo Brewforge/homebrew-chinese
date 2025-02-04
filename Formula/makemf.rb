@@ -1,37 +1,17 @@
 class Makemf < Formula
   desc "让 GGUF 在 Ollama 中运行"
   homepage "https://github.com/Mrered/Gobin"
-  version "0.3.0"
+  url "https://github.com/Mrered/Gobin/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "52d807b878a4259b68e4a4f8c5980c0c6c9036349c0b63b6c7144a1330539b09"
   license "MIT"
+  head "https://github.com/Mrered/Gobin.git", branch: "main"
 
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Mrered/Gobin/releases/download/v0.3.0/makemf_0.3.0_darwin_arm64.tar.gz"
-    sha256 "cf7fdd858a44a243622aed491399722b5da945eacb79fb012a38a71c7f71786d"
-  elsif OS.mac? && !Hardware::CPU.arm?
-    url "https://github.com/Mrered/Gobin/releases/download/v0.2.3/makemf_0.2.3_darwin_amd64.tar.gz"
-    sha256 "2f6f5312c85b832b9c4397c779cd1168547afb99e0dc6226ab933512bcc6ec53"
-  elsif !OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Mrered/Gobin/releases/download/v0.2.3/makemf_0.2.3_linux_arm64.tar.gz"
-    sha256 "6a00351436126ca5b0fde825ab3b90ef2edb1345c5f8d3226512b09756f627d0"
-  elsif !OS.mac? && !Hardware::CPU.arm?
-    url "https://github.com/Mrered/Gobin/releases/download/v0.2.3/makemf_0.2.3_linux_amd64.tar.gz"
-    sha256 "0020268aff143c9d4fa69b595f57344674791f902f4ea5efad0bb3c607e25aca"
-  end
-
-  livecheck do
-    url :homepage
-    strategy :github_latest
-  end
-
+  depends_on "go" => :build
   def install
-    bin.install "makemf"
-  end
-
-  def post_install
-    chmod 0555, bin/"makemf"
+    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/makemf"
   end
 
   test do
-    system bin/"makemf", "-h"
+    system bin/"makemf", "-v"
   end
 end
