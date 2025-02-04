@@ -15,6 +15,13 @@ on:
 
 permissions: write-all
 
+env:
+  HOMEBREW_DEVELOPER: 1
+  HOMEBREW_GITHUB_ACTIONS: 1
+  HOMEBREW_NO_AUTO_UPDATE: 1
+  HOMEBREW_NO_INSTALL_FROM_API: 1
+  HOMEBREW_RELOCATABLE_INSTALL_NAMES: 1
+
 jobs:
   bump-casks:
     name: Bump casks
@@ -28,8 +35,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Homebrew env
-        uses: ./.github/actions/homebrew-env
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: false
+          cask: false
+          test-bot: false
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
@@ -61,8 +73,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Homebrew env
-        uses: ./.github/actions/homebrew-env
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: false
+          cask: false
+          test-bot: false
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
@@ -94,8 +111,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Linuxbrew env
-        uses: ./.github/actions/linuxbrew-env
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: false
+          cask: false
+          test-bot: false
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
