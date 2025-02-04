@@ -13,9 +13,45 @@ on:
   # allow run manually
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.head_ref || github.ref_name }}
+
 permissions: write-all
 
+env:
+  HOMEBREW_DEVELOPER: 1
+  HOMEBREW_GITHUB_ACTIONS: 1
+  HOMEBREW_NO_AUTO_UPDATE: 1
+  HOMEBREW_NO_INSTALL_FROM_API: 1
+  HOMEBREW_RELOCATABLE_INSTALL_NAMES: 1
+
 jobs:
+  tap-syntax:
+    if: "!contains(github.event.head_commit.message, 'skip-build')"
+    runs-on: ubuntu-22.04
+    container:
+      image: ghcr.io/homebrew/ubuntu22.04:master
+    env:
+      HOMEBREW_SIMULATE_MACOS_ON_LINUX: 1
+    outputs:
+      testing_formulae: ${{ steps.formulae-detect.outputs.testing_formulae }}
+      added_formulae: ${{ steps.formulae-detect.outputs.added_formulae }}
+      deleted_formulae: ${{ steps.formulae-detect.outputs.deleted_formulae }}
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: true
+          cask: false
+          test-bot: true
+
+      - run: brew test-bot --only-tap-syntax
+
+      - run: brew test-bot --only-formulae-detect
+        if: github.event_name == 'pull_request'
+        id: formulae-detect
+
   bump-casks:
     name: Bump casks
     if: github.repository == 'brewforge/homebrew-chinese'
@@ -28,8 +64,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Homebrew env
-        uses: ./.github/actions/homebrew-env
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: false
+          cask: false
+          test-bot: false
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
@@ -61,8 +102,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Homebrew env
-        uses: ./.github/actions/homebrew-env
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: false
+          cask: false
+          test-bot: false
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
@@ -94,8 +140,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Linuxbrew env
-        uses: ./.github/actions/linuxbrew-env
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+        with:
+          core: false
+          cask: false
+          test-bot: false
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
