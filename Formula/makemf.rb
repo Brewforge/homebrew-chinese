@@ -1,12 +1,12 @@
 class Makemf < Formula
   desc "让 GGUF 在 Ollama 中运行"
   homepage "https://github.com/Mrered/Gobin"
-  version "0.2.4"
+  version "0.3.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Mrered/Gobin/releases/download/v0.2.4/makemf_0.2.4_darwin_arm64.tar.gz"
-    sha256 "c09a6bc634e3b90f6f52e3b6711aa27fc8aec3cf7ae59acc897ae9a965be32f6"
+    url "https://github.com/Mrered/Gobin/releases/download/v0.3.0/makemf_0.3.0_darwin_arm64.tar.gz"
+    sha256 "cf7fdd858a44a243622aed491399722b5da945eacb79fb012a38a71c7f71786d"
   elsif OS.mac? && !Hardware::CPU.arm?
     url "https://github.com/Mrered/Gobin/releases/download/v0.2.3/makemf_0.2.3_darwin_amd64.tar.gz"
     sha256 "2f6f5312c85b832b9c4397c779cd1168547afb99e0dc6226ab933512bcc6ec53"
