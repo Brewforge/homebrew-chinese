@@ -7,6 +7,7 @@ class Ollamaplist < Formula
   head "https://github.com/Mrered/Gobin.git", branch: "main"
 
   depends_on "go" => :build
+
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/ollamaplist"
   end
