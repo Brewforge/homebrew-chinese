@@ -1,8 +1,8 @@
 class Makemf < Formula
-  desc "让 GGUF 在 Ollama 中运行"
+  desc "为 GGUF 文件生成 Makefile"
   homepage "https://github.com/Mrered/Gobin"
-  url "https://github.com/Mrered/Gobin/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "52d807b878a4259b68e4a4f8c5980c0c6c9036349c0b63b6c7144a1330539b09"
+  url "https://github.com/Mrered/Gobin/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "cb2ec711ca053d68eb1ff585701c6fd1c3c6d84b006cec21ffd117dc617e3068"
   license "MIT"
   head "https://github.com/Mrered/Gobin.git", branch: "main"
 
