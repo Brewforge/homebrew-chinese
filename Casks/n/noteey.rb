@@ -3,7 +3,6 @@ cask "noteey" do
   sha256 "819c267499c867b0d0653c7a5edf3626959a6d301316ca72988c2118bae8816c"
 
   url "https://github.com/andyyoungm/muenzo/releases/download/v#{version}/Noteey-#{version}.universal.dmg"
-
   name "Noteey"
   desc "融合卡片和白板的笔记软件"
   homepage "https://www.noteey.com/"

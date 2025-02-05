@@ -3,7 +3,6 @@ cask "copybook" do
   sha256 "0be7be40aa1010b40ba7554566d68be902bb2ac70bd60180fcdc257d7798f16a"
 
   url "https://github.com/xxNull-lsk/Copybook/releases/download/v#{version}/copybook_#{version}_macos_x64.tar.gz"
-
   name "Copybook"
   desc "生成拼音、汉字、汉字字帖，支持笔顺"
   homepage "https://github.com/xxNull-lsk/Copybook/"

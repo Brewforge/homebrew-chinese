@@ -3,7 +3,6 @@ cask "clashx-meta" do
   sha256 "216ab727e2f60c533a933c22e21e677132974683660a71907f3332c447a27e80"
 
   url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
-
   name "ClashX Meta"
   desc "Rule based proxy base on Clash"
   homepage "https://github.com/MetaCubeX/ClashX.Meta"

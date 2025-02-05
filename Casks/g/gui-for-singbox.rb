@@ -6,7 +6,6 @@ cask "gui-for-singbox" do
          intel: "02a561f84ab0ce449b49248d85bb5727b520ed9a3a886f84fddca88295695637"
 
   url "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v#{version}/GUI.for.SingBox-darwin-#{arch}.zip"
-
   name "GUI.for.SingBox"
   desc "SingBox GUI"
   homepage "https://github.com/GUI-for-Cores/GUI.for.SingBox"

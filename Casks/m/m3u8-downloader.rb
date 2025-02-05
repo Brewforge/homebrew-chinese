@@ -6,7 +6,6 @@ cask "m3u8-downloader" do
          intel: "033e5383fec82327196d8a58834a50f95a37d2e4dde9f397cdd34317a2a7d8d7"
 
   url "https://github.com/HeiSir2014/M3U8-Downloader/releases/download/v#{version}/M3U8-Downloader-mac_#{arch}-#{version}.dmg"
-
   name "M3U8-Downloader"
   desc "Open-source M3U8 Downloader"
   homepage "https://github.com/HeiSir2014/M3U8-Downloader/"

@@ -5,7 +5,6 @@ cask "pdf-guru" do
   sha256 :no_check
 
   url "https://github.com/kevin2li/PDF-Guru/releases/download/v#{version}/pdf-guru-darwin-#{arch}-#{version}.zip"
-
   name "PDF Guru"
   desc "Multi-purpose PDF file processing tool with a nice UI"
   homepage "https://github.com/kevin2li/PDF-Guru/"

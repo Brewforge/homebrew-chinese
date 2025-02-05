@@ -3,7 +3,6 @@ cask "tts-vue" do
   sha256 "f9121b43edc6c3661ea7fa47118e9c25ebb22fbcdda96c02b32a15cec73c7792"
 
   url "https://github.com/LokerL/tts-vue/releases/download/#{version}/tts-vue-macos-latest.zip"
-
   name "tts-vue"
   desc "微软语音合成工具"
   homepage "https://tts-doc.loker.vip/home.html"

@@ -6,7 +6,6 @@ cask "clash-nyanpasu" do
          intel: "a4d4ff4e9fbe7ab1a73e151451f0b8b599dd97702e9d5706bb08c2d962bceeac"
 
   url "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v#{version}/Clash.Nyanpasu_#{version}_#{arch}.dmg"
-
   name "Clash Nyanpasu"
   desc "Cross-Platform Clash GUI based on Tauri"
   homepage "https://github.com/libnyanpasu/clash-nyanpasu"

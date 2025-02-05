@@ -5,8 +5,8 @@ cask "alist-desktop" do
   sha256 arm:   "00ef31f67b210b9086f4d23f7986855097900ca6070445a84b79ef6ecf1acf16",
          intel: "07479ad97dd2f5d7a014c4e3e2423e7acb306ade895397c0edbbef0111767358"
 
-  url "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_#{arch}.dmg"
-
+  url "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_#{arch}.dmg",
+      verified: "github.com/alist-org/desktop-release/"
   name "AList-Desktop"
   desc "File list program that supports multiple storage, powered by Gin and Solidjs"
   homepage "https://alist.nn.ci/zh/"

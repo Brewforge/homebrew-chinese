@@ -6,7 +6,6 @@ cask "pot-desktop" do
          intel: "4297c172b0bab10a9a5d62b2505aeaa1dfe7b3853522152b6fff6c766dba648f"
 
   url "https://github.com/pot-app/pot-desktop/releases/download/#{version}/pot_#{version}_#{arch}.dmg"
-
   name "pot"
   desc "Cross-platform translation software"
   homepage "https://github.com/pot-app/pot-desktop"

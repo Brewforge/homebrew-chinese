@@ -6,7 +6,6 @@ cask "alist-helper" do
          intel: "969f14af3c422b33f9e818689e34401cdd4f0f9eb9f4c72f3a444f0e7ee33825"
 
   url "https://github.com/Xmarmalade/alisthelper/releases/download/v#{version}/AlistHelper_app_v#{version}_macos#{arch}"
-
   name "Alist Helper"
   desc "Application to simplify the use of the desktop version of alist"
   homepage "https://github.com/Xmarmalade/alisthelper"

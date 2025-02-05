@@ -6,7 +6,6 @@ cask "flclash" do
          intel: "e7211355db9094eb7b03e8b50e04c43b3d59c612b04d3a27b22552ae30f23012"
 
   url "https://github.com/chen08209/FlClash/releases/download/v#{version}/FlClash-#{version}-macos-#{arch}.dmg"
-
   name "FlClash"
   desc "Multi-platform proxy client based on ClashMeta"
   homepage "https://github.com/chen08209/FlClash"
