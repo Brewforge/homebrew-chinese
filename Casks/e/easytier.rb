@@ -6,8 +6,7 @@ cask "easytier" do
          intel: "7e12653ab12631051ca559ee55c2bc80f8ead83559203ed1613cb0bdaa76b8c8"
 
   url "https://github.com/EasyTier/EasyTier/releases/download/v#{version}/easytier-gui_#{version}_#{arch}.dmg",
-    verified: "github.com/EasyTier/EasyTier/"
-
+      verified: "github.com/EasyTier/EasyTier/"
   name "EasyTier"
   desc "简单、安全、去中心化的内网穿透 VPN 组网方案"
   homepage "https://www.easytier.top/"
