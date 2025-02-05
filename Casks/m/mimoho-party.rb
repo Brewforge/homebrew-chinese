@@ -5,7 +5,8 @@ cask "mimoho-party" do
   sha256 arm:   "fc97e86b73fdc2ae6a6827618d565dc4a9c97606139050bc6d263999cc49e28f",
          intel: "3dc5653bc8a34249b986e6c74b6dab732b7c930bcf325749a68f565ef7ca7b78"
 
-  url "https://github.com/mihomo-party-org/mihomo-party/releases/download/v#{version}/mihomo-party-macos-#{version}-#{arch}.pkg"
+  url "https://github.com/mihomo-party-org/mihomo-party/releases/download/v#{version}/mihomo-party-macos-#{version}-#{arch}.pkg",
+      verified: "github.com/mihomo-party-org/mihomo-party/"
   name "Mihomo Party"
   desc "Another Mihomo GUI"
   homepage "https://mihomo.party/"

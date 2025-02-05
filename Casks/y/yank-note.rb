@@ -5,7 +5,8 @@ cask "yank-note" do
   sha256 arm:   "ef9ff34096e2654dbb143ec470c91d0867785d939d298cf871145f958d22f64b",
          intel: "ccfaa78c06680fe4d9f7e2ef5cb4005fcbe87dd8ef501080763285647c484635"
 
-  url "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg"
+  url "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg",
+      verified: "github.com/purocean/yn/"
   name "Yank Note"
   desc "高可扩展性 Markdown 笔记软件"
   homepage "https://yank-note.com/zh-CN"
