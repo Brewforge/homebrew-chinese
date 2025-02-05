@@ -1,8 +1,8 @@
 class Ollamaplist < Formula
-  desc "给 Ollama CLI 添加环境变量"
+  desc "给通过 Homebrew 安装的 Ollama CLI 工具添加环境变量"
   homepage "https://github.com/Mrered/Gobin"
-  url "https://github.com/Mrered/Gobin/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "52d807b878a4259b68e4a4f8c5980c0c6c9036349c0b63b6c7144a1330539b09"
+  url "https://github.com/Mrered/Gobin/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "cb2ec711ca053d68eb1ff585701c6fd1c3c6d84b006cec21ffd117dc617e3068"
   license "MIT"
   head "https://github.com/Mrered/Gobin.git", branch: "main"
 
