@@ -2,17 +2,14 @@ cask "clashx-meta" do
   version "1.4.8"
   sha256 "216ab727e2f60c533a933c22e21e677132974683660a71907f3332c447a27e80"
 
-  mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
+  url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
 
-  url "#{mirror}#{origin}",
-      verified: "mirror.ghproxy.com/"
   name "ClashX Meta"
   desc "Rule based proxy base on Clash"
   homepage "https://github.com/MetaCubeX/ClashX.Meta"
 
   livecheck do
-    url origin.to_s
+    url :url
     strategy :github_latest
   end
 

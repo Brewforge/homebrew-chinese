@@ -5,17 +5,14 @@ cask "gui-for-singbox" do
   sha256 arm:   "be2f54ff47e316fa78478045b7462f2cd01efa54ad63d9b9cc4f34b1b202c406",
          intel: "02a561f84ab0ce449b49248d85bb5727b520ed9a3a886f84fddca88295695637"
 
-  mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v#{version}/GUI.for.SingBox-darwin-#{arch}.zip"
+  url "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v#{version}/GUI.for.SingBox-darwin-#{arch}.zip"
 
-  url "#{mirror}#{origin}",
-      verified: "mirror.ghproxy.com/"
   name "GUI.for.SingBox"
   desc "SingBox GUI"
   homepage "https://github.com/GUI-for-Cores/GUI.for.SingBox"
 
   livecheck do
-    url origin.to_s
+    url :url
     strategy :github_latest
   end
 

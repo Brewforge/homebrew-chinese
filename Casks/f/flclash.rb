@@ -5,17 +5,14 @@ cask "flclash" do
   sha256 arm:   "a45ccfa9b6484f648dd9fa49a71f0cf8811789990c0db56f1fef75d854c9c07f",
          intel: "e7211355db9094eb7b03e8b50e04c43b3d59c612b04d3a27b22552ae30f23012"
 
-  mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/chen08209/FlClash/releases/download/v#{version}/FlClash-#{version}-macos-#{arch}.dmg"
+  url "https://github.com/chen08209/FlClash/releases/download/v#{version}/FlClash-#{version}-macos-#{arch}.dmg"
 
-  url "#{mirror}#{origin}",
-      verified: "mirror.ghproxy.com/"
   name "FlClash"
   desc "Multi-platform proxy client based on ClashMeta"
   homepage "https://github.com/chen08209/FlClash"
 
   livecheck do
-    url origin.to_s
+    url :url
     strategy :github_latest
   end
 

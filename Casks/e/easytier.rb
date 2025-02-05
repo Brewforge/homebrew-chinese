@@ -5,17 +5,14 @@ cask "easytier" do
   sha256 arm:   "0df9499d65eb65a11f4728e726955d2781fe3ec02e45821eee8cc36a47b20960",
          intel: "7e12653ab12631051ca559ee55c2bc80f8ead83559203ed1613cb0bdaa76b8c8"
 
-  mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/EasyTier/EasyTier/releases/download/v#{version}/easytier-gui_#{version}_#{arch}.dmg"
+  url "https://github.com/EasyTier/EasyTier/releases/download/v#{version}/easytier-gui_#{version}_#{arch}.dmg"
 
-  url "#{mirror}#{origin}",
-      verified: "mirror.ghproxy.com/"
   name "EasyTier"
   desc "简单、安全、去中心化的内网穿透 VPN 组网方案"
   homepage "https://www.easytier.top/"
 
   livecheck do
-    url origin.to_s
+    url :url
     strategy :github_latest
   end
 

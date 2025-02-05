@@ -4,17 +4,14 @@ cask "dashplayer" do
   version "5.1.2"
   sha256 "0f950573597f67ec82d3b18b41948d49cf91b1a06721cc375e688799091fd0e6"
 
-  mirror = "https://mirror.ghproxy.com/"
-  origin = "https://github.com/solidSpoon/DashPlayer/releases/download/v#{version}/DashPlayer-#{version}-arm64.dmg"
+  url "https://github.com/solidSpoon/DashPlayer/releases/download/v#{version}/DashPlayer-#{version}-arm64.dmg"
 
-  url "#{mirror}#{origin}",
-      verified: "mirror.ghproxy.com/"
   name "DashPlayer"
   desc "为英语学习者量身打造的视频播放器"
   homepage "https://dash-player.solidspoon.xyz/"
 
   livecheck do
-    url origin.to_s
+    url :url
     strategy :github_latest
   end
 
