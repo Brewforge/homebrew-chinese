@@ -5,7 +5,7 @@ cask "dashplayer" do
   sha256 "0f950573597f67ec82d3b18b41948d49cf91b1a06721cc375e688799091fd0e6"
 
   url "https://github.com/solidSpoon/DashPlayer/releases/download/v#{version}/DashPlayer-#{version}-arm64.dmg",
-    verified: "github.com/solidSpoon/DashPlayer"
+      verified: "github.com/solidSpoon/DashPlayer/"
   name "DashPlayer"
   desc "为英语学习者量身打造的视频播放器"
   homepage "https://dash-player.solidspoon.xyz/"
