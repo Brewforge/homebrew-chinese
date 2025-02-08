@@ -97,6 +97,10 @@ brew ls
 brew help
 ```
 
+## 🌟 欢迎加星
+
+[![星标](https://starchart.cc/Brewforge/homebrew-chinese.svg?variant=adaptive)](https://starchart.cc/Brewforge/homebrew-chinese)
+
 ## ✨ 一起维护
 
 请直接发起 [拉取请求](https://github.com/Brewforge/homebrew-chinese/compare) 或 [工单](https://github.com/Brewforge/homebrew-chinese/issues/new/choose) 。
