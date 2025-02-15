@@ -1,6 +1,6 @@
 cask "noteey" do
-  version "1.15.1"
-  sha256 "6398bc27a2878847c0bd8918943d354a22f0b2be126686076a5a57da8d7fb413"
+  version "1.16.0"
+  sha256 "e3063391658042150b3435787fd12cb176179b2e1e0f6ec106d521666c5fb41f"
 
   url "https://github.com/andyyoungm/muenzo/releases/download/v#{version}/Noteey-#{version}.universal.dmg",
       verified: "github.com/andyyoungm/muenzo/"
