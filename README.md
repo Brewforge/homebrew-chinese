@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD033 -->
 
-![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![CI](https://github.com/Brewforge/homebrew-chinese/actions/workflows/bump.yml/badge.svg) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese)
+![Homebrew](https://img.shields.io/badge/-Homebrew-FBB040?labelColor=555555&logoColor=FFFFFF&logo=homebrew) ![CI](https://github.com/Brewforge/homebrew-chinese/actions/workflows/schedule.yml/badge.svg) ![license](https://img.shields.io/github/license/Brewforge/homebrew-chinese) ![code-size](https://img.shields.io/github/languages/code-size/Brewforge/homebrew-chinese) ![repo-size](https://img.shields.io/github/repo-size/Brewforge/homebrew-chinese)
 
 一个致力于为中国用户提供 [🍺 Homebrew](https://github.com/Homebrew/brew) 支持的中文库
 
@@ -18,8 +18,9 @@
 
 🙋‍♂️ 为什么会有本仓库
 
-- 💪 国内用户访问 [Homebrew](https://github.com/Homebrew) 官方仓库比较费劲
-- 🪜 下载过程流量消耗比较多，本仓库对通过 GitHub 发布内容使用 [GitHub Proxy](https://mirror.ghproxy.com) 进行加速
+- 部分软件因为未签名而未能被官方库收录
+<!-- - 💪 国内用户访问 [Homebrew](https://github.com/Homebrew) 官方仓库比较费劲 -->
+<!-- - 🪜 下载过程流量消耗比较多，本仓库对通过 GitHub 发布内容使用 [GitHub Proxy](https://mirror.ghproxy.com) 进行加速 -->
 
 📦 收录列表
 
@@ -28,6 +29,9 @@
     <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向国人">
   </a>
   <a href="https://github.com/Brewforge/homebrew-extras/blob/main/list.md" style="margin: 0 10px;">
+    <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向全球">
+  </a>
+  <a href="https://github.com/Brewforge/homebrew-more/blob/main/list.md" style="margin: 0 10px;">
     <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向全球">
   </a>
 </div>
@@ -69,20 +73,19 @@ brew tap brewforge/extras
 🔍 搜索
 
 ```sh
-brew search <formula 或 cask>
+brew search <cask>
 ```
 
 🛒 安装
 
 ```sh
-brew install <formula>
 brew install --cask <cask>
 ```
 
 🗑️ 卸载
 
 ```sh
-brew rm <formula 或 cask>
+brew rm <cask>
 ```
 
 🧾 列出已安装的软件
