@@ -26,13 +26,13 @@
 
 <div style="text-align: center;">
   <a href="列表.md" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%9B%BD%E4%BA%BA-red?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向国人">
+    <img src="https://img.shields.io/badge/面向国人-red?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向国人">
   </a>
   <a href="https://github.com/Brewforge/homebrew-extras/blob/main/list.md" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向全球">
+    <img src="https://img.shields.io/badge/面向全球-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向全球">
   </a>
   <a href="https://github.com/Brewforge/homebrew-more/blob/main/list.md" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向全球">
+    <img src="https://img.shields.io/badge/命令行-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="命令行">
   </a>
 </div>
 
