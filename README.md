@@ -92,8 +92,8 @@ brew help
 
 > 本列表中没有的软件，可以在下面列表中查看
 >
-> [![点击前往 面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
-> [![点击前往 命令行](https://img.shields.io/badge/命令行-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-more/blob/main/list.md)
+> [![点击前往 面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-extras)
+> [![点击前往 命令行](https://img.shields.io/badge/命令行-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-more)
 
 ### 图形化软件
 
@@ -188,7 +188,8 @@ brew help
 
 > 本列表中没有的软件，可以在下面列表中查看
 >
-> [![点击前往 面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
+> [![点击前往 面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-extras)
+> [![点击前往 命令行](https://img.shields.io/badge/命令行-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-more)
 
 ## 🌟 欢迎加星
 
