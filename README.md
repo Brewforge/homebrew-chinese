@@ -14,7 +14,9 @@
 
 👏 欢迎参与[仓库建设讨论](https://github.com/orgs/Brewforge/discussions) 🎙️
 
-## 📝 太长不看
+## 🍺 用起来
+
+### 📝 太长不看
 
 🙋‍♂️ 为什么会有本仓库
 
@@ -22,21 +24,7 @@
 <!-- - 💪 国内用户访问 [Homebrew](https://github.com/Homebrew) 官方仓库比较费劲 -->
 <!-- - 🪜 下载过程流量消耗比较多，本仓库对通过 GitHub 发布内容使用 [GitHub Proxy](https://mirror.ghproxy.com) 进行加速 -->
 
-📦 收录列表
-
-<div style="text-align: center;">
-  <a href="列表.md" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/面向国人-red?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向国人">
-  </a>
-  <a href="https://github.com/Brewforge/homebrew-extras/blob/main/list.md" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/面向全球-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="面向全球">
-  </a>
-  <a href="https://github.com/Brewforge/homebrew-more/blob/main/list.md" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/命令行-blue?style=for-the-badge&logo=homebrew&labelColor=555555" alt="命令行">
-  </a>
-</div>
-
-## 🏃 准备
+### 🏃 准备
 
 - 🪜 流量有限：🍺 HomebrewCN [Homebrew 国内安装脚本 | Gitee](https://gitee.com/cunkai/HomebrewCN) 🚴
 
@@ -52,7 +40,7 @@
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-## 🍺 使用
+### 🚀 使用
 
 🚰 把本仓库和 [brewforge/extras](https://github.com/Brewforge/homebrew-extras) **拍** 到自己 Mac 上（仅需初次）
 
@@ -100,12 +88,110 @@ brew ls
 brew help
 ```
 
-## 🌟 欢迎加星
+## 🀄️ 列表
 
-[![星标](https://starchart.cc/Brewforge/homebrew-chinese.svg?variant=adaptive)](https://starchart.cc/Brewforge/homebrew-chinese)
+> 本列表中没有的软件，可以在下面列表中查看
+>
+> [![点击前往 面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
+> [![点击前往 命令行](https://img.shields.io/badge/命令行-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-more/blob/main/list.md)
+
+### 图形化软件
+
+|       桶名        |                                  软件官网                                  |                                   备注                                   |
+| :---------------: | :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+|  `alist-desktop`  |       [AList Desktop](https://github.com/alist-org/desktop-release)        |                   ![b](assets/b.svg)![2](assets/2.svg)                   |
+|  `alist-helper`   |         [Alist-Helper](https://github.com/Xmarmalade/alisthelper)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+| `app-cleaner-cn`  | [App Cleaner 中文版](https://nektony.com/zh-hans/mac-app-cleaner/download) |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `copybook`     |            [字帖生成器](https://github.com/xxNull-lsk/Copybook)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|     `e-study`     |                      [知网研学](https://e-study.com)                       |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
+|   `easy-to-tv`    |          [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|   `easyspider`    |                    [EasySpider](https://easyspider.net)                    |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|   `edrawmax@9`    |                     [亿图图示 9](http://edrawsoft.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|     `i4tools`     |                       [爱思助手](https://www.i4.cn)                        |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `keyviz-cn`    |              [Keyviz-cn](https://github.com/zetaloop/keyviz/)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|    `lingquan`     |                       [零泉](https://lingquan.cool/)                       |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
+|    `linkease`     |                     [易有云](https://app.linkease.com)                     |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
+| `m3u8-downloader` |      [M3U8-Downloader](https://github.com/HeiSir2014/M3U8-Downloader)      |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|    `mastergo`     |                      [MasterGo](https://mastergo.com)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|     `noteey`      |                     [Noteey](https://www.noteey.com/)                      | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
+|    `pdf-guru`     |              [PDF-Guru](https://github.com/kevin2li/PDF-Guru)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+| `quarkclouddrive` |                      [夸克网盘](https://pan.quark.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|     `tts-vue`     |               [TTS-Vue](https://tts-doc.loker.vip/home.html)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|    `yank-note`    |                  [Yank-Note](https://yank-note.com/zh-CN)                  | ![a](assets/a.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
+
+### 代理工具
+
+|       桶名        |                              软件官网                               |                 备注                 |
+| :---------------: | :-----------------------------------------------------------------: | :----------------------------------: |
+|   `clashx-meta`   |       [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta)       | ![a](assets/a.svg)![1](assets/1.svg) |
+| `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
+| `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
+
+### AI 工具
+
+|    桶名     |              软件官网               |                 备注                 |
+| :---------: | :---------------------------------: | :----------------------------------: |
+| `aigcpanel` | [AigcPanel](https://aigcpanel.com/) | ![a](assets/a.svg)![1](assets/1.svg) |
+|   `aidea`   |    [aidea](https://ai.aicode.cc)    | ![b](assets/b.svg)![2](assets/2.svg) |
+
+### 外语学习
+
+|     桶名      |                          软件官网                           |                          备注                          |
+| :-----------: | :---------------------------------------------------------: | :----------------------------------------------------: |
+| `dashplayer`  |   [dashplayer](https://github.com/solidSpoon/DashPlayer)    | ![a](assets/a.svg)![1](assets/1.svg)![3](assets/3.svg) |
+|    `enjoy`    |        [人人都能学英语](https://1000h.org/enjoy-app)        | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
+| `pot-desktop` |        [Pot](https://github.com/pot-app/pot-desktop)        |          ![a](assets/a.svg)![1](assets/1.svg)          |
+|  `eshelper`   |    [西语助手](https://www.eudic.net/v4/es/app/eshelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
+|  `frhelper`   |    [法语助手](https://www.eudic.net/v4/es/app/frhelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
+|   `ting-en`   | [每日英语听力](http://www.francochinois.com/v4/en/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
+|   `ting-es`   | [每日西语听力](http://www.francochinois.com/v4/es/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
+|   `ting-fr`   | [每日法语听力](http://www.francochinois.com/v4/fr/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
+
+### 开源软件镜像
+
+|           桶名            |                                     软件官网                                      |                 备注                 |
+| :-----------------------: | :-------------------------------------------------------------------------------: | :----------------------------------: |
+|       `basictex-cn`       |           [BasicTeX 镜像](https://www.tug.org/mactex/morepackages.html)           | ![a](assets/a.svg)![1](assets/1.svg) |
+|       `blender-cn`        |                      [Blender 镜像](https://www.blender.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
+|       `freecad-cn`        |           [FreeCAD 镜像](https://www.freecad.org/index.php?lang=zh_CN)            | ![a](assets/a.svg)![1](assets/1.svg) |
+|         `gimp-cn`         |                         [GIMP 镜像](https://www.gimp.org)                         | ![a](assets/a.svg)![1](assets/1.svg) |
+|         `iina-cn`         |                           [IINA 镜像](https://iina.io)                            | ![a](assets/a.svg)![1](assets/1.svg) |
+|       `inkscape-cn`       |         [Inkscape 镜像](https://inkscape.org/zh-hans/?switchlang=zh-hans)         | ![a](assets/a.svg)![1](assets/1.svg) |
+|        `julia-cn`         |                        [Julia 镜像](https://julialang.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
+|        `kicad-cn`         |                          [Kicad 镜像](https://kicad.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `libreoffice-cn`      |                 [LibreOffice 镜像](https://zh-cn.libreoffice.org)                 | ![a](assets/a.svg)![1](assets/1.svg) |
+|         `lyx-cn`          |                          [Lyx 镜像](https://www.lyx.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
+|      `miniforge-cn`       |            [Miniforge 镜像](https://github.com/conda-forge/miniforge)             | ![a](assets/a.svg)![1](assets/1.svg) |
+| `navicat-premium-lite-cn` | [Navicat Premium Lite 镜像](https://navicat.com.cn/products/navicat-premium-lite) | ![b](assets/b.svg)![1](assets/1.svg) |
+|         `obs-cn`          |                  [OBS Studio 镜像](https://obsproject.com/zh-cn)                  | ![a](assets/a.svg)![1](assets/1.svg) |
+|      `qt-creator-cn`      |                  [Qt Creator 镜像](https://www.qt.io/developers)                  | ![a](assets/a.svg)![1](assets/1.svg) |
+|      `texstudio-cn`       |                      [TeXStudio 镜像](https://texstudio.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
+|         `vlc-cn`          |                     [VLC 镜像](https://www.videolan.org/vlc)                      | ![a](assets/a.svg)![1](assets/1.svg) |
+|       `vscodium-cn`       |               [VSCodium 镜像](https://github.com/VSCodium/vscodium)               | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ## ✨ 一起维护
 
 请直接发起 [拉取请求](https://github.com/Brewforge/homebrew-chinese/compare) 或 [工单](https://github.com/Brewforge/homebrew-chinese/issues/new/choose) 。
+
+如希望成为仓库维护者，可提 issue。
+
+## ⚔️ 揭榜
+
+目前还有一些当前维护者未能搞定的 Cask，请各位豪杰出手相助。
+
+|    桶名     |                软件官网                |                     问题                      |
+| :---------: | :------------------------------------: | :-------------------------------------------: |
+| `lceda-pro` | [嘉立创 EDA 专业版](https://lceda.cn/) | 解压失败（压缩包中有文件名包含非 UTF-8 字符） |
+
+---
+
+> 本列表中没有的软件，可以在下面列表中查看
+>
+> [![点击前往 面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-extras/blob/main/list.md)
+
+## 🌟 欢迎加星
+
+[![星标](https://starchart.cc/Brewforge/homebrew-chinese.svg?variant=adaptive)](https://starchart.cc/Brewforge/homebrew-chinese)
 
 <!-- ## ❤️ 赞助者 -->
