@@ -1,9 +1,9 @@
 cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.2.35.1"
-  sha256 arm:   "0adf3ee96c7777cf72f7db11a77b051888648589f89e4050c32ac4fde50fcf23",
-         intel: "0adf3ee96c7777cf72f7db11a77b051888648589f89e4050c32ac4fde50fcf23"
+  version "2.2.36.3"
+  sha256 arm:   "8842a83563fba8557d6dc8ae79cac63cb8fbe9f16027a12723b319d3aca431c8",
+         intel: "8842a83563fba8557d6dc8ae79cac63cb8fbe9f16027a12723b319d3aca431c8"
 
   branch = "main"
   url "https://raw.githubusercontent.com/Brewforge/homebrew-chinese/refs/heads/#{branch}/Casks/l/lceda-pro.sh",
