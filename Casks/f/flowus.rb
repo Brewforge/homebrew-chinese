@@ -2,8 +2,7 @@ cask "flowus" do
   arch arm: "arm64", intel: "x64"
 
   version "1.2.0"
-  sha256 arm:   "358af712f5aaffea5b5141e75860e18b57bd6139088a1f5f565d73287777971d",
-         intel: "0ceb9a78974f3773b96d54024a89c5777eaadde08d5da5c2a35c0d90d36bf9b6"
+  sha256 :no_check
 
   url "https://desktopdownload2.flowus.cn/production/mac/flowus-mac-#{arch}.zip",
       user_agent: :fake,
