@@ -13,7 +13,7 @@ cask "keyviz-cn" do
       match = page.match(/href=.*?v(\d+(\.\d+)+(a\d)?)/i)
       next if match.blank?
 
-      (match[1]).to_s
+      match[1].to_s
     end
   end
 
