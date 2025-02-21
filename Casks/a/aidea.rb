@@ -1,6 +1,6 @@
 cask "aidea" do
-  version "1.0.15"
-  sha256 "61b2e3cacdf08d09c7aa3726e6b0fc14c752c05dec4e7afdeb237f3c5b39f55a"
+  version "2.0.0"
+  sha256 "b87710e26b55ae0025539b1e8bb56aad8abc436e3929dee609cc085f2ffb1c20"
 
   url "https://github.com/mylxsw/aidea/releases/download/#{version}/aidea-#{version}-macos.dmg",
       verified: "github.com/mylxsw/aidea/"
