@@ -14,14 +14,6 @@ body:
       label: 软件名
     validations:
       required: true
-  - type: dropdown
-    attributes:
-      label: 类型
-      options:
-        - 图形化软件
-        - 命令行软件
-    validations:
-      required: true
   - type: input
     attributes:
       label: 软件官网
@@ -29,9 +21,9 @@ body:
       required: true
   - type: input
     attributes:
-      label: 软件最新版本
+      label: 最新发布日期
     validations:
-      required: false
+      required: true
   - type: input
     attributes:
       label: 一句话描述软件主要用途
