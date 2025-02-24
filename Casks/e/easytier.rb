@@ -9,7 +9,7 @@ cask "easytier" do
       verified: "github.com/EasyTier/EasyTier/"
   name "EasyTier"
   desc "简单、安全、去中心化的内网穿透 VPN 组网方案"
-  homepage "https://www.easytier.top/"
+  homepage "https://easytier.cn/"
 
   livecheck do
     url :url
@@ -18,5 +18,10 @@ cask "easytier" do
 
   app "easytier-gui.app"
 
-  zap trash: "~/Library/Logs/com.kkrainbow.easytier"
+  zap trash: [
+    "~/Library/Caches/com.kkrainbow.easytier",
+    "~/Library/Logs/com.kkrainbow.easytier",
+    "~/Library/Saved Application State/com.kkrainbow.easytier.savedState",
+    "~/Library/WebKit/com.kkrainbow.easytier",
+  ]
 end

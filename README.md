@@ -95,6 +95,22 @@ brew help
 > [![点击前往 面向全球](https://img.shields.io/badge/%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-extras)
 > [![点击前往 命令行](https://img.shields.io/badge/命令行-blue?style=for-the-badge&logo=homebrew&label=点击前往)](https://github.com/Brewforge/homebrew-more)
 
+### AI 工具
+
+|    桶名     |              软件官网               |                 备注                 |
+| :---------: | :---------------------------------: | :----------------------------------: |
+| `aigcpanel` | [AigcPanel](https://aigcpanel.com/) | ![a](assets/a.svg)![1](assets/1.svg) |
+|   `aidea`   |    [aidea](https://ai.aicode.cc)    | ![b](assets/b.svg)![2](assets/2.svg) |
+
+### 代理工具
+
+|       桶名        |                              软件官网                               |                 备注                 |
+| :---------------: | :-----------------------------------------------------------------: | :----------------------------------: |
+|   `clashx-meta`   |       [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta)       | ![a](assets/a.svg)![1](assets/1.svg) |
+| `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
+| `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
+
 ### 图形化软件
 
 |       桶名        |                                  软件官网                                  |                                   备注                                   |
@@ -114,26 +130,9 @@ brew help
 | `m3u8-downloader` |      [M3U8-Downloader](https://github.com/HeiSir2014/M3U8-Downloader)      |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `mastergo`     |                      [MasterGo](https://mastergo.com)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |     `noteey`      |                     [Noteey](https://www.noteey.com/)                      | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
-|    `pdf-guru`     |              [PDF-Guru](https://github.com/kevin2li/PDF-Guru)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 | `quarkclouddrive` |                      [夸克网盘](https://pan.quark.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |     `tts-vue`     |               [TTS-Vue](https://tts-doc.loker.vip/home.html)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `yank-note`    |                  [Yank-Note](https://yank-note.com/zh-CN)                  | ![a](assets/a.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
-
-### 代理工具
-
-|       桶名        |                              软件官网                               |                 备注                 |
-| :---------------: | :-----------------------------------------------------------------: | :----------------------------------: |
-|   `clashx-meta`   |       [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta)       | ![a](assets/a.svg)![1](assets/1.svg) |
-| `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
-|     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
-| `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
-
-### AI 工具
-
-|    桶名     |              软件官网               |                 备注                 |
-| :---------: | :---------------------------------: | :----------------------------------: |
-| `aigcpanel` | [AigcPanel](https://aigcpanel.com/) | ![a](assets/a.svg)![1](assets/1.svg) |
-|   `aidea`   |    [aidea](https://ai.aicode.cc)    | ![b](assets/b.svg)![2](assets/2.svg) |
 
 ### 外语学习
 
