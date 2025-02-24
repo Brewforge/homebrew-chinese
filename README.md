@@ -118,6 +118,7 @@ brew help
 |  `alist-desktop`  |       [AList Desktop](https://github.com/alist-org/desktop-release)        |                   ![b](assets/b.svg)![2](assets/2.svg)                   |
 |  `alist-helper`   |         [Alist-Helper](https://github.com/Xmarmalade/alisthelper)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 | `app-cleaner-cn`  | [App Cleaner 中文版](https://nektony.com/zh-hans/mac-app-cleaner/download) |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `cajviewer`    |           [CAJViewer](https://CAJViewer.cnki.net/download.html)            |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `copybook`     |            [字帖生成器](https://github.com/xxNull-lsk/Copybook)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `e-study`     |                      [知网研学](https://e-study.com)                       |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |   `easy-to-tv`    |          [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |

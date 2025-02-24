@@ -1,6 +1,6 @@
 cask "cajviewer" do
   version "9.5.0.25014"
-  sha256 "bcee837286a58eb786230115d53a0f69448b22cc126621b811cb147f98f03034"
+  sha256 "c2024ac446d760d4e3cd4a81753b6e46b8cfc48dc9ebce2376cb0e1ada5e1974"
 
   url "https://download.cnki.net/cajPackage/CAJMACPackage/CAJViewer_#{version}_arm64.dmg"
   name "CAJViewer"
@@ -8,8 +8,8 @@ cask "cajviewer" do
   homepage "https://CAJViewer.cnki.net/download.html"
 
   livecheck do
-    url :url
-    regex(/CAJViewer_#{arch}_(.+)_arm64\.dmg/i)
+    url :homepage
+    regex(/CAJViewer_(.+)_arm64\.dmg/)
   end
 
   auto_updates true
