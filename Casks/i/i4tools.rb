@@ -14,6 +14,8 @@ cask "i4tools" do
     regex(/i4Tools[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
+  auto_updates true
+
   pkg "i4tools.pkg"
 
   uninstall quit:    "cn.i4tools.mac",
