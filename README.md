@@ -152,7 +152,6 @@ brew help
 
 |           桶名            |                                     软件官网                                      |                 备注                 |
 | :-----------------------: | :-------------------------------------------------------------------------------: | :----------------------------------: |
-|       `basictex-cn`       |           [BasicTeX 镜像](https://www.tug.org/mactex/morepackages.html)           | ![a](assets/a.svg)![1](assets/1.svg) |
 |       `blender-cn`        |                      [Blender 镜像](https://www.blender.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
 |       `freecad-cn`        |           [FreeCAD 镜像](https://www.freecad.org/index.php?lang=zh_CN)            | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `gimp-cn`         |                         [GIMP 镜像](https://www.gimp.org)                         | ![a](assets/a.svg)![1](assets/1.svg) |
