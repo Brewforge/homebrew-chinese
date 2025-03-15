@@ -2,7 +2,7 @@ cask "navicat-premium-lite-cn" do
   version "17.1.10"
   sha256 :no_check
 
-  url "https://dn.navicat.com.cn/download/navicat#{version.major}_premium_lite_cs.dmg"
+  url "  https://navicat.com.cn/download/direct-download?product=navicat17_premium_lite_cs.dmg&location=1"
   name "Navicat Premium Lite"
   desc "Database administration and development tool"
   homepage "https://navicat.com.cn/products/navicat-premium-lite"
