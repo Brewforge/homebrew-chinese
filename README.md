@@ -152,7 +152,6 @@ brew help
 
 |     桶名      |                     软件官网                     | 语言  | 备注                                 |
 | :-----------: | :----------------------------------------------: | :---: | ------------------------------------ |
-|    `alist`    |         [AList](https://alist.nn.ci/zh)          |  Go   | ![a](assets/a.svg)![1](assets/1.svg) |
 |   `bbdown`    |   [BBDown](https://github.com/nilaoda/BBDown)    |  C#   | ![a](assets/a.svg)![1](assets/1.svg) |
 | `nezha-agent` | [哪吒监控服务](https://github.com/nezhahq/agent) |  Go   | ![a](assets/a.svg)![1](assets/1.svg) |
 
