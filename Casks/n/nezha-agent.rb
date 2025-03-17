@@ -3,9 +3,9 @@ cask "nezha-agent" do
 
   os macos: "darwin", linux: "linux"
 
-  version "1.7.3"
-  sha256 arm:          "86dfe252135e953cb41a8e3e872d04f7ac1dfe95facbfbdb6393a0af335ae93f",
-         x86_64:       "567a06e8b049e7373f022790d54aa05bcdf9741a37fd01d65a4687a52808a10e",
+  version "1.9.5"
+  sha256 arm:          "5d65bbe88dc99be93283c91fd5baa37f9d1633db89424f460eda95d5da29b63f",
+         x86_64:       "33141788d25b94fe395fe93bfeee3d25f51c43abd168d4bfee5ef11f3d34bb7a",
          arm64_linux:  "592008995d39aabfb3a313da86ffc4fecc4e2aea8ab0295006c8706d299c5f5b",
          x86_64_linux: "56a40362b8c8b5b47238932a76dc880d3a7a749c0b1c6626f66549dd5a27381f"
 
