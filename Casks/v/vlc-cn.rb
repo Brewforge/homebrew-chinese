@@ -9,7 +9,7 @@ cask "vlc-cn" do
       verified: "mirrors.bfsu.edu.cn/videolan-ftp/vlc/"
   name "VLC media player"
   desc "Multimedia player"
-  homepage "https://www.videolan.org/vlc/"
+  homepage "https://videolan.org/vlc/"
 
   livecheck do
     url "https://mirrors.bfsu.edu.cn/videolan-ftp/vlc/last/macosx"

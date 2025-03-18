@@ -6,7 +6,7 @@ cask "i4tools" do
   name "i4Tools"
   name "爱思助手"
   desc "Mobile device management software"
-  homepage "https://www.i4.cn/"
+  homepage "https://i4.cn/"
 
   livecheck do
     url :url

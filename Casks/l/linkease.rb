@@ -6,7 +6,7 @@ cask "linkease" do
       verified: "fw.koolcenter.com/binary/"
   name "LinkEase"
   desc "一个可以随时随地远程连接个人 文件或设备的私有存储云"
-  homepage "https://www.linkease.com/"
+  homepage "https://linkease.com/"
 
   livecheck do
     url "https://doc.linkease.com/zh/guide/linkease/install/device/support.html"

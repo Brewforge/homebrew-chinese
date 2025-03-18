@@ -6,7 +6,7 @@ cask "qt-creator-cn" do
       verified: "mirrors.bfsu.edu.cn/"
   name "Qt Creator"
   desc "IDE for application development"
-  homepage "https://www.qt.io/developers/"
+  homepage "https://qt.io/developers/"
 
   livecheck do
     url "https://mirrors.bfsu.edu.cn/qt/official_releases/qtcreator/latest/"

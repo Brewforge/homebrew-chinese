@@ -10,7 +10,7 @@ cask "libreoffice-cn" do
       verified: "mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/"
   name "LibreOffice"
   desc "Office suite"
-  homepage "https://www.libreoffice.org/"
+  homepage "https://libreoffice.org/"
 
   livecheck do
     url "https://mirrors.bfsu.edu.cn/libreoffice/libreoffice/stable/"

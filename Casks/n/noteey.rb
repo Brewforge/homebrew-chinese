@@ -6,7 +6,7 @@ cask "noteey" do
       verified: "github.com/andyyoungm/muenzo/"
   name "Noteey"
   desc "融合卡片和白板的笔记软件"
-  homepage "https://www.noteey.com/"
+  homepage "https://noteey.com/"
 
   livecheck do
     url :url

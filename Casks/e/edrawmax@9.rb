@@ -3,12 +3,12 @@ cask "edrawmax@9" do
   sha256 :no_check
 
   language "CN", default: true do
-    url "https://www.edrawsoft.cn/2download/edrawmax-cn-9.2.dmg"
-    homepage "http://www.edrawsoft.cn/"
+    url "https://edrawsoft.cn/2download/edrawmax-cn-9.2.dmg"
+    homepage "http://edrawsoft.cn/"
   end
   language "en" do
-    url "https://www.edrawsoft.com/archives/edrawmax-9.2.dmg"
-    homepage "https://www.edrawsoft.com/"
+    url "https://edrawsoft.com/archives/edrawmax-9.2.dmg"
+    homepage "https://edrawsoft.com/"
   end
 
   name "EdrawMax"

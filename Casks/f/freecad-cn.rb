@@ -9,7 +9,7 @@ cask "freecad-cn" do
       verified: "mirrors.bfsu.edu.cn/github-release/FreeCAD/FreeCAD/"
   name "FreeCAD"
   desc "3D parametric modeler"
-  homepage "https://www.freecadweb.org/"
+  homepage "https://freecadweb.org/"
 
   livecheck do
     url "https://mirrors.bfsu.edu.cn/github-release/FreeCAD/FreeCAD/LatestRelease/"
