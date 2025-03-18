@@ -5,14 +5,14 @@ cask "blender-cn" do
   sha256 arm:   "32297d20fae74683052267b9171945712c0aeb8a499d8e677e44740d3e30a034",
          intel: "3894df9f3034b177c96a386ef017aa3a0e9cf1859fedbfe731a19438188ec8c6"
 
-  url "https://mirror.nju.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
-      verified: "mirror.nju.edu.cn/blender/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
+      verified: "mirror.tuna.tsinghua.edu.cn/"
   name "Blender"
   desc "3D creation suite"
-  homepage "https://www.blender.org/"
+  homepage "https://blender.org/"
 
   livecheck do
-    url "https://www.blender.org/download/"
+    url "https://blender.org/download/"
     regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)[._-]macos[._-]#{arch}\.dmg}i)
   end
 
