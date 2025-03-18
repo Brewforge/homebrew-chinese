@@ -6,7 +6,7 @@ cask "blender-cn" do
          intel: "3894df9f3034b177c96a386ef017aa3a0e9cf1859fedbfe731a19438188ec8c6"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
-      verified: "mirror.tuna.tsinghua.edu.cn/"
+      verified: "mirrors.tuna.tsinghua.edu.cn/"
   name "Blender"
   desc "3D creation suite"
   homepage "https://blender.org/"
