@@ -1,6 +1,5 @@
 cask "bbdown" do
   arch arm: "arm64", intel: "x64"
-
   os macos: "osx", linux: "linux"
 
   version "1.6.3,20240814"
