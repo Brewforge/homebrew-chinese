@@ -124,6 +124,7 @@ brew help
 |   `easy-to-tv`    |          [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |   `easyspider`    |                    [EasySpider](https://easyspider.net)                    |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |   `edrawmax@9`    |                     [亿图图示 9](http://edrawsoft.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `feeluown`     |                [FeelUOwn](http://feeluown.readthedocs.io/)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `i4tools`     |                       [爱思助手](https://www.i4.cn)                        |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `keyviz-cn`    |              [Keyviz-cn](https://github.com/zetaloop/keyviz/)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `lingquan`     |                       [零泉](https://lingquan.cool/)                       |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
