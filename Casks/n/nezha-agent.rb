@@ -2,9 +2,9 @@ cask "nezha-agent" do
   arch arm: "arm64", intel: "amd64"
   os macos: "darwin", linux: "linux"
 
-  version "1.9.5"
-  sha256 arm:          "5d65bbe88dc99be93283c91fd5baa37f9d1633db89424f460eda95d5da29b63f",
-         x86_64:       "33141788d25b94fe395fe93bfeee3d25f51c43abd168d4bfee5ef11f3d34bb7a",
+  version "1.9.6"
+  sha256 arm:          "1731d9267b7815df73ffacd3c952d67e869d9f28cc5f0864272758a308e06c12",
+         x86_64:       "d67d93622fb1ce7156c21dee09258e071e127ee9b5430661d4b340a22d0dc0d8",
          arm64_linux:  "592008995d39aabfb3a313da86ffc4fecc4e2aea8ab0295006c8706d299c5f5b",
          x86_64_linux: "56a40362b8c8b5b47238932a76dc880d3a7a749c0b1c6626f66549dd5a27381f"
 
