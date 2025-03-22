@@ -11,7 +11,7 @@ cask "ting-es" do
 
   livecheck do
     url "http://www.francochinois.com/v4/es/app/ting"
-    regex(/href=.*?dmg\?ver=(\d+(?:-\d+)*)/i)
+    regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
   auto_updates true
