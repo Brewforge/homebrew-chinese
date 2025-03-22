@@ -1,6 +1,6 @@
 cask "ting-fr" do
-  version "2025-03-11"
-  sha256 "2bbbd11266417bf99b0eb0e9240a48b9369a66688779d37dbcdc2a0bc579664a"
+  version "10.2.0"
+  sha256 "e30384de6d1e088a762118e6937ddbf5f81e664d487d9908195ab6a0235d2e17"
 
   url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg?v=#{version}",
       verified:   "static.frdic.com/",

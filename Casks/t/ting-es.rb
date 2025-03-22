@@ -1,6 +1,6 @@
 cask "ting-es" do
-  version "2025-03-11"
-  sha256 "2bbbd11266417bf99b0eb0e9240a48b9369a66688779d37dbcdc2a0bc579664a"
+  version "10.2.0"
+  sha256 "20142fb5583a38b01229b62254665eccc0b8c116fd9be88ec52346314665aa5e"
 
   url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?v=#{version}",
       verified:   "static.frdic.com/",
