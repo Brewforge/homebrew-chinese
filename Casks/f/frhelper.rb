@@ -6,7 +6,7 @@ cask "frhelper" do
       user_agent: :fake
   name "Frhelper"
   name "法语助手"
-  desc "French-Chinese dictionary and learning tool"
+  desc "法语学习者必备的工具"
   homepage "https://www.eudic.net/v4/fr/app/frhelper"
 
   livecheck do
