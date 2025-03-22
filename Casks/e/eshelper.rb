@@ -1,8 +1,8 @@
 cask "eshelper" do
   version "9.7.0"
-  sha256 :no_check
+  sha256 "2bbbd11266417bf99b0eb0e9240a48b9369a66688779d37dbcdc2a0bc579664a"
 
-  url "https://static.eudic.net/pkg/ehmac.dmg",
+  url "https://static.eudic.net/pkg/ehmac.dmg?v=#{version}",
       user_agent: :fake
   name "Eshelper"
   name "西语助手"
@@ -10,8 +10,8 @@ cask "eshelper" do
   homepage "https://www.eudic.net/v4/es/app/eshelper"
 
   livecheck do
-    url :url
-    strategy :extract_plist
+    url :homepage
+    regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
   auto_updates true

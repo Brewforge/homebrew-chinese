@@ -1,9 +1,8 @@
 cask "ting-es" do
   version "2025-03-11"
-  sha256 :no_check
+  sha256 "2bbbd11266417bf99b0eb0e9240a48b9369a66688779d37dbcdc2a0bc579664a"
 
-  # static.frdic.com/ was verified as official when first introduced to the cask
-  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg",
+  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?v=#{version}",
       verified:   "static.frdic.com/",
       user_agent: :fake
   name "每日西语听力"
