@@ -151,13 +151,6 @@ brew help
 |   `ting-es`   | [每日西语听力](http://www.francochinois.com/v4/es/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
 |   `ting-fr`   | [每日法语听力](http://www.francochinois.com/v4/fr/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
 
-### 命令行
-
-|     桶名      |                     软件官网                     | 语言  | 备注                                 |
-| :-----------: | :----------------------------------------------: | :---: | ------------------------------------ |
-|   `bbdown`    |   [BBDown](https://github.com/nilaoda/BBDown)    |  C#   | ![a](assets/a.svg)![1](assets/1.svg) |
-| `nezha-agent` | [哪吒监控服务](https://github.com/nezhahq/agent) |  Go   | ![a](assets/a.svg)![1](assets/1.svg) |
-
 ### 开源软件镜像
 
 |           桶名            |                                     软件官网                                      |                 备注                 |
