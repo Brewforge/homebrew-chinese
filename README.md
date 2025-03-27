@@ -147,6 +147,7 @@ brew help
 |  `dehelper`   |    [德语助手](https://www.eudic.net/v4/de/app/dehelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
 |  `eshelper`   |    [西语助手](https://www.eudic.net/v4/es/app/eshelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
 |  `frhelper`   |    [法语助手](https://www.eudic.net/v4/fr/app/frhelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
+|   `ting-de`   | [每日德语听力](http://www.francochinois.com/v4/en/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
 |   `ting-en`   | [每日英语听力](http://www.francochinois.com/v4/en/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
 |   `ting-es`   | [每日西语听力](http://www.francochinois.com/v4/es/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
 |   `ting-fr`   | [每日法语听力](http://www.francochinois.com/v4/fr/app/ting) | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
