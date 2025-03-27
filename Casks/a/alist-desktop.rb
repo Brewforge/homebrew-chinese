@@ -1,9 +1,9 @@
 cask "alist-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "3.43.0"
-  sha256 arm:   "deeb45c22bc17e017b4b8f5c702101ffaa5f14385748e27c07747032d9dbec8c",
-         intel: "4eff6cd36ae4818aea21860388136b1ef1bfdf6b305010c42349bc43c8991de0"
+  version "3.44.0"
+  sha256 arm:   "23891c7f6a5234fa22a5539c15e1fe9256d379ff40cd4fd0108d3586b93afaff",
+         intel: "183cfa9865eea758df1f3f707928ddff43fa78719471b2635f65df4cf3e04ef7"
 
   url "https://github.com/alist-org/desktop-release/releases/download/v#{version}/alist-desktop_#{version}_#{arch}.dmg",
       verified: "github.com/alist-org/desktop-release/"
