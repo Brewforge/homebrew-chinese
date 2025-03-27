@@ -5,7 +5,7 @@ cask "aigcpanel" do
   sha256 arm:   "37c9e02f1148e38f258a2f68c7f2b4907b856103906ddf39f556fac7be78765f",
          intel: "beabe63af2fb49864e582b28e66622f99fae630324f8e08f28e216b85f2be196"
 
-  url "https://github.com/modstart-lib/aigcpanel/releases/download/v#{version}/AigcPanel-#{version}-mac-#{arch}.dmg",
+  url "https://github.com/modstart-lib/aigcpanel/releases/download/v#{version}/AigcPanelPro-#{version}-mac-#{arch}.dmg",
       verified: "github.com/modstart-lib/aigcpanel/"
   name "AigcPanel"
   desc "一个简单易用的一站式 AI 数字人系统"
