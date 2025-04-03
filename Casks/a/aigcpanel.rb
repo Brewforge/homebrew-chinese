@@ -1,9 +1,9 @@
 cask "aigcpanel" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.9.0"
-  sha256 arm:   "6faf42ec687eb545d4e25161178b2e954479444aa1bf312f62417ca541d0b63e",
-         intel: "0c656ee68ba0281603655977395dc339008add613af537ebc12adaed3971d406"
+  version "0.10.0"
+  sha256 arm:   "72cf066c4105585a01107d0315ee705999abf9779ca96406009b68d3db0c5a9f",
+         intel: "d51f900ae3fba16d60b085b648101426947988ca2ed49eb64b6c1c932066a986"
 
   url "https://github.com/modstart-lib/aigcpanel/releases/download/v#{version}/AigcPanelPro-#{version}-mac-#{arch}.dmg",
       verified: "github.com/modstart-lib/aigcpanel/"
