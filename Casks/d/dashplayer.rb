@@ -1,8 +1,8 @@
 cask "dashplayer" do
   arch arm: "arm64", intel: "x64"
 
-  version "5.1.4"
-  sha256 "c4e36f28410eb8b64db7dd7ff02d9b243e16f5b68b051da965c6878e60f0ca8c"
+  version "5.1.5"
+  sha256 "058edf48f3cb2b576f56a13d438e3c5cca1535252ebdb165467c6a7a38e1ffc0"
 
   url "https://github.com/solidSpoon/DashPlayer/releases/download/v#{version}/DashPlayer-#{version}-arm64.dmg",
       verified: "github.com/solidSpoon/DashPlayer/"
