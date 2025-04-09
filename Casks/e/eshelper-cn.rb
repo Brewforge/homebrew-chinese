@@ -1,4 +1,4 @@
-cask "eshelper" do
+cask "eshelper-cn" do
   version "11.6.0"
   sha256 "727d874fdb76b8e0f20054dd553e0b9700ccd93c037a74e9eb88aedc0174ab9d"
 
