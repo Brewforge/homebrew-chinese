@@ -1,4 +1,4 @@
-cask "frhelper" do
+cask "frhelper-cn" do
   version "11.6.0"
   sha256 "9d8aa256c56868bde63f7a09cf53a271aa10a571ac1979d5e70f7f7b173363fc"
 
