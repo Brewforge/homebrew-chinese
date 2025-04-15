@@ -1,9 +1,9 @@
 cask "julia-cn" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.11.4"
-  sha256 arm:   "8978e7bed0ae882648c1723b02d1e329454955eba4f7fe897bf572b684acae3f",
-         intel: "1068dbe15f7992c05620e1f55bdabb8bb47af8e6f0e189375af14caedd9fb1c9"
+  version "1.11.5"
+  sha256 arm:   "eec35fee04782d076fcb1aee48b023027dc26c08f172cd3f54fcaa5559069deb",
+         intel: "e8ce10435224dec0f4c6923f006ce441a1265375d4309509ee246221d995c09e"
 
   url "https://mirrors.bfsu.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg",
       verified: "mirrors.bfsu.edu.cn/julia-releases/bin/mac/"
