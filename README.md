@@ -111,6 +111,7 @@ brew help
 |     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
 | `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `v2rayn`      |             [v2rayN](hhttps://github.com/2dust/v2rayN)              | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `v2rayxs`     |            [V2RayXS](hhttps://github.com/tzmax/V2RayXS)             | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ### 图形化软件
 
