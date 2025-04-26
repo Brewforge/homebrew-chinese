@@ -110,6 +110,7 @@ brew help
 | `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
 | `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `v2rayn`      |             [v2rayN](hhttps://github.com/2dust/v2rayN)              | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ### 图形化软件
 
