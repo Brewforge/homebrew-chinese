@@ -9,7 +9,7 @@ on:
     # Every 12 hours
     # - cron: "20 */12 * * *"
     # Every day at 6am
-    - cron: "0 6 * * *"
+    - cron: '0 6 * * *'
   # allow run manually
   workflow_dispatch:
 
@@ -33,10 +33,6 @@ jobs:
       image: ghcr.io/homebrew/ubuntu22.04:master
     env:
       HOMEBREW_SIMULATE_MACOS_ON_LINUX: 1
-    outputs:
-      testing_formulae: ${{ steps.formulae-detect.outputs.testing_formulae }}
-      added_formulae: ${{ steps.formulae-detect.outputs.added_formulae }}
-      deleted_formulae: ${{ steps.formulae-detect.outputs.deleted_formulae }}
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
@@ -47,10 +43,6 @@ jobs:
           test-bot: true
 
       - run: brew test-bot --only-tap-syntax
-
-      - run: brew test-bot --only-formulae-detect
-        if: github.event_name == 'pull_request'
-        id: formulae-detect
 
   bump-casks:
     name: Bump casks
@@ -82,7 +74,7 @@ jobs:
 
       - name: Bump
         env:
-          HOMEBREW_DEVELOPER: "1"
+          HOMEBREW_DEVELOPER: '1'
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         shell: bash -ieo pipefail {0}
         run: |
