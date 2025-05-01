@@ -1,4 +1,4 @@
-cask "easytier" do
+cask "easytier-gui" do
   arch arm: "aarch64", intel: "x64"
 
   version "2.2.4"
