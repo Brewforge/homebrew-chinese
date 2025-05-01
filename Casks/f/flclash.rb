@@ -1,9 +1,9 @@
 cask "flclash" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.8.82"
-  sha256 arm:   "e63185daafef5505d6ee9486b339e572f77265bc0e798467d0424b9ed51f12f9",
-         intel: "268a07bf69b45d50c5f13a619c8959eb35a1168b4f7b0407391606a75256853a"
+  version "0.8.83"
+  sha256 arm:   "cb37b1a054981e3de161795f8e22b93a57dc794c7da709061150cfb057a824a0",
+         intel: "e0dc7596917966ad4d73720ff8a299c03e8ed6a3f540c26fd53c86ea3f7da73d"
 
   url "https://github.com/chen08209/FlClash/releases/download/v#{version}/FlClash-#{version}-macos-#{arch}.dmg"
   name "FlClash"
