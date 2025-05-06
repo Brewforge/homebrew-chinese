@@ -7,10 +7,10 @@ cask "ting-es" do
       user_agent: :fake
   name "每日西语听力"
   desc "精听细读，更好学西语"
-  homepage "http://www.francochinois.com/v4/es/app/ting"
+  homepage "https://www.francochinois.com/v4/es/app/ting"
 
   livecheck do
-    url "http://www.francochinois.com/v4/es/app/ting"
+    url :homepage
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 

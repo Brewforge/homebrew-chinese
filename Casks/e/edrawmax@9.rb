@@ -4,7 +4,7 @@ cask "edrawmax@9" do
 
   language "CN", default: true do
     url "https://edrawsoft.cn/2download/edrawmax-cn-9.2.dmg"
-    homepage "http://edrawsoft.cn/"
+    homepage "https://edrawsoft.cn/"
   end
   language "en" do
     url "https://edrawsoft.com/archives/edrawmax-9.2.dmg"
