@@ -6,7 +6,7 @@ cask "feeluown" do
       verified: "github.com/feeluown/FeelUOwn/"
   name "FeelUOwn"
   desc "一个稳定、用户友好以及高度可定制的音乐播放器"
-  homepage "http://feeluown.readthedocs.io/"
+  homepage "https://feeluown.readthedocs.io/"
 
   livecheck do
     url "https://github.com/feeluown/FeelUOwn/releases"
