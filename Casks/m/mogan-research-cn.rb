@@ -19,6 +19,7 @@ cask "mogan-research-cn" do
   app "MoganResearch.app"
 
   zap trash: [
+    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/app.mogan.research",
     "~/Library/Application Support/XmacsLabs",
     "~/Library/Saved Application State/app.mogan.research.savedState",
   ]
