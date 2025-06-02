@@ -113,7 +113,7 @@ brew help
 |     `v2rayn`      |             [v2rayN](hhttps://github.com/2dust/v2rayN)              | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `v2rayxs`     |            [V2RayXS](hhttps://github.com/tzmax/V2RayXS)             | ![a](assets/a.svg)![1](assets/1.svg) |
 
-### 图形化软件
+### 通用软件
 
 |       桶名        |                                  软件官网                                  |                                   备注                                   |
 | :---------------: | :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
@@ -169,6 +169,7 @@ brew help
 |        `kicad-cn`         |                          [Kicad 镜像](https://kicad.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `libreoffice-cn`      |                 [LibreOffice 镜像](https://zh-cn.libreoffice.org)                 | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `lyx-cn`          |                          [Lyx 镜像](https://www.lyx.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `mogan-research-cn`    |                     [Mogan Research 镜像](https://mogan.app/)                     | ![a](assets/a.svg)![1](assets/1.svg) |
 |      `miniforge-cn`       |            [Miniforge 镜像](https://github.com/conda-forge/miniforge)             | ![a](assets/a.svg)![1](assets/1.svg) |
 | `navicat-premium-lite-cn` | [Navicat Premium Lite 镜像](https://navicat.com.cn/products/navicat-premium-lite) | ![b](assets/b.svg)![1](assets/1.svg) |
 |         `obs-cn`          |                  [OBS Studio 镜像](https://obsproject.com/zh-cn)                  | ![a](assets/a.svg)![1](assets/1.svg) |
