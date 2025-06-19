@@ -12,8 +12,8 @@ cask "chaoxing-cxstudy" do
 
   livecheck do
     url :url
-    regex(/study_#{arch}_([^_]+)_[^\.]+\.dmg/i)
     strategy :header_match
+    regex(/study_#{arch}_([^_]+)_[^\.]+\.dmg/i)
   end
 
   app "学习通.app"
