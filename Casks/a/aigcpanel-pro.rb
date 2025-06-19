@@ -13,7 +13,7 @@ cask "aigcpanel-pro" do
 
   livecheck do
     url :url
-    regex(%r{AigcPanelPro-(\d+(\.\d+)+(-beta)?)-mac-#{arch}\.dmg}i)
+    regex(/AigcPanelPro-(\d+(\.\d+)+(-beta)?)-mac-#{arch}\.dmg/i)
     strategy :github_latest do |json, regex|
       json["assets"]&.map do |asset|
         match = asset["browser_download_url"]&.match(regex)
