@@ -1,6 +1,6 @@
 cask "qt-creator-cn" do
-  version "16.0.0"
-  sha256 "f6677aee4e37a496996b404ca168d1817dd19645f2d2063d3a204ece4d816bf6"
+  version "17.0.0"
+  sha256 "68c59ff25f73ebe3ca55e847c0c8dbb49c0dca284b49d5efe6db1633323d745a"
 
   url "https://mirrors.bfsu.edu.cn/qt/official_releases/qtcreator/#{version.major_minor}/#{version}/qt-creator-opensource-mac-x86_64-#{version}.dmg",
       verified: "mirrors.bfsu.edu.cn/"
