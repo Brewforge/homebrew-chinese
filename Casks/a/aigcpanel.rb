@@ -13,8 +13,21 @@ cask "aigcpanel" do
 
   livecheck do
     url :url
-    strategy :github_latest
-    # regex(/AigcPanel-(\d+(\.\d+)+(-beta)?)-mac-#{arch}\.dmg/i)
+    regex(/AigcPanel-(\d+(\.\d+)+(-beta)?)-mac-#{arch}\.dmg/i)
+    strategy :github_releases do |json, regex|
+      json.filter_map do |release|
+        matched = release["assets"].filter_map do |asset|
+          match = asset["name"].match(regex)
+          next if match.blank?
+
+          match[1]
+        end.first
+
+        next if matched.blank?
+
+        matched
+      end.first
+    end
   end
 
   app "AigcPanel.app"
