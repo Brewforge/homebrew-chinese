@@ -13,7 +13,7 @@ cask "aigcpanel" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    regex(/^v?(\d+(\.\d+)+(-Beta)?)$/i)
   end
 
   app "AigcPanel.app"
