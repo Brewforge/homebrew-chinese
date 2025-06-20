@@ -117,7 +117,6 @@ brew help
 
 |       桶名        |                                  软件官网                                  |                                   备注                                   |
 | :---------------: | :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
-|  `alist-desktop`  |       [AList Desktop](https://github.com/alist-org/desktop-release)        |                   ![b](assets/b.svg)![2](assets/2.svg)                   |
 |  `alist-helper`   |         [Alist-Helper](https://github.com/Xmarmalade/alisthelper)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 | `app-cleaner-cn`  | [App Cleaner 中文版](https://nektony.com/zh-hans/mac-app-cleaner/download) |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `cajviewer`    |           [CAJViewer](https://CAJViewer.cnki.net/download.html)            |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
