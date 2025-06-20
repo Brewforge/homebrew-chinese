@@ -176,7 +176,6 @@ brew help
 |      `qt-creator-cn`      |                  [Qt Creator 镜像](https://www.qt.io/developers)                  | ![a](assets/a.svg)![1](assets/1.svg) |
 |      `texstudio-cn`       |                      [TeXStudio 镜像](https://texstudio.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `vlc-cn`          |                     [VLC 镜像](https://www.videolan.org/vlc)                      | ![a](assets/a.svg)![1](assets/1.svg) |
-|       `vscodium-cn`       |               [VSCodium 镜像](https://github.com/VSCodium/vscodium)               | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ## ✨ 一起维护
 
