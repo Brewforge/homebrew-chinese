@@ -1,6 +1,6 @@
 cask "lyx-cn" do
-  version "2.4.3"
-  sha256 "3e9d84622165e519cee8f4d6f4d0d58be4edc8daf1d81eda1c1b6b3adde9ab4b"
+  version "2.4.4"
+  sha256 "8f92befe0df9da6f251a5a04a8ef536a03a354cfbb4e6f87dd80e76fa92871c0"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/lyx/bin/#{version.major_minor_patch}/LyX-#{version}+qt5-x86_64-arm64-cocoa.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/lyx/bin/"
