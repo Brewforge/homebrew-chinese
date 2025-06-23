@@ -1,9 +1,9 @@
 cask "gui-for-singbox" do
   arch arm: "arm64", intel: "amd64"
 
-  version "1.9.7"
-  sha256 arm:   "86cb22608951e96502877dbd967fc3205a6eb622e924cb7e34cffcee48f0aba6",
-         intel: "7140e8b9c0fca6523ab0f409cb7202a7f95176d1bb1da715aa42b24b1cfaefd2"
+  version "1.9.8-Alpha"
+  sha256 arm:   "2a56ba3da53139defbfd3c271aefbf4be2489c495855be6c9c0b849c34c8c18f",
+         intel: "c18a7de5dc2b280c9aa881946e906b444a5cc1504c1c31e3650fa3c3cb74320d"
 
   url "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v#{version}/GUI.for.SingBox-darwin-#{arch}.zip"
   name "GUI.for.SingBox"
@@ -18,7 +18,7 @@ cask "gui-for-singbox" do
         match = asset["browser_download_url"]&.match(regex)
         next if match.blank?
 
-        "#{match[1]}"
+        match[1].to_s
       end
     end
   end
