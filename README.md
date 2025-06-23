@@ -97,10 +97,9 @@ brew help
 
 ### AI 工具
 
-|    桶名     |              软件官网               |                 备注                 |
-| :---------: | :---------------------------------: | :----------------------------------: |
-| `aigcpanel` | [AigcPanel](https://aigcpanel.com/) | ![a](assets/a.svg)![1](assets/1.svg) |
-|   `aidea`   |    [aidea](https://ai.aicode.cc)    | ![b](assets/b.svg)![2](assets/2.svg) |
+|  桶名   |           软件官网            |                 备注                 |
+| :-----: | :---------------------------: | :----------------------------------: |
+| `aidea` | [aidea](https://ai.aicode.cc) | ![b](assets/b.svg)![2](assets/2.svg) |
 
 ### 代理工具
 
@@ -110,8 +109,8 @@ brew help
 | `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
 | `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
-|     `v2rayn`      |             [v2rayN](hhttps://github.com/2dust/v2rayN)              | ![a](assets/a.svg)![1](assets/1.svg) |
-|     `v2rayxs`     |            [V2RayXS](hhttps://github.com/tzmax/V2RayXS)             | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `v2rayn`      |              [v2rayN](https://github.com/2dust/v2rayN)              | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `v2rayxs`     |             [V2RayXS](https://github.com/tzmax/V2RayXS)             | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ### 通用软件
 

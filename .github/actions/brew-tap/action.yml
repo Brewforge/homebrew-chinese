@@ -2,7 +2,7 @@ name: Brew Tap
 description: Homebrew Tap
 
 runs:
-  using: "composite"
+  using: 'composite'
 
   steps:
     - name: Add Tap
@@ -13,6 +13,6 @@ runs:
     - name: Install Homebrew's dependencies
       shell: bash -ieo pipefail {0}
       run: |
-        brew install ripgrep sd gcc coreutils jq
+        brew install ripgrep sd gcc coreutils
         brew unlink coreutils && brew link coreutils
         brew install-bundler-gems --groups "audit,style"
