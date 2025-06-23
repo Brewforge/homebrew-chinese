@@ -18,7 +18,7 @@ cask "gui-for-singbox" do
         match = asset["browser_download_url"]&.match(regex)
         next if match.blank?
 
-        "#{match[1]}"
+        match[1].to_s
       end
     end
   end
