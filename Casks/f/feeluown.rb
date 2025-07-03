@@ -1,6 +1,6 @@
 cask "feeluown" do
-  version "4.1.12,14.7.5"
-  sha256 "d445c0bc75e657d3ec1ee2d739678caedcadae96f62f48c182e2b001461c8b23"
+  version "4.1.13,14.7.6"
+  sha256 "f13bd09d00523c7640f7ec9a1b96299667a8a9e2bac2423661fca9eaee6ed102"
 
   url "https://github.com/feeluown/FeelUOwn/releases/download/v#{version.csv.first}/FeelUOwnX-macOS#{version.csv.second}-arm64.zip",
       verified: "github.com/feeluown/FeelUOwn/"
