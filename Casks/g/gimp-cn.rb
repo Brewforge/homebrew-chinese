@@ -5,14 +5,14 @@ cask "gimp-cn" do
   sha256 arm:   "bc3002d9221ebed220b9687378275d139b4fd0ea066fe3a2b5788ef2ee4377f3",
          intel: "9a2dc5c194212f9f7b8ab6752c7aaad5c5e38cb211ec526593f4d6d720b76c3f"
 
-  url "https://mirror.nju.edu.cn/gimp/gimp/v#{version.major_minor}/macos/gimp-#{version.csv.first}-#{arch}#{"-#{version.csv.second}" if version.csv.second}.dmg",
-      verified: "mirror.nju.edu.cn/gimp/"
+  url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/macos/gimp-#{version.csv.first}-#{arch}#{"-#{version.csv.second}" if version.csv.second}.dmg",
+      verified: "mirrors.ustc.edu.cn/gimp/"
   name "GIMP development version"
   desc "Free and open-source image editor"
-  homepage "https://www.gimp.org/"
+  homepage "https://gimp.org/"
 
   livecheck do
-    url "https://www.gimp.org/gimp_versions.json"
+    url "https://gimp.org/gimp_versions.json"
     strategy :json do |json|
       json["STABLE"]&.map do |release|
         release["macos"]&.map do |build|

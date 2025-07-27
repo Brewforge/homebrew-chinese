@@ -5,8 +5,8 @@ cask "blender-cn" do
   sha256 arm:   "f03e5ae7813db62c8664176b62638e12c1413cd9d59a883bb7bfb67cbaa8c52e",
          intel: "d3141506d82572ca80ba58c007d2b4e30c59f4c89f940246a81769c6db6becb2"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/"
+  url "https://mirror.nju.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
+      verified: "mirror.nju.edu.cn/"
   name "Blender"
   desc "3D creation suite"
   homepage "https://blender.org/"

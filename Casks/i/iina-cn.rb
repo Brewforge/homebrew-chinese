@@ -2,14 +2,14 @@ cask "iina-cn" do
   version "1.3.5"
   sha256 "3b8b9199f41a18c2aa8b30e5824d0c9daccc1d59176832ea650f533fcbdc6a38"
 
-  url "https://mirrors.bfsu.edu.cn/iina/IINA.v#{version}.dmg",
-      verified: "mirrors.bfsu.edu.cn/iina/"
+  url "https://mirror.nju.edu.cn/iina/IINA.v#{version}.dmg",
+      verified: "mirror.nju.edu.cn/iina/"
   name "IINA"
   desc "Free and open-source media player"
   homepage "https://iina.io/"
 
   livecheck do
-    url "https://mirrors.bfsu.edu.cn/iina"
+    url "https://mirror.nju.edu.cn/iina"
     regex(/IINA\.v(\d+(\.\d+)+)\.dmg/i)
   end
 
