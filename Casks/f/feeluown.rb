@@ -9,7 +9,7 @@ cask "feeluown" do
   homepage "https://feeluown.readthedocs.io/"
 
   livecheck do
-    url "https://github.com/feeluown/FeelUOwn/releases"
+    url :url
     regex(%r{v(\d+(\.\d+)+)/FeelUOwnX-macOS(\d+(\.\d+)+)-arm64\.zip$}i)
     strategy :github_latest do |json|
       json["assets"]&.map do |asset|

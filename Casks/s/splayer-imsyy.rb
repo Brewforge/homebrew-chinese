@@ -11,7 +11,7 @@ cask "splayer-imsyy" do
   homepage "https://github.com/imsyy/SPlayer"
 
   livecheck do
-    url "https://github.com/imsyy/SPlayer/releases"
+    url :url
     regex(/splayer-v?(\d+(?:\.\d+)+)(-beta\.\d)?#{arch}-mac\.zip$/i)
     strategy :github_latest do |json, regex|
       json["assets"]&.map do |asset|
