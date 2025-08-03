@@ -1,9 +1,9 @@
 cask "gui-for-singbox" do
   arch arm: "arm64", intel: "amd64"
 
-  version "1.9.8-Alpha"
-  sha256 arm:   "2a56ba3da53139defbfd3c271aefbf4be2489c495855be6c9c0b849c34c8c18f",
-         intel: "c18a7de5dc2b280c9aa881946e906b444a5cc1504c1c31e3650fa3c3cb74320d"
+  version "1.9.8"
+  sha256 arm:   "656bc604b1e5c7cd4652643a00b58f2105cd24c943275f4610f4418de954fc05",
+         intel: "0dda9ada4d68c60bb8d3c41c3000d5b95dcaf013b2ec32fae17eadf297538b47"
 
   url "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v#{version}/GUI.for.SingBox-darwin-#{arch}.zip"
   name "GUI.for.SingBox"
