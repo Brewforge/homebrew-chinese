@@ -2,9 +2,9 @@ cask "libreoffice-cn" do
   arch arm: "aarch64", intel: "x86-64"
   folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  version "25.2.4"
-  sha256 arm:   "d0f8573dfc5d1a858061a9bc7889313cb6837db8a8f1b568d067ca156c03745e",
-         intel: "88746b5e46a72ae964ed2275399ee0fb2a0712f6d93a30b151358ffa0ea8349a"
+  version "25.2.5"
+  sha256 arm:   "0f1e170818508c238ea3fc48753ba264c3dbbce0270655fe020f415f0deef0f0",
+         intel: "1cb2cc12f26757cb3df282854c80edd17857ece679a6b30b6391b0dc95f6f504"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/libreoffice/libreoffice/stable/"
