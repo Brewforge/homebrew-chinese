@@ -9,7 +9,7 @@ cask "cajviewer" do
 
   livecheck do
     url :homepage
-    regex(/CAJViewer_(.+)_arm64\.dmg/)
+    regex(/CAJViewer_(\d+(\.\d+)+)_arm64\.dmg/)
   end
 
   auto_updates true

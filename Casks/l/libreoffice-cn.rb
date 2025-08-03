@@ -12,9 +12,10 @@ cask "libreoffice-cn" do
   homepage "https://libreoffice.org/"
 
   livecheck do
-    url "https://mirrors.aliyun.com/libreoffice/stable/"
-    regex(%r{href="(\d+(?:\.\d+)+)/mac"}i)
+    url "https://wiki.documentfoundation.org/Main_Page"
+    regex(/>\s*Download\s+LibreOffice\s+v?(\d+(?:\.\d+)+)\s*</im)
   end
+
 
   auto_updates true
   conflicts_with cask: ["homebrew/cask-versions/libreoffice-still", "libreoffice"]
