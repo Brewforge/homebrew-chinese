@@ -1,9 +1,9 @@
 cask "easytier-gui" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.3.2"
-  sha256 arm:   "54607696e29570eab375d6205dafa6c73e1f3850ad0f3ad39e3e114097eda6f8",
-         intel: "b2b28b0e7b0e3b4893133b9a46932a6efbc9da2968682b0b173074ae4a9702c2"
+  version "2.4.2"
+  sha256 arm:   "1a3b0762f9a899502b604195402c8576524bf931ca82fdef04348e5d4a764c0d",
+         intel: "bc46c8bf8b71c71b7e5e6405bc6432ddceabbcd56a7923610848eb903c851cb1"
 
   url "https://github.com/EasyTier/EasyTier/releases/download/v#{version}/easytier-gui_#{version}_#{arch}.dmg",
       verified: "github.com/EasyTier/EasyTier/"
