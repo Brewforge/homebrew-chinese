@@ -133,6 +133,7 @@ brew help
 |    `linkease`     |                     [易有云](https://app.linkease.com)                     |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 | `m3u8-downloader` |      [M3U8-Downloader](https://github.com/HeiSir2014/M3U8-Downloader)      |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `mastergo`     |                      [MasterGo](https://mastergo.com)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `messauto`     |              [MessAuto](https://github.com/LeeeSe/MessAuto/)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `noteey`      |                     [Noteey](https://www.noteey.com/)                      | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
 | `quarkclouddrive` |                      [夸克网盘](https://pan.quark.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `splayer-imsyy`  |                [SPlayer](https://github.com/imsyy/SPlayer)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
