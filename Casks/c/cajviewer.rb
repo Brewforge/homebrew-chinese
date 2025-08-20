@@ -5,7 +5,7 @@ cask "cajviewer" do
   url "https://download.cnki.net/cajPackage/CAJMACPackage/CAJViewer_#{version}_arm64.dmg"
   name "CAJViewer"
   desc "专业文献阅读器"
-  homepage "https://CAJViewer.cnki.net/download.html"
+  homepage "https://cajviewer.cnki.net/download.html"
 
   livecheck do
     url :homepage

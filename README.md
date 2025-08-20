@@ -98,13 +98,13 @@ brew help
 ### AI 工具
 
 |  桶名   |           软件官网            |                 备注                 |
-| :-----: | :---------------------------: | :----------------------------------: |
+|:-------:|:-----------------------------:|:------------------------------------:|
 | `aidea` | [aidea](https://ai.aicode.cc) | ![b](assets/b.svg)![2](assets/2.svg) |
 
 ### 代理工具
 
 |       桶名        |                              软件官网                               |                 备注                 |
-| :---------------: | :-----------------------------------------------------------------: | :----------------------------------: |
+|:-----------------:|:-------------------------------------------------------------------:|:------------------------------------:|
 |   `clashx-meta`   |       [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta)       | ![a](assets/a.svg)![1](assets/1.svg) |
 | `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
@@ -115,7 +115,7 @@ brew help
 ### 通用软件
 
 |       桶名        |                                  软件官网                                  |                                   备注                                   |
-| :---------------: | :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+|:-----------------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
 |  `alist-helper`   |         [Alist-Helper](https://github.com/Xmarmalade/alisthelper)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 | `app-cleaner-cn`  | [App Cleaner 中文版](https://nektony.com/zh-hans/mac-app-cleaner/download) |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `cajviewer`    |           [CAJViewer](https://CAJViewer.cnki.net/download.html)            |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
@@ -142,7 +142,7 @@ brew help
 ### 外语学习
 
 |     桶名      |                          软件官网                           |                          备注                          |
-| :-----------: | :---------------------------------------------------------: | :----------------------------------------------------: |
+|:-------------:|:-----------------------------------------------------------:|:------------------------------------------------------:|
 | `dashplayer`  |   [dashplayer](https://github.com/solidSpoon/DashPlayer)    | ![a](assets/a.svg)![1](assets/1.svg)![3](assets/3.svg) |
 |    `enjoy`    |        [人人都能学英语](https://1000h.org/enjoy-app)        | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
 | `pot-desktop` |        [Pot](https://github.com/pot-app/pot-desktop)        |          ![a](assets/a.svg)![1](assets/1.svg)          |
@@ -157,7 +157,7 @@ brew help
 ### 开源软件镜像
 
 |           桶名            |                                     软件官网                                      |                 备注                 |
-| :-----------------------: | :-------------------------------------------------------------------------------: | :----------------------------------: |
+|:-------------------------:|:---------------------------------------------------------------------------------:|:------------------------------------:|
 |       `blender-cn`        |                      [Blender 镜像](https://www.blender.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
 |       `freecad-cn`        |           [FreeCAD 镜像](https://www.freecad.org/index.php?lang=zh_CN)            | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `gimp-cn`         |                         [GIMP 镜像](https://www.gimp.org)                         | ![a](assets/a.svg)![1](assets/1.svg) |
@@ -167,7 +167,7 @@ brew help
 |        `kicad-cn`         |                          [Kicad 镜像](https://kicad.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `libreoffice-cn`      |                 [LibreOffice 镜像](https://zh-cn.libreoffice.org)                 | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `lyx-cn`          |                          [Lyx 镜像](https://www.lyx.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
-|    `mogan-research-cn`    |                     [Mogan Research 镜像](https://mogan.app/)                     | ![a](assets/a.svg)![1](assets/1.svg) |
+|        `mogan-cn`         |                         [Mogan 镜像](https://mogan.app/)                          | ![a](assets/a.svg)![1](assets/1.svg) |
 |      `miniforge-cn`       |            [Miniforge 镜像](https://github.com/conda-forge/miniforge)             | ![a](assets/a.svg)![1](assets/1.svg) |
 | `navicat-premium-lite-cn` | [Navicat Premium Lite 镜像](https://navicat.com.cn/products/navicat-premium-lite) | ![b](assets/b.svg)![1](assets/1.svg) |
 |         `obs-cn`          |                  [OBS Studio 镜像](https://obsproject.com/zh-cn)                  | ![a](assets/a.svg)![1](assets/1.svg) |
@@ -186,7 +186,7 @@ brew help
 目前还有一些当前维护者未能搞定的 Cask，请各位豪杰出手相助。
 
 |     桶名      |                 软件官网                 |                      问题                       |
-| :-----------: | :--------------------------------------: | :---------------------------------------------: |
+|:-------------:|:----------------------------------------:|:-----------------------------------------------:|
 | ~`lceda-pro`~ | ~[嘉立创 EDA 专业版](https://lceda.cn/)~ | ~解压失败（压缩包中有文件名包含非 UTF-8 字符）~ |
 
 ---

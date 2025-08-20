@@ -12,7 +12,7 @@ cask "blender-cn" do
   homepage "https://blender.org/"
 
   livecheck do
-    url "https://blender.org/download/"
+    url "https://www.blender.org/download/"
     regex(%r{href=.*?/blender[._-]v?(\d+(?:\.\d+)+)[._-]macos[._-]#{arch}\.dmg}i)
   end
 

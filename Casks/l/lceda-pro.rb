@@ -2,11 +2,9 @@ cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
   version "2.2.40.8"
-  sha256 arm:   "8842a83563fba8557d6dc8ae79cac63cb8fbe9f16027a12723b319d3aca431c8",
-         intel: "8842a83563fba8557d6dc8ae79cac63cb8fbe9f16027a12723b319d3aca431c8"
+  sha256 :no_check
 
-  branch = "main"
-  url "https://raw.githubusercontent.com/Brewforge/homebrew-chinese/refs/heads/#{branch}/Casks/l/lceda-pro.sh",
+  url "https://raw.githubusercontent.com/Brewforge/homebrew-chinese/refs/heads/main/Casks/l/lceda-pro.sh",
       verified: "raw.githubusercontent.com/Brewforge/homebrew-chinese/"
   name "LCEDA-Pro"
   desc "高效的国产 PCB 设计工具，永久免费"
@@ -19,8 +17,6 @@ cask "lceda-pro" do
 
   auto_updates true
 
-  # app "LCEDA-Pro.app"
-
   installer script: {
     executable: "lceda-pro.sh",
     args:       [
@@ -29,8 +25,6 @@ cask "lceda-pro" do
       appdir.to_s,
     ],
   }
-
-  # binary "#{appdir}/LCEDA-Pro.app/Contents/MacOS/LCEDA-Pro"
 
   uninstall delete: caskroom_path.to_s
 

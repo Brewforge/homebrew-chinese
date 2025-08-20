@@ -6,10 +6,10 @@ cask "lyx-cn" do
       verified: "mirror.nju.edu.cn/lyx/bin/"
   name "LyX"
   desc "GUI document processor based on the LaTeX typesetting system"
-  homepage "https://lyx.org/"
+  homepage "https://www.lyx.org/"
 
   livecheck do
-    url "https://lyx.org/Download"
+    url "https://www.lyx.org/Download"
     regex(/LyX[._-]v?(\d+(?:\.\d+)+)\+qt5/i)
   end
 
