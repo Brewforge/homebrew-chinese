@@ -4,8 +4,8 @@ cask "lceda-pro" do
   version "2.2.40.8"
   sha256 :no_check
 
-  url "https://raw.githubusercontent.com/Brewforge/homebrew-chinese/refs/heads/main/Casks/l/lceda-pro.sh",
-      verified: "raw.githubusercontent.com/Brewforge/homebrew-chinese/"
+  url "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip",
+      verified: "image.lceda.cn/"
   name "LCEDA-Pro"
   desc "高效的国产 PCB 设计工具，永久免费"
   homepage "https://lceda.cn/"
@@ -17,14 +17,7 @@ cask "lceda-pro" do
 
   auto_updates true
 
-  installer script: {
-    executable: "lceda-pro.sh",
-    args:       [
-      "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip",
-      "#{staged_path}/lceda-pro-mac-#{arch}-#{version}.zip",
-      appdir.to_s,
-    ],
-  }
+  app "lceda-pro-mac-#{arch}-#{version}/LCEDA-Pro.app"
 
   uninstall delete: caskroom_path.to_s
 
