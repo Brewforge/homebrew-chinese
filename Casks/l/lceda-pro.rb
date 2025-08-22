@@ -4,8 +4,7 @@ cask "lceda-pro" do
   version "2.2.40.8"
   sha256 :no_check
 
-  url "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip",
-      verified: "image.lceda.cn/"
+  url "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip"
   name "LCEDA-Pro"
   desc "高效的国产 PCB 设计工具，永久免费"
   homepage "https://lceda.cn/"
