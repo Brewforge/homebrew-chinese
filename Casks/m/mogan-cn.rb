@@ -1,9 +1,9 @@
 cask "mogan-cn" do
   arch arm: "-arm"
 
-  version "2025.1.0"
-  sha256 arm:   "16f19adbe53841b6d1e3631862c8e90b6441cb444cfd3ec6939084ffbaa38fbf",
-         intel: "01dd079a5f4fe01fc8bb114c922b2ccf2affa03cde64f0bfd2ab1a47312d96ae"
+  version "2025.1.1"
+  sha256 arm:   "51cfa0e6bddeaa0ae6a9f0aede6018c1590ae9fd607dc4a45b7186b876852335",
+         intel: "ca15ad19217ab6808984845911b1620981af379f96fd8d309877b57f39cda445"
 
   url "https://mirrors.ustc.edu.cn/github-release/XmacsLabs/mogan/LatestRelease/MoganSTEM-v#{version}#{arch}.dmg",
       verified: "mirrors.ustc.edu.cn/github-release/XmacsLabs/mogan/LatestRelease/"
