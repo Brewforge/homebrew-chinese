@@ -8,13 +8,14 @@ cask "keyviz-cn" do
   homepage "https://github.com/zetaloop/keyviz"
 
   livecheck do
-    url "https://github.com/zetaloop/keyviz/tags"
-    strategy :page_match do |page|
-      match = page.match(/href=.*?v(\d+(\.\d+)+(a\d)?)/i)
-      next if match.blank?
+    # url "https://github.com/zetaloop/keyviz/tags"
+    # strategy :page_match do |page|
+    #   match = page.match(/href=.*?v(\d+(\.\d+)+(a\d)?)/i)
+    #   next if match.blank?
 
-      match[1].to_s
-    end
+    #   match[1].to_s
+    # end
+    skip "No livecheck as pre-release"
   end
 
   auto_updates true
