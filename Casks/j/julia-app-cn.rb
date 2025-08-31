@@ -1,4 +1,4 @@
-cask "julia-cn" do
+cask "julia-app-cn" do
   arch arm: "aarch64", intel: "x64"
 
   version "1.11.6"

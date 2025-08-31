@@ -166,7 +166,8 @@ brew help
 |         `gimp-cn`         |                           [GIMP 镜像](https://gimp.org)                           | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `iina-cn`         |                           [IINA 镜像](https://iina.io)                            | ![a](assets/a.svg)![1](assets/1.svg) |
 |       `inkscape-cn`       |         [Inkscape 镜像](https://inkscape.org/zh-hans/?switchlang=zh-hans)         | ![a](assets/a.svg)![1](assets/1.svg) |
-|        `julia-cn`         |                        [Julia 镜像](https://julialang.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
+|      `julia-app-cn`       |                        [Julia 镜像](https://julialang.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `julia-app@lts-cn`     |                      [Julia LTS 镜像](https://julialang.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
 |        `kicad-cn`         |                          [Kicad 镜像](https://kicad.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `libreoffice-cn`      |                 [LibreOffice 镜像](https://zh-cn.libreoffice.org)                 | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `lyx-cn`          |                            [Lyx 镜像](https://lyx.org)                            | ![a](assets/a.svg)![1](assets/1.svg) |
