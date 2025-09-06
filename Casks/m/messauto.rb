@@ -1,9 +1,9 @@
 cask "messauto" do
   arch arm: "aarch", intel: "x"
 
-  version "1.2.0"
-  sha256 arm:   "94d97a0b73e598bcd7727577c5bce6a5cd758b3e340b739be2232fdc6338850a",
-         intel: "9e91afb13de11fb1aa8a1cf710d901711fc056dc7b0b2329f8251df7e7395d5f"
+  version "1.2.1"
+  sha256 arm:   "0203b4479ff4974b2fc2404970f35c00fa64f6dc00aa73198205243f9fa03e77",
+         intel: "50f51f0d83bef007dee27f13b479131e649ec7be42449e3c20b5eaa9c691a8ec"
 
   url "https://github.com/LeeeSe/MessAuto/releases/download/v#{version}/MessAuto_#{version}_#{arch}64.dmg"
   name "MessAuto"
