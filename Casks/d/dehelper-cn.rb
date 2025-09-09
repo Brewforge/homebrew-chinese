@@ -17,7 +17,7 @@ cask "dehelper-cn" do
   auto_updates true
   depends_on macos: ">= :high_sierra"
 
-  app "Eudic_de.app"
+  app "Dehelper.app"
 
   uninstall quit: [
     "com.eusoft.dehelper",
