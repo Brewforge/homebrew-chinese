@@ -1,9 +1,9 @@
 cask "v2rayn" do
   arch arm: "arm64", intel: "64"
 
-  version "7.14.6"
-  sha256 arm:   "aca613428107a862620aae1bcb56c05a88c4bd20d8d9c732b2be959b327df65d",
-         intel: "6569a1d4030066bf02b7e0698a9a2b98404a8d9a69fa7225098e4039a677f0c5"
+  version "7.14.9"
+  sha256 arm:   "50ddbc4b9a2a8e4db1f96579a50a826e12952111c27a740ae0beac2468b7a05e",
+         intel: "9cd525b1f7c709b7f03d21107c0b4694ab97054eea6fc393cb985515bc8f6ae7"
 
   url "https://github.com/2dust/v2rayN/releases/download/#{version}/v2rayN-macos-#{arch}.dmg"
   name "v2rayN"
