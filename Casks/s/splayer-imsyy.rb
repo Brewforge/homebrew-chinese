@@ -1,9 +1,9 @@
 cask "splayer-imsyy" do
   arch arm: "-arm64", intel: ""
 
-  version "3.0.0-beta.1"
-  sha256 arm:   "51a54652a76ed145133ac54544f08bff5590d99c7fd31055161c01131c323367",
-         intel: "22479889d413a70c5f5372dfca46f134a5f5216255a667fa8457d2190fe1ad42"
+  version "3.0.0-beta.2"
+  sha256 arm:   "4239da3c2a7ea8b88071fb87ff2458fd88b8a85931c5fe4cbbfa41d265cb713f",
+         intel: "85ac83af0148db9bdfaf5463444cca4157425da31c0f757c5e53042a8fc836cf"
 
   url "https://github.com/imsyy/SPlayer/releases/download/v#{version}/splayer-#{version}-mac.zip"
   name "SPlayer"
@@ -54,4 +54,8 @@ cask "splayer-imsyy" do
     "~/Library/Preferences/com.imsyy.splayer.plist",
     "~/Library/Saved Application State/com.imsyy.splayer.savedState",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end
