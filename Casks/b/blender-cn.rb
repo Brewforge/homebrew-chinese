@@ -1,9 +1,9 @@
 cask "blender-cn" do
   arch arm: "arm64", intel: "x64"
 
-  version "4.5.1"
-  sha256 arm:   "99dcd51528cc06bd872bb28867f6663c21332f4986cc87bea95131da93a23e0f",
-         intel: "c7922b8afc194d82800a8926f842162007e365d72e955a319164cb2c4662e049"
+  version "4.5.3"
+  sha256 arm:   "73ea841053b55404bb3a71a9a22366f1f8821787fe5c899f8b55a7fff929d01b",
+         intel: "c1fd8f30eef1b37918659ad65c504d30cebd3e5bac74dd54f7df1a311aeebe18"
 
   url "https://mirror.nju.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
       verified: "mirror.nju.edu.cn/"
