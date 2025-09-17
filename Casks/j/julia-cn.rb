@@ -1,11 +1,8 @@
-cask "julia-app@lts-cn" do
-  arch arm: "aarch64", intel: "x64"
+cask "julia-cn" do
+  version "1.11.6"
+  sha256 "297ff71261e9e77114601c3b1ab1a3056621911887e791192e219558f35939a6"
 
-  version "1.10.10"
-  sha256 arm:   "297ff71261e9e77114601c3b1ab1a3056621911887e791192e219558f35939a6",
-         intel: "bf44d032150d0aa0cd363ec09dd518589727f9ec8102f34c1093cedc1ab04c36"
-
-  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg",
+  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/aarch64/#{version.major_minor}/julia-#{version}-macaarch64.dmg",
       verified: "mirrors.ustc.edu.cn/julia-releases/bin/mac/"
   name "Julia"
   desc "Programming language for technical computing"
@@ -13,7 +10,7 @@ cask "julia-app@lts-cn" do
 
   livecheck do
     url "https://julialang.org/downloads/"
-    regex(/\(LTS\)\s+release:\s+v?(\d+(?:\.\d+)+)/i)
+    regex(/href=.*?julia-(\d+(\.\d+){2})-macaarch64\.dmg/i)
   end
 
   auto_updates true
