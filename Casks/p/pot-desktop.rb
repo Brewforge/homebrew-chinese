@@ -7,7 +7,7 @@ cask "pot-desktop" do
 
   url "https://github.com/pot-app/pot-desktop/releases/download/#{version}/pot_#{version}_#{arch}.dmg"
   name "pot"
-  desc "Cross-platform translation software"
+  desc "Cross-platform software for text translation and recognition."
   homepage "https://github.com/pot-app/pot-desktop"
 
   livecheck do
