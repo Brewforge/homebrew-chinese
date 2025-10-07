@@ -1,9 +1,9 @@
 cask "gimp-cn" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "3.0.4"
-  sha256 arm:   "bc3002d9221ebed220b9687378275d139b4fd0ea066fe3a2b5788ef2ee4377f3",
-         intel: "9a2dc5c194212f9f7b8ab6752c7aaad5c5e38cb211ec526593f4d6d720b76c3f"
+  version "3.0.6"
+  sha256 arm:   "6f4e7f8ed7ebfa80dcb6e0c05f9b1d6bd3d5a991e99abc2f3391cf37bfd97d70",
+         intel: "0267ae09d88e1d4b121810fbdcb91f333944201b0b02e2afdbbfabd1a046a551"
 
   url "https://mirrors.ustc.edu.cn/gimp/v#{version.major_minor}/macos/gimp-#{version.csv.first}-#{arch}#{"-#{version.csv.second}" if version.csv.second}.dmg",
       verified: "mirrors.ustc.edu.cn/gimp/"
