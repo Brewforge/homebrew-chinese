@@ -4,7 +4,7 @@ cask "jianying-pro-installer" do
 
   url "https://lf3-package.vlabstatic.com/obj/faceu-packages/installer/jianying_jianyingpro_#{version}_installer.dmg",
       verified: "lf3-package.vlabstatic.com/obj/faceu-packages/installer/"
-  name "CapCut"
+  name "剪映专业版"
   desc "全能易用的桌面端剪辑软件，让创作更简单"
   homepage "https://www.capcut.cn/"
 
