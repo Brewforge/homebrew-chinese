@@ -9,8 +9,9 @@ cask "julia-cn" do
   homepage "https://julialang.org/"
 
   livecheck do
-    url "https://julialang.org/downloads/"
-    regex(/href=.*?julia-(\d+(\.\d+){2})-macaarch64\.dmg/i)
+    skip "同步问题，暂不更新"
+    # url "https://julialang.org/downloads/"
+    # regex(/href=.*?julia-(\d+(\.\d+){2})-macaarch64\.dmg/i)
   end
 
   auto_updates true
