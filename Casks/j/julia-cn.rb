@@ -1,6 +1,6 @@
 cask "julia-cn" do
-  version "1.12.0"
-  sha256 "cb2b2ef53f2aab3874e5fe2e45feaf12955139354b312de0a39d568438a3daa0"
+  version "1.12.1"
+  sha256 "141ab2ac2561d2ab68ca9e35a42cd0defc382439f68dbd8c7d916cf4388aa44b"
 
   url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/aarch64/#{version.major_minor}/julia-#{version}-macaarch64.dmg",
       verified: "mirrors.ustc.edu.cn/julia-releases/bin/mac/"
