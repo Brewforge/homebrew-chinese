@@ -16,6 +16,7 @@ cask "julia-cn" do
 
   auto_updates true
   conflicts_with cask: "julia"
+  depends_on macos: ">= :sequoia"
 
   app "Julia-#{version.major_minor}.app"
   binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia"
