@@ -19,7 +19,7 @@ cask "obs-cn" do
 
   auto_updates true
   conflicts_with cask: ["obs@beta", "obs"]
-  depends_on macos: ">= :montrey"
+  depends_on macos: ">= :monterey"
 
   app "OBS.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
