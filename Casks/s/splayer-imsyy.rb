@@ -1,26 +1,18 @@
 cask "splayer-imsyy" do
-  arch arm: "-arm64", intel: ""
+  arch arm: "-arm64", intel: "x64"
 
   version "3.0.0-beta.2"
-  sha256 arm:   "4239da3c2a7ea8b88071fb87ff2458fd88b8a85931c5fe4cbbfa41d265cb713f",
+  sha256 arm:   "sha256:fe4c400688931d11b893dda8a55532bcd2f228d36e8ee1ea92ca842c2adb2cc0",
          intel: "85ac83af0148db9bdfaf5463444cca4157425da31c0f757c5e53042a8fc836cf"
 
-  url "https://github.com/imsyy/SPlayer/releases/download/v#{version}/splayer-#{version}-mac.zip"
+  url "https://github.com/imsyy/SPlayer/releases/download/v#{version}/SPlayer-#{version}-#{arch}.dmg"
   name "SPlayer"
   desc "简约的音乐播放器"
   homepage "https://github.com/imsyy/SPlayer"
 
   livecheck do
     url :url
-    regex(/splayer-v?(\d+(?:\.\d+)+)(-beta\.\d)?#{arch}-mac\.zip$/i)
-    strategy :github_latest do |json, regex|
-      json["assets"]&.map do |asset|
-        match = asset["browser_download_url"]&.match(regex)
-        next if match.blank?
-
-        "#{match[1]}#{match[2]}"
-      end
-    end
+    strategy :github_latest
   end
 
   auto_updates true

@@ -11,14 +11,8 @@ cask "throne" do
   homepage "https://github.com/throneproj/Throne"
 
   livecheck do
-    # url "https://github.com/throneproj/Throne/tags"
-    # strategy :page_match do |page|
-    #   match = page.match(/href=.*?(\d+(\.\d+)+)(-beta\.\d)/i)
-    #   next if match.blank?
-
-    #   match[1].to_s + match[3].to_s
-    # end
-    skip "No livecheck as pre-release"
+    url :url
+    strategy :github_latest
   end
 
   auto_updates true
