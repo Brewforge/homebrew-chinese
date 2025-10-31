@@ -1,9 +1,9 @@
 cask "splayer-imsyy" do
-  arch arm: "-arm64", intel: "x64"
+  arch arm: "arm64", intel: "x64"
 
-  version "3.0.0-beta.2"
-  sha256 arm:   "sha256:fe4c400688931d11b893dda8a55532bcd2f228d36e8ee1ea92ca842c2adb2cc0",
-         intel: "85ac83af0148db9bdfaf5463444cca4157425da31c0f757c5e53042a8fc836cf"
+  version "3.0.0-beta.3"
+  sha256 arm:   "fe4c400688931d11b893dda8a55532bcd2f228d36e8ee1ea92ca842c2adb2cc0",
+         intel: "2b8396936c81ead2f8ce4cf797d4c99d2f04acdcd97cec0ca06dbf9a721aa341"
 
   url "https://github.com/imsyy/SPlayer/releases/download/v#{version}/SPlayer-#{version}-#{arch}.dmg"
   name "SPlayer"
@@ -12,7 +12,15 @@ cask "splayer-imsyy" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    regex(%r{/SPlayer-(\d+(\.\d+)+)(-beta\.\d)?-#{arch}\.dmg$}i)
+    strategy :github_latest do |json, regex|
+      json["assets"]&.map do |asset|
+        match = asset["browser_download_url"]&.match(regex)
+        next if match.blank?
+
+        "#{match[1]}#{match[3]}"
+      end
+    end
   end
 
   auto_updates true
