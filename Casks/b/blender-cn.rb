@@ -18,7 +18,7 @@ cask "blender-cn" do
 
   auto_updates true
   conflicts_with cask: "homebrew/cask-versions/blender-lts"
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :big_sur"
 
   app "Blender.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)

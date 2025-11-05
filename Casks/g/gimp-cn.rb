@@ -27,7 +27,7 @@ cask "gimp-cn" do
 
   auto_updates true
   conflicts_with cask: ["gimp", "gimp-dev"]
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :big_sur"
 
   app "GIMP.app"
   shimscript = "#{staged_path}/gimp.wrapper.sh"

@@ -45,7 +45,7 @@ cask "blender@lts-cn" do
   end
 
   conflicts_with cask: "blender"
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :big_sur"
 
   app "Blender.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)

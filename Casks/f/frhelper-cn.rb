@@ -14,7 +14,7 @@ cask "frhelper-cn" do
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :big_sur"
 
   app "Frhelper.app"
 
