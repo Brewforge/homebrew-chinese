@@ -15,7 +15,7 @@ cask "qt-creator-cn" do
 
   auto_updates true
   conflicts_with cask: "qt-creator"
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :big_sur"
 
   app "Qt Creator.app"
 

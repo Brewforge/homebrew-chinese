@@ -15,7 +15,7 @@ cask "ting-en" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :big_sur"
 
   app "每日英语听力.app"
 
