@@ -15,7 +15,7 @@ cask "lyx-cn" do
 
   auto_updates true
   conflicts_with cask: "lyx"
-  depends_on macos: ">= :mojave"
+  depends_on macos: ">= :big_sur"
 
   app "LyX.app"
   binary "#{appdir}/LyX.app/Contents/MacOS/inkscape", target: "lyx-inkscape"
