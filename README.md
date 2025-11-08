@@ -135,6 +135,7 @@ brew help
 |    `mastergo`     |                      [MasterGo](https://mastergo.com)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `messauto`     |              [MessAuto](https://github.com/LeeeSe/MessAuto/)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `noteey`      |                       [Noteey](https://noteey.com/)                        | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
+|  `project-graph`  |         [Project Graph](https://github.com/graphif/project-graph)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 | `quarkclouddrive` |                      [夸克网盘](https://pan.quark.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `splayer-imsyy`  |                [SPlayer](https://github.com/imsyy/SPlayer)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `tts-vue`     |               [TTS-Vue](https://tts-doc.loker.vip/home.html)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
