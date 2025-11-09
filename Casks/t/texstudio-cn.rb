@@ -18,7 +18,7 @@ cask "texstudio-cn" do
 
   auto_updates true
   conflicts_with cask: "texstudio"
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :ventura"
 
   app "texstudio-#{version}-osx#{arch}.app"
 
