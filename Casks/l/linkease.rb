@@ -10,6 +10,8 @@ cask "linkease" do
 
   livecheck do
     skip "未找到可用信息"
+    # url "https://main.linkease.com/download/"
+    # regex(/最新版本:\sv(\d(\.\d)+)\s+/i)
   end
 
   auto_updates true
