@@ -24,6 +24,7 @@ cask "splayer-imsyy" do
   end
 
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   app "SPlayer.app"
 
@@ -54,8 +55,4 @@ cask "splayer-imsyy" do
     "~/Library/Preferences/com.imsyy.splayer.plist",
     "~/Library/Saved Application State/com.imsyy.splayer.savedState",
   ]
-
-  caveats do
-    requires_rosetta
-  end
 end
