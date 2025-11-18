@@ -121,7 +121,7 @@ brew help
 |    `cajviewer`    |           [CAJViewer](https://CAJViewer.cnki.net/download.html)            |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `copybook`     |            [字帖生成器](https://github.com/xxNull-lsk/Copybook)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `esearch`     |                 [eSearch](https://esearch-app.netlify.app)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
-|     `e-study`     |                      [知网研学](https://e-study.com)                       |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
+|     `e-study`     |                    [知网研学](https://estudy.cnki.net/)                    |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |   `easy-to-tv`    |          [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |   `easyspider`    |                    [EasySpider](https://easyspider.net)                    |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `easytier`     |                    [EasyTier-GUI](https://easytier.cn/)                    |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
