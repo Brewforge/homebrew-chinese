@@ -18,25 +18,7 @@ cask "blender-cn" do
   # fetched due to Cloudflare protections, so we have to naively assume a
   # version is released when the assets are uploaded.
   livecheck do
-    url "https://download.blender.org/release/"
-    regex(/href=.*?blender[._-]v?(\d+(?:\.\d+)+)(?:[._-]macos)?[._-]#{arch}\.dmg/i)
-    strategy :page_match do |page, regex|
-      # Match major/minor versions from stable directory names
-      major_minor_versions =
-        page.scan(%r{href=["']?[^"' >]*?Blender[._-]?v?(\d+(?:\.\d+)+)/?["' >]}i)
-            .flatten
-            .uniq
-            .sort_by { |v| Version.new(v) }
-      next if major_minor_versions.blank?
-
-      # Check the directory listing page for the highest major/minor version
-      directory_page = Homebrew::Livecheck::Strategy.page_content(
-        URI.join(@url, "Blender#{major_minor_versions.last}/").to_s,
-      )[:content]
-      next if directory_page.blank?
-
-      directory_page.scan(regex).map { |match| match[0] }
-    end
+    skip "Cannot be fetched due to Cloudflare protections"
   end
 
   auto_updates true
