@@ -1,9 +1,9 @@
 cask "yank-note" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.84.0"
-  sha256 arm:   "69e24de0571cd33815a9262824572188adbedd1ea28ccb9f08518b1f9aa1e6cc",
-         intel: "1edaa5e455905b0002fd13ab299969e33436007cc8312099b6b1ad952e7e596a"
+  version "3.85.1"
+  sha256 arm:   "e9320a4c3c0fef8f76b63331a2939b0ade8ef07c2abcccff0117135e9dadb747",
+         intel: "b80f87619308e8f5ca5874b8cfa8f4823ae7fc87d05b375b675473e5b4b682eb"
 
   url "https://github.com/purocean/yn/releases/download/v#{version}/Yank-Note-mac-#{arch}-#{version}.dmg",
       verified: "github.com/purocean/yn/"
