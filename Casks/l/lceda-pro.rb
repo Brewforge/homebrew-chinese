@@ -1,7 +1,7 @@
 cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.2.43.4"
+  version "2.2.44.12"
   sha256 :no_check
 
   url "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip"
