@@ -1,9 +1,9 @@
 cask "throne" do
   arch arm: "arm64", intel: "amd64"
 
-  version "1.0.10"
-  sha256 arm:   "171a309b789f7fd1068ce67e213ed6dd7387113047ba52c686ee8c6156ae5fe3",
-         intel: "a70679f04e0386005b303d942e352c461caed2c31efa5bf26437b9bc4c25ffd1"
+  version "1.0.11"
+  sha256 arm:   "7da0af799fe9825db7380e6b59147beb181bf46e2ee5a5c8a437e339584f99e1",
+         intel: "c560eefe18332e3979baf2e2b5a6aa2c9fe09358c2c0b6807bbf26d2e457ee81"
 
   url "https://github.com/throneproj/Throne/releases/download/#{version}/Throne-#{version}-macos-#{arch}.zip"
   name "Throne"
