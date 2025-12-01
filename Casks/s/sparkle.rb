@@ -1,9 +1,9 @@
 cask "sparkle" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.6.14"
-  sha256 arm:   "db203b0c8833e0e176e9a222d8df5ea72451494f05bfb6b92fb9e2dbcb28bd52",
-         intel: "614565c8703338c210d1498dab801c6fc8eff2042bc3145ed0413536bd7cf794"
+  version "1.6.15"
+  sha256 arm:   "b2a827dec0c6fe8c38be3067877f845dfa7961b352a6a19971e7cfb1cceb2111",
+         intel: "5644cb13e78d6e92ea9c01ff4b1c155ce74409d913a43acdea18508d0399452b"
 
   url "https://github.com/xishang0128/sparkle/releases/download/#{version}/sparkle-macos-#{version}-#{arch}.pkg"
   name "sparkle"
