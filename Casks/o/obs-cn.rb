@@ -13,7 +13,7 @@ cask "obs-cn" do
 
   livecheck do
     url "https://mirror.nju.edu.cn/github-release/obsproject/obs-studio/LatestRelease"
-    regex(/OBS-Studio-(\d+(\.\d+){2})-macos-#{arch}\.dmg/i)
+    regex(/OBS-Studio-(\d+(\.\d+){2})-macOS-#{arch}\.dmg/i)
   end
 
   auto_updates true
