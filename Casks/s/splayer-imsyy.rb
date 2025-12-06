@@ -1,9 +1,9 @@
 cask "splayer-imsyy" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.0.0-beta.5"
-  sha256 arm:   "214bb65ffb8f752c6fb7ef056870bf2171c0d4ef3cb694b39ef68c9e70c02409",
-         intel: "4602b687dcfb6aa535389ceaab25d9335cc8cb0c919821cd5df4fa49d80bc04f"
+  version "3.0.0-beta.6"
+  sha256 arm:   "91374d9ebdf6c9148e795b1587237eba7b5417f9d015a1f3067cb411967d5ab3",
+         intel: "1f4c40c82bfd45ad85aa9ce0668c9117b728e868eef2adb4a1624883dc9d9f71"
 
   url "https://github.com/imsyy/SPlayer/releases/download/v#{version}/SPlayer-#{version}-#{arch}.dmg"
   name "SPlayer"
