@@ -1,5 +1,5 @@
 cask "obs-cn" do
-  arch arm: "apple", intel: "Intel"
+  arch arm: "Apple", intel: "Intel"
 
   version "32.0.2"
   sha256 arm:   "5c8f0e2349e45b57512e32312b053688e0b2bb9f0e8de8e7e24ee392e77a7cb3",
