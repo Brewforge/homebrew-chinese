@@ -1,9 +1,9 @@
 cask "wiliwili" do
   arch arm: "AppleSilicon", intel: "IntelChip"
 
-  version "1.5.2"
-  sha256 arm:   "99ec5b23a61cc03ffecf183533d7e5791e3d9db85c85dcdd3de1fdc942f2daaa",
-         intel: "dfd03849b1220de46b0179368a5e0ce7c00939c7b4643f1a2d1e3ce8a37ee6cd"
+  version "1.5.3"
+  sha256 arm:   "67665e626ae3b050169c2fa7dd1c5105c310eeab7819c4415be52c49db1c74f8",
+         intel: "07409c601988ba8433ec53f359101057dda3ae6a3acc6f6101aab9f767427474"
 
   url "https://github.com/xfangfang/wiliwili/releases/download/v#{version}/wiliwili-macOS-#{arch}.dmg",
       verified: "github.com/xfangfang/wiliwili/"
