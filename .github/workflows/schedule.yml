@@ -9,7 +9,7 @@ on:
     # Every 12 hours
     # - cron: "20 */12 * * *"
     # Every day at 6am
-    - cron: '0 6 * * *'
+    - cron: "0 6 * * *"
   # allow run manually
   workflow_dispatch:
 
@@ -40,7 +40,7 @@ jobs:
         with:
           core: false
           cask: false
-          test-bot: true
+          debug: true
 
       - run: brew test-bot --only-tap-syntax
 
@@ -62,7 +62,7 @@ jobs:
         with:
           core: false
           cask: false
-          test-bot: false
+          debug: false
 
       - name: Brew Tap
         uses: ./.github/actions/brew-tap
@@ -74,7 +74,7 @@ jobs:
 
       - name: Bump
         env:
-          HOMEBREW_DEVELOPER: '1'
+          HOMEBREW_DEVELOPER: "1"
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         shell: bash -ieo pipefail {0}
         run: |
