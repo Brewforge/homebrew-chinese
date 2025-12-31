@@ -12,8 +12,8 @@ cask "mogan-cn" do
   homepage "https://mogan.app/"
 
   livecheck do
-    url "https://mirrors.ustc.edu.cn/github-release/XmacsLabs/mogan/LatestRelease/"
-    regex(/MoganSTEM-v?(\d+(\.\d+){2})\.dmg/i)
+    url "https://github.com/XmacsLabs/mogan"
+    strategy :github_latest
   end
 
   app "MoganSTEM.app"
