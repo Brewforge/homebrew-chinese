@@ -16,7 +16,7 @@ cask "cajviewer" do
   homepage "https://cajviewer.cnki.net/download.html"
 
   livecheck do
-    url "https://cajviewer.cnki.net/download.html"
+    url :homepage
     regex(/CAJViewer_v?(\d+(?:\.\d+)+)[._-](\d+)_#{arch}\.dmg/im)
     strategy :page_match do |page, regex|
       match = page.match(regex)
