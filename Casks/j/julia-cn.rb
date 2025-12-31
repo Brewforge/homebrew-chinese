@@ -1,8 +1,12 @@
 cask "julia-cn" do
-  version "1.12.2"
-  sha256 "d5ded99ca977daa896dc519282d60ea321327e11f37c5e0c555ec2ed1e06f2d5"
+   arch arm: "aarch64", intel: "x64"
+  livecheck_arch = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/aarch64/#{version.major_minor}/julia-#{version}-macaarch64.dmg",
+  version "1.12.3"
+  sha256 arm:   "49b624570de64a98420d1e0950060b0ea3a505662abe80fe3fcc989cee773b9c",
+         intel: "a2d6f81bbf3253ff67e4004cfd34294d1a9d0d9298ef9f1aff6ac1321fa2ae37"
+
+  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/aarch64/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg",
       verified: "mirrors.ustc.edu.cn/julia-releases/bin/mac/"
   name "Julia"
   desc "Programming language for technical computing"
