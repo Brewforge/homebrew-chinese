@@ -1,5 +1,5 @@
 cask "julia-cn" do
-   arch arm: "aarch64", intel: "x64"
+  arch arm: "aarch64", intel: "x64"
   livecheck_arch = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
   version "1.12.3"
@@ -25,7 +25,7 @@ cask "julia-cn" do
   end
 
   auto_updates true
-  conflicts_with cask: "julia"
+  conflicts_with cask: "julia-app"
   depends_on macos: ">= :sequoia"
 
   app "Julia-#{version.major_minor}.app"
@@ -33,6 +33,7 @@ cask "julia-cn" do
 
   zap trash: [
     "~/.julia",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.github.julia.sfl*",
     "~/Library/Logs/Julia",
     "~/Library/Preferences/com.github.Julia.plist",
     "~/Library/Preferences/julia.plist",
