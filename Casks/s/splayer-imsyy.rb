@@ -1,11 +1,11 @@
 cask "splayer-imsyy" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.0.0-beta.7"
-  sha256 arm:   "fd7da53dbdfbcb48d251d82805d97ea5cd39ebe0e8876e5ce75e4443de366375",
-         intel: "155d53b27118291c81cd3cc6a1f2ee64985cdae8d196d8025bf775fee8b9af19"
+  version "3.0.0-beta.8"
+  sha256 arm:   "78cdf70defefab9d54e75cf069f91e3cf6f8d1ee951766ce0e8f7dcee90bd50c",
+         intel: "af9a3d4e7576df36e16da6cef95e57a6653e5674b42fcbe5d878365983051679"
 
-  url "https://github.com/imsyy/SPlayer/releases/download/v#{version}/SPlayer-#{version}-#{arch}.dmg"
+  url "https://github.com/imsyy/SPlayer/releases/download/v#{version}.2025/SPlayer-#{version}-#{arch}.dmg"
   name "SPlayer"
   desc "简约的音乐播放器"
   homepage "https://github.com/imsyy/SPlayer"
