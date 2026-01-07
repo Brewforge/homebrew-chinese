@@ -21,7 +21,6 @@ cask "lceda-pro" do
   uninstall delete: caskroom_path.to_s
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/cn.lceda.pro",
     "~/Library/Application Support/JLCEDA Pro",
     "~/Library/Preferences/cn.lceda.pro.plist",
     "~/Library/Saved Application State/cn.lceda.pro.savedState",

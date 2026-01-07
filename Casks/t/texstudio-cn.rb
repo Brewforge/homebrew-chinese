@@ -23,7 +23,6 @@ cask "texstudio-cn" do
   app "texstudio-#{version}-osx#{arch}.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/texstudio",
     "~/.config/texstudio",
     "~/Library/Preferences/texstudio.plist",
     "~/Library/Saved Application State/texstudio.savedState",

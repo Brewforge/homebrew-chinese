@@ -22,8 +22,6 @@ cask "esearch" do
   app "e-search.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/com.esearch.app",
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/com.esearch.app.helper.GPU",
     "~/Library/Application Support/eSearch",
     "~/Library/Preferences/com.esearch.app.plist",
   ]

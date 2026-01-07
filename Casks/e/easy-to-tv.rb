@@ -15,7 +15,6 @@ cask "easy-to-tv" do
   app "easy_to_tv.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/easy_to_tv",
     "~/Library/Preferences/easy_to_tv.plist",
     "~/Library/Saved Application State/easy_to_tv.savedState",
   ]

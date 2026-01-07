@@ -28,10 +28,6 @@ cask "gui-for-singbox" do
   app "GUI.for.SingBox.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/com.wails.GUI.for.SingBox",
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/T/com.wails.GUI.for.SingBox",
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/T/GUI.for.SingBox.lock",
-    "~/Library/Caches/com.wails.GUI.for.SingBox",
     "~/Library/Preferences/com.wails.GUI.for.SingBox.plist",
     "~/Library/Saved Application State/com.wails.GUI.for.SingBox.savedState",
     "~/Library/WebKit/com.wails.GUI.for.SingBox",

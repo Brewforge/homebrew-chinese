@@ -27,7 +27,6 @@ cask "feeluown" do
   app "FeelUOwnX.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/org.feeluown.FeelUOwnX",
     "~/Library/Saved Application State/org.feeluown.FeelUOwnX.savedState",
   ]
 end

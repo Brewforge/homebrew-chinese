@@ -26,7 +26,7 @@ cask "v2rayxs" do
 
   zap trash: [
     "/Library/Application Support/V2RayXS",
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/cenmrev.V2RayXS",
+
     "~/Library/Application Support/V2RayXS",
     "~/Library/Caches/cenmrev.V2RayXS",
     "~/Library/HTTPStorages/cenmrev.V2RayXS",

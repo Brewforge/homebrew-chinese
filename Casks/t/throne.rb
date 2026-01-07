@@ -21,7 +21,6 @@ cask "throne" do
   app "Throne/Throne.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/moe.Throne.macosx",
     "~/Library/Preferences/Throne",
   ]
 end

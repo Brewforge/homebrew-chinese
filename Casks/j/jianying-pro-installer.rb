@@ -25,7 +25,7 @@ cask "jianying-pro-installer" do
 
   zap trash: [
     "/Applications/VideoFusion-macOS.app",
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/com.lemon.lvpro",
+
     "~/Library/Application Scripts/com.lemon.lvpro",
     "~/Library/Application Scripts/X2JNK7LY8J.lv",
     "~/Library/Application Scripts/X2JNK7LY8J.ve",

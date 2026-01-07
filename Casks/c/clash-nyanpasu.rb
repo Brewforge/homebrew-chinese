@@ -25,8 +25,6 @@ cask "clash-nyanpasu" do
   end
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/moe.elaina.clash.nyanpasu",
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/T/moe.elaina.clash.nyanpasu",
     "~/Library/Application Support/Clash Nyanpasu",
     "~/Library/Caches/moe.elaina.clash.nyanpasu",
     "~/Library/Saved Application State/moe.elaina.clash.nyanpasu.savedState",

@@ -26,7 +26,6 @@ cask "v2rayn" do
   end
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/2dust.v2rayN",
     "~/Library/Application Support/v2rayN",
     "~/Library/Preferences/2dust.v2rayN.plist",
   ]

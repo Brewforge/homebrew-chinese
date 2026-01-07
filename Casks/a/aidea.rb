@@ -16,7 +16,6 @@ cask "aidea" do
   app "aidea.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/cc.aicode.flutter.askaide.askaide",
     "~/.aidea",
     "~/Library/Application Support/cc.aicode.flutter.askaide.askaide",
     "~/Library/Caches/cc.aicode.flutter.askaide.askaide",

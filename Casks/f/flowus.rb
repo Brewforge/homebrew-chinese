@@ -37,8 +37,6 @@ cask "flowus" do
   app "flowus.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/com.flowus.app",
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/com.flowus.app.helper.GPU",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flowus.app.sfl*",
     "~/Library/Application Support/FlowUs",
     "~/Library/Preferences/com.flowus.app.plist",

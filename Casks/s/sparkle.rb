@@ -23,7 +23,6 @@ cask "sparkle" do
             pkgutil: "org.sparkle-project.SparkleTestApp"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/org.sparkle-project.SparkleTestApp",
     "~/Library/Application Scripts/org.sparkle-project.SparkleTestApp",
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.sparkle-project.sparkletestapp.sfl*",
     "~/Library/Containers/org.sparkle-project.SparkleTestApp",

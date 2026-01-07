@@ -20,7 +20,6 @@ cask "alist-helper" do
   app "alisthelper.app"
 
   zap trash: [
-    "/var/folders/py/n14256yd5r5ddms88x9bvsv40000gn/C/dev.xmarmalade.alisthelper.alisthelper",
     "~/Library/Preferences/dev.xmarmalade.alisthelper.alisthelper.plist",
     "~/Library/Saved Application State/dev.xmarmalade.alisthelper.alisthelper.savedState",
   ]
