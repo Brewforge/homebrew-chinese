@@ -2,14 +2,14 @@ cask "kicad-cn" do
   version "9.0.7"
   sha256 "449525e4ac119dc79a36b9a5aba5e6a269ecdc1905b94dce9eaf44ea45fd84c2"
 
-  url "https://mirror.nyist.edu.cn/kicad/osx/stable/kicad-unified-universal-#{version}.dmg",
-      verified: "mirror.nyist.edu.cn/kicad/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/kicad-unified-universal-#{version}.dmg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/kicad/"
   name "KiCad"
   desc "Electronics design automation suite"
   homepage "https://kicad.org/"
 
   livecheck do
-    url "https://mirror.nyist.edu.cn/kicad/osx/stable/"
+    url "https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/"
     regex(/kicad-unified-universal-(\d+(?:\.\d+)+(-rc\d+)?)/i)
   end
 
