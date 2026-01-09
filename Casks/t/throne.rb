@@ -20,7 +20,5 @@ cask "throne" do
 
   app "Throne/Throne.app"
 
-  zap trash: [
-    "~/Library/Preferences/Throne",
-  ]
+  zap trash: "~/Library/Preferences/Throne"
 end

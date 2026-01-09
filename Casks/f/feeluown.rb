@@ -26,7 +26,5 @@ cask "feeluown" do
 
   app "FeelUOwnX.app"
 
-  zap trash: [
-    "~/Library/Saved Application State/org.feeluown.FeelUOwnX.savedState",
-  ]
+  zap trash: "~/Library/Saved Application State/org.feeluown.FeelUOwnX.savedState"
 end

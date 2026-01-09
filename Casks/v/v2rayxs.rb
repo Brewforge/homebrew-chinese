@@ -26,7 +26,6 @@ cask "v2rayxs" do
 
   zap trash: [
     "/Library/Application Support/V2RayXS",
-
     "~/Library/Application Support/V2RayXS",
     "~/Library/Caches/cenmrev.V2RayXS",
     "~/Library/HTTPStorages/cenmrev.V2RayXS",
