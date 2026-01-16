@@ -106,7 +106,7 @@ brew help
 |       桶名        |                              软件官网                               |                 备注                 |
 |:-----------------:|:-------------------------------------------------------------------:|:------------------------------------:|
 |   `clashx-meta`   |       [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta)       | ![a](assets/a.svg)![1](assets/1.svg) |
-|    `clash-mi`     |           [Clash-Mi](https://github.com/KaringX/clash-mi)           | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `clash-mi`     |                   [Clash-Mi](https://clashmi.app)                   | ![a](assets/a.svg)![1](assets/1.svg) |
 | `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
 | `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
