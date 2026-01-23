@@ -14,6 +14,7 @@ cask "clash-mi" do
   end
 
   auto_updates true
+  depends_on macos: ">= :monterey"
 
   app "Clash Mi.app"
 
