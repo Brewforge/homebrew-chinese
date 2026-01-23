@@ -1,6 +1,6 @@
 cask "e-study" do
-  version "4.4.1,364"
-  sha256 "0f03f8565b3a4d88a185ff924a6e381339a1e05ba057bba104cb8e22c9c30012"
+  version "4.4.1,378"
+  sha256 "50d5d56e3b450f34d7dc35aa46e596547aab6d3363a16df3e86e806ae5399103"
 
   url "https://piccachex.cnki.net/estudy/CNKI%20E-Study%20For%20Mac#{version.csv.first}.dmg"
   name "estudy"
