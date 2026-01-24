@@ -1,6 +1,6 @@
 cask "project-graph" do
-  version "2.9.10"
-  sha256 "758b0aa2503d2e13b5311bd01e5c19db59e3fb1d1a30b1aab23a664ad28d8d7b"
+  version "2.9.11"
+  sha256 "5bb27d54a438ad8c3c570023ba860cb5296378c63e9571b9c7203ae399581fd6"
 
   url "https://github.com/graphif/project-graph/releases/download/v#{version}/Project.Graph_#{version}_universal.app.tar.gz"
   name "Project Graph"
