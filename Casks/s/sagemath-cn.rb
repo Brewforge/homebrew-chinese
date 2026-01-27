@@ -1,9 +1,9 @@
 cask "sagemath-cn" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "10.8,2.8.3"
-  sha256 arm:   "1e20329ebcf04d8700752d763886c81c8187e96785af9eb37faff0a7e96da6f6",
-         intel: "7237f112d66b9be63cc55c91418fe789257ba3a31d42a29930d6b05483456197"
+  version "10.8,2.8.4"
+  sha256 arm:   "0122d24622f86ef885865aa31c809c4663ce1b8d0868ae456ffaf0baaefad2c2",
+         intel: "9b4e0803dd933471e4b35997f1419f52efa8a201b0fe6b3e84a322f3f30727c7"
 
   url "https://mirrors.ustc.edu.cn/github-release/3-manifolds/Sage_macOS/LatestRelease/SageMath-#{version.csv.first}_#{arch}.dmg",
       verified: "mirrors.ustc.edu.cn/github-release/3-manifolds/Sage_macOS/LatestRelease/"
