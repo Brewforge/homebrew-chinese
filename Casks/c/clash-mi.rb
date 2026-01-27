@@ -9,8 +9,9 @@ cask "clash-mi" do
   homepage "https://clashmi.app/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    # url :url
+    # strategy :github_latest
+    skip "wrong version"
   end
 
   auto_updates true
