@@ -16,6 +16,7 @@ cask "sparkle" do
   end
 
   auto_updates true
+  depends_on macos: ">=:big_sur"
 
   pkg "sparkle-macos-#{version}-#{arch}.pkg"
 
