@@ -11,7 +11,7 @@ cask "linkease" do
   livecheck do
     # skip "未找到可用信息"
     url "https://main.linkease.com/download/?type=macOS"
-    regex(/v(\d(\.\d){2})/i)
+    regex(/<span[^>]*class="client-version">v(\d+(\.\d+)+)</i)
   end
 
   auto_updates true
