@@ -1,21 +1,15 @@
 cask "blender-cn" do
   arch arm: "arm64", intel: "x64"
 
-  # NOTE: Please manually check for a new `blender@lts` version at
-  # https://www.blender.org/download/lts/ when updating this cask, as we cannot
-  # identify LTS versions using livecheck.
-  version "4.5.5"
-  sha256 arm:   "de1d239d1326378744326bdf1a55f935cdd3d7e808eadd0d601bba28e06e05f6",
-         intel: "f60c27f9a52ccde87e9e68ae8184e5c8c56f8b622d0657b345c64ad2b1232174"
+  on_arm do
+    version "5.0.1"
+    sha256 "102a81ddee5346c96339c6a529069a2d52df05f330eb9bfd431c8dd79fb4afb6"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/"
-  name "Blender"
-  desc "3D creation suite"
-  homepage "https://blender.org/"
-
-  livecheck do
-    url "https://download.blender.org/release/"
+    # The upstream download page (https://www.blender.org/download/) cannot be
+    # fetched due to Cloudflare protections, so we have to naively assume a
+    # version is released when the assets are uploaded.
+    livecheck do
+      url "https://download.blender.org/release/"
       regex(/href=.*?blender[._-]v?(\d+(?:\.\d+)+)(?:[._-]macos)?[._-]#{arch}\.dmg/i)
       strategy :page_match do |page, regex|
         # Match major/minor versions from stable directory names
@@ -36,9 +30,30 @@ cask "blender-cn" do
       end
     end
   end
+  on_intel do
+    version "4.5.6"
+    sha256 "4088b442c87381a9673ce00317e34e8ab520e6c560532e6057f507dd9c5f7713"
+
+    # Intel support is limited to version 4.5.x series.
+    livecheck do
+      url "https://download.blender.org/release/Blender4.5/"
+      regex(/href=.*?blender[._-]v?(\d+(?:\.\d+)+)(?:[._-]macos)?[._-]#{arch}\.dmg/i)
+    end
+
+    deprecate! date: "2027-07-01", because: :unsupported
+  end
+
+  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
+      verified: "mirrors.tuna.tsinghua.edu.cn/"
+  name "Blender"
+  desc "3D creation suite"
+  homepage "https://www.blender.org/"
 
   auto_updates true
-  conflicts_with cask: "homebrew/cask-versions/blender-lts"
+  conflicts_with cask: %w[
+    blender@lts
+    blender@lts-cn
+  ]
   depends_on macos: ">= :big_sur"
 
   app "Blender.app"
