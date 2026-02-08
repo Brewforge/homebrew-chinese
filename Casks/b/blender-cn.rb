@@ -51,6 +51,7 @@ cask "blender-cn" do
 
   auto_updates true
   conflicts_with cask: %w[
+    blender
     blender@lts
     blender@lts-cn
   ]

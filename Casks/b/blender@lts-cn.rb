@@ -19,7 +19,11 @@ cask "blender@lts-cn" do
     skip "Cannot be fetched due to Cloudflare protections"
   end
 
-  conflicts_with cask: "blender"
+  conflicts_with cask: %w[
+    blender
+    blender-cn
+    blender@lts-cn
+  ]
   depends_on macos: ">= :big_sur"
 
   app "Blender.app"
