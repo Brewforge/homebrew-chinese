@@ -1,21 +1,20 @@
 cask "keyviz-cn" do
-  version "2.0.0a2"
-  sha256 "144beb2fa2c4b234b416fdb8c0e0df7ca203efdbba606b0491712ab15b621079"
+  version "2.1.0"
+  sha256 "79ad585e5ae6bf2dd873cbeab2ab8610ac77f35db72b6291f50cb51f1a55de41"
 
-  url "https://github.com/zetaloop/keyviz/releases/download/v#{version}/keyviz-v#{version}-macos.dmg"
+  url "https://github.com/zetaloop/keyviz/releases/download/v#{version}/keyviz_#{version}_aarch64.dmg"
   name "keyviz"
   desc "Visualize your keystrokes && mouse actions in real-time"
   homepage "https://github.com/zetaloop/keyviz"
 
   livecheck do
-    # url "https://github.com/zetaloop/keyviz/tags"
-    # strategy :page_match do |page|
-    #   match = page.match(/href=.*?v(\d+(\.\d+)+(a\d)?)/i)
-    #   next if match.blank?
+    url "https://github.com/zetaloop/keyviz/tags"
+    strategy :page_match do |page|
+      match = page.match(/href=.*?v(\d+(\.\d+){2}(a\d)?)/i)
+      next if match.blank?
 
-    #   match[1].to_s
-    # end
-    skip "No livecheck as pre-release"
+      match[1].to_s
+    end
   end
 
   auto_updates true
