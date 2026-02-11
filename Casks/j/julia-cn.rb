@@ -13,15 +13,8 @@ cask "julia-cn" do
   homepage "https://julialang.org/"
 
   livecheck do
-    url "https://julialang-s3.julialang.org/bin/versions.json"
-    strategy :json do |json|
-      json.map do |version, release|
-        next unless release["stable"]
-        next unless release["files"].any? { |file| file["os"] == "mac" && file["arch"] == livecheck_arch }
-
-        version
-      end
-    end
+    url "https://julialang.org/downloads/manual-downloads/"
+    regex(/Current stable release:\s+v?(\d+(?:\.\d+)+)/i)
   end
 
   auto_updates true

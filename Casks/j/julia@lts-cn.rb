@@ -16,11 +16,14 @@ cask "julia@lts-cn" do
   end
 
   auto_updates true
-  conflicts_with cask: "julia"
-  depends_on macos: ">= :ventura"
+  conflicts_with cask: %w[
+    julia-app
+    julia-app@lts
+  ]
+  depends_on macos: ">= :sequoia"
 
   app "Julia-#{version.major_minor}.app"
-  binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia"
+  binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia", target: "julia-lts"
 
   zap trash: [
     "~/.julia",
