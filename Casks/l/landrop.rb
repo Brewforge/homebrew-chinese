@@ -10,9 +10,9 @@ cask "landrop" do
   homepage "https://landrop.app/"
 
   livecheck do
-    # skip "未找到可用信息"
-    url :homepage
-    regex(/"(\d+(\.\d){2})"/i)
+    skip "嵌套标签，难以选择"
+    # url :homepage
+    # regex(/aria-labelledby="radix-:r0:-trigger-macos".+?class="text-sm text-gray-500 mb-2">v(\d+(\.\d){2})/i)
   end
 
   auto_updates true

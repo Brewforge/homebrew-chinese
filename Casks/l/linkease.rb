@@ -9,9 +9,9 @@ cask "linkease" do
   homepage "https://main.linkease.com/"
 
   livecheck do
-    # skip "未找到可用信息"
-    url "https://main.linkease.com/download/?type=macOS"
-    regex(/<span[^>]*class="client-version">v(\d+(\.\d+)+)</i)
+    skip "无法选中"
+    # url "https://main.linkease.com/download"
+    # regex(/最新版本: v(\d+(\.\d){2})/i)
   end
 
   auto_updates true

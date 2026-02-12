@@ -130,9 +130,7 @@ brew help
 |    `feeluown`     |                [FeelUOwn](http://feeluown.readthedocs.io/)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `i4tools`     |                         [爱思助手](https://i4.cn)                          |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `keyviz-cn`    |              [Keyviz-cn](https://github.com/zetaloop/keyviz/)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
-|     `landrop`     |                      [LANDrop](https://landrop.app/)                       |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `lingquan`     |                       [零泉](https://lingquan.cool/)                       |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
-|    `linkease`     |                     [易有云](https://app.linkease.com)                     |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 | `m3u8-downloader` |      [M3U8-Downloader](https://github.com/HeiSir2014/M3U8-Downloader)      |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `mastergo`     |                      [MasterGo](https://mastergo.com)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `messauto`     |              [MessAuto](https://github.com/LeeeSe/MessAuto/)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
@@ -193,10 +191,12 @@ brew help
 
 目前还有一些当前维护者未能搞定的 Cask，请各位豪杰出手相助。
 
-|           桶名           |                  软件官网                  |                       问题                        |
-|:------------------------:|:------------------------------------------:|:-------------------------------------------------:|
-|     ~~`lceda-pro`~~      | ~~[嘉立创 EDA 专业版](https://lceda.cn/)~~ | ~~解压失败（压缩包中有文件名包含非 UTF-8 字符）~~ |
-| `jianying-pro-installer` |    [剪映专业版](https://www.capcut.cn/)    |                  未找到版本信息                   |
+|      桶名       |                  软件官网                  |                       问题                        |
+|:---------------:|:------------------------------------------:|:-------------------------------------------------:|
+|   `capcut-cn`   |    [剪映中文版](https://www.capcut.cn/)    |                  未找到版本信息                   |
+| ~~`lceda-pro`~~ | ~~[嘉立创 EDA 专业版](https://lceda.cn/)~~ | ~~解压失败（压缩包中有文件名包含非 UTF-8 字符）~~ |
+|    `landrop`    |      [LANDrop](https://landrop.app/)       |                嵌套标签，难以选择                 |
+|   `linkease`    |     [易有云](https://app.linkease.com)     |                多个结果，无法选中                 |
 
 ---
 
@@ -210,3 +210,5 @@ brew help
 [![星标](https://starchart.cc/Brewforge/homebrew-chinese.svg?variant=adaptive)](https://starchart.cc/Brewforge/homebrew-chinese)
 
 <!-- ## ❤️ 赞助者 -->
+
+```text

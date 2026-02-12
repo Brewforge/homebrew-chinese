@@ -17,7 +17,7 @@ cask "cajviewer" do
 
   livecheck do
     url :homepage
-    regex(/CAJViewer_v?(\d+(?:\.\d+)+)[._-](\d+)_#{arch}\.dmg/im)
+    regex(/CAJViewer_v?(\d+(?:\.\d+)+)[._-](\d+)_#{arch}\.dmg/i)
     strategy :page_match do |page, regex|
       match = page.match(regex)
       next if match.blank?

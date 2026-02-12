@@ -1,5 +1,5 @@
-cask "jianying-pro-installer" do
-  version "0_1.2.10"
+cask "capcut-cn" do
+  version "0_1.2.14"
   sha256 :no_check
 
   url "https://lf3-package.vlabstatic.com/obj/faceu-packages/installer/jianying_jianyingpro_#{version}_installer.dmg",
