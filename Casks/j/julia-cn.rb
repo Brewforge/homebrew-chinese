@@ -1,6 +1,5 @@
 cask "julia-cn" do
   arch arm: "aarch64", intel: "x64"
-  livecheck_arch = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
   version "1.12.4"
   sha256 arm:   "69df6d591592bf44af434be77d514d252aa315c89b312e8b5251a6a3313827a8",
@@ -19,7 +18,7 @@ cask "julia-cn" do
 
   auto_updates true
   conflicts_with cask: "julia-app"
-  depends_on macos: ">= :ventura"
+  depends_on macos: ">= :sequoia"
 
   app "Julia-#{version.major_minor}.app"
   binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia"
