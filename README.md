@@ -97,9 +97,10 @@ brew help
 
 ### AI 工具
 
-|  桶名   |           软件官网            |                 备注                 |
-|:-------:|:-----------------------------:|:------------------------------------:|
-| `aidea` | [aidea](https://ai.aicode.cc) | ![b](assets/b.svg)![2](assets/2.svg) |
+|    桶名     |                       软件官网                       |                 备注                 |
+| :---------: | :--------------------------------------------------: | :----------------------------------: |
+|   `aidea`   |            [aidea](https://ai.aicode.cc)             | ![b](assets/b.svg)![2](assets/2.svg) |
+| `cc-switch` | [cc-switch](https://github.com/farion1231/cc-switch) | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ### 代理工具
 
