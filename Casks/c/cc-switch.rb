@@ -2,7 +2,8 @@ cask "cc-switch" do
   version "3.10.3"
   sha256 "5ce89988ead9a9c135721c598ff6bf343a897d4b1987b92e9de4834730021528"
 
-  url "https://github.com/farion1231/cc-switch/releases/download/v#{version}/CC-Switch-v#{version}-macOS.tar.gz"
+  url "https://github.com/farion1231/cc-switch/releases/download/v#{version}/CC-Switch-v#{version}-macOS.zip
+"
   name "CC Switch"
   desc "Configuration manager for Claude Code, Codex, Gemini and OpenCode"
   homepage "https://github.com/farion1231/cc-switch"
