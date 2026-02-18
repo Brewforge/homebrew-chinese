@@ -10,10 +10,11 @@ cask "frhelper-cn" do
   homepage "https://www.eudic.net/v4/fr/app/frhelper"
 
   livecheck do
-    url :homepage
-    regex(/应用版本：(\d+(\.\d+)+)/i)
+    url "https://eudic.yuque.com/org-wiki-eudic-fxu2ea/mfxd3t/tqq00bp7a8p2y1gu"
+    regex(/版本号: (\d+(\.\d+)+)/i)
   end
 
+  auto_updates true
   depends_on macos: ">= :big_sur"
 
   app "Frhelper.app"
