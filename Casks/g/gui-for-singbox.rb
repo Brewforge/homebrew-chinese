@@ -12,7 +12,7 @@ cask "gui-for-singbox" do
 
   livecheck do
     url :url
-    regex(%r{v(\d+(\.\d+)+(-Alpha)?)/GUI.for.SingBox-darwin-#{arch}.zip$}i)
+    regex(%r{v(\d+(\.\d+)+(-Alpha)?(-dev\.\d)?)/GUI.for.SingBox-darwin-#{arch}.zip$}i)
     strategy :github_latest do |json|
       json["assets"]&.map do |asset|
         match = asset["browser_download_url"]&.match(regex)

@@ -10,13 +10,13 @@ cask "feeluown" do
 
   livecheck do
     url :url
-    regex(%r{v(\d+(\.\d+)+)/FeelUOwnX-macOS(\d+(\.\d+)+)-arm64\.zip$}i)
+    regex(%r{v(\d+(\.\d+)+(a\d)?)/FeelUOwnX-macOS(\d+(\.\d+)+)-arm64\.zip$}i)
     strategy :github_latest do |json|
       json["assets"]&.map do |asset|
         match = asset["browser_download_url"]&.match(regex)
         next if match.blank?
 
-        "#{match[1]},#{match[3]}"
+        "#{match[1]},#{match[4]}"
       end
     end
   end
