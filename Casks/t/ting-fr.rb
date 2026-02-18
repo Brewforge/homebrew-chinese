@@ -10,8 +10,8 @@ cask "ting-fr" do
   homepage "https://www.francochinois.com/v4/fr/app/ting"
 
   livecheck do
-    url :homepage
-    regex(/应用版本：(\d+(\.\d+)+)/i)
+    url "https://eudic.yuque.com/org-wiki-eudic-fxu2ea/mfxd3t/xtg53urhq3rh1vkw"
+    regex(/版本号: (\d+(\.\d+)+)/i)
   end
 
   auto_updates true
