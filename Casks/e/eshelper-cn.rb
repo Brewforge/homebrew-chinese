@@ -1,6 +1,6 @@
 cask "eshelper-cn" do
-  version "11.6.0"
-  sha256 "c7ea6a58c8c14dbfb1a48efa1ee209d316c8adde8561bcb5c51c7f64f40c1493"
+  version "25.8.0"
+  sha256 "57eb78b8d4c9489d64a5aca4463181dafb817f849f6307da5297d451e38fbf23"
 
   url "https://static.eudic.net/pkg/ehmac.dmg?v=#{version}",
       user_agent: :fake
