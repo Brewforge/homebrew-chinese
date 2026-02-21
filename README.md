@@ -168,8 +168,8 @@ brew help
 |         `gimp-cn`         |                           [GIMP 镜像](https://gimp.org)                           | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `iina-cn`         |                           [IINA 镜像](https://iina.io)                            | ![a](assets/a.svg)![1](assets/1.svg) |
 |       `inkscape-cn`       |         [Inkscape 镜像](https://inkscape.org/zh-hans/?switchlang=zh-hans)         | ![a](assets/a.svg)![1](assets/1.svg) |
-|      `julia-app-cn`       |                        [Julia 镜像](https://julialang.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
-|    `julia-app@lts-cn`     |                      [Julia LTS 镜像](https://julialang.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
+|        `julia-cn`         |                        [Julia 镜像](https://julialang.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
+|      `julia@lts-cn`       |                      [Julia LTS 镜像](https://julialang.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
 |        `kicad-cn`         |                          [Kicad 镜像](https://kicad.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `lyx-cn`          |                            [Lyx 镜像](https://lyx.org)                            | ![a](assets/a.svg)![1](assets/1.svg) |
 |      `miniforge-cn`       |            [Miniforge 镜像](https://github.com/conda-forge/miniforge)             | ![a](assets/a.svg)![1](assets/1.svg) |
@@ -178,7 +178,7 @@ brew help
 |         `obs-cn`          |                  [OBS Studio 镜像](https://obsproject.com/zh-cn)                  | ![a](assets/a.svg)![1](assets/1.svg) |
 |      `qt-creator-cn`      |                    [Qt Creator 镜像](https://qt.io/developers)                    | ![a](assets/a.svg)![1](assets/1.svg) |
 |      `texstudio-cn`       |                      [TeXStudio 镜像](https://texstudio.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
-|       `sagemath-cn`       |                    [SageMath 镜像](hthttps://www.sagemath.org)                    | ![a](assets/a.svg)![1](assets/1.svg) |
+|       `sagemath-cn`       |                       [SageMath 镜像](https://sagemath.org)                       | ![a](assets/a.svg)![1](assets/1.svg) |
 |         `vlc-cn`          |                       [VLC 镜像](https://videolan.org/vlc)                        | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ## ✨ 一起维护
@@ -193,7 +193,7 @@ brew help
 
 |      桶名       |                  软件官网                  |                       问题                        |
 |:---------------:|:------------------------------------------:|:-------------------------------------------------:|
-|   `capcut-cn`   |    [剪映中文版](https://www.capcut.cn/)    |                  未找到版本信息                   |
+|   `capcut-cn`   |      [剪映中文版](https://capcut.cn/)      |                  未找到版本信息                   |
 | ~~`lceda-pro`~~ | ~~[嘉立创 EDA 专业版](https://lceda.cn/)~~ | ~~解压失败（压缩包中有文件名包含非 UTF-8 字符）~~ |
 |    `landrop`    |      [LANDrop](https://landrop.app/)       |                嵌套标签，难以选择                 |
 |   `linkease`    |     [易有云](https://app.linkease.com)     |                多个结果，无法选中                 |
