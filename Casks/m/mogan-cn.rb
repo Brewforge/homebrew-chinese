@@ -1,6 +1,6 @@
 cask "mogan-cn" do
-  version "2026.1.2"
-  sha256 "34ed6e6cb26c8019939ea02b2a1121c14d6dd1c589ce33810acb98f863fa28d8"
+  version "2026.2.0"
+  sha256 "7b67d56486719f60c7731954cf870cbe3ea1373153da24f13414176eaa80dd01"
 
   url "https://mirrors.ustc.edu.cn/github-release/XmacsLabs/mogan/LatestRelease/MoganSTEM-v#{version}-arm.dmg",
       verified: "mirrors.ustc.edu.cn/github-release/XmacsLabs/mogan/"
