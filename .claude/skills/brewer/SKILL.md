@@ -86,6 +86,8 @@ brew createzap {cask-name}
 
 ## 5. 更新 README + 提交
 
+**每个软件都必须更新 README 并立即 commit，不要跳过 README，不要攒多个软件一起提交。**
+
 - 在对应分类表格中按字母序插入新条目
 - 徽章：`a.svg`=开源 `b.svg`=闭源 `1.svg`=免费 `2.svg`=买断 `3.svg`=订阅
 - 检查是否有其他 cask 文件未列入 README，一并补充
