@@ -125,6 +125,7 @@ brew help
 | `chaoxing-cxstudy` |                    [学习通](https://app.chaoxing.com/)                     |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `cloud-uploader`  |      [网易云音乐上传助手](https://github.com/lulu-ls/cloud-uploader)       |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `copybook`     |            [字帖生成器](https://github.com/xxNull-lsk/Copybook)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|    `douyin-ar`     |                    [像塑](https://effect.douyin.com/)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |     `esearch`      |                 [eSearch](https://esearch-app.netlify.app)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `e-study`      |                    [知网研学](https://estudy.cnki.net/)                    |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |    `easy-to-tv`    |          [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
