@@ -145,6 +145,7 @@ brew help
 | `quarkclouddrive`  |                      [夸克网盘](https://pan.quark.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `splayer-imsyy`   |                [SPlayer](https://github.com/imsyy/SPlayer)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `tts-vue`      |               [TTS-Vue](https://tts-doc.loker.vip/home.html)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|    `vibeviewer`    |          [Vibeviewer](https://github.com/MarveleE/Vibeviewer)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `wiliwili`     |             [wiliwili](https://xfangfang.github.io/wiliwili/)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `yank-note`     |                  [Yank-Note](https://yank-note.com/zh-CN)                  | ![a](assets/a.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
 
