@@ -31,8 +31,8 @@ cask "name" do
   end
 
   auto_updates true # 如果 app 自更新
-
   depends_on macos: ">= :版本"
+
   app "AppName.app"
 
   preflight do # 未签名 app 需要
@@ -41,7 +41,7 @@ cask "name" do
 
   zap trash: [
     "...",
-    "..."
+    "....",
   ]
 end
 ```
