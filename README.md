@@ -125,7 +125,7 @@ brew help
 | `chaoxing-cxstudy` |                    [学习通](https://app.chaoxing.com/)                     |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `cloud-uploader`  |      [网易云音乐上传助手](https://github.com/lulu-ls/cloud-uploader)       |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `copybook`     |            [字帖生成器](https://github.com/xxNull-lsk/Copybook)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
-|    `douyin-ar`     |                    [像塑](https://effect.douyin.com/)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `douyin-ar`     |                     [像塑](https://effect.douyin.com/)                     |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |     `esearch`      |                 [eSearch](https://esearch-app.netlify.app)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `e-study`      |                    [知网研学](https://estudy.cnki.net/)                    |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |    `easy-to-tv`    |          [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
@@ -143,10 +143,11 @@ brew help
 |     `messauto`     |              [MessAuto](https://github.com/LeeeSe/MessAuto/)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |      `noteey`      |                       [Noteey](https://noteey.com/)                        | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
 |  `project-graph`   |         [Project Graph](https://github.com/graphif/project-graph)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|      `presto`      |               [Presto](https://github.com/Presto-io/Presto)                |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 | `quarkclouddrive`  |                      [夸克网盘](https://pan.quark.cn)                      |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `splayer-imsyy`   |                [SPlayer](https://github.com/imsyy/SPlayer)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `tts-vue`      |               [TTS-Vue](https://tts-doc.loker.vip/home.html)               |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
-|    `vibeviewer`    |          [Vibeviewer](https://github.com/MarveleE/Vibeviewer)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|    `vibeviewer`    |            [Vibeviewer](https://github.com/MarveleE/Vibeviewer)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `wiliwili`     |             [wiliwili](https://xfangfang.github.io/wiliwili/)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `yank-note`     |                  [Yank-Note](https://yank-note.com/zh-CN)                  | ![a](assets/a.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
 
