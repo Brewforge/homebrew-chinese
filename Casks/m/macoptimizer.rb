@@ -7,7 +7,7 @@ cask "macoptimizer" do
 
   url "https://github.com/ddlmanus/MacOptimizer/releases/download/v#{version}/Mac._v#{version}_#{arch}.dmg"
   name "Mac优化大师"
-  desc "macOS 系统清理和优化工具"
+  desc "系统清理和优化工具"
   homepage "https://github.com/ddlmanus/MacOptimizer"
 
   livecheck do

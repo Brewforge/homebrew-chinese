@@ -19,28 +19,29 @@ cask "name" do
 
   version "x.y.z"
   sha256 arm: "...",
-         intel: "..."
+         intel: "...."
 
   url "..."
   name "显示名称"
   desc "描述"
-  homepage "https://..."
+  homepage "https://.../"
 
   livecheck do
-    "..."
-  end            # GitHub 项目用 strategy :github_latest
+    "..." # GitHub 项目用 strategy :github_latest
+  end
 
-  auto_updates true               # 如果 app 自更新
+  auto_updates true # 如果 app 自更新
 
   depends_on macos: ">= :版本"
   app "AppName.app"
 
-  preflight do                    # 未签名 app 需要
+  preflight do # 未签名 app 需要
     system_command "xattr", args: ["-cr", "#{staged_path}/AppName.app"]
   end
 
   zap trash: [
     "...",
+    "..."
   ]
 end
 ```
