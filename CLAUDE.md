@@ -4,7 +4,7 @@ Homebrew tap (`brewforge/chinese`)，为中国用户提供 cask 定义。
 
 ## 仓库结构
 
-```
+```text
 Casks/{首字母}/{cask-name}.rb   # 所有 cask 文件按首字母分目录
 assets/                         # README 用的 SVG 徽章
   a.svg = 开源, b.svg = 闭源
@@ -22,14 +22,18 @@ cask "name" do
   name "显示名称"
   desc "描述"
   homepage "..."
-  livecheck do ... end            # GitHub 项目用 strategy :github_latest
+  livecheck do
+    "..."
+  end            # GitHub 项目用 strategy :github_latest
   auto_updates true               # 如果 app 自更新
   depends_on macos: ">= :版本"
   app "AppName.app"
   preflight do                    # 未签名 app 需要
     system_command "xattr", args: ["-cr", "#{staged_path}/AppName.app"]
   end
-  zap trash: [...]
+  zap trash: [
+    "...",
+  ]
 end
 ```
 
