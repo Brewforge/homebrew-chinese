@@ -60,7 +60,7 @@ macOS 版本映射：12→monterey, 13→ventura, 14→sonoma, 15→sequoia
 ## 3. 安装 App 并生成 zap
 
 ```bash
-brew install {cask-name}
+brew install --cask brewforge/chinese/{cask-name}
 ```
 
 安装完成后**提示用户运行一次软件**，等待用户确认。
@@ -68,8 +68,7 @@ brew install {cask-name}
 用户确认后：
 
 ```bash
-brew tap nrlquaker/createzap   # 仅首次
-brew createzap {cask-name}
+brew createzap brewforge/chinese/{cask-name}
 ```
 
 将输出填入 cask 的 `zap` 字段。
@@ -88,7 +87,7 @@ brew createzap {cask-name}
 
 **每个软件都必须更新 README 并立即 commit，不要跳过 README，不要攒多个软件一起提交。**
 
-- 在对应分类表格中按字母序插入新条目
+- 在对应分类表格中按字母序插入新条目（不需要手动对齐列宽，插入纯内容即可，用户会用编辑器格式化表格）
 - 徽章：`a.svg`=开源 `b.svg`=闭源 `1.svg`=免费 `2.svg`=买断 `3.svg`=订阅
 - 检查是否有其他 cask 文件未列入 README，一并补充
 - rb 文件和 README 改动合并为**单次 commit**，格式：`{cask-name} {version}`
