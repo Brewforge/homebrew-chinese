@@ -18,7 +18,7 @@ cask "name" do
   arch arm: "...", intel: "..." # 多架构时
 
   version "x.y.z"
-  sha256 arm: "...",
+  sha256 arm:   "...",
          intel: "...."
 
   url "..."
