@@ -1,9 +1,9 @@
 cask "dbeaver-cn" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "25.3.5"
-  sha256 arm:   "2b682354729848bc0097426e699cb96432c45e9b261c72cf7d9524bae4d4a28e",
-         intel: "196ae8da178a527cbba6c3729b66c0f26f07be4f7a1a20d58580c6f708282628"
+  version "26.0.0"
+  sha256 arm:   "5b31d585a6dc2179e87625c1ff97c50aef7b61c3e26c1e8ddb59bfed3f3f6aaa",
+         intel: "1b55efe27b9c6f4b828dba12d6bbed7f2eab8b4a073c7666bbe8de6bd3c2e90e"
 
   url "https://mirrors.ustc.edu.cn/github-release/dbeaver/dbeaver/LatestRelease/dbeaver-ce-#{version}-macos-#{arch}.dmg",
       verified: "mirrors.ustc.edu.cn/github-release/dbeaver/dbeaver/"
