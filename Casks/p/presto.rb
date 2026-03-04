@@ -8,7 +8,7 @@ cask "presto" do
   url "https://github.com/Presto-io/Presto/releases/download/v#{version}/Presto-#{version}-macOS-#{arch}.dmg"
   name "Presto"
   desc "Markdown to PDF document conversion tool powered by Typst"
-  homepage "https://github.com/Presto-io/Presto"
+  homepage "https://presto.mre.red"
 
   livecheck do
     url :url
