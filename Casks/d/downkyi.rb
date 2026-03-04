@@ -17,7 +17,7 @@ cask "downkyi" do
 
   auto_updates true
 
-  app "DownKyi.app"
+  app "哔哩下载姬.app"
 
-  zap trash: []
+  zap trash: "~/Library/Application Support/DownKyi"
 end
