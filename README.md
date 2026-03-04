@@ -98,13 +98,13 @@ brew help
 ### AI 工具
 
 |  桶名   |           软件官网            |                 备注                 |
-| :-----: | :---------------------------: | :----------------------------------: |
+|:-------:|:-----------------------------:|:------------------------------------:|
 | `aidea` | [aidea](https://ai.aicode.cc) | ![b](assets/b.svg)![2](assets/2.svg) |
 
 ### 代理工具
 
 |       桶名        |                              软件官网                               |                 备注                 |
-| :---------------: | :-----------------------------------------------------------------: | :----------------------------------: |
+|:-----------------:|:-------------------------------------------------------------------:|:------------------------------------:|
 |   `clashx-meta`   |       [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta)       | ![a](assets/a.svg)![1](assets/1.svg) |
 |    `clash-mi`     |                   [Clash-Mi](https://clashmi.app)                   | ![a](assets/a.svg)![1](assets/1.svg) |
 | `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
@@ -118,14 +118,16 @@ brew help
 ### 通用软件
 
 |        桶名        |                                  软件官网                                  |                                   备注                                   |
-| :----------------: | :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+|:------------------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
 |   `alist-helper`   |         [Alist-Helper](https://github.com/Xmarmalade/alisthelper)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |  `app-cleaner-cn`  | [App Cleaner 中文版](https://nektony.com/zh-hans/mac-app-cleaner/download) |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `bilitools`     |                 [BiliTools](https://btjawa.top/bilitools/)                 |                   ![a](assets/b.svg)![1](assets/1.svg)                   |
 |    `cajviewer`     |           [CAJViewer](https://CAJViewer.cnki.net/download.html)            |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 | `chaoxing-cxstudy` |                    [学习通](https://app.chaoxing.com/)                     |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `cloud-uploader`  |      [网易云音乐上传助手](https://github.com/lulu-ls/cloud-uploader)       |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `copybook`     |            [字帖生成器](https://github.com/xxNull-lsk/Copybook)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `douyin-ar`     |                     [像塑](https://effect.douyin.com/)                     |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|     `downkyi`      |          [哔哩下载姬](https://github.com/yaobiao131/downkyicore/)          |                   ![a](assets/b.svg)![1](assets/1.svg)                   |
 |     `esearch`      |                 [eSearch](https://esearch-app.netlify.app)                 |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `e-study`      |                    [知网研学](https://estudy.cnki.net/)                    |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |    `easy-to-tv`    |          [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
@@ -154,7 +156,7 @@ brew help
 ### 外语学习
 
 |     桶名      |                        软件官网                         |                          备注                          |
-| :-----------: | :-----------------------------------------------------: | :----------------------------------------------------: |
+|:-------------:|:-------------------------------------------------------:|:------------------------------------------------------:|
 | `dashplayer`  | [dashplayer](https://github.com/solidSpoon/DashPlayer)  | ![a](assets/a.svg)![1](assets/1.svg)![3](assets/3.svg) |
 |    `enjoy`    |      [人人都能学英语](https://1000h.org/enjoy-app)      | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
 | `pot-desktop` |      [Pot](https://github.com/pot-app/pot-desktop)      |          ![a](assets/a.svg)![1](assets/1.svg)          |
@@ -169,7 +171,7 @@ brew help
 ### 开源软件镜像
 
 |           桶名            |                                     软件官网                                      |                 备注                 |
-| :-----------------------: | :-------------------------------------------------------------------------------: | :----------------------------------: |
+|:-------------------------:|:---------------------------------------------------------------------------------:|:------------------------------------:|
 |       `blender-cn`        |                        [Blender 镜像](https://blender.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `blender@lts-cn`      |                      [Blender LTS 镜像](https://blender.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
 |       `dbeaver-cn`        |                       [DBeaver 镜像](hthttps://dbeaver.io)                        | ![a](assets/a.svg)![1](assets/1.svg) |
@@ -200,7 +202,7 @@ brew help
 目前还有一些当前维护者未能搞定的 Cask，请各位豪杰出手相助。
 
 |      桶名       |                  软件官网                  |                       问题                        |
-| :-------------: | :----------------------------------------: | :-----------------------------------------------: |
+|:---------------:|:------------------------------------------:|:-------------------------------------------------:|
 |   `capcut-cn`   |      [剪映中文版](https://capcut.cn/)      |                  未找到版本信息                   |
 | ~~`lceda-pro`~~ | ~~[嘉立创 EDA 专业版](https://lceda.cn/)~~ | ~~解压失败（压缩包中有文件名包含非 UTF-8 字符）~~ |
 |    `landrop`    |      [LANDrop](https://landrop.app/)       |                嵌套标签，难以选择                 |
