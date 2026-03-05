@@ -5,7 +5,8 @@ cask "presto" do
   sha256 arm:   "cdf7ec83443c9b2f52c0cc6fadc83fb219b4e3c0ae89ea1dbbd60020c6aaff80",
          intel: "7a1a6062a6f6d87bb246d367a3d5b2db1d000b38545da74a0a040eb5b269b3f8"
 
-  url "https://github.com/Presto-io/Presto/releases/download/v#{version}/Presto-#{version}-macOS-#{arch}.dmg"
+  url "https://github.com/Presto-io/Presto/releases/download/v#{version}/Presto-#{version}-macOS-#{arch}.dmg",
+      verified: "github.com/Presto-io/Presto/"
   name "Presto"
   desc "Markdown to PDF document conversion tool powered by Typst"
   homepage "https://presto.mre.red"
