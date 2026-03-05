@@ -9,7 +9,7 @@ cask "presto" do
       verified: "github.com/Presto-io/Presto/"
   name "Presto"
   desc "Markdown to PDF document conversion tool powered by Typst"
-  homepage "https://presto.mre.red"
+  homepage "https://presto.mre.red/"
 
   livecheck do
     url :url
