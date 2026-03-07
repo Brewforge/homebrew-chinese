@@ -106,7 +106,6 @@ brew help
 |       桶名        |                              软件官网                               |                 备注                 |
 |:-----------------:|:-------------------------------------------------------------------:|:------------------------------------:|
 |   `clashx-meta`   |       [Clashx.Meta](https://github.com/MetaCubeX/ClashX.Meta)       | ![a](assets/a.svg)![1](assets/1.svg) |
-|    `clash-mi`     |                   [Clash-Mi](https://clashmi.app)                   | ![a](assets/a.svg)![1](assets/1.svg) |
 | `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
 | `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
@@ -159,7 +158,6 @@ brew help
 |:-------------:|:-------------------------------------------------------:|:------------------------------------------------------:|
 | `dashplayer`  | [dashplayer](https://github.com/solidSpoon/DashPlayer)  | ![a](assets/a.svg)![1](assets/1.svg)![3](assets/3.svg) |
 |    `enjoy`    |      [人人都能学英语](https://1000h.org/enjoy-app)      | ![b](assets/b.svg)![2](assets/2.svg)![3](assets/3.svg) |
-| `pot-desktop` |      [Pot](https://github.com/pot-app/pot-desktop)      |          ![a](assets/a.svg)![1](assets/1.svg)          |
 | `dehelper-cn` |    [德语助手](https://eudic.net/v4/de/app/dehelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
 | `eshelper-cn` |    [西语助手](https://eudic.net/v4/es/app/eshelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
 | `frhelper-cn` |    [法语助手](https://eudic.net/v4/fr/app/frhelper)     | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
