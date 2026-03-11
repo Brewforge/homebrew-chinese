@@ -22,7 +22,7 @@ cask "blender@lts-cn" do
   conflicts_with cask: %w[
     blender
     blender-cn
-    blender@lts-cn
+    blender@lts
   ]
   depends_on macos: ">= :big_sur"
 

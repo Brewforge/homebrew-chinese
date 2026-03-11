@@ -21,7 +21,7 @@ cask "julia@lts-cn" do
     julia-app
     julia-app@lts
   ]
-  depends_on macos: ">= :sequoia"
+  depends_on macos: ">= :ventura"
 
   app "Julia-#{version.major_minor}.app"
   binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia", target: "julia-lts"
