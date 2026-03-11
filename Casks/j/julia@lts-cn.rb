@@ -4,7 +4,7 @@ cask "julia@lts-cn" do
   version "1.10.10"
   sha256 "297ff71261e9e77114601c3b1ab1a3056621911887e791192e219558f35939a6"
 
-  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-macaarch64.dmg",
+  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg",
       verified: "mirrors.ustc.edu.cn/julia-releases/bin/mac/"
   name "Julia"
   desc "Programming language for technical computing"
