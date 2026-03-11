@@ -2,7 +2,8 @@ cask "julia@lts-cn" do
   arch arm: "aarch64", intel: "x64"
 
   version "1.10.10"
-  sha256 "297ff71261e9e77114601c3b1ab1a3056621911887e791192e219558f35939a6"
+  sha256 arm:   "7283a27f8a8c12495fbba8cbf38e5b284fecaba9d54da1e0f8d6d8cedb4f4d92",
+         intel: "18c0daffdc4504116d2e29e96b0b81ad98d20c88196d48d377ccffb71ab0ca73"
 
   url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg",
       verified: "mirrors.ustc.edu.cn/julia-releases/bin/mac/"
