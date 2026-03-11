@@ -1,7 +1,7 @@
 cask "julia@lts-cn" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.10.10"
+  version "1.10.11"
   sha256 arm:   "7283a27f8a8c12495fbba8cbf38e5b284fecaba9d54da1e0f8d6d8cedb4f4d92",
          intel: "18c0daffdc4504116d2e29e96b0b81ad98d20c88196d48d377ccffb71ab0ca73"
 
