@@ -168,26 +168,25 @@ brew help
 
 ### 开源软件镜像
 
-|           桶名            |                                     软件官网                                      |                 备注                 |
-|:-------------------------:|:---------------------------------------------------------------------------------:|:------------------------------------:|
-|       `blender-cn`        |                        [Blender 镜像](https://blender.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
-|     `blender@lts-cn`      |                      [Blender LTS 镜像](https://blender.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
-|       `dbeaver-cn`        |                       [DBeaver 镜像](hthttps://dbeaver.io)                        | ![a](assets/a.svg)![1](assets/1.svg) |
-|         `gimp-cn`         |                           [GIMP 镜像](https://gimp.org)                           | ![a](assets/a.svg)![1](assets/1.svg) |
-|         `iina-cn`         |                           [IINA 镜像](https://iina.io)                            | ![a](assets/a.svg)![1](assets/1.svg) |
-|       `inkscape-cn`       |         [Inkscape 镜像](https://inkscape.org/zh-hans/?switchlang=zh-hans)         | ![a](assets/a.svg)![1](assets/1.svg) |
-|        `julia-cn`         |                        [Julia 镜像](https://julialang.org)                        | ![a](assets/a.svg)![1](assets/1.svg) |
-|      `julia@lts-cn`       |                      [Julia LTS 镜像](https://julialang.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
-|        `kicad-cn`         |                          [Kicad 镜像](https://kicad.org)                          | ![a](assets/a.svg)![1](assets/1.svg) |
-|         `lyx-cn`          |                            [Lyx 镜像](https://lyx.org)                            | ![a](assets/a.svg)![1](assets/1.svg) |
-|      `miniforge-cn`       |            [Miniforge 镜像](https://github.com/conda-forge/miniforge)             | ![a](assets/a.svg)![1](assets/1.svg) |
-|        `mogan-cn`         |                          [Mogan 镜像](https://mogan.app)                          | ![a](assets/a.svg)![1](assets/1.svg) |
-| `navicat-premium-lite-cn` | [Navicat Premium Lite 镜像](https://navicat.com.cn/products/navicat-premium-lite) | ![b](assets/b.svg)![1](assets/1.svg) |
-|         `obs-cn`          |                  [OBS Studio 镜像](https://obsproject.com/zh-cn)                  | ![a](assets/a.svg)![1](assets/1.svg) |
-|      `qt-creator-cn`      |                    [Qt Creator 镜像](https://qt.io/developers)                    | ![a](assets/a.svg)![1](assets/1.svg) |
-|      `texstudio-cn`       |                      [TeXStudio 镜像](https://texstudio.org)                      | ![a](assets/a.svg)![1](assets/1.svg) |
-|       `sagemath-cn`       |                       [SageMath 镜像](https://sagemath.org)                       | ![a](assets/a.svg)![1](assets/1.svg) |
-|         `vlc-cn`          |                       [VLC 镜像](https://videolan.org/vlc)                        | ![a](assets/a.svg)![1](assets/1.svg) |
+|       桶名       |                             软件官网                              |                 备注                 |
+|:----------------:|:-----------------------------------------------------------------:|:------------------------------------:|
+|   `blender-cn`   |                [Blender 镜像](https://blender.org)                | ![a](assets/a.svg)![1](assets/1.svg) |
+| `blender@lts-cn` |              [Blender LTS 镜像](https://blender.org)              | ![a](assets/a.svg)![1](assets/1.svg) |
+|   `dbeaver-cn`   |               [DBeaver 镜像](hthttps://dbeaver.io)                | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `gimp-cn`     |                   [GIMP 镜像](https://gimp.org)                   | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `iina-cn`     |                   [IINA 镜像](https://iina.io)                    | ![a](assets/a.svg)![1](assets/1.svg) |
+|  `inkscape-cn`   | [Inkscape 镜像](https://inkscape.org/zh-hans/?switchlang=zh-hans) | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `julia-cn`    |                [Julia 镜像](https://julialang.org)                | ![a](assets/a.svg)![1](assets/1.svg) |
+|  `julia@lts-cn`  |              [Julia LTS 镜像](https://julialang.org)              | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `kicad-cn`    |                  [Kicad 镜像](https://kicad.org)                  | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `lyx-cn`     |                    [Lyx 镜像](https://lyx.org)                    | ![a](assets/a.svg)![1](assets/1.svg) |
+|  `miniforge-cn`  |    [Miniforge 镜像](https://github.com/conda-forge/miniforge)     | ![a](assets/a.svg)![1](assets/1.svg) |
+|    `mogan-cn`    |                  [Mogan 镜像](https://mogan.app)                  | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `obs-cn`     |          [OBS Studio 镜像](https://obsproject.com/zh-cn)          | ![a](assets/a.svg)![1](assets/1.svg) |
+| `qt-creator-cn`  |            [Qt Creator 镜像](https://qt.io/developers)            | ![a](assets/a.svg)![1](assets/1.svg) |
+|  `texstudio-cn`  |              [TeXStudio 镜像](https://texstudio.org)              | ![a](assets/a.svg)![1](assets/1.svg) |
+|  `sagemath-cn`   |               [SageMath 镜像](https://sagemath.org)               | ![a](assets/a.svg)![1](assets/1.svg) |
+|     `vlc-cn`     |               [VLC 镜像](https://videolan.org/vlc)                | ![a](assets/a.svg)![1](assets/1.svg) |
 
 ## ✨ 一起维护
 
