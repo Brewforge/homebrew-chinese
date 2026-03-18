@@ -11,10 +11,6 @@ cask "blender@lts-cn" do
   desc "Free and open-source 3D creation suite"
   homepage "https://www.blender.org/"
 
-  # The upstream LTS page (https://www.blender.org/download/lts/) cannot be
-  # fetched due to Cloudflare protections and we can't tell which versions are
-  # LTS simply from the version number, so this will have to be manually
-  # checked.
   livecheck do
     skip "Cannot be fetched due to Cloudflare protections"
   end

@@ -1,79 +1,42 @@
 cask "blender-cn" do
-  arch arm: "arm64", intel: "x64"
+    version "5.1.0"
+    sha256 "ebeda0dbb7fbf06f3cbcf58c11397551de745f1177acfe3e2331ac0d4d901996"
 
-  on_arm do
-    version "5.0.1"
-    sha256 "102a81ddee5346c96339c6a529069a2d52df05f330eb9bfd431c8dd79fb4afb6"
+    url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg",
+        verified: "mirrors.tuna.tsinghua.edu.cn/"
+    name "Blender"
+    desc "3D creation suite"
+    homepage "https://www.blender.org/"
 
-    # The upstream download page (https://www.blender.org/download/) cannot be
-    # fetched due to Cloudflare protections, so we have to naively assume a
-    # version is released when the assets are uploaded.
     livecheck do
-      url "https://download.blender.org/release/"
-      regex(/href=.*?blender[._-]v?(\d+(?:\.\d+)+)(?:[._-]macos)?[._-]#{arch}\.dmg/i)
-      strategy :page_match do |page, regex|
-        # Match major/minor versions from stable directory names
-        major_minor_versions =
-          page.scan(%r{href=["']?[^"' >]*?Blender[._-]?v?(\d+(?:\.\d+)+)/?["' >]}i)
-              .flatten
-              .uniq
-              .sort_by { |v| Version.new(v) }
-        next if major_minor_versions.blank?
-
-        # Check the directory listing page for the highest major/minor version
-        directory_page = Homebrew::Livecheck::Strategy.page_content(
-          URI.join(@url, "Blender#{major_minor_versions.last}/").to_s,
-        )[:content]
-        next if directory_page.blank?
-
-        directory_page.scan(regex).map { |match| match[0] }
-      end
-    end
-  end
-  on_intel do
-    version "4.5.6"
-    sha256 "4088b442c87381a9673ce00317e34e8ab520e6c560532e6057f507dd9c5f7713"
-
-    # Intel support is limited to version 4.5.x series.
-    livecheck do
-      url "https://download.blender.org/release/Blender4.5/"
-      regex(/href=.*?blender[._-]v?(\d+(?:\.\d+)+)(?:[._-]macos)?[._-]#{arch}\.dmg/i)
+      skip "Cannot be fetched due to Cloudflare protections"
     end
 
-    deprecate! date: "2027-07-01", because: :unsupported
-  end
+    auto_updates true
+    conflicts_with cask: %w[
+      blender
+      blender@lts
+      blender@lts-cn
+    ]
+    depends_on macos: ">= :big_sur"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/"
-  name "Blender"
-  desc "3D creation suite"
-  homepage "https://www.blender.org/"
+    app "Blender.app"
+    # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
+    shimscript = "#{staged_path}/blender.wrapper.sh"
+    binary shimscript, target: "blender"
 
-  auto_updates true
-  conflicts_with cask: %w[
-    blender
-    blender@lts
-    blender@lts-cn
-  ]
-  depends_on macos: ">= :big_sur"
+    preflight do
+      # make __pycache__ directories writable, otherwise uninstall fails
+      FileUtils.chmod "u+w", Dir.glob("#{staged_path}/*.app/**/__pycache__")
 
-  app "Blender.app"
-  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
-  shimscript = "#{staged_path}/blender.wrapper.sh"
-  binary shimscript, target: "blender"
+      File.write shimscript, <<~EOS
+        #!/bin/bash
+        '#{appdir}/Blender.app/Contents/MacOS/Blender' "$@"
+      EOS
+    end
 
-  preflight do
-    # make __pycache__ directories writable, otherwise uninstall fails
-    FileUtils.chmod "u+w", Dir.glob("#{staged_path}/*.app/**/__pycache__")
-
-    File.write shimscript, <<~EOS
-      #!/bin/bash
-      '#{appdir}/Blender.app/Contents/MacOS/Blender' "$@"
-    EOS
-  end
-
-  zap trash: [
-    "~/Library/Application Support/Blender",
-    "~/Library/Saved Application State/org.blenderfoundation.blender.savedState",
-  ]
+    zap trash: [
+      "~/Library/Application Support/Blender",
+      "~/Library/Saved Application State/org.blenderfoundation.blender.savedState",
+    ]
 end
