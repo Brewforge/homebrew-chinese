@@ -1,6 +1,6 @@
 cask "kicad-cn" do
-  version "10.0.0-rc2"
-  sha256 "0abc2bfc56743130df914a6a7640a222aecac85db0ce340b8d389c1ee46c97fb"
+  version "10.0.0"
+  sha256 "e0913a3df62aacfb76b9a8282a2c8389f5a06cae6ab3d1666ac753e0dbd242c8"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/kicad-unified-universal-#{version}.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/kicad/"
