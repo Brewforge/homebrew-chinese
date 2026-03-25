@@ -1,5 +1,5 @@
 cask "v2rayxs" do
-  arch arm: "arm64", intel: "64"
+  arch arm: "arm64", intel: "x86_64"
 
   version "1.5.10"
   sha256 arm:   "0de8519d035db77c2ad314772db15b655e1ac7bec24e35768be745f3708a26b3",
