@@ -18,6 +18,7 @@ cask "keyviz-cn" do
   end
 
   auto_updates true
+  depends_on arch: :arm64
 
   app "keyviz.app"
 

@@ -1,6 +1,4 @@
 cask "dashplayer" do
-  arch arm: "arm64", intel: "x64"
-
   version "5.1.7"
   sha256 "80f39fbdfdda5faccde47486048f9f7bb63efda9296b7da9685c7536a5a34960"
 
@@ -14,6 +12,8 @@ cask "dashplayer" do
     url :url
     strategy :github_latest
   end
+
+  depends_on arch: :arm64
 
   app "DashPlayer.app"
 
