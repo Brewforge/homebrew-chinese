@@ -1,9 +1,9 @@
 cask "texstudio-cn" do
   arch arm: "-m1", intel: ""
 
-  version "4.9.2"
-  sha256 arm:   "b404caf563ec3f7de953cf7368b8a04c572bd327d17763464a5f95e757c35099",
-         intel: "1cd7a9585bf135122ec95555347152789d093e54a5811ffd48327f069e534f6e"
+  version "4.9.3"
+  sha256 arm:   "32ef7a5ae65baf61601ce2dd8be555e7ef2cca67939577ba37c14d5312e2a802",
+         intel: "2784e967dc11687c86381f72c59df53087f2eacf1ddacb886b2ba5095f13c399"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/texstudio/LatestRelease/texstudio-#{version}-osx#{arch}.zip",
       verified: "mirrors.tuna.tsinghua.edu.cn/github-release/texstudio-org/"
