@@ -22,6 +22,6 @@ cask "cockpit-tools" do
 
   zap trash: [
     "~/Library/Application Support/cockpit-tools",
-    "~/Library/WebKit/com.jlcodes.cockpit-tools"
+    "~/Library/WebKit/com.jlcodes.cockpit-tools",
   ]
 end
