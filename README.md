@@ -120,7 +120,6 @@ brew help
 |        桶名        |                                  软件官网                                  |                                   备注                                   |
 |:------------------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
 |   `alist-helper`   |         [Alist-Helper](https://github.com/Xmarmalade/alisthelper)          |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
-|  `app-cleaner-cn`  | [App Cleaner 中文版](https://nektony.com/zh-hans/mac-app-cleaner/download) |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `bilitools`     |                 [BiliTools](https://btjawa.top/bilitools/)                 |                   ![a](assets/b.svg)![1](assets/1.svg)                   |
 |    `cajviewer`     |           [CAJViewer](https://CAJViewer.cnki.net/download.html)            |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 | `chaoxing-cxstudy` |                    [学习通](https://app.chaoxing.com/)                     |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
@@ -173,7 +172,7 @@ brew help
 |:----------------:|:-----------------------------------------------------------------:|:------------------------------------:|
 |   `blender-cn`   |                [Blender 镜像](https://blender.org)                | ![a](assets/a.svg)![1](assets/1.svg) |
 | `blender@lts-cn` |              [Blender LTS 镜像](https://blender.org)              | ![a](assets/a.svg)![1](assets/1.svg) |
-|   `dbeaver-cn`   |               [DBeaver 镜像](hthttps://dbeaver.io)                | ![a](assets/a.svg)![1](assets/1.svg) |
+|   `dbeaver-cn`   |               [DBeaver 镜像](https://dbeaver.io)                | ![a](assets/a.svg)![1](assets/1.svg) |
 |    `gimp-cn`     |                   [GIMP 镜像](https://gimp.org)                   | ![a](assets/a.svg)![1](assets/1.svg) |
 |    `iina-cn`     |                   [IINA 镜像](https://iina.io)                    | ![a](assets/a.svg)![1](assets/1.svg) |
 |  `inkscape-cn`   | [Inkscape 镜像](https://inkscape.org/zh-hans/?switchlang=zh-hans) | ![a](assets/a.svg)![1](assets/1.svg) |
