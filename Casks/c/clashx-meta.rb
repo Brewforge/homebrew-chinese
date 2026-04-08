@@ -1,6 +1,6 @@
 cask "clashx-meta" do
-  version "1.4.32"
-  sha256 "464aeff010745b6c815655a467417c8a4ea94da11fde569e41eadfc3651bbd55"
+  version "1.4.33"
+  sha256 "1b17a7a755396378b29bf89861d11e3c2c1288155234b7fd2a21f33fb21837a1"
 
   url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
   name "ClashX Meta"
