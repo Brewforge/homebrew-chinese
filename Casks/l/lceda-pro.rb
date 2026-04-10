@@ -18,8 +18,6 @@ cask "lceda-pro" do
 
   app "lceda-pro-mac-#{arch}-#{version}/嘉立创EDA(专业版).app"
 
-  uninstall delete: caskroom_path.to_s
-
   zap trash: [
     "~/Library/Application Support/JLCEDA Pro",
     "~/Library/Preferences/cn.lceda.pro.plist",
