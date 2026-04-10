@@ -12,8 +12,9 @@ cask "presto" do
   homepage "https://presto.mre.red/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    # url :url
+    # strategy :github_latest
+    skip "The newer version does not have GitHub releases"
   end
 
   depends_on macos: ">= :big_sur"
