@@ -16,7 +16,7 @@ cask "lceda-pro" do
 
   auto_updates true
 
-  app "lceda-pro-mac-#{arch}-#{version}/LCEDA-Pro.app"
+  app "lceda-pro-mac-#{arch}-#{version}/嘉立创EDA(专业版).app"
 
   uninstall delete: caskroom_path.to_s
 
