@@ -81,3 +81,39 @@ jobs:
           rsync -lrv --exclude=.git "$(pwd)" "$(brew --repository brewforge/chinese)"
           cd "$(brew --repository brewforge/chinese)"
           ./.github/actions/bump-casks/script.sh
+
+  auto-merge-prs:
+    name: Auto merge PRs
+    needs: bump-casks
+    if: github.repository == 'brewforge/homebrew-chinese'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Auto merge PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+        run: |
+          # Get all open PRs
+          prs=$(gh pr list --repo brewforge/homebrew-chinese --state open --json number,headRefName,author --jq '.[] | select(.author.login == "github-actions[bot]" or .author.login == "BrewTestBot") | .number')
+
+          for pr in $prs; do
+            echo "Processing PR #$pr"
+
+            if gh pr view "$pr" --repo brewforge/homebrew-chinese --json mergeable --jq '.mergeable' | grep -q "MERGEABLE"; then
+              echo "Merging PR #$pr"
+
+              # Merge PR
+              if gh pr merge "$pr" --repo brewforge/homebrew-chinese --merge --delete-branch; then
+                echo "Successfully merged PR #$pr and deleted branch"
+              else
+                echo "Failed to merge PR #$pr"
+              fi
+            else
+              echo "PR #$pr is not mergeable, skipping"
+            fi
+          done
