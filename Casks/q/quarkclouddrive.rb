@@ -22,7 +22,7 @@ cask "quarkclouddrive" do
 
   auto_updates true
 
-  app "夸克网盘.app"
+  app "QuarkCloudDrive.app"
 
   zap trash: [
     "~/Library/Preferences/com.alibaba.quark.clouddrive",
