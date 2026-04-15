@@ -1,5 +1,5 @@
 cask "qt-creator-cn" do
-  version "19.0.0"
+  version "18.0.0"
   sha256 "369e7e925dd1b5cbc0d2c1f3fa83b3485464833cfd6c627ac3bbf1847dc90df0"
 
   url "https://mirrors.ustc.edu.cn/qtproject/official_releases/qtcreator/latest/qt-creator-opensource-mac-universal-#{version}.dmg",
