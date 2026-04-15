@@ -1,6 +1,6 @@
 cask "quarkclouddrive" do
-  version "3.24.0,2830624,37213"
-  sha256 "b2fb15cedb2fa35b2b9e850ffe6cb17724b6cb71d34b1422ea1aa27e93bef2ad"
+  version "6.5.1.711,2899163,37213"
+  sha256 "e94e580118a70973254038458263bc227941ab42049cae6d3ee59e75b0ea821c"
 
   url "https://umcdn.quark.cn/download/37213/quarkclouddrivemac/pckk@product_guanwang/QuarkCloudDriveMac_V#{version.csv.first}_mac_pf30003_(zh-cn)_release_(Build#{version.csv.second}).dmg"
   name "夸克网盘"
