@@ -1,5 +1,4 @@
 cask "quarkclouddrive" do
-
   version "3.24.0,2830624"
   sha256 "b2fb15cedb2fa35b2b9e850ffe6cb17724b6cb71d34b1422ea1aa27e93bef2ad"
 
@@ -12,7 +11,7 @@ cask "quarkclouddrive" do
     url "https://pan.quark.cn/api/client_version"
     strategy :page_match do |page|
       data = JSON.parse(page)["data"]["origin_macDmgForArmUrl"]
-      match = data.match(%r{QuarkCloudDriveMac_V(\d+(\.\d+)+)_mac_pf30003_\(zh-cn\)_release_\(Build(\d{7})\)\.dmg}i)
+      match = data.match(/QuarkCloudDriveMac_V(\d+(\.\d+)+)_mac_pf30003_\(zh-cn\)_release_\(Build(\d{7})\)\.dmg/i)
       next if match.blank?
 
       "#{match[1]},#{match[3]}"
