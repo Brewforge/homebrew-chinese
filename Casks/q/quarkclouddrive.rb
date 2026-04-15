@@ -1,24 +1,14 @@
 cask "quarkclouddrive" do
-  arch arm: "-arm", intel: ""
-  key = on_arch_conditional arm: "ForArmUrl", intel: "DmgUrl"
+  version "6.5.1.711,2899163"
+  sha256 "e94e580118a70973254038458263bc227941ab42049cae6d3ee59e75b0ea821c"
 
-  version "3.24.0,2830624-20260305163541,ccihhihcicdgcekek"
-  sha256 "b2fb15cedb2fa35b2b9e850ffe6cb17724b6cb71d34b1422ea1aa27e93bef2ad"
-
-  url "https://pdds.quark.cn/download/stfile/#{version.csv.third}/QuarkCloudDrive_v#{version.csv.first}_release2_(Build#{version.csv.second}).dmg"
+  url "https://umcdn.quark.cn/download/37213/quarkclouddrivemac/pckk@product_guanwang/QuarkCloudDriveMac_V#{version.csv.first}_mac_pf30003_(zh-cn)_release_(Build#{version.csv.second}).dmg"
   name "夸克网盘"
   desc "电脑高效拍档，一键存爽快看"
   homepage "https://pan.quark.cn/"
 
   livecheck do
-    url "https://pan.quark.cn/api/client_version"
-    strategy :page_match do |page|
-      data = JSON.parse(page)["data"]["origin_macDmg#{key}"]
-      match = data.match(%r{.*?/stfile/(\w+)/QuarkCloudDrive_v(\d+(\.\d+)+)_release_\(Build(\d{7}-\d{14})\)}i)
-      next if match.blank?
-
-      "#{match[2]},#{match[4]},#{match[1]}"
-    end
+    skip "API is outdated"
   end
 
   auto_updates true
