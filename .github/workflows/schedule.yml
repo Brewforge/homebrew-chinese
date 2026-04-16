@@ -27,7 +27,6 @@ env:
 
 jobs:
   tap-syntax:
-    if: "!contains(github.event.head_commit.message, 'skip-build')"
     runs-on: ubuntu-22.04
     container:
       image: ghcr.io/homebrew/ubuntu22.04:master
@@ -99,7 +98,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
           # Get all open PRs
-          prs=$(gh pr list --repo brewforge/homebrew-chinese --state open --json number,headRefName,author --jq '.[] | select(.author.login == "github-actions[bot]" or .author.login == "BrewTestBot") | .number')
+          prs=$(gh pr list --repo brewforge/homebrew-chinese --state open --json number,headRefName,author --jq '.[] | select(.author.login == "Brewforge-Bot-0") | .number')
 
           for pr in $prs; do
             echo "Processing PR #$pr"
@@ -108,7 +107,7 @@ jobs:
               echo "Merging PR #$pr"
 
               # Merge PR
-              if gh pr merge "$pr" --repo brewforge/homebrew-chinese --merge --delete-branch; then
+              if gh pr merge "$pr" --repo brewforge/homebrew-chinese --merge; then
                 echo "Successfully merged PR #$pr and deleted branch"
               else
                 echo "Failed to merge PR #$pr"
