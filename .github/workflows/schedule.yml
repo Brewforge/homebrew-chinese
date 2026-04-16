@@ -109,6 +109,7 @@ jobs:
               # Merge PR
               if gh pr merge "$pr" --repo brewforge/homebrew-chinese --merge; then
                 echo "Successfully merged PR #$pr and deleted branch"
+                sleep 2s
               else
                 echo "Failed to merge PR #$pr"
               fi
