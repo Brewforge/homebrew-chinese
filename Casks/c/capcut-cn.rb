@@ -9,7 +9,7 @@ cask "capcut-cn" do
   homepage "https://www.capcut.cn/"
 
   livecheck do
-    "No Infomation Available Found"
+    skip "No Infomation Available Found"
   end
 
   auto_updates true
