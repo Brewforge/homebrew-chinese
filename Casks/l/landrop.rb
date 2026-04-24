@@ -1,6 +1,4 @@
 cask "landrop" do
-  arch arm: "arm64", intel: ""
-
   version "2.7.2"
   sha256 "bb9343d50b6606fa4531591eda657bfea3af7ec542fdf7f0fa6ba69ffded261f"
 
@@ -12,7 +10,7 @@ cask "landrop" do
   livecheck do
     skip "嵌套标签，难以选择"
     # url :homepage
-    # regex(/aria-labelledby="radix-:r0:-trigger-macos".+?class="text-sm text-gray-500 mb-2">v(\d+(\.\d){2})/i)
+    regex(/(\d+(\.\d){2})/i)
   end
 
   auto_updates true

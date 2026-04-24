@@ -10,7 +10,10 @@ cask "lyx-cn" do
 
   livecheck do
     url "https://www.lyx.org/Download"
-    regex(/LyX[._-]v?(\d+(?:\.\d+)+)\+qt5/i)
+    regex(/LyX[._-]v?(\d+(?:\.\d+)+)\+qt(\d+)/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
+    end
   end
 
   auto_updates true
