@@ -1,0 +1,29 @@
+cask "retain-pdf" do
+  version "4.1.0"
+  sha256 "3b2499ca7222f5c47c6dbe52f4964f021a388dcea57365bfc2b64e1138cc5024"
+
+  url "https://github.com/wxyhgk/retain-pdf/releases/download/v#{version}/RetainPDF-#{version}-mac-arm64.dmg",
+      verified: "github.com/wxyhgk/retain-pdf/"
+  name "retain-pdf"
+  desc "在保留版面、公式与结构的前提下进行 PDF 翻译"
+  homepage "https://retain-pdf.com/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
+  auto_updates true
+
+  app "RetainPDF.app"
+
+  preflight do
+    system_command "xattr",
+                   args: ["-cr", "#{staged_path}/RetainPDF.app"]
+  end
+
+  zap trash: [
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.wxyhgk.retainpdf.sfl*",
+    "~/Library/Preferences/com.wxyhgk.retainpdf.plist",
+  ]
+end
