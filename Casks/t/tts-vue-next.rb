@@ -14,6 +14,7 @@ cask "tts-vue-next" do
   end
 
   auto_updates true
+  depends_on arch: :arm64
 
   app "tts-vue-next.app"
 
