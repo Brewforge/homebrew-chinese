@@ -19,6 +19,11 @@ cask "ting-en" do
 
   app "每日英语听力.app"
 
+  preflight do
+    system_command "xattr",
+                   args: ["-cr", "#{staged_path}/每日英语听力.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/ting_en",
     "~/Library/Caches/com.eusoft.ting.en",

@@ -20,6 +20,11 @@ cask "cockpit-tools" do
 
   app "Cockpit Tools.app"
 
+  preflight do
+    system_command "xattr",
+                   args: ["-cr", "#{staged_path}/Cockpit Tools.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/cockpit-tools",
     "~/Library/WebKit/com.jlcodes.cockpit-tools",

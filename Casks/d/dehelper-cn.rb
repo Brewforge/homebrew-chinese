@@ -19,6 +19,11 @@ cask "dehelper-cn" do
 
   app "Dehelper.app"
 
+  preflight do
+    system_command "xattr",
+                   args: ["-cr", "#{staged_path}/Dehelper.app"]
+  end
+
   uninstall quit: [
     "com.eusoft.dehelper",
     "com.eusoft.dehelper.LightPeek",

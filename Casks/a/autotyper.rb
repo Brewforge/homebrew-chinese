@@ -15,6 +15,11 @@ cask "autotyper" do
 
   app "AutoGLM.app"
 
+  preflight do
+    system_command "xattr",
+                   args: ["-cr", "#{staged_path}/AutoGLM.app"]
+  end
+
   zap trash: [
     "/Applications/AutoGLM.app",
     "~/Library/Caches/com.zhipu.agent",
