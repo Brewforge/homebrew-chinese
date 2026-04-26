@@ -97,17 +97,25 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
         run: |
-          # Get all open PRs
-          prs=$(gh pr list --repo brewforge/homebrew-chinese --state open --json number,headRefName,author --jq '.[] | select(.author.login == "Brewforge-Bot-0") | .number')
+          # Get all open PRs, excluding nightly updates
+          gh pr list \
+            --repo 'brewforge/homebrew-chinese' \
+            --state open \
+            --limit 1000 \
+            --json number,title,headRefName,author \
+            --jq '.[] | select(.author.login == "Brewforge-Bot-0" or .author.login == "ivaquero") | select((((.title // "") + " " + (.headRefName // "")) | ascii_downcase | contains("nightly")) | not) | .number' \
+            > prs.txt
 
-          for pr in $prs; do
+          while IFS= read -r pr; do
+            [ -n "$pr" ] || continue
+
             echo "Processing PR #$pr"
 
-            if gh pr view "$pr" --repo brewforge/homebrew-chinese --json mergeable --jq '.mergeable' | grep -q "MERGEABLE"; then
+            if gh pr view "$pr" --repo 'brewforge/homebrew-chinese' --json mergeable --jq '.mergeable' | grep -q "MERGEABLE"; then
               echo "Merging PR #$pr"
 
               # Merge PR
-              if gh pr merge "$pr" --repo brewforge/homebrew-chinese --merge; then
+              if gh pr merge "$pr" --repo 'brewforge/homebrew-chinese' --merge --delete-branch; then
                 echo "Successfully merged PR #$pr and deleted branch"
                 sleep 5s
               else
@@ -116,4 +124,4 @@ jobs:
             else
               echo "PR #$pr is not mergeable, skipping"
             fi
-          done
+          done < prs.txt
