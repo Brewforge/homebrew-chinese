@@ -9,8 +9,16 @@ cask "retain-pdf" do
   homepage "https://retain-pdf.com/"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    url "https://github.com/wxyhgk/retain-pdf/releases"
+    regex(/RetainPDF-Mac-(\d+(\.\d+){2})(-beta\d)?\.dmg/i)
+    strategy :github_latest do |json, regex|
+      json["assets"]&.map do |asset|
+        match = asset["browser_download_url"]&.match(regex)
+        next if match.blank?
+
+        "#{match[1]}#{match[3]}"
+      end
+    end
   end
 
   auto_updates true
