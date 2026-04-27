@@ -1,0 +1,73 @@
+name: automerge
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge-prs:
+    name: Auto merge PRs
+    if: github.repository == 'brewforge/homebrew-chinese'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+      MAX_ROUNDS: 10
+      REPO: brewforge/homebrew-chinese
+    steps:
+      - name: Auto merge PRs
+        run: |
+          list_prs() {
+            gh pr list \
+              --repo "$REPO" \
+              --state open \
+              --limit 1000 \
+              --json number,title,headRefName,author \
+              --jq '.[] | select(.author.login == "Brewforge-Bot-0" or .author.login == "ivaquero") | select((((.title // "") + " " + (.headRefName // "")) | ascii_downcase | contains("nightly")) | not) | .number'
+          }
+
+          mergeable() {
+            local pr="$1" state
+
+            for _ in {1..6}; do
+              state=$(gh pr view "$pr" --repo "$REPO" --json mergeable --jq '.mergeable')
+              [ "$state" != "UNKNOWN" ] && break
+              sleep 10
+            done
+
+            [ "$state" = "MERGEABLE" ]
+          }
+
+          for round in $(seq 1 "$MAX_ROUNDS"); do
+            mapfile -t prs < <(list_prs)
+            [ "${#prs[@]}" -gt 0 ] || break
+
+            echo "Round $round: found ${#prs[@]} PR(s)"
+            merged=false
+
+            for pr in "${prs[@]}"; do
+              echo "Processing PR #$pr"
+
+              if mergeable "$pr"; then
+                if gh pr merge "$pr" --repo "$REPO" --merge --delete-branch; then
+                  echo "Successfully merged PR #$pr and deleted branch"
+                  merged=true
+                  sleep 10
+                  break
+                fi
+
+                echo "Failed to merge PR #$pr"
+              else
+                echo "PR #$pr is not mergeable, skipping"
+              fi
+            done
+
+            [ "$merged" = true ] || break
+          done
