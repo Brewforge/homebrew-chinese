@@ -1,6 +1,6 @@
 cask "retain-pdf" do
-  version "4.1.1-beta1"
-  sha256 "74f85db3f35c581e44621d671c561ed23b90821762114432aedf7a2939825ec0"
+  version "4.1.1-beta2"
+  sha256 "f1fac1ca403c314fd8660ac538482731ec0a9b3d76216d77fd758a61eacf2901"
 
   url "https://github.com/wxyhgk/retain-pdf/releases/download/v#{version}/RetainPDF-Mac-#{version}.dmg"
   name "retain-pdf"
