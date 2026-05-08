@@ -1,11 +1,21 @@
 cask "miniforge-cn" do
-  arch arm: "arm64", intel: "x86_64"
+  os macos: "MacOSX", linux: "Linux"
 
   version "26.3.2-0"
-  sha256 arm:   "a58d9e5a30cac3cd5ecdba2dc52dd042584a2f742a47e975779530f89e5768f5",
-         intel: "f19cc973899925b29141239880787e26cd524bcecd259c2fee72e0f561fc7b54"
 
-  url "https://mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-MacOSX-#{arch}.sh",
+  on_macos do
+    arch arm: "arm64", intel: "x86_64"
+    sha256 arm:   "a58d9e5a30cac3cd5ecdba2dc52dd042584a2f742a47e975779530f89e5768f5",
+           intel: "f19cc973899925b29141239880787e26cd524bcecd259c2fee72e0f561fc7b54"
+  end
+
+  on_linux do
+    arch arm: "aarch64", intel: "x86_64"
+    sha256 arm:   "b8f0320c0fe9bc9dd24be8896ecf4995bbba4227c9822902daeeb7f3689ba7d3",
+           intel: "1d9b75bdf29ba48d9f10bb155a685baab02d318d1d591d2495f97524579dccc1"
+  end
+
+  url "https://mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-#{os}-#{arch}.sh",
       verified: "mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/"
   name "miniforge"
   desc "Minimal installer for conda specific to conda-forge"
@@ -13,7 +23,7 @@ cask "miniforge-cn" do
 
   livecheck do
     url "https://mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
-    regex(/Miniforge3-(\d+(?:[.-]\d+)+)-MacOSX-#{arch}\.sh/i)
+    regex(/Miniforge3-(\d+(?:[.-]\d+)+)-#{os}-#{arch}\.sh/i)
   end
 
   auto_updates true
