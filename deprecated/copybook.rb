@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 cask "copybook" do
   version "1.0.1102"
   sha256 "0be7be40aa1010b40ba7554566d68be902bb2ac70bd60180fcdc257d7798f16a"
