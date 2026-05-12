@@ -18,6 +18,7 @@ cask "vlc-cn" do
 
   auto_updates true
   conflicts_with cask: ["homebrew/cask-versions/vlc-nightly", "vlc"]
+  depends_on :macos
 
   app "VLC.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)

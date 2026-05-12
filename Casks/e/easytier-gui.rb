@@ -16,6 +16,8 @@ cask "easytier-gui" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "easytier-gui.app"
 
   zap trash: [

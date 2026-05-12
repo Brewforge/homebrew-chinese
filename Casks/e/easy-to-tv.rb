@@ -12,6 +12,8 @@ cask "easy-to-tv" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "easy_to_tv.app"
 
   zap trash: [

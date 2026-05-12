@@ -16,6 +16,8 @@ cask "wiliwili" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "wiliwili.app"
 
   zap trash: "~/Library/Application Support/wiliwili"
