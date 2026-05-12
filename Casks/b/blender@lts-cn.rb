@@ -20,7 +20,7 @@ cask "blender@lts-cn" do
     blender-cn
     blender@lts
   ]
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Blender.app"
   # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)

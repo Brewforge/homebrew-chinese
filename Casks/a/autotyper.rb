@@ -13,6 +13,8 @@ cask "autotyper" do
     regex(/(\d{6})\.dmg/i)
   end
 
+  depends_on :macos
+
   app "AutoGLM.app"
 
   preflight do

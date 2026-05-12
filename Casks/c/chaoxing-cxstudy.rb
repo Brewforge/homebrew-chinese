@@ -16,6 +16,8 @@ cask "chaoxing-cxstudy" do
     regex(/study_#{arch}_([^_]+)_[^.]+\.dmg/i)
   end
 
+  depends_on :macos
+
   app "学习通.app"
 
   zap trash: [
