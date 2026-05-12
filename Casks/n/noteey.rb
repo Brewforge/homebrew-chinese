@@ -14,6 +14,7 @@ cask "noteey" do
   end
 
   auto_updates true
+  depends_on :macos
 
   app "Noteey.app"
 

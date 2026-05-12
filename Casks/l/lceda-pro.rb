@@ -16,6 +16,7 @@ cask "lceda-pro" do
   end
 
   auto_updates true
+  depends_on :macos
 
   app "lceda-pro-mac-#{arch}-#{version}/嘉立创EDA(专业版).app"
 

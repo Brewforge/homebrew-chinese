@@ -15,7 +15,7 @@ cask "macoptimizer" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Mac优化大师.app"
 

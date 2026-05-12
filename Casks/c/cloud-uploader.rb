@@ -13,6 +13,8 @@ cask "cloud-uploader" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "cloud-uploader.app"
 
   zap trash: []

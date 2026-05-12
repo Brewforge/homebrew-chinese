@@ -24,6 +24,7 @@ cask "gui-for-singbox" do
   end
 
   auto_updates true
+  depends_on :macos
 
   app "GUI.for.SingBox.app"
 

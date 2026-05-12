@@ -14,6 +14,7 @@ cask "e-study" do
   end
 
   auto_updates true
+  depends_on :macos
 
   app "知网研学.app"
 

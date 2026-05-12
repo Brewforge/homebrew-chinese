@@ -14,8 +14,7 @@ cask "douyin-ar" do
   end
 
   auto_updates true
+  depends_on :macos
 
   app "Douyin AR.app"
-
-  # No zap stanza required
 end
