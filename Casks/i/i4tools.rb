@@ -15,6 +15,7 @@ cask "i4tools" do
   end
 
   auto_updates true
+  depends_on :macos
 
   pkg "i4tools.pkg"
 

@@ -20,6 +20,7 @@ cask "edrawmax@9" do
 
   auto_updates true
   conflicts_with cask: "edrawmax"
+  depends_on :macos
 
   app "EdrawMax.app"
 
