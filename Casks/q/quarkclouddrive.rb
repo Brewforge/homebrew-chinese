@@ -1,8 +1,8 @@
 cask "quarkclouddrive" do
-  version "6.5.1.711,2899163,37213"
-  sha256 "e94e580118a70973254038458263bc227941ab42049cae6d3ee59e75b0ea821c"
+  version "37213,6.8.2.734,30003,2965899"
+  sha256 "789bdaaa5a7af2a382c74ed7b47d606913ed17c872817326a14e80d0967a8119"
 
-  url "https://umcdn.quark.cn/download/37213/quarkclouddrivemac/pckk@product_guanwang/QuarkCloudDriveMac_V#{version.csv.first}_mac_pf30003_(zh-cn)_release_(Build#{version.csv.second}).dmg"
+  url "https://umcdn.quark.cn/download/#{version.csv.first}/quarkclouddrivemac/pckk@product_guanwang_macmini/QuarkCloudDriveMac_V#{version.csv.second}_mac_pf#{version.csv.third}_(zh-cn)_releasemini_(Build#{version.csv.fourth}).dmg"
   name "夸克网盘"
   desc "电脑高效拍档，一键存爽快看"
   homepage "https://pan.quark.cn/"
@@ -16,7 +16,7 @@ cask "quarkclouddrive" do
       match = data.match(regex)
       next if match.blank?
 
-      "#{match[2]},#{match[4]},#{match[1]}"
+      "#{match[1]},#{match[2]},#{match[4]},#{match[5]}"
     end
   end
 
