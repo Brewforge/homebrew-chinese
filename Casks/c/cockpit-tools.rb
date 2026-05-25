@@ -1,9 +1,9 @@
 cask "cockpit-tools" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.24.7"
-  sha256 arm:   "1fef5bfb99fe215031209a3e249ce0a180a8711fe7b2f2a8b625f3f08fab9785",
-         intel: "71d25f27387f0de46d219294afe99c6efcc3d5c9ae6eb1dd531e7cd77055ab77"
+  version "0.24.8"
+  sha256 arm:   "b072b774ce71a1225d4eb8bd2c7df4f364a42701bdf79c5c6b1a715118862c64",
+         intel: "816f0c3da58ad38f8633a3bbc8fa3174ddf4474ad68aed35b618c5079673ba89"
 
   url "https://github.com/jlcodes99/cockpit-tools/releases/download/v#{version}/Cockpit.Tools_#{version}_#{arch}.dmg"
   name "Cockpit Tools"
