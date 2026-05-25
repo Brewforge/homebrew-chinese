@@ -11,8 +11,8 @@ cask "quarkclouddrive" do
     url "https://pan.quark.cn/api/client_version"
     strategy :page_match do |page|
       data = JSON.parse(page)["data"]["origin_macDmgForArmUrl"]
-      stem = "quarkclouddrivemac/pckk@product_guanwang/QuarkCloudDriveMac_V"
-      regex(%r{/(\d{5})/#{stem}(\d+(\.\d+)+)_mac_pf30003_\(zh-cn\)_release_\(Build(\d{7})\)\.dmg}i)
+      stem = "quarkclouddrivemac/pckk@product_guanwang_macmini/QuarkCloudDriveMac"
+      regex(%r{/(\d{5})/#{stem}_V(\d+(\.\d+)+)_mac_pf(\d{5})_\(zh-cn\)_releasemini_\(Build(\d{7})\)\.dmg}i)
       match = data.match(regex)
       next if match.blank?
 
