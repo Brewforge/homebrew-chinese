@@ -35,6 +35,9 @@ jobs:
           core: false
           cask: false
 
+      - name: Clean stale download locks
+        run: rm -f /home/linuxbrew/.cache/Homebrew/downloads/*.incomplete
+
       - run: brew test-bot --only-tap-syntax
 
   bump-casks:
