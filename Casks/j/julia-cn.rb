@@ -1,5 +1,6 @@
 cask "julia-cn" do
   arch arm: "aarch64", intel: "x64"
+  livecheck_arch = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
   version "1.12.6"
   sha256 arm:   "d065db4f16d4a18b4f1ab682d0ff4299addd13b999e980100fd72db592b99242",
@@ -29,6 +30,7 @@ cask "julia-cn" do
 
   app "Julia-#{version.major_minor}.app"
   binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia"
+  manpage "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/share/man/man1/julia.1"
 
   zap trash: [
     "~/.julia",
