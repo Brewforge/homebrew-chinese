@@ -1,9 +1,9 @@
 cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.2.135"
-  sha256 arm:   "2ab7822434a5d10e25448f808389ea176b3f4fe1b132b74e3bb16a11fabd5c1a",
-         intel: "ff0b23ef80ec32b9715f94b14347b65358f94195f48b05f73381c77447f92965"
+  version "3.2.149"
+  sha256 arm:   "817be3db3a93f7c419f4a03a4d59127c99c6579dca28f9341168e07d48e41e18",
+         intel: "8a9910eccbaa42514e38b4ae47e9af5176e03459723de3585ae4498619a06570"
 
   url "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip"
   name "LCEDA-Pro"
@@ -17,8 +17,9 @@ cask "lceda-pro" do
 
   auto_updates true
   depends_on :macos
+  container nested: "嘉立创EDA(专业版).dmg"
 
-  app "lceda-pro-mac-#{arch}-#{version}/嘉立创EDA(专业版).app"
+  app "嘉立创EDA(专业版).app"
 
   zap trash: [
     "~/Library/Application Support/JLCEDA Pro",
