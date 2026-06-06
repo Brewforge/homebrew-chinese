@@ -2,7 +2,7 @@ cask "i4tools" do
   version "3.22.006"
   sha256 :no_check
 
-  url "https://url.i4.cn/fqIBBbaa"
+  url "https://url.i4.cn/FFRBr2aa"
   name "i4Tools"
   name "爱思助手"
   desc "Mobile device management software"
