@@ -1,8 +1,11 @@
 cask "i4tools" do
+  arch arm: "_arm64", intel: ""
+  key = on_arch_conditional arm: "FFRBr2aa", intel: "fqIBBbaa"
+
   version "3.22.006"
   sha256 :no_check
 
-  url "https://url.i4.cn/FFRBr2aa"
+  url "https://url.i4.cn/#{key}"
   name "i4Tools"
   name "爱思助手"
   desc "Mobile device management software"
@@ -17,7 +20,7 @@ cask "i4tools" do
   auto_updates true
   depends_on :macos
 
-  pkg "i4tools.pkg"
+  pkg "i4tools#{arch}.pkg"
 
   uninstall quit:    "cn.i4tools.mac",
             pkgutil: "cn.i4tools.mac"
@@ -29,8 +32,4 @@ cask "i4tools" do
     "~/Library/Preferences/org.example.i4AirPlayer.plist",
     "~/Library/Saved Application State/org.example.i4AirPlayer.savedState",
   ]
-
-  caveats do
-    requires_rosetta
-  end
 end
