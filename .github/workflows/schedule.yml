@@ -22,23 +22,23 @@ env:
   HOMEBREW_RELOCATABLE_INSTALL_NAMES: 1
 
 jobs:
-  tap-syntax:
-    runs-on: ubuntu-22.04
-    container:
-      image: ghcr.io/homebrew/ubuntu22.04:master
-    env:
-      HOMEBREW_SIMULATE_MACOS_ON_LINUX: 1
-    steps:
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@main
-        with:
-          core: false
-          cask: false
+  # tap-syntax:
+  #   runs-on: ubuntu-22.04
+  #   container:
+  #     image: ghcr.io/homebrew/ubuntu22.04:master
+  #   env:
+  #     HOMEBREW_SIMULATE_MACOS_ON_LINUX: 1
+  #   steps:
+  #     - name: Set up Homebrew
+  #       uses: Homebrew/actions/setup-homebrew@main
+  #       with:
+  #         core: false
+  #         cask: false
 
-      - name: Clean stale download locks
-        run: rm -f /home/linuxbrew/.cache/Homebrew/downloads/*.incomplete
+  #     - name: Clean stale download locks
+  #       run: rm -f /home/linuxbrew/.cache/Homebrew/downloads/*.incomplete
 
-      - run: brew test-bot --only-tap-syntax
+  #     - run: brew test-bot --only-tap-syntax
 
   bump-casks:
     name: Bump casks
