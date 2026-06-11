@@ -16,7 +16,6 @@ cask "lyx-cn" do
     end
   end
 
-  auto_updates true
   conflicts_with cask: "lyx"
   depends_on macos: :big_sur
 

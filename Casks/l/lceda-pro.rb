@@ -15,7 +15,6 @@ cask "lceda-pro" do
     regex(/lceda-pro-mac-#{arch}-(\d+(\.\d+)+)/i)
   end
 
-  auto_updates true
   depends_on :macos
   container nested: "嘉立创EDA(专业版).dmg"
 

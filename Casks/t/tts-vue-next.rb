@@ -13,7 +13,6 @@ cask "tts-vue-next" do
     strategy :github_latest
   end
 
-  auto_updates true
   depends_on arch: :arm64
   depends_on :macos
 

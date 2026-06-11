@@ -15,7 +15,6 @@ cask "eudic-cn" do
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
-  auto_updates true
   depends_on macos: :big_sur
 
   app "Eudic.app"

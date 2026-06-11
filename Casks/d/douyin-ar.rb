@@ -13,7 +13,6 @@ cask "douyin-ar" do
     skip "no reliable way to determine the version"
   end
 
-  auto_updates true
   depends_on :macos
 
   app "Douyin AR.app"

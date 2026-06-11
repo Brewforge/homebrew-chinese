@@ -12,7 +12,6 @@ cask "capcut-cn" do
     skip "No Infomation Available Found"
   end
 
-  auto_updates true
 
   installer script: {
     executable: "jianying-installer.app/Contents/MacOS/jianying-installer",

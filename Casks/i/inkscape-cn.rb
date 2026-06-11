@@ -16,7 +16,6 @@ cask "inkscape-cn" do
     regex(/Inkscape-(\d+(\.\d+)+)_#{arch}\.dmg/i)
   end
 
-  auto_updates true
   depends_on :macos
 
   app "Inkscape.app"

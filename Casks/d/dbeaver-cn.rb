@@ -16,7 +16,6 @@ cask "dbeaver-cn" do
     regex(/dbeaver-ce-(\d+(\.\d+)+)-macos-#{arch}\.dmg/i)
   end
 
-  auto_updates true
   conflicts_with cask: "dbeaver-community"
   depends_on macos: :big_sur
 

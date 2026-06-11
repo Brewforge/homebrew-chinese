@@ -18,7 +18,6 @@ cask "edrawmax@9" do
     skip "历史版本，不更新"
   end
 
-  auto_updates true
   conflicts_with cask: "edrawmax"
   depends_on :macos
 

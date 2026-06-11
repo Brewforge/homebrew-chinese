@@ -13,7 +13,6 @@ cask "landrop" do
     regex(/(\d+(\.\d){2})/i)
   end
 
-  auto_updates true
   depends_on macos: :big_sur
 
   app "LANDrop.app"

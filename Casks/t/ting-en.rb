@@ -14,7 +14,6 @@ cask "ting-en" do
     regex(/版本号: (\d+(\.\d+)+)/i)
   end
 
-  auto_updates true
   depends_on macos: :big_sur
 
   app "每日英语听力.app"

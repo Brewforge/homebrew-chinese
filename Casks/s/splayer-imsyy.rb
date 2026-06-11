@@ -23,7 +23,6 @@ cask "splayer-imsyy" do
     end
   end
 
-  auto_updates true
   depends_on macos: :monterey
 
   app "SPlayer.app"

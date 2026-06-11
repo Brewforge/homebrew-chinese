@@ -29,8 +29,7 @@ cask "name" do
   livecheck do
     "..." # GitHub 项目用 strategy :github_latest
   end
-
-  auto_updates true # 如果 app 自更新
+ # 如果 app 自更新
   depends_on macos: ">= :版本"
 
   app "AppName.app"

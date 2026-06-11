@@ -16,7 +16,6 @@ cask "vlc-cn" do
     regex(/vlc-(\d+(\.\d+){2})-#{arch}\.dmg/i)
   end
 
-  auto_updates true
   conflicts_with cask: ["homebrew/cask-versions/vlc-nightly", "vlc"]
   depends_on :macos
 

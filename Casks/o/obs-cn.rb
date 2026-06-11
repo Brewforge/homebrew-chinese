@@ -16,7 +16,6 @@ cask "obs-cn" do
     regex(/OBS-Studio-(\d+(\.\d+){2})-macOS-#{arch}\.dmg/i)
   end
 
-  auto_updates true
   conflicts_with cask: ["obs@beta", "obs"]
   depends_on macos: :monterey
 

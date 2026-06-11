@@ -13,7 +13,6 @@ cask "mogan-cn" do
     regex(/MoganSTEM-v(\d{4}(\.\d+)+)-arm\.dmg/i)
   end
 
-  auto_updates true
   depends_on macos: :sonoma
 
   app "MoganSTEM.app"

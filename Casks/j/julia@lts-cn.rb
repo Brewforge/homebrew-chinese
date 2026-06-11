@@ -16,7 +16,6 @@ cask "julia@lts-cn" do
     regex(/\(LTS\)\s+release:\s+v?(\d+(?:\.\d+)+)/i)
   end
 
-  auto_updates true
   conflicts_with cask: %w[
     julia-app
     julia-app@lts

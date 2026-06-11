@@ -17,7 +17,6 @@ cask "i4tools" do
     regex(/i4Tools[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
-  auto_updates true
   depends_on :macos
 
   pkg "i4tools#{arch}.pkg"

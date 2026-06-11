@@ -26,7 +26,6 @@ cask "miniforge-cn" do
     regex(/Miniforge3-(\d+(?:[.-]\d+)+)-#{os}-#{arch}\.sh/i)
   end
 
-  auto_updates true
   conflicts_with cask: %w[
     mambaforge
     mambaforge-cn

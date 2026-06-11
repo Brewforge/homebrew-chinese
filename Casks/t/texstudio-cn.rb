@@ -16,7 +16,6 @@ cask "texstudio-cn" do
     regex(/texstudio-(\d+(\.\d+){2})-osx\.zip/i)
   end
 
-  auto_updates true
   conflicts_with cask: "texstudio"
   depends_on macos: :ventura
 

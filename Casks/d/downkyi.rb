@@ -15,7 +15,6 @@ cask "downkyi" do
     strategy :github_latest
   end
 
-  auto_updates true
   depends_on :macos
 
   app "哔哩下载姬.app"

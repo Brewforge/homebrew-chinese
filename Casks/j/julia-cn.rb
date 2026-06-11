@@ -24,7 +24,6 @@ cask "julia-cn" do
     end
   end
 
-  auto_updates true
   conflicts_with cask: "julia-app"
   depends_on macos: :sequoia
 

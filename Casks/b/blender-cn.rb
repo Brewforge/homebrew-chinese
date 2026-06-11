@@ -30,7 +30,6 @@ cask "blender-cn" do
     end
   end
 
-  auto_updates true
   conflicts_with cask: %w[
     blender
     blender@lts

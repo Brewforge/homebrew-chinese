@@ -16,7 +16,6 @@ cask "lingquan" do
     regex(/\d{4}-\d{2}-\d{2} v(\d+(\.\d+){2})/i)
   end
 
-  auto_updates true
   depends_on :macos
 
   app "零泉.app"

@@ -13,7 +13,6 @@ cask "qt-creator-cn" do
     regex(/qt-creator-opensource-mac-universal-(.\d+(\.\d+)+)\.dmg/i)
   end
 
-  auto_updates true
   conflicts_with cask: "qt-creator"
   depends_on macos: :ventura
 

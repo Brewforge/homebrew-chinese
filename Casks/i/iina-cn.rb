@@ -13,7 +13,6 @@ cask "iina-cn" do
     regex(/IINA\.v(\d+(\.\d+)+)\.dmg/i)
   end
 
-  auto_updates true
   conflicts_with cask: "iina"
   depends_on macos: :big_sur
 

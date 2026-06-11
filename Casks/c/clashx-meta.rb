@@ -12,7 +12,6 @@ cask "clashx-meta" do
     strategy :github_latest
   end
 
-  auto_updates true
   depends_on macos: :monterey
 
   app "ClashX Meta.app"

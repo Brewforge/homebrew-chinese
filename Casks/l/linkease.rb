@@ -14,7 +14,6 @@ cask "linkease" do
     # regex(/最新版本: v(\d+(\.\d){2})/i)
   end
 
-  auto_updates true
   depends_on :macos
 
   app "LinkEase.app"
