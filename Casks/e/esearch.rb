@@ -1,9 +1,9 @@
 cask "esearch" do
   arch arm: "arm64", intel: "x64"
 
-  version "15.2.3"
-  sha256 arm:   "1c599aa7d144802287215bb9f494721c97883ed612f53e63c382287eb3f3465c",
-         intel: "2da8710582af851b45153b7ac6cfb9b6e9a7e0f304b28109c94511c3824c4b86"
+  version "15.3.2"
+  sha256 arm:   "908488c38e9a19c154c89b51cf24d3b6142d1971e8bc80957e433386fda0d65a",
+         intel: "76c243d24409f3d85d3decb1620c39620cd0966b84f5c8fa85bd95252e805258"
 
   url "https://github.com/xushengfeng/eSearch/releases/download/#{version}/eSearch-#{version}-darwin-#{arch}.dmg",
       verified: "github.com/xushengfeng/eSearch/"
