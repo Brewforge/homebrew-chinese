@@ -1,9 +1,9 @@
 cask "lceda-pro" do
   arch arm: "arm64", intel: "x64"
 
-  version "3.2.149"
-  sha256 arm:   "817be3db3a93f7c419f4a03a4d59127c99c6579dca28f9341168e07d48e41e18",
-         intel: "8a9910eccbaa42514e38b4ae47e9af5176e03459723de3585ae4498619a06570"
+  version "3.2.166"
+  sha256 arm:   "6a61ab76e9df28cf210145405c8c516e36f07ac357fc9eaec5cb51d3315c8acd",
+         intel: "a0c1d4a12f75ca6ccdbc2f9439600f926b76045faf4a05f699209c21614c9974"
 
   url "https://image.lceda.cn/files/lceda-pro-mac-#{arch}-#{version}.zip"
   name "LCEDA-Pro"
