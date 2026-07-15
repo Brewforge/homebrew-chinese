@@ -1,6 +1,6 @@
 cask "blender-cn" do
-  version "5.1.2"
-  sha256 "f104ffee2ba6aee32328e5c203b7e4608d8a1745f7bbcf2766f3b9777e8fbe17"
+  version "5.2.0"
+  sha256 "ed4d8390166dec5ea0a2813a03db6221f206ce016442be7f59f41d760972568a"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg",
       verified: "mirrors.tuna.tsinghua.edu.cn/"
