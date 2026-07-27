@@ -1,10 +1,10 @@
 cask "mastergo" do
-  arch arm: "-arm", intel: ""
+  arch arm: "-arm"
   key = on_arch_conditional arm: "M1", intel: ""
 
-  version "1.10.11"
-  sha256 arm:   "59cde0b88c0e73ca8a3c31f4270ae578e8a8b013944df82c2185bac0f55bcb15",
-         intel: "dcb2509a23a4e38e65b7d0781109ff7fa591ef1296370828545eca4c1508ee86"
+  version "1.11.5"
+  sha256 arm:   "8632932972f3606783b89361a0ffe31952e5e102b627c79a29bf1fde96a30e71",
+         intel: "6061aac2da91f45376202a2967c4e23f45fa1e3b119b3a390f0798a403c915aa"
 
   url "https://static.mastergo.com/plugins/desktop/macos#{arch}/MasterGo-#{version}.dmg"
   name "MasterGo"
