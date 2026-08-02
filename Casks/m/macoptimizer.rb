@@ -17,7 +17,7 @@ cask "macoptimizer" do
 
   depends_on macos: :monterey
 
-  app "MacOptimizer-v#{version}-#{arch}.app"
+  app "MacOptimizer.app"
 
   preflight do
     system_command "xattr",
