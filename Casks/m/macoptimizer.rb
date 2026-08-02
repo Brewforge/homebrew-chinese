@@ -1,9 +1,9 @@
 cask "macoptimizer" do
   arch arm: "AppleSilicon", intel: "Intel"
 
-  version "4.0.7"
-  sha256 arm:   "fa2e1265513d8f073bdaedd3a1966113510991c9c443e7d730751f6de5707783",
-         intel: "9a6910cbebedc3a84ef8f031823dc3710698578b757a100d313d762d29e1e116"
+  version "5.0"
+  sha256 arm:   "68ae036bef1418c37ef0522c7cdc7f1d37978c1f7f9487306c4bddeda4122403",
+         intel: "4f84d5b51bcffb6bdd9bb62cbe915f9f141b88aa4785cef0f3e4aa7f659e1321"
 
   url "https://github.com/ddlmanus/MacOptimizer/releases/download/v#{version}/MacOptimizer-v#{version}-#{arch}.dmg"
   name "Mac优化大师"
