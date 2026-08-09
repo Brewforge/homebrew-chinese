@@ -1,6 +1,6 @@
 cask "dashplayer" do
-  version "6.0.1"
-  sha256 "8302f159fd3223ed0bc8fe641efa2d3f3342cc360f8bd966870e52e4a9cc3d83"
+  version "6.1.0"
+  sha256 "2e3e05952f485494136d8f558ca424f46c72453e8602216d6d836e7ce0d836b9"
 
   url "https://github.com/solidSpoon/DashPlayer/releases/download/v#{version}/DashPlayer-#{version}-arm64.dmg",
       verified: "github.com/solidSpoon/DashPlayer/"
