@@ -17,7 +17,7 @@ cask "lyx-cn" do
   end
 
   conflicts_with cask: "lyx"
-  depends_on macos: :big_sur
+  depends_on macos: :monterey
 
   app "LyX.app"
   binary "#{appdir}/LyX.app/Contents/MacOS/inkscape", target: "lyx-inkscape"
