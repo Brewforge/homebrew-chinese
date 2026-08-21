@@ -18,7 +18,6 @@ cask "easyspider" do
   app "EasySpider_MacOS/EasySpider.app"
 
   zap trash: [
-    "~/Library/Application Support/CrashReporter/Google Chrome_1ACF1E2B-4D5C-504D-B6FE-65DDCCEC136A",
     "~/Library/Application Support/EasySpider",
     "~/Library/Preferences/com.electron.easyspider.plist",
     "~/Library/Saved Application State/com.electron.easyspider.savedState",
