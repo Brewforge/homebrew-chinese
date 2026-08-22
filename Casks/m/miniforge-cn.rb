@@ -1,16 +1,15 @@
 cask "miniforge-cn" do
   os macos: "MacOSX", linux: "Linux"
 
-  version "26.3.2-3"
-  sha256 arm:          "59168f1e24d0a4ad9932021170809fca836cd240e183eeeb331d5bcfc0098168",
-         intel:        "39273e4c89a0a1af4538010615d44ae8f44e1af41007e02def593d20f316b003",
-         arm64_linux:  "2c113a69297e612b01ca0f320c22a3107a11f2ab9b573d79ac868a175945ce29",
-         x86_64_linux: "848194851a98903134187fbb4ab50efe87b003e0c0f808f97644b7524a62bf2c"
+  version "26.5.3-0"
+  sha256 arm:          "0d765919d3ccfd1f89147aa1cf8133bfc55b3a3c13f5bacdcc091c33132fddd2",
+         intel:        "0266a7bfeb12165286133145717bef0d88070f1b76710beb6a62fec4e88371a1",
+         arm64_linux:  "0391e42075a7632e9665d6e728387ee6b905f6c3e704d3513e1c1133d0d69b89",
+         x86_64_linux: "14db468222ad564658656f769506056209b6dc375f5e7dfd31eb5ebbf08fa529"
 
   on_macos do
     arch arm: "arm64", intel: "x86_64"
   end
-
   on_linux do
     arch arm: "aarch64", intel: "x86_64"
   end
