@@ -1,0 +1,71 @@
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - "Casks/**"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  HOMEBREW_DEVELOPER: 1
+  HOMEBREW_GITHUB_ACTIONS: 1
+  HOMEBREW_NO_AUTO_UPDATE: 1
+  HOMEBREW_NO_INSTALL_FROM_API: 1
+
+jobs:
+  validate:
+    name: Validate casks
+    if: github.repository == 'brewforge/homebrew-chinese'
+    runs-on: macos-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@main
+        with:
+          core: false
+          cask: false
+
+      - name: Determine changed casks
+        id: changed
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          range="${base:+$base...HEAD}"
+          [ -n "$range" ] || range="origin/main...HEAD"
+          casks=""
+          while IFS= read -r file; do
+            casks+="$(basename "$file" .rb) "
+          done < <(git diff --name-only --diff-filter=ACMR "$range" -- 'Casks/*.rb')
+          echo "Changed casks: ${casks:-none}"
+          echo "casks=${casks% }" >> "$GITHUB_OUTPUT"
+
+      - name: Sync tap
+        run: |
+          brew tap brewforge/chinese
+          rsync -lrv --exclude=.git "$(pwd)/" "$(brew --repository brewforge/chinese)/"
+
+      - name: Install bundler gems
+        run: brew install-bundler-gems --groups "audit,style"
+
+      - name: Style
+        if: steps.changed.outputs.casks != ''
+        run: |
+          cd "$(brew --repository brewforge/chinese)"
+          brew style --cask ${{ steps.changed.outputs.casks }}
+
+      - name: Audit
+        if: steps.changed.outputs.casks != ''
+        run: |
+          cd "$(brew --repository brewforge/chinese)"
+          brew audit --strict --online --cask ${{ steps.changed.outputs.casks }}
