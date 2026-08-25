@@ -103,6 +103,7 @@ brew help
 |   `autotyper`   |     [AutoTyper](https://autoglm.zhipuai.cn/autotyper/)      | ![b](assets/b.svg)![1](assets/1.svg) |
 | `cockpit-tools` | [cockpit-tools](https://github.com/jlcodes99/cockpit-tools) | ![a](assets/a.svg)![1](assets/1.svg) |
 | `lingjing-script-tool` | [灵境剧本工具](https://github.com/lizheyong/lingjing-script-tool-releases) | ![a](assets/a.svg)![1](assets/1.svg) |
+| `qoderwork-cn` | [Qoder](https://qoder.com.cn/qoderwork) | ![b](assets/b.svg)![1](assets/1.svg) |
 
 ### 代理工具
 
@@ -121,6 +122,7 @@ brew help
 
 |        桶名        |                             软件官网                             |                                   备注                                   |
 | :----------------: | :--------------------------------------------------------------: | :----------------------------------------------------------------------: |
+|      `anymo`       |                   [Anymo](https://anymoweb.com/)                 |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |    `bilitools`     |            [BiliTools](https://btjawa.top/bilitools/)            |                   ![a](assets/b.svg)![1](assets/1.svg)                   |
 |    `cajviewer`     |      [CAJViewer](https://CAJViewer.cnki.net/download.html)       |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 | `chaoxing-cxstudy` |               [学习通](https://app.chaoxing.com/)                |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
@@ -148,6 +150,7 @@ brew help
 |  `project-graph`   |    [Project Graph](https://github.com/graphif/project-graph)     |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |      `presto`      |          [Presto](https://github.com/Presto-io/Presto)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 | `quarkclouddrive`  |                 [夸克网盘](https://pan.quark.cn)                 |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
+|    `retain-pdf`    |        [retain-pdf](https://github.com/wxyhgk/retain-pdf)        |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |  `splayer-imsyy`   |           [SPlayer](https://github.com/imsyy/SPlayer)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |   `tts-vue-next`   |       [TTS-Vue-Next](https://tts-doc.loker.vip/home.html)        |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `tiny-rdm`     |             [Tiny RDM](https://redis.tinycraft.cc/)              |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
@@ -205,6 +208,7 @@ brew help
 |    桶名     |              软件官网              |        问题        |
 | :---------: | :--------------------------------: | :----------------: |
 | `capcut-cn` |  [剪映中文版](https://capcut.cn/)  |   未找到版本信息   |
+| `lceda-pro` | [嘉立创 EDA 专业版](https://lceda.cn/) |      需要登录      |
 |  `landrop`  |  [LANDrop](https://landrop.app/)   | 嵌套标签，难以选择 |
 | `linkease`  | [易有云](https://app.linkease.com) | 多个结果，无法选中 |
 
