@@ -18,8 +18,8 @@ cask "happ" do
 
   zap trash: [
     "~/Library/Application Support/Happ",
-    "~/Library/Caches/Happ",
     "~/Library/Caches/com.happ.www",
+    "~/Library/Caches/Happ",
     "~/Library/Preferences/com.happ.plist",
     "~/Library/Preferences/com.happ.www.plist",
     "~/Library/Saved Application State/com.happ.www.savedState",
