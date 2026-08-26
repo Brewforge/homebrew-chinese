@@ -45,7 +45,7 @@ jobs:
           [ -n "$range" ] || range="origin/main...HEAD"
           casks=""
           while IFS= read -r file; do
-            casks+="$(basename "$file" .rb) "
+            casks+="brewforge/chinese/$(basename "$file" .rb) "
           done < <(git diff --name-only --diff-filter=ACMR "$range" -- 'Casks/*.rb')
           echo "Changed casks: ${casks:-none}"
           echo "casks=${casks% }" >> "$GITHUB_OUTPUT"
@@ -68,4 +68,6 @@ jobs:
         if: steps.changed.outputs.casks != ''
         run: |
           cd "$(brew --repository brewforge/chinese)"
-          brew audit --strict --online --cask ${{ steps.changed.outputs.casks }}
+          # setup-homebrew 会清空 HOMEBREW_NO_INSTALL_FROM_API；带 tap 全名可确保
+          # audit 加载本 tap 的 cask 文件，而非官方 API 数据里的同名 cask
+          HOMEBREW_NO_INSTALL_FROM_API=1 brew audit --strict --online --cask ${{ steps.changed.outputs.casks }}
