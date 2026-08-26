@@ -113,6 +113,7 @@ brew help
 | `clash-nyanpasu`  |          [Clash-Nyanpasu](https://github.com/libnyanpasu)           | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `flclash`     |           [FlClash](https://github.com/chen08209/FlClash)           | ![a](assets/a.svg)![1](assets/1.svg) |
 | `gui-for-singbox` | [GUI.for.SingBox](https://github.com/GUI-for-Cores/GUI.for.SingBox) | ![a](assets/a.svg)![1](assets/1.svg) |
+|       `happ`      |              [Happ](https://www.happ.su/)               | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `sparkle`     |          [Sparkle](https://github.com/xishang0128/sparkle)          | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `throne`      |           [Throne](https://github.com/throneproj/Throne)            | ![a](assets/a.svg)![1](assets/1.svg) |
 |     `v2rayn`      |              [v2rayN](https://github.com/2dust/v2rayN)              | ![a](assets/a.svg)![1](assets/1.svg) |
