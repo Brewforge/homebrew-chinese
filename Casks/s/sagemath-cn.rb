@@ -1,7 +1,7 @@
 cask "sagemath-cn" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "10.9,10.9.0"
+  version "10.9,10.9.1"
   sha256 arm:   "84f78143db3fb7c251f6eea906c6efb7793d26e96a3fbdb2104c1f9bb4b1827e",
          intel: "d8424f0401df2d5efe94c6fc8d8b8aabd53034fc9a050cb442bda09cc10e12e6"
 
