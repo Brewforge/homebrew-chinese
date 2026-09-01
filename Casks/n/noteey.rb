@@ -2,8 +2,7 @@ cask "noteey" do
   version "1.62.0"
   sha256 "26a639ee0b5c8dea211e5cb840d48251f569aa3454fcb9f6b1759587d7149b04"
 
-  url "https://github.com/andyyoungm/muenzo/releases/download/v#{version}/Noteey-#{version}.universal.dmg",
-      verified: "github.com/andyyoungm/muenzo/"
+  url "https://github.com/andyyoungm/muenzo/releases/download/v#{version}/Noteey-#{version}.universal.dmg"
   name "Noteey"
   desc "融合卡片和白板的笔记软件"
   homepage "https://noteey.com/"
