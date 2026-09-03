@@ -3,7 +3,6 @@ cask "eudic-cn" do
   sha256 "57eb78b8d4c9489d64a5aca4463181dafb817f849f6307da5297d451e38fbf23"
 
   url "https://static.frdic.com/pkg/eudicmac.dmg?v=#{version}",
-      verified:   "static.frdic.com/",
       user_agent: :fake
   name "Eudic"
   name "欧路词典"
@@ -15,7 +14,7 @@ cask "eudic-cn" do
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
-  depends_on macos: :big_sur
+  depends_on macos: :ventura
 
   app "Eudic.app"
 
