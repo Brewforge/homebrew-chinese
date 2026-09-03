@@ -1,6 +1,6 @@
 cask "eudic-cn" do
-  version "25.8.0"
-  sha256 "57eb78b8d4c9489d64a5aca4463181dafb817f849f6307da5297d451e38fbf23"
+  version "26.9.0"
+  sha256 "a63d5e3420c1b1339a6d98ef97298bcf3044f52f1efb812efcf27bc171406b11"
 
   url "https://static.frdic.com/pkg/eudicmac.dmg?v=#{version}",
       user_agent: :fake
