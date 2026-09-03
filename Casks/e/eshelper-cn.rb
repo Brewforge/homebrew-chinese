@@ -1,6 +1,6 @@
 cask "eshelper-cn" do
-  version "11.6.0"
-  sha256 "023d51c23442ec770cfcd94cb8ab5a6bc725d07422f733062815d85a2602eab3"
+  version "26.9.0"
+  sha256 "151d883ec24c1643dbe3e7c1308f60515d8d4b3ae2e713006bf82d03c7d47f49"
 
   url "https://static.eudic.net/pkg/ehmac.dmg?v=#{version}",
       user_agent: :fake
@@ -14,7 +14,7 @@ cask "eshelper-cn" do
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
-  depends_on macos: :big_sur
+  depends_on macos: :ventura
 
   app "Eudic_es.app"
 
