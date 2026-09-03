@@ -1,6 +1,6 @@
 cask "frhelper-cn" do
-  version "11.6.0"
-  sha256 "71d45bc1db561ec6702618dbf9903a463a590da42e60088cd565536ca3101a38"
+  version "26.9.0"
+  sha256 "daf90bace82d25114c564ed5ac9224bf1627729b5297fe7a6720c79f05d7b543"
 
   url "https://static.eudic.net/pkg/fhmac.dmg?v=#{version}",
       user_agent: :fake
@@ -14,7 +14,7 @@ cask "frhelper-cn" do
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
-  depends_on macos: :big_sur
+  depends_on macos: :ventura
 
   app "Frhelper.app"
 
