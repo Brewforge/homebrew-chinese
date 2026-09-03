@@ -129,7 +129,6 @@ brew help
 |  `cloud-uploader`  | [网易云音乐上传助手](https://github.com/lulu-ls/cloud-uploader)  |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `copybook`     |       [字帖生成器](https://github.com/xxNull-lsk/Copybook)       |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |    `douyin-ar`     |                [像塑](https://effect.douyin.com/)                |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
-|     `downkyi`      |     [哔哩下载姬](https://github.com/yaobiao131/downkyicore/)     |                   ![a](assets/b.svg)![1](assets/1.svg)                   |
 |     `esearch`      |            [eSearch](https://esearch-app.netlify.app)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |     `e-study`      |               [知网研学](https://estudy.cnki.net/)               |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |    `easy-to-tv`    |     [Easy To TV](https://github.com/duolabmeng6/easy_to_tv)      |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
@@ -149,7 +148,6 @@ brew help
 |      `noteey`      |                  [Noteey](https://noteey.com/)                   | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
 |  `project-graph`   |    [Project Graph](https://github.com/graphif/project-graph)     |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |      `presto`      |          [Presto](https://github.com/Presto-io/Presto)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
-| `quarkclouddrive`  |                 [夸克网盘](https://pan.quark.cn)                 |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |    `retain-pdf`    |        [retain-pdf](https://github.com/wxyhgk/retain-pdf)        |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |  `splayer-imsyy`   |           [SPlayer](https://github.com/imsyy/SPlayer)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |   `tts-vue-next`   |       [TTS-Vue-Next](https://tts-doc.loker.vip/home.html)        |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
@@ -208,7 +206,6 @@ brew help
 |    桶名     |              软件官网              |        问题        |
 | :---------: | :--------------------------------: | :----------------: |
 | `capcut-cn` |  [剪映中文版](https://capcut.cn/)  |   未找到版本信息   |
-| `lceda-pro` | [嘉立创 EDA 专业版](https://lceda.cn/) |      需要登录      |
 |  `landrop`  |  [LANDrop](https://landrop.app/)   | 嵌套标签，难以选择 |
 | `linkease`  | [易有云](https://app.linkease.com) | 多个结果，无法选中 |
 
