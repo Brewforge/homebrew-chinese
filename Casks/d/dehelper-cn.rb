@@ -1,6 +1,6 @@
 cask "dehelper-cn" do
-  version "25.8.0"
-  sha256 "fcc1e31f5f84c8148e03a3c5aff271ce951a3bd3f88b3a12998daae001fe9ca1"
+  version "26.9.0"
+  sha256 "f0631d1f43ddc8395afd1330b1c5ae798ba763383e3ea818b8de998256faac62"
 
   url "https://static.eudic.net/pkg/dhmac.dmg?v=#{version}",
       user_agent: :fake
@@ -14,7 +14,7 @@ cask "dehelper-cn" do
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
-  depends_on macos: :big_sur
+  depends_on macos: :ventura
 
   app "Dehelper.app"
 
