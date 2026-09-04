@@ -4,8 +4,7 @@ cask "anymo" do
   version "2.7.12"
   sha256 :no_check
 
-  url "https://anymoweb.com/app-mac-#{arch}.dmg",
-      verified: "anymoweb.com/"
+  url "https://anymoweb.com/app-mac-#{arch}.dmg"
   name "Anymo"
   desc "终身受用的抗遗忘卡片记忆笔记"
   homepage "https://anymoweb.com/"
