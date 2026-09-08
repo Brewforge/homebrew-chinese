@@ -5,8 +5,7 @@ cask "tiny-rdm" do
   sha256 arm:   "aaebc58a1f97505743bf05f2ab1cfc5e7c3e5841d90266ad836eaab74435f1a3",
          intel: "3d8e61fa474ae50b61e41a623841fcdd7629615fa105758f2840fff75fe857ad"
 
-  url "https://github.com/tiny-craft/tiny-rdm/releases/download/v#{version}/TinyRDM_#{version}_mac_#{arch}.dmg",
-      verified: "github.com/tiny-craft/tiny-rdm/"
+  url "https://github.com/tiny-craft/tiny-rdm/releases/download/v#{version}/TinyRDM_#{version}_mac_#{arch}.dmg"
   name "Tiny RDM"
   desc "Redis desktop manager"
   homepage "https://redis.tinycraft.cc/"
@@ -20,9 +19,8 @@ cask "tiny-rdm" do
 
   app "Tiny RDM.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/Tiny RDM.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/Tiny RDM.app"]
   end
 
   zap trash: [
