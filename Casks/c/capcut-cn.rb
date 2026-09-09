@@ -11,7 +11,6 @@ cask "capcut-cn" do
     skip "No Infomation Available Found"
   end
 
-
   installer script: {
     executable: "jianying-installer.app/Contents/MacOS/jianying-installer",
     args:       ["-q"],

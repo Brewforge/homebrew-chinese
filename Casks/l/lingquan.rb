@@ -1,6 +1,6 @@
 cask "lingquan" do
-  arch arm: "-arm64", intel: ""
-  folder = on_arch_conditional arm: "", intel: "/x64"
+  arch arm: "-arm64"
+  folder = on_arch_conditional intel: "/x64"
 
   version "1.1.5"
   sha256 :no_check
