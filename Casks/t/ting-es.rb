@@ -3,7 +3,6 @@ cask "ting-es" do
   sha256 "946bfbb335b831c98eecbd89e1dcffc3291eb0fcc9532985c5b378648ed48985"
 
   url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?v=#{version}",
-      verified:   "static.frdic.com/",
       user_agent: :fake
   name "每日西语听力"
   desc "精听细读，更好学西语"
@@ -18,9 +17,8 @@ cask "ting-es" do
 
   app "每日西语听力.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/每日西语听力.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/每日西语听力.app"]
   end
 
   zap trash: [

@@ -14,13 +14,12 @@ cask "anymo" do
     regex(/version:\s*"?(\d+(?:\.\d+)+)"?/i)
   end
 
-  depends_on macos: :catalina
+  depends_on :macos
 
   app "Anymo.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/Anymo.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/Anymo.app"]
   end
 
   zap trash: [

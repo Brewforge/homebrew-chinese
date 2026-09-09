@@ -19,9 +19,8 @@ cask "flclash" do
 
   app "FlClash.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/FlClash.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/FlClash.app"]
   end
 
   zap trash: [

@@ -5,8 +5,7 @@ cask "obs-cn" do
   sha256 arm:   "920d6f26703d2df6e4085bd3c1cbed30488325084136c7a6e9e37021fbd6aaf7",
          intel: "f8d8afe3dffdc86efa0698c02ff0c997866bac3e6208ddaf56d37108baacf197"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/OBS-Studio-#{version}-macOS-#{arch}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease/OBS-Studio-#{version}-macOS-#{arch}.dmg"
   name "OBS"
   desc "Open-source software for live streaming and screen recording"
   homepage "https://obsproject.com/"
@@ -24,10 +23,10 @@ cask "obs-cn" do
   shimscript = "#{staged_path}/obs.wrapper.sh"
   binary shimscript, target: "obs"
 
-  preflight do
-    File.write shimscript, <<~EOS
+  preflight_steps do
+    write_file "obs.wrapper.sh", <<~EOS
       #!/bin/bash
-      exec '#{appdir}/OBS.app/Contents/MacOS/OBS' "$@"
+      exec '{{appdir}}/OBS.app/Contents/MacOS/OBS' "$@"
     EOS
   end
 

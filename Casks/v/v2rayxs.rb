@@ -19,9 +19,8 @@ cask "v2rayxs" do
 
   app "V2RayXS.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/V2RayXS.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/V2RayXS.app"]
   end
 
   zap trash: [

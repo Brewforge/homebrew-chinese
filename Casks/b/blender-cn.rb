@@ -2,8 +2,7 @@ cask "blender-cn" do
   version "5.2.1"
   sha256 "6409e21de80994db5f4c4a34486b6fd43cea21085b912f7491c53e923acb65a3"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg"
   name "Blender"
   desc "3D creation suite"
   homepage "https://www.blender.org/"
@@ -43,13 +42,13 @@ cask "blender-cn" do
   shimscript = "#{staged_path}/blender.wrapper.sh"
   binary shimscript, target: "blender"
 
-  preflight do
+  preflight_steps do
     # make __pycache__ directories writable, otherwise uninstall fails
-    FileUtils.chmod "u+w", Dir.glob("#{staged_path}/*.app/**/__pycache__")
+    set_permissions "*.app/**/__pycache__", "u+w", recursive: false
 
-    File.write shimscript, <<~EOS
+    write_file "blender.wrapper.sh", <<~EOS
       #!/bin/bash
-      '#{appdir}/Blender.app/Contents/MacOS/Blender' "$@"
+      '{{appdir}}/Blender.app/Contents/MacOS/Blender' "$@"
     EOS
   end
 

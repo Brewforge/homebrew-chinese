@@ -2,8 +2,7 @@ cask "iina-cn" do
   version "1.4.4"
   sha256 "dd0fc0bd4b37fb57a1c8d30d6e3201b3a64bafd29959fe56953964613237beb1"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/iina/IINA.v#{version}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/iina/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/iina/IINA.v#{version}.dmg"
   name "IINA"
   desc "Free and open-source media player"
   homepage "https://iina.io/"

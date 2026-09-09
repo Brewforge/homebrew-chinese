@@ -25,9 +25,8 @@ cask "retain-pdf" do
 
   app "RetainPDF.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/RetainPDF.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/RetainPDF.app"]
   end
 
   zap trash: [

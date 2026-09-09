@@ -5,8 +5,7 @@ cask "inkscape-cn" do
   sha256 arm:   "118e9e23190eea1265592a8b2053f5fb67e13a55b9311b2ab284df7008a896b4",
          intel: "f0b05d5195e3aa0ba9d6d6a972f1d7f57abd876532b4d6eb02ecc98c0dcdfdbf"
 
-  url "https://mirror.nju.edu.cn/inkscape/Inkscape-#{version}_#{arch}.dmg",
-      verified: "mirror.nju.edu.cn/inkscape/"
+  url "https://mirror.nju.edu.cn/inkscape/Inkscape-#{version}_#{arch}.dmg"
   name "Inkscape"
   desc "Vector graphics editor"
   homepage "https://inkscape.org/"
@@ -23,10 +22,10 @@ cask "inkscape-cn" do
   shimscript = "#{staged_path}/inkscape.wrapper.sh"
   binary shimscript, target: "inkscape"
 
-  preflight do
-    File.write shimscript, <<~EOS
+  preflight_steps do
+    write_file "inkscape.wrapper.sh", <<~EOS
       #!/bin/sh
-      exec '#{staged_path}/Inkscape.app/Contents/MacOS/inkscape' "$@"
+      exec '{{staged_path}}/Inkscape.app/Contents/MacOS/inkscape' "$@"
     EOS
   end
 

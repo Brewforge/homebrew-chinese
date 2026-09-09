@@ -2,8 +2,7 @@ cask "iqiyi" do
   version "17.8.0,20260821101500"
   sha256 :no_check
 
-  url "https://static-d.iqiyi.com/ext/common/iQIYIMedia_271.dmg",
-      verified: "static-d.iqiyi.com/ext/common/"
+  url "https://static-d.iqiyi.com/ext/common/iQIYIMedia_271.dmg"
   name "爱奇艺视频"
   desc "爱奇艺视频官方客户端"
   homepage "https://app.iqiyi.com/mac/player/index.html"

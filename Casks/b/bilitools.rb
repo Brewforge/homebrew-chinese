@@ -5,8 +5,7 @@ cask "bilitools" do
   sha256 arm:   "8a778b7b7b09452c56b0833994255903f784b8d2f5b407cf04b14ac9ddaa0288",
          intel: "f5500b45e404b2b8d790135051fe40a90fe78d32095e04508372dfb6f62fdd54"
 
-  url "https://github.com/btjawa/BiliTools/releases/download/v#{version}/BiliTools_#{version}_#{arch}.dmg",
-      verified: "github.com/btjawa/BiliTools/"
+  url "https://github.com/btjawa/BiliTools/releases/download/v#{version}/BiliTools_#{version}_#{arch}.dmg"
   name "BiliTools"
   desc "跨平台哔哩哔哩工具箱"
   homepage "https://btjawa.top/bilitools"
