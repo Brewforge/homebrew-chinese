@@ -14,8 +14,7 @@ cask "miniforge-cn" do
     arch arm: "aarch64", intel: "x86_64"
   end
 
-  url "https://mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-#{os}-#{arch}.sh",
-      verified: "mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/"
+  url "https://mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-#{os}-#{arch}.sh"
   name "miniforge"
   desc "Minimal installer for conda specific to conda-forge"
   homepage "https://github.com/conda-forge/miniforge"

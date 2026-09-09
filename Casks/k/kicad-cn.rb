@@ -2,8 +2,7 @@ cask "kicad-cn" do
   version "10.0.6"
   sha256 "ef4dcd4278c46d3efcd28c8db273d5957d68efda028f6bf79b4811fc5302dc68"
 
-  url "https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/kicad-unified-universal-#{version}.dmg",
-      verified: "mirrors.tuna.tsinghua.edu.cn/kicad/"
+  url "https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/kicad-unified-universal-#{version}.dmg"
   name "KiCad"
   desc "Electronics design automation suite"
   homepage "https://kicad.org/"

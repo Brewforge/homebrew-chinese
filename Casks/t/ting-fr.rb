@@ -2,8 +2,7 @@ cask "ting-fr" do
   version "25.12.0"
   sha256 "4e5e7e809494a3141435897f6f4ba8052f682453a4426305837808eeecaa1802"
 
-  url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg?v=#{version}",
-      verified:   "static.frdic.com/",
+  url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg?v=#{version}"
       user_agent: :fake
   name "每日法语听力"
   desc "精听细读，更好学法语"

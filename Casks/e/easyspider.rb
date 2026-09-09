@@ -2,8 +2,7 @@ cask "easyspider" do
   version "0.6.5"
   sha256 "40f40ad9040792867613ac2809052b9410048cd5a598b09d5bae08de9ed04d25"
 
-  url "https://github.com/NaiboWang/EasySpider/releases/download/v#{version}/EasySpider_#{version}_MacOS_Apple_Arm_Chip.7z",
-      verified: "github.com/NaiboWang/EasySpider/"
+  url "https://github.com/NaiboWang/EasySpider/releases/download/v#{version}/EasySpider_#{version}_MacOS_Apple_Arm_Chip.7z"
   name "EasySpider"
   desc "Visual No-Code/Code-Free Web Crawler/Spider"
   homepage "https://easyspider.net/"

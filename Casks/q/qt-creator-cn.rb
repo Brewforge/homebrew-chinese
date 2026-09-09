@@ -2,8 +2,7 @@ cask "qt-creator-cn" do
   version "20.0.1"
   sha256 "f18ebb715619f2092e1816498e34c989b75c269bfc948169f1dd76e0231b5fa0"
 
-  url "https://mirrors.ustc.edu.cn/qtproject/official_releases/qtcreator/latest/qt-creator-opensource-mac-universal-#{version}.dmg",
-      verified: "mirrors.ustc.edu.cn/"
+  url "https://mirrors.ustc.edu.cn/qtproject/official_releases/qtcreator/latest/qt-creator-opensource-mac-universal-#{version}.dmg"
   name "Qt Creator"
   desc "IDE for application development"
   homepage "https://qt.io/developers/"

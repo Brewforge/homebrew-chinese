@@ -2,8 +2,7 @@ cask "autotyper" do
   version "041006"
   sha256 "6651287fa312324a36055218e9fa55f6fb11b70ebb8ccf7b7da3d41dce8e7afd"
 
-  url "https://autoglm.aminer.cn/desktop_client/AutoTyper_#{version}.dmg",
-      verified: "autoglm.aminer.cn/"
+  url "https://autoglm.aminer.cn/desktop_client/AutoTyper_#{version}.dmg"
   name "AutoTyper"
   desc "一款智能的AI语音输入工具"
   homepage "https://autoglm.zhipuai.cn/"

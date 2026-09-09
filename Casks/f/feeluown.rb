@@ -2,8 +2,7 @@ cask "feeluown" do
   version "5.1.2,15.7.7"
   sha256 "9cd776a9015f1f35d7163a9b8b236eb20bf31825c73b3bbfd7ccf7e71ff07fbf"
 
-  url "https://github.com/feeluown/FeelUOwn/releases/download/v#{version.csv.first}/FeelUOwnX-macOS#{version.csv.second}-arm64.zip",
-      verified: "github.com/feeluown/FeelUOwn/"
+  url "https://github.com/feeluown/FeelUOwn/releases/download/v#{version.csv.first}/FeelUOwnX-macOS#{version.csv.second}-arm64.zip"
   name "FeelUOwn"
   desc "一个稳定、用户友好以及高度可定制的音乐播放器"
   homepage "https://feeluown.readthedocs.io/"

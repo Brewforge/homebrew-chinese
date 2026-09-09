@@ -6,8 +6,7 @@ cask "julia-cn" do
   sha256 arm:   "3c9c2978a4940c0c338f6b665d30c70da188e88bd03d739d5185187254967b8a",
          intel: "c3fe0d7065f891370eb8848e3d57d2e8998d1b21d6a4ce0b35d9a4d603a2abac"
 
-  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg",
-      verified: "mirrors.ustc.edu.cn/julia-releases/bin/mac/"
+  url "https://mirrors.ustc.edu.cn/julia-releases/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg"
   name "Julia"
   desc "Programming language for technical computing"
   homepage "https://julialang.org/"

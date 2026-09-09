@@ -5,8 +5,7 @@ cask "sagemath-cn" do
   sha256 arm:   "84f78143db3fb7c251f6eea906c6efb7793d26e96a3fbdb2104c1f9bb4b1827e",
          intel: "d8424f0401df2d5efe94c6fc8d8b8aabd53034fc9a050cb442bda09cc10e12e6"
 
-  url "https://mirrors.ustc.edu.cn/github-release/3-manifolds/Sage_macOS/LatestRelease/SageMath-#{version.csv.first}_#{arch}.dmg",
-      verified: "mirrors.ustc.edu.cn/github-release/3-manifolds/Sage_macOS/LatestRelease/"
+  url "https://mirrors.ustc.edu.cn/github-release/3-manifolds/Sage_macOS/LatestRelease/SageMath-#{version.csv.first}_#{arch}.dmg"
   name "Sage"
   desc "Mathematics software system"
   homepage "https://www.sagemath.org/"

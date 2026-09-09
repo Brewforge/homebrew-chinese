@@ -5,8 +5,7 @@ cask "vlc-cn" do
   sha256 arm:   "fc6fac08d87f538517d44aca0c5e7a244b67c8c4cb589bf478363a7315fd5e0d",
          intel: "ec01530ce69d849dd057fba8876e68ac39bf279dc28de4e9c04e4aec11fc98db"
 
-  url "https://mirrors.ustc.edu.cn/videolan-ftp/vlc/last/macosx/vlc-#{version}-#{arch}.dmg",
-      verified: "mirrors.ustc.edu.cn/videolan-ftp/vlc/"
+  url "https://mirrors.ustc.edu.cn/videolan-ftp/vlc/last/macosx/vlc-#{version}-#{arch}.dmg"
   name "VLC media player"
   desc "Multimedia player"
   homepage "https://videolan.org/vlc/"

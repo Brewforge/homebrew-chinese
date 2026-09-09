@@ -2,8 +2,7 @@ cask "capcut-cn" do
   version "0_1.2.14"
   sha256 :no_check
 
-  url "https://lf3-package.vlabstatic.com/obj/faceu-packages/installer/jianying_jianyingpro_#{version}_installer.dmg",
-      verified: "lf3-package.vlabstatic.com/obj/faceu-packages/installer/"
+  url "https://lf3-package.vlabstatic.com/obj/faceu-packages/installer/jianying_jianyingpro_#{version}_installer.dmg"
   name "剪映专业版"
   desc "全能易用的桌面端剪辑软件，让创作更简单"
   homepage "https://www.capcut.cn/"

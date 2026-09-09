@@ -2,8 +2,7 @@ cask "ting-de" do
   version "25.12.0"
   sha256 "0f391df7d065087f5a12943f3b7f6ff3a8d675f467ff2a8c2294a0f60f581f30"
 
-  url "https://static.frdic.com/pkg/ting_de/ting_de.dmg?v=#{version}",
-      verified:   "static.frdic.com/",
+  url "https://static.frdic.com/pkg/ting_de/ting_de.dmg?v=#{version}"
       user_agent: :fake
   name "每日德语听力"
   desc "精听细读，更好学德语"
