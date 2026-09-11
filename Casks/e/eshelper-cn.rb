@@ -18,9 +18,8 @@ cask "eshelper-cn" do
 
   app "Eudic_es.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/Eudic_es.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/Eudic_es.app"]
   end
 
   uninstall quit: [

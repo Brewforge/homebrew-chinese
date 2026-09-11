@@ -17,9 +17,8 @@ cask "tts-vue-next" do
 
   app "tts-vue-next.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/tts-vue-next.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/tts-vue-next.app"]
   end
 
   zap trash: [
