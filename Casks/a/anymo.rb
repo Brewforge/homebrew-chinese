@@ -1,7 +1,7 @@
 cask "anymo" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.7.13"
+  version "2.8.1"
   sha256 :no_check
 
   url "https://anymoweb.com/app-mac-#{arch}.dmg"
@@ -14,13 +14,12 @@ cask "anymo" do
     regex(/version:\s*"?(\d+(?:\.\d+)+)"?/i)
   end
 
-  depends_on macos: :catalina
+  depends_on macos: :big_sur
 
   app "Anymo.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/Anymo.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/Anymo.app"]
   end
 
   zap trash: [
