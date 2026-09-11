@@ -1,6 +1,6 @@
 cask "ting-fr" do
-  version "25.12.0"
-  sha256 "4e5e7e809494a3141435897f6f4ba8052f682453a4426305837808eeecaa1802"
+  version "26.9.1"
+  sha256 "a85292c945e6f7bb264fa6c9e412a9f3892ef561ee3323a57b7b019f8e525034"
 
   url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg?v=#{version}",
       user_agent: :fake
@@ -9,8 +9,8 @@ cask "ting-fr" do
   homepage "https://www.francochinois.com/v4/fr/app/ting"
 
   livecheck do
-    url "https://eudic.yuque.com/org-wiki-eudic-fxu2ea/mfxd3t/xtg53urhq3rh1vkw"
-    regex(/版本号: (\d+(\.\d+)+)/i)
+    url :homepage
+    regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
   depends_on macos: :big_sur
