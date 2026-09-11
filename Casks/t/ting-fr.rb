@@ -1,6 +1,6 @@
 cask "ting-fr" do
   version "26.9.1"
-  sha256 "a85292c945e6f7bb264fa6c9e412a9f3892ef561ee3323a57b7b019f8e525034"
+  sha256 "8036fb889e193a23edc5f1021e8cc32d4b416e28fb548fb0acc9489f3deee126"
 
   url "https://static.frdic.com/pkg/ting_fr/ting_fr.dmg?v=#{version}",
       user_agent: :fake
