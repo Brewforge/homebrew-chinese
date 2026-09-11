@@ -1,25 +1,24 @@
 cask "ting-es" do
-  version "25.12.0"
-  sha256 "946bfbb335b831c98eecbd89e1dcffc3291eb0fcc9532985c5b378648ed48985"
+  version "26.9.1"
+  sha256 "b6e408a660124daedd5e2daefe35a9c543a1075fb15310d2851e7d4e74900937"
 
-  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?v=#{version}"
+  url "https://static.frdic.com/pkg/ting_es/ting_es.dmg?v=#{version}",
       user_agent: :fake
   name "每日西语听力"
   desc "精听细读，更好学西语"
   homepage "https://www.francochinois.com/v4/es/app/ting"
 
   livecheck do
-    url "https://eudic.yuque.com/org-wiki-eudic-fxu2ea/mfxd3t/xtg53urhq3rh1vkw"
-    regex(/版本号: (\d+(\.\d+)+)/i)
+    url :homepage
+    regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
   depends_on macos: :big_sur
 
   app "每日西语听力.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/每日西语听力.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/每日西语听力.app"]
   end
 
   zap trash: [
