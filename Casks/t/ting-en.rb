@@ -17,9 +17,8 @@ cask "ting-en" do
 
   app "每日英语听力.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/每日英语听力.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "{{staged_path}}/每日英语听力.app"]
   end
 
   zap trash: [
