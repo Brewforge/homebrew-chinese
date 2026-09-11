@@ -2,7 +2,7 @@ cask "ting-en" do
   version "25.12.0"
   sha256 "e4c2b5f99afb9560b0d8fdb2f6d0e3bf75967c0b7c8d26105746d017753d31d5"
 
-  url "https://static.frdic.com/pkg/ting_en/ting_en.dmg?v=#{version}"
+  url "https://static.frdic.com/pkg/ting_en/ting_en.dmg?v=#{version}",
       user_agent: :fake
   name "每日英语听力"
   desc "精听细读，更好学英语"
