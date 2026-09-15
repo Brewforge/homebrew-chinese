@@ -10,10 +10,16 @@ cask "cajviewer" do
     sha256 "b832a16631ac11a9f66d62f6b9e8eed83d355e9edec1d7b011b41732f2e5a03b"
   end
 
-  url "https://download.cnki.net/cajPackage/CAJMACPackage/CAJViewer_#{version.csv.first}.#{version.csv.second}_#{arch}.dmg"
+  url "https://download.cnki.net/cajPackage/CAJMACPackage/CAJViewer_#{version.csv.first}.#{version.csv.second}_#{arch}.dmg",
+      user_agent: :fake,
+      referer:    "https://cajviewer.cnki.net/",
+      header:     [
+        "CLIENT-IP: 115.239.211.92", # 杭州 IP
+        "X-Forwarded-For: 115.239.211.92", # 杭州 IP
+      ]
   name "CAJViewer"
   desc "专业文献阅读器"
-  homepage "https://cajviewer.cnki.net/download.html"
+  homepage "https://cajviewer.cnki.net"
 
   livecheck do
     url :homepage
@@ -30,9 +36,8 @@ cask "cajviewer" do
 
   app "CAJViewer.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-cr", "#{staged_path}/CAJViewer.app"]
+  preflight_steps do
+    run "xattr", args: ["-cr", "#{staged_path}/CAJViewer.app"]
   end
 
   zap trash: [

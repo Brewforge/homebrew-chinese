@@ -11,26 +11,30 @@ cask "obs-cn" do
   homepage "https://obsproject.com/"
 
   livecheck do
-    url "https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/LatestRelease"
-    regex(/OBS-Studio-(\d+(\.\d+){2})-macOS-#{arch}\.dmg/i)
+    url "https://obsproject.com/osx_update/updates_#{livecheck_folder}_v2.xml"
+    regex(/obs[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]macos[._-]#{arch}\.dmg/i)
+    strategy :sparkle do |items, regex|
+      items.map do |item|
+        next if item.channel != "stable"
+
+        item.url&.[](regex, 1)
+      end
+    end
   end
 
-  conflicts_with cask: ["obs@beta", "obs"]
+  auto_updates true
+  conflicts_with cask: %w[
+    obs
+    obs@beta
+  ]
   depends_on macos: :ventura
 
   app "OBS.app"
-  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
-  shimscript = "#{staged_path}/obs.wrapper.sh"
-  binary shimscript, target: "obs"
+  command_wrapper "obs",
+                  executable: "#{appdir}/OBS.app/Contents/MacOS/OBS"
 
-  preflight do
-    File.write shimscript, <<~EOS
-      #!/bin/bash
-      exec '#{appdir}/OBS.app/Contents/MacOS/OBS' "$@"
-    EOS
-  end
-
-  uninstall delete: "/Library/CoreMediaIO/Plug-Ins/DAL/obs-mac-virtualcam.plugin"
+  uninstall quit:   "com.obsproject.obs-studio",
+            delete: "/Library/CoreMediaIO/Plug-Ins/DAL/obs-mac-virtualcam.plugin"
 
   zap trash: [
     "~/Library/Application Support/obs-studio",

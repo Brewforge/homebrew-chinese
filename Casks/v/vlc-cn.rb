@@ -8,33 +8,30 @@ cask "vlc-cn" do
   url "https://mirrors.ustc.edu.cn/videolan-ftp/vlc/last/macosx/vlc-#{version}-#{arch}.dmg"
   name "VLC media player"
   desc "Multimedia player"
-  homepage "https://videolan.org/vlc/"
+  homepage "https://www.videolan.org/vlc/"
 
   livecheck do
-    url "https://mirrors.ustc.edu.cn/videolan-ftp/vlc/last/macosx"
-    regex(/vlc-(\d+(\.\d+){2})-#{arch}\.dmg/i)
+    url "https://www.videolan.org/vlc/download-macosx.html"
+    regex(%r{href=.*?/vlc[._-]v?(\d+(?:\.\d+)+)(?:[._-][a-z]\w*)?\.dmg}i)
   end
 
-  conflicts_with cask: ["homebrew/cask-versions/vlc-nightly", "vlc"]
+  auto_updates true
+  conflicts_with cask: %w[
+    vlc
+    vlc@nightly
+  ]
   depends_on :macos
 
   app "VLC.app"
-  # shim script (https://github.com/Homebrew/homebrew-cask/issues/18809)
-  shimscript = "#{staged_path}/vlc.wrapper.sh"
-  binary shimscript, target: "vlc"
-
-  preflight do
-    File.write shimscript, <<~EOS
-      #!/bin/sh
-      exec '#{appdir}/VLC.app/Contents/MacOS/VLC' "$@"
-    EOS
-  end
+  command_wrapper "vlc",
+                  executable: "#{appdir}/VLC.app/Contents/MacOS/VLC"
 
   zap trash: [
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.videolan.vlc.sfl*",
     "~/Library/Application Support/org.videolan.vlc",
     "~/Library/Application Support/VLC",
     "~/Library/Caches/org.videolan.vlc",
+    "~/Library/HTTPStorages/org.videolan.vlc",
     "~/Library/Preferences/org.videolan.vlc",
     "~/Library/Preferences/org.videolan.vlc.plist",
     "~/Library/Saved Application State/org.videolan.vlc.savedState",

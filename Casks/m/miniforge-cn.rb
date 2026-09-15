@@ -1,18 +1,9 @@
 cask "miniforge-cn" do
-  os macos: "MacOSX", linux: "Linux"
+  arch arm: "arm64", intel: "x86_64"
 
-  version "26.5.3-0"
-  sha256 arm:          "0d765919d3ccfd1f89147aa1cf8133bfc55b3a3c13f5bacdcc091c33132fddd2",
-         intel:        "0266a7bfeb12165286133145717bef0d88070f1b76710beb6a62fec4e88371a1",
-         arm64_linux:  "0391e42075a7632e9665d6e728387ee6b905f6c3e704d3513e1c1133d0d69b89",
-         x86_64_linux: "14db468222ad564658656f769506056209b6dc375f5e7dfd31eb5ebbf08fa529"
-
-  on_macos do
-    arch arm: "arm64", intel: "x86_64"
-  end
-  on_linux do
-    arch arm: "aarch64", intel: "x86_64"
-  end
+  version "26.7.2-0"
+  sha256 arm:   "d70bfa2e97afcda96927c9b9ca0e2316cb7750e4ce651c94388267cbe9588711",
+         intel: "b00e7798658f92721a3ae2f6b9832695ffc6baf07758894d726268055359f6c5"
 
   url "https://mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/LatestRelease/Miniforge3-#{version}-#{os}-#{arch}.sh"
   name "miniforge"
@@ -20,16 +11,14 @@ cask "miniforge-cn" do
   homepage "https://github.com/conda-forge/miniforge"
 
   livecheck do
-    url "https://mirrors.ustc.edu.cn/github-release/conda-forge/miniforge/LatestRelease"
-    regex(/Miniforge3-(\d+(?:[.-]\d+)+)-#{os}-#{arch}\.sh/i)
+    url :homepage
+    regex(/v?(\d+(?:[.-]\d+)+)/i)
+    strategy :github_latest
   end
 
-  conflicts_with cask: %w[
-    mambaforge
-    mambaforge-cn
-    miniconda
-    miniforge
-  ]
+  auto_updates true
+  conflicts_with cask: "miniconda"
+  depends_on :macos
   container type: :naked
 
   installer script: {
@@ -39,16 +28,16 @@ cask "miniforge-cn" do
   binary "#{caskroom_path}/base/condabin/conda"
   binary "#{caskroom_path}/base/condabin/mamba"
 
-  postflight do
-    if Dir.exist? "#{HOMEBREW_TEMP}/#{token}-envs"
-      FileUtils.rm_r "#{caskroom_path}/base/envs"
-      FileUtils.mv "#{HOMEBREW_TEMP}/#{token}-envs", "#{caskroom_path}/base/envs"
+  postflight_steps do
+    if_path_exists "{{temp}}/{{token}}-envs" do
+      remove "base/envs", base: :caskroom_path, recursive: true
+      move "{{temp}}/{{token}}-envs", "base/envs", target_base: :caskroom_path
     end
   end
 
-  uninstall_preflight do
-    if Dir.exist? "#{caskroom_path}/base/envs"
-      FileUtils.mv "#{caskroom_path}/base/envs", "#{HOMEBREW_TEMP}/#{token}-envs"
+  uninstall_preflight_steps do
+    if_path_exists "{{caskroom_path}}/base/envs" do
+      move "base/envs", "{{temp}}/{{token}}-envs", source_base: :caskroom_path
     end
   end
 
