@@ -16,10 +16,8 @@ cask "project-graph" do
 
   app "Project Graph.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Project Graph.app"],
-                   sudo: false
+  postflight_steps do
+    run "xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Project Graph.app"]
   end
 
   zap trash: [
