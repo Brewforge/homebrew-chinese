@@ -8,16 +8,21 @@ cask "landrop" do
   homepage "https://landrop.app/"
 
   livecheck do
-    skip "嵌套标签，难以选择"
-    # url :homepage
-    regex(/(\d+(\.\d){2})/i)
+    url "https://releases.landrop.app/versions.json"
+    strategy :json do |json|
+      json["desktop"]
+    end
   end
 
   depends_on macos: :big_sur
 
   app "LANDrop.app"
 
-  uninstall quit: "app.landrop.landrop"
+  uninstall quit: "app.landrop.landrop-v2-electron"
 
-  zap trash: "~/Library/Preferences/app.landrop.landrop-v2-electron.plist"
+  zap trash: [
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.landrop.landrop-v2-electron.sfl*",
+    "~/Library/Application Support/landrop-v2-electron",
+    "~/Library/Preferences/app.landrop.landrop-v2-electron.plist",
+  ]
 end
