@@ -140,7 +140,7 @@ brew help
 |     `i4tools`      |                    [爱思助手](https://i4.cn)                     |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |      `iqiyi`       |              [爱奇艺视频](https://app.iqiyi.com/mac/player/index.html)              |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 |    `keyviz-cn`     |         [Keyviz-cn](https://github.com/zetaloop/keyviz/)         |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
-|     `landrop`      |                 [LANDrop](https://landrop.app/)                  |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+|     `landrop`      |                 [LANDrop](https://landrop.app/)                  |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |     `lingquan`     |                  [零泉](https://lingquan.cool/)                  |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
 | `m3u8-downloader`  | [M3U8-Downloader](https://github.com/HeiSir2014/M3U8-Downloader) |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |   `macoptimizer`   |     [Mac优化大师](https://github.com/ddlmanus/MacOptimizer)      |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
