@@ -123,7 +123,6 @@ brew help
 |        桶名        |                             软件官网                             |                                   备注                                   |
 | :----------------: | :--------------------------------------------------------------: | :----------------------------------------------------------------------: |
 |      `anymo`       |                   [Anymo](https://anymoweb.com/)                 |          ![b](assets/b.svg)![1](assets/1.svg)![3](assets/3.svg)          |
-|    `bilitools`     |            [BiliTools](https://btjawa.top/bilitools/)            |                   ![a](assets/b.svg)![1](assets/1.svg)                   |
 |    `cajviewer`     |      [CAJViewer](https://CAJViewer.cnki.net/download.html)       |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 | `chaoxing-cxstudy` |               [学习通](https://app.chaoxing.com/)                |                   ![b](assets/b.svg)![1](assets/1.svg)                   |
 |  `cloud-uploader`  | [网易云音乐上传助手](https://github.com/lulu-ls/cloud-uploader)  |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
