@@ -1,6 +1,6 @@
 cask "retain-pdf" do
-  version "4.2.2"
-  sha256 "853f7db9a31ec980f9fdf35ee58bde64e747a915dd98d6c8b59b20f28b03b105"
+  version "4.2.5"
+  sha256 "7932fcb367c52dc89ea0b8acdd3ef2f8a7ff639843a90dea4abdaed5be72a111"
 
   url "https://github.com/wxyhgk/retain-pdf/releases/download/v#{version}/RetainPDF-Mac-#{version}.dmg"
   name "retain-pdf"
@@ -21,7 +21,7 @@ cask "retain-pdf" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: :big_sur
+  depends_on macos: :ventura
 
   app "RetainPDF.app"
 
