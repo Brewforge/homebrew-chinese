@@ -17,7 +17,7 @@ cask "autotyper" do
   app "AutoGLM.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/AutoGLM.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/AutoGLM.app"]
   end
 
   zap trash: [

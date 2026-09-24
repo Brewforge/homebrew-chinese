@@ -20,7 +20,7 @@ cask "cockpit-tools" do
   app "Cockpit Tools.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/Cockpit Tools.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/Cockpit Tools.app"]
   end
 
   zap trash: [

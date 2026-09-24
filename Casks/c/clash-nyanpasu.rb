@@ -20,7 +20,7 @@ cask "clash-nyanpasu" do
   app "Clash Nyanpasu.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/Clash Nyanpasu.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/Clash Nyanpasu.app"]
   end
 
   zap trash: [

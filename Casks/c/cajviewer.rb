@@ -37,7 +37,7 @@ cask "cajviewer" do
   app "CAJViewer.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/CAJViewer.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/CAJViewer.app"]
   end
 
   zap trash: [

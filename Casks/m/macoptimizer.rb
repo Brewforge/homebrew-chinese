@@ -20,7 +20,7 @@ cask "macoptimizer" do
   app "Mac优化大师.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/MacOptimizer-v#{version}-#{arch}.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/MacOptimizer-v#{version}-#{arch}.app"]
   end
 
   zap trash: [

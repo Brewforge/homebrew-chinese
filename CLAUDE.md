@@ -35,7 +35,7 @@ cask "name" do
   app "AppName.app"
 
   preflight do # 未签名 app 需要
-    system_command "xattr", args: ["-cr", "#{staged_path}/AppName.app"]
+    system_command "xattr", args: ["-cr", "{{staged_path}}/AppName.app"]
   end
 
   zap trash: [

@@ -19,7 +19,7 @@ cask "dehelper-cn" do
   app "Dehelper.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/Dehelper.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/Dehelper.app"]
   end
 
   uninstall quit: [

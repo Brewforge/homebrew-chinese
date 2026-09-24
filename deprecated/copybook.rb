@@ -31,7 +31,7 @@ cask "copybook" do
   app "字帖生成器.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/字帖生成器.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/字帖生成器.app"]
   end
 
   zap trash: [

@@ -20,7 +20,7 @@ cask "v2rayn" do
   app "v2rayN.app"
 
   preflight_steps do
-    run "xattr", args: ["-cr", "#{staged_path}/v2rayN.app"]
+    run "xattr", args: ["-cr", "{{staged_path}}/v2rayN.app"]
   end
 
   zap trash: [
