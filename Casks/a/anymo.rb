@@ -1,7 +1,7 @@
 cask "anymo" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.8.1"
+  version "2.9.1"
   sha256 :no_check
 
   url "https://anymoweb.com/app-mac-#{arch}.dmg"
@@ -14,7 +14,7 @@ cask "anymo" do
     regex(/version:\s*"?(\d+(?:\.\d+)+)"?/i)
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "Anymo.app"
 
