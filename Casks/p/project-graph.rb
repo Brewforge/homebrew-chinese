@@ -1,6 +1,6 @@
 cask "project-graph" do
-  version "4.2.3"
-  sha256 "b6c233888a80ee42c6dd91cd96eb3a0982c727edfa8ee45ea91966b0014f6e2d"
+  version "4.2.4"
+  sha256 "ce9a07d6945a6b9751b286269f72dd2d9fb1f61b4cecfc0430f903fb99a0538e"
 
   url "https://github.com/graphif/project-graph/releases/download/v#{version}/Project.Graph_#{version}_universal.app.tar.gz"
   name "Project Graph"
@@ -12,7 +12,7 @@ cask "project-graph" do
     strategy :github_latest
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "Project Graph.app"
 
