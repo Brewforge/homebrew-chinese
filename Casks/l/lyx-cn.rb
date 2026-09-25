@@ -1,6 +1,6 @@
 cask "lyx-cn" do
-  version "2.5.2,6"
-  sha256 "329a4f45a04f2585eac7b44722f068fe24722481dcc8521dc284c02161fb2855"
+  version "2.5.3,6"
+  sha256 "fd8cf48332bd1efb9e402ee2077816343c759875ba04def7082c3af14daa3943"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/lyx/bin/#{version.csv.first.major_minor_patch}/LyX-#{version.csv.first}+qt#{version.csv.second}-x86_64-arm64-cocoa.dmg"
   name "LyX"
