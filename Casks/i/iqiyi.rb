@@ -1,5 +1,5 @@
 cask "iqiyi" do
-  version "17.8.0,20260821101500"
+  version "17.9.0,20260921102900"
   sha256 :no_check
 
   url "https://static-d.iqiyi.com/ext/common/iQIYIMedia_271.dmg"
@@ -12,7 +12,7 @@ cask "iqiyi" do
     strategy :extract_plist
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "爱奇艺.app"
 
