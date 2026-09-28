@@ -24,7 +24,7 @@ cask "julia-cn" do
   end
 
   conflicts_with cask: "julia-app"
-  depends_on macos: :tahoe
+  depends_on macos: :golden_gate
 
   app "Julia-#{version.major_minor}.app"
   binary "#{appdir}/Julia-#{version.major_minor}.app/Contents/Resources/julia/bin/julia"
