@@ -1,6 +1,6 @@
 cask "kicad-cn" do
-  version "10.0.6"
-  sha256 "ef4dcd4278c46d3efcd28c8db273d5957d68efda028f6bf79b4811fc5302dc68"
+  version "10.0.7-rc1"
+  sha256 "0850a79e175c283f508c36f856cc5efdbdee43b90dd62d54ecdc609b85b17617"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/kicad-unified-universal-#{version}.dmg"
   name "KiCad"
@@ -12,7 +12,7 @@ cask "kicad-cn" do
     regex(/kicad-unified-universal-(\d+(?:\.\d+)+(-rc\d+)?)/i)
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   suite "KiCad"
   binary "KiCad/KiCad.app/Contents/MacOS/dxf2idf"
