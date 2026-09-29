@@ -1,7 +1,7 @@
 cask "anymo" do
   arch arm: "arm64", intel: "x64"
 
-  version "2.9.1"
+  version "2.9.2"
   sha256 :no_check
 
   url "https://anymoweb.com/app-mac-#{arch}.dmg"
