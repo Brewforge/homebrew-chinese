@@ -1,6 +1,6 @@
 cask "iina-cn" do
-  version "1.4.4"
-  sha256 "dd0fc0bd4b37fb57a1c8d30d6e3201b3a64bafd29959fe56953964613237beb1"
+  version "1.5.0"
+  sha256 "8fad50479b10e09645053457cec46bd53d054ced2242cfe68f74586735a20dc7"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/iina/IINA.v#{version}.dmg"
   name "IINA"
@@ -13,7 +13,7 @@ cask "iina-cn" do
   end
 
   conflicts_with cask: "iina"
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "IINA.app"
   binary "#{appdir}/IINA.app/Contents/MacOS/iina-cli", target: "iina"
