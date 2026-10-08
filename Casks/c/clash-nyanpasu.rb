@@ -1,9 +1,9 @@
 cask "clash-nyanpasu" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.6.1"
+  version "2.0.0-beta.3"
   sha256 arm:   "97ee903d06b8fb8f35764302717bfd4b19b5a43d5f9b103e9b60fd97173023a1",
-         intel: "a4d4ff4e9fbe7ab1a73e151451f0b8b599dd97702e9d5706bb08c2d962bceeac"
+         intel: "ad098d088f054c07250f4d06b1397fce3f59b8f9ee774aaa931da047f4a54788"
 
   url "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v#{version}/Clash.Nyanpasu_#{version}_#{arch}.dmg"
   name "Clash Nyanpasu"
@@ -18,7 +18,7 @@ cask "clash-nyanpasu" do
         match = asset["browser_download_url"]&.match(regex)
         next if match.blank?
 
-        "#{match[1]}"
+        match[1].to_s
       end
     end
   end
