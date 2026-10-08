@@ -23,7 +23,7 @@ cask "clash-nyanpasu" do
     end
   end
 
-  depends_on macos: :ventura
+  depends_on macos: :monterey
 
   app "Clash Nyanpasu.app"
 
