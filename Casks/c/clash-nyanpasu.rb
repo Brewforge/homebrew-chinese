@@ -12,13 +12,13 @@ cask "clash-nyanpasu" do
 
   livecheck do
     url :url
-    regex(%r{v(\d+(\.\d+)+(-beta\.\d)?)/Clash.Nyanpasu_(\d+(\.\d+)+(-beta\.\d)?)-aarch64\.zip$}i)
+    regex(%r{v(\d+(\.\d+)+(-beta\.\d)?)/Clash.Nyanpasu_(\d+(\.\d+)+(-beta\.\d)?)_aarch64\.zip$}i)
     strategy :github_latest do |json|
       json["assets"]&.map do |asset|
         match = asset["browser_download_url"]&.match(regex)
         next if match.blank?
 
-        "#{match[1]},#{match[4]}"
+        "#{match[1]}"
       end
     end
   end
