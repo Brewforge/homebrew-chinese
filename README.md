@@ -148,6 +148,7 @@ brew help
 |      `noteey`      |                  [Noteey](https://noteey.com/)                   | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg)![3](assets/3.svg) |
 |  `project-graph`   |    [Project Graph](https://github.com/graphif/project-graph)     |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |      `presto`      |          [Presto](https://github.com/Presto-io/Presto)           |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
+| `redisee` | [Redisee](https://redisee.com/) | ![b](assets/b.svg)![1](assets/1.svg)![2](assets/2.svg) |
 |    `retain-pdf`    |        [retain-pdf](https://github.com/wxyhgk/retain-pdf)        |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |  `splayer-imsyy`   |           [SPlayer](https://github.com/imsyy/SPlayer)            |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
 |   `tts-vue-next`   |       [TTS-Vue-Next](https://tts-doc.loker.vip/home.html)        |                   ![a](assets/a.svg)![1](assets/1.svg)                   |
