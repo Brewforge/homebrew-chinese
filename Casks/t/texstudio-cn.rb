@@ -16,7 +16,7 @@ cask "texstudio-cn" do
   end
 
   conflicts_with cask: "texstudio"
-  depends_on macos: :ventura
+  depends_on macos: :sonoma
 
   app "texstudio-#{version}-osx#{arch}.app"
 
