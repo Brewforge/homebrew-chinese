@@ -1,11 +1,10 @@
 cask "i4tools" do
-  arch arm: "_arm64", intel: ""
-  key = on_arch_conditional arm: "FFRBr2aa", intel: "fqIBBbaa"
+  arch arm: "arm64", intel: "x64"
 
-  version "3.22.006"
+  version "9.11.003"
   sha256 :no_check
 
-  url "https://url.i4.cn/#{key}"
+  url "https://d-updater.i4.cn/i4tools9/download/macos/arm64/i4Tools_v#{version}_#{arch}.dmg"
   name "i4Tools"
   name "爱思助手"
   desc "Mobile device management software"
@@ -14,7 +13,7 @@ cask "i4tools" do
   livecheck do
     url :url
     strategy :header_match
-    regex(/i4Tools[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    regex(/i4Tools_v?(\d+(\.\d+)+)_arm64\.dmg/i)
   end
 
   depends_on :macos
