@@ -13,20 +13,19 @@ cask "blender-cn" do
     strategy :page_match do |page, regex|
       # Match major/minor versions from stable directory names
       major_minor_versions =
-          page.scan(%r{href=["']?[^"' >]*?Blender[._-]?v?(\d+(?:\.\d+)+)/?["' >]}i)
-              .flatten
-              .uniq
-              .sort_by { |v| Version.new(v) }
-        next if major_minor_versions.blank?
+        page.scan(%r{href=["']?[^"' >]*?Blender[._-]?v?(\d+(?:\.\d+)+)/?["' >]}i)
+            .flatten
+            .uniq
+            .sort_by { |v| Version.new(v) }
+      next if major_minor_versions.blank?
 
-        # Check the directory listing page for the highest major/minor version
-        directory_page = Homebrew::Livecheck::Strategy.page_content(
-          URI.join(@url, "Blender#{major_minor_versions.last}/").to_s,
-        )[:content]
-        next if directory_page.blank?
+      # Check the directory listing page for the highest major/minor version
+      directory_page = Homebrew::Livecheck::Strategy.page_content(
+        URI.join(@url, "Blender#{major_minor_versions.last}/").to_s,
+       )[:content]
+      next if directory_page.blank?
 
-        directory_page.scan(regex).map { |match| match[0] }
-      end
+      directory_page.scan(regex).map { |match| match[0] }
     end
   end
 
