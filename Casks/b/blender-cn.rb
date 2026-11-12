@@ -8,6 +8,7 @@ cask "blender-cn" do
   homepage "https://www.blender.org/"
 
   livecheck do
+ livecheck do
     url "https://download.blender.org/release/"
     regex(/href=.*?blender[._-]v?(\d+(?:\.\d+)+)(?:[._-]macos)?[._-]#{arch}\.dmg/i)
     strategy :page_match do |page, regex|
