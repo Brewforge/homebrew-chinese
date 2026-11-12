@@ -1,9 +1,9 @@
 cask "clash-nyanpasu" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.0.0"
-  sha256 arm:   "1bb57b7ebcda65e5edf23463e09308a0c7154eb6609104ed4f6ade5def72b3c1",
-         intel: "14d11c3b9de0a4b843d36cd5843bd97b08a5211005866367e38c80b448ffc92d"
+  version "2.0.1"
+  sha256 arm:   "545b3d7dd16620d74c7ea18a86440b552a7157feafb7553126f2b1b18abc1da9",
+         intel: "1b02d5a35c0f6b926c9c0702803fd1148cfac4313c2131eb821fadac6bbfb537"
 
   url "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v#{version}/Clash.Nyanpasu_#{version}_#{arch}.dmg"
   name "Clash Nyanpasu"
