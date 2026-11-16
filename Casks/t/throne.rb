@@ -15,7 +15,7 @@ cask "throne" do
     strategy :github_latest
   end
 
-  depends_on :macos
+  depends_on macos: :sonoma
 
   app "Throne/Throne.app"
 
