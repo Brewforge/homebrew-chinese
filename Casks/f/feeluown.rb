@@ -1,6 +1,6 @@
 cask "feeluown" do
-  version "5.1.2,15.7.7"
-  sha256 "9cd776a9015f1f35d7163a9b8b236eb20bf31825c73b3bbfd7ccf7e71ff07fbf"
+  version "5.1.3,26.7.2"
+  sha256 "ef71150c06095da0e4fe624f17d404d40b371cc8ff88fa7e83faea9cc60562db"
 
   url "https://github.com/feeluown/FeelUOwn/releases/download/v#{version.csv.first}/FeelUOwnX-macOS#{version.csv.second}-arm64.zip"
   name "FeelUOwn"
@@ -20,7 +20,7 @@ cask "feeluown" do
     end
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "FeelUOwnX.app"
 
