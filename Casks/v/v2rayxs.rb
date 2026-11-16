@@ -1,9 +1,9 @@
 cask "v2rayxs" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.6.3"
-  sha256 arm:   "600a86c8d3468fb14a070b9c7750a040cefa3095b8356a7cc4f184a4deb754ce",
-         intel: "8a735d5b79066e6d2860120cb8fa552f24bb21aedbc5041250231a98e8d73679"
+  version "1.6.4"
+  sha256 arm:   "35249e3bc539832dea3a46542f0482c50af649730dad18cfdd3b9d2f83fce9ed",
+         intel: "0849a763c2d8c53cba07e7d195c253051635c4c9b17ef05c43e349a0cf7422ff"
 
   url "https://github.com/tzmax/V2RayXS/releases/download/v#{version}/V2RayXS_#{arch}.app.zip"
   name "V2RayXS"
