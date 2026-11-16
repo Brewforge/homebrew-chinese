@@ -1,6 +1,6 @@
 cask "ting-en" do
-  version "26.9.1"
-  sha256 "9d151943c3c57274612ea61d440c50d42ae3ba3057bc2c760b3fe88e13242a8b"
+  version "26.11.1"
+  sha256 "16b132af5f9afcbeb8c271d3f640cec15722ac133af5f525c5dddac881d89dd5"
 
   url "https://static.frdic.com/pkg/ting_en/ting_en.dmg?v=#{version}",
       user_agent: :fake
@@ -13,7 +13,7 @@ cask "ting-en" do
     regex(/应用版本：(\d+(\.\d+)+)/i)
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "每日英语听力.app"
 
