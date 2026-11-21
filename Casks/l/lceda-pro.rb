@@ -1,6 +1,6 @@
 cask "lceda-pro" do
-  version "4.1.104"
-  sha256 "364f51a20e829fdf78f139553aa4051d514dd9ae729a6c8781216a4e308e5341"
+  version "4.1.105"
+  sha256 "035b38df05d4c50b69f5a2e3d55ef951cefac1b397df50936198b879b4252a7e"
 
   url "https://image.lceda.cn/files/lceda-pro-mac-arm64-#{version}.zip"
   name "LCEDA-Pro"
