@@ -1,5 +1,5 @@
 cask "dehelper-cn" do
-  version "26.11.2"
+  version "26.11.3"
   sha256 "f1d7bc0ec3c58546d6a9b4f8105fcac47d19e57644319617c8e18b80473fe3eb"
 
   url "https://static.eudic.net/pkg/dhmac.dmg?v=#{version}",
