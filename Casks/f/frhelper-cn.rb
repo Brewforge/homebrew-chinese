@@ -1,5 +1,5 @@
 cask "frhelper-cn" do
-  version "26.11.3"
+  version "26.11.4"
   sha256 "75aa49bb6119b93bf647ebe66cdc34399a343da70bbbd03b767ef986481468a9"
 
   url "https://static.eudic.net/pkg/fhmac.dmg?v=#{version}",
