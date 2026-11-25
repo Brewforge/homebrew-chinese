@@ -34,7 +34,9 @@ jobs:
         run: |
           # Merge states where GitHub will actually accept the merge. BLOCKED
           # (pending/failed required checks, unresolved conversations) and DIRTY
-          # (merge conflict) are skipped instead of attempted.
+          # (merge conflict) are skipped instead of attempted; BEHIND is handled
+          # separately by updating the branch, because GitHub never does that on
+          # its own and a merge is impossible until it happens.
           mergeable_states=" CLEAN HAS_HOOKS UNSTABLE "
           allowed_authors=" Brewforge-Bot-0 ivaquero "
 
@@ -76,7 +78,7 @@ jobs:
             echo UNKNOWN
           }
 
-          considered=0 merged=0 failed=0
+          considered=0 merged=0 failed=0 updated=0
           for row in "${candidates[@]}"; do
             number="${row%%$'\t'*}"
             author="${row#*$'\t'}"
@@ -91,9 +93,19 @@ jobs:
             # is only a hint.
             state=$(resolve_state "$number")
             if [[ "$mergeable_states" != *" $state "* ]]; then
-              hint=""
-              [ "$state" = "BEHIND" ] && hint=" (base branch moved; needs an update)"
-              echo "Skipping #$number ($author): mergeStateStatus=$state$hint"
+              # BEHIND means the base branch moved and a policy requires the head
+              # to be up to date: GitHub will never make that true on its own, so
+              # merging is impossible until the branch is updated. Update it here
+              # and let the next validate run trigger a fresh attempt.
+              if [ "$state" = "BEHIND" ]; then
+                echo "Updating #$number ($author): base branch moved"
+                if ! gh pr update-branch "$number" --repo "$REPO"; then
+                  echo "::warning::Could not update branch of PR #$number"
+                fi
+                updated=$((updated + 1))
+              else
+                echo "Skipping #$number ($author): mergeStateStatus=$state"
+              fi
               continue
             fi
 
@@ -125,7 +137,7 @@ jobs:
             fi
           done
 
-          echo "Merged $merged, failed $failed, considered $considered of ${#candidates[@]} open PR(s)"
+          echo "Merged $merged, failed $failed, updated $updated, considered $considered of ${#candidates[@]} open PR(s)"
           if [ "$failed" -gt 0 ]; then
             exit 1
           fi
