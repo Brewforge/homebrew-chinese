@@ -103,6 +103,7 @@ brew help
 |   `autotyper`   |     [AutoTyper](https://autoglm.zhipuai.cn/autotyper/)      | ![b](assets/b.svg)![1](assets/1.svg) |
 | `cockpit-tools` | [cockpit-tools](https://github.com/jlcodes99/cockpit-tools) | ![a](assets/a.svg)![1](assets/1.svg) |
 | `lingjing-script-tool` | [灵境剧本工具](https://github.com/lizheyong/lingjing-script-tool-releases) | ![a](assets/a.svg)![1](assets/1.svg) |
+| `qoder-cn` | [Qoder CN](https://qoder.com.cn) | ![b](assets/b.svg)![1](assets/1.svg) |
 | `qoderwork-cn` | [Qoder](https://qoder.com.cn/qoderwork) | ![b](assets/b.svg)![1](assets/1.svg) |
 
 ### 代理工具
