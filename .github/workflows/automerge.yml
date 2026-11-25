@@ -3,10 +3,17 @@ name: automerge
 on:
   schedule:
     - cron: "0 6 * * *"
+  # Merge as soon as the required check finishes, instead of waiting for the
+  # daily cron (which GitHub delays by hours).
+  workflow_run:
+    workflows: ["validate"]
+    types: [completed]
   workflow_dispatch:
 
+# Serialise runs: two concurrent runs can try to merge the same pull request.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -17,57 +24,97 @@ jobs:
     name: Auto merge PRs
     if: github.repository == 'brewforge/homebrew-chinese'
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       GH_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
-      MAX_ROUNDS: 10
       REPO: brewforge/homebrew-chinese
     steps:
       - name: Auto merge PRs
+        shell: bash
         run: |
-          list_prs() {
-            gh pr list \
-              --repo "$REPO" \
-              --state open \
-              --limit 1000 \
-              --json number,title,headRefName,author \
-              --jq '.[] | select(.author.login == "Brewforge-Bot-0" or .author.login == "ivaquero") | select((((.title // "") + " " + (.headRefName // "")) | ascii_downcase | contains("nightly")) | not) | .number'
-          }
+          # Merge states where GitHub will actually accept the merge. BLOCKED
+          # (pending/failed required checks, unresolved conversations) and DIRTY
+          # (merge conflict) are skipped instead of attempted.
+          mergeable_states=" CLEAN HAS_HOOKS UNSTABLE "
+          allowed_authors=" Brewforge-Bot-0 ivaquero "
 
-          mergeable() {
-            local pr="$1" state
+          pr_fields="number,title,headRefName,author,isDraft,mergeStateStatus,headRefOid"
+          pr_filter='.[]
+            | select(.isDraft | not)
+            | select((((.title // "") + " " + (.headRefName // "")) | ascii_downcase | contains("nightly")) | not)
+            | "\(.number)\t\(.author.login)\t\(.mergeStateStatus)"'
 
+          # Command substitution, not process substitution: a failing `gh pr list`
+          # must fail the step instead of looking like "no pull requests".
+          listed=$(gh pr list --repo "$REPO" --state open --limit 1000 \
+            --json "$pr_fields" --jq "$pr_filter")
+          candidates=()
+          while IFS= read -r row; do
+            if [ -n "$row" ]; then
+              candidates+=("$row")
+            fi
+          done <<< "$listed"
+
+          if [ "${#candidates[@]}" -eq 0 ]; then
+            echo "No open pull requests to consider"
+            exit 0
+          fi
+
+          resolve_state() {
+            local number="$1" state=""
             for _ in {1..6}; do
-              state=$(gh pr view "$pr" --repo "$REPO" --json mergeable --jq '.mergeable')
-              [ "$state" != "UNKNOWN" ] && break
+              state=$(gh pr view "$number" --repo "$REPO" --json mergeStateStatus \
+                --jq .mergeStateStatus 2>/dev/null || echo UNKNOWN)
+              if [ "$state" != "UNKNOWN" ]; then
+                echo "$state"
+                return 0
+              fi
               sleep 10
             done
-
-            [ "$state" = "MERGEABLE" ]
+            echo UNKNOWN
           }
 
-          for round in $(seq 1 "$MAX_ROUNDS"); do
-            mapfile -t prs < <(list_prs)
-            [ "${#prs[@]}" -gt 0 ] || break
+          considered=0 merged=0 failed=0
+          for row in "${candidates[@]}"; do
+            number="${row%%$'\t'*}"
+            rest="${row#*$'\t'}"
+            author="${rest%%$'\t'*}"
+            state="${rest#*$'\t'}"
 
-            echo "Round $round: found ${#prs[@]} PR(s)"
-            merged=false
+            if [[ "$allowed_authors" != *" $author "* ]]; then
+              continue
+            fi
+            considered=$((considered + 1))
 
-            for pr in "${prs[@]}"; do
-              echo "Processing PR #$pr"
+            if [ "$state" = "UNKNOWN" ]; then
+              state=$(resolve_state "$number")
+            fi
+            if [[ "$mergeable_states" != *" $state "* ]]; then
+              echo "Skipping #$number ($author): mergeStateStatus=$state"
+              continue
+            fi
 
-              if mergeable "$pr"; then
-                if gh pr merge "$pr" --repo "$REPO" --merge --delete-branch; then
-                  echo "Successfully merged PR #$pr and deleted branch"
-                  merged=true
-                  sleep 10
-                  break
-                fi
+            head=$(gh pr view "$number" --repo "$REPO" --json headRefOid \
+              --jq .headRefOid 2>/dev/null || true)
+            if [ -z "$head" ]; then
+              echo "::error::Could not read head commit of PR #$number"
+              failed=$((failed + 1))
+              continue
+            fi
 
-                echo "Failed to merge PR #$pr"
-              else
-                echo "PR #$pr is not mergeable, skipping"
-              fi
-            done
-
-            [ "$merged" = true ] || break
+            echo "Processing #$number ($author, $state) head ${head:0:8}"
+            if gh pr merge "$number" --repo "$REPO" --merge --delete-branch \
+              --match-head-commit "$head"; then
+              echo "Merged #$number"
+              merged=$((merged + 1))
+              sleep 10
+            else
+              echo "::error::Failed to merge PR #$number"
+              failed=$((failed + 1))
+            fi
           done
+
+          echo "Merged $merged, failed $failed, considered $considered of ${#candidates[@]} open PR(s)"
+          if [ "$failed" -gt 0 ]; then
+            exit 1
+          fi
