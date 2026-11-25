@@ -1,5 +1,5 @@
 cask "eshelper-cn" do
-  version "26.11.3"
+  version "26.11.4"
   sha256 "262fc8340e2810dad54332e6859d773273ef92bb501e7825bacd4c28c3675454"
 
   url "https://static.eudic.net/pkg/ehmac.dmg?v=#{version}",
