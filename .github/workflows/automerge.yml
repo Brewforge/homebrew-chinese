@@ -39,10 +39,12 @@ jobs:
           allowed_authors=" Brewforge-Bot-0 ivaquero "
 
           pr_fields="number,title,headRefName,author,isDraft,mergeStateStatus,headRefOid"
+          # Only listing identity here: merge state is re-read for every candidate
+          # right before merging, because each merge invalidates the snapshot.
           pr_filter='.[]
             | select(.isDraft | not)
             | select((((.title // "") + " " + (.headRefName // "")) | ascii_downcase | contains("nightly")) | not)
-            | "\(.number)\t\(.author.login)\t\(.mergeStateStatus)"'
+            | "\(.number)\t\(.author.login)"'
 
           # Command substitution, not process substitution: a failing `gh pr list`
           # must fail the step instead of looking like "no pull requests".
@@ -77,20 +79,21 @@ jobs:
           considered=0 merged=0 failed=0
           for row in "${candidates[@]}"; do
             number="${row%%$'\t'*}"
-            rest="${row#*$'\t'}"
-            author="${rest%%$'\t'*}"
-            state="${rest#*$'\t'}"
+            author="${row#*$'\t'}"
 
             if [[ "$allowed_authors" != *" $author "* ]]; then
               continue
             fi
             considered=$((considered + 1))
 
-            if [ "$state" = "UNKNOWN" ]; then
-              state=$(resolve_state "$number")
-            fi
+            # Always fresh: a merge earlier in this loop can flip a CLEAN pull
+            # request to BEHIND or BLOCKED, so the value from the initial list
+            # is only a hint.
+            state=$(resolve_state "$number")
             if [[ "$mergeable_states" != *" $state "* ]]; then
-              echo "Skipping #$number ($author): mergeStateStatus=$state"
+              hint=""
+              [ "$state" = "BEHIND" ] && hint=" (base branch moved; needs an update)"
+              echo "Skipping #$number ($author): mergeStateStatus=$state$hint"
               continue
             fi
 
@@ -108,8 +111,16 @@ jobs:
               echo "Merged #$number"
               merged=$((merged + 1))
               sleep 10
+              continue
+            fi
+
+            # Distinguish "merge refused because the state moved under us" from a
+            # real failure: only the latter should turn the job red.
+            current=$(resolve_state "$number")
+            if [[ "$mergeable_states" != *" $current "* ]]; then
+              echo "::warning::Skipped #$number: mergeStateStatus changed to $current during the run"
             else
-              echo "::error::Failed to merge PR #$number"
+              echo "::error::Failed to merge PR #$number (mergeStateStatus=$current)"
               failed=$((failed + 1))
             fi
           done
