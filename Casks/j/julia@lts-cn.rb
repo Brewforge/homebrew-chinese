@@ -12,7 +12,7 @@ cask "julia@lts-cn" do
 
   livecheck do
     url "https://julialang.org/downloads/manual-downloads/"
-    regex(/\(LTS\)\s+release:\s+v?(\d+(?:\.\d+)+)/i)
+    regex(/id=["']long_term_support_release["'][^>]*>.*?v?(\d+(?:\.\d+)+)/i)
   end
 
   conflicts_with cask: %w[
