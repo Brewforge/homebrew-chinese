@@ -42,7 +42,7 @@ cask "inkscape-cn" do
         match = row[0].match(regex)
         next unless match
 
-        (match[1] == match[2]) ? match[1] : "#{match[1]},#{match[2]}"
+        match.values_at(1, 2).uniq.join(",")
       end
     end
   end
