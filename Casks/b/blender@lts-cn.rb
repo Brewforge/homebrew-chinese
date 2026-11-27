@@ -1,11 +1,8 @@
 cask "blender@lts-cn" do
-  arch arm: "arm64", intel: "x64"
+  version "5.2.4"
+  sha256 "e73d564f97061b2496ccc5a0bd738937d2d3d0acae23621a00bbc7534dfd135f"
 
-  version "4.5.7"
-  sha256 arm:   "e19e353486ebe79fd61b7b1424971c44abd8dfd20dd6dd43753e78c3e3f30704",
-         intel: "7bc6d2fed3ac4c49c82959868b9f8086315573a3e4cdcee16de2dec93010a1a8"
-
-  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-#{arch}.dmg"
+  url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg"
   name "Blender"
   desc "Free and open-source 3D creation suite"
   homepage "https://www.blender.org/"
@@ -31,6 +28,7 @@ cask "blender@lts-cn" do
 
   zap trash: [
     "~/Library/Application Support/Blender",
+    "~/Library/Caches/Blender",
     "~/Library/Saved Application State/org.blenderfoundation.blender.savedState",
   ]
 end
