@@ -1,6 +1,6 @@
 cask "blender-cn" do
-  version "5.2.3"
-  sha256 "acc05374485a272342d4b323c15ac01953e7f697da2f1bad8af9c3bf087267a4"
+  version "5.3.0"
+  sha256 "2d802b54766741e612cead50b03ebbc8eb64dadc71eda932573d256b8a784720"
 
   url "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender#{version.major_minor}/blender-#{version}-macos-arm64.dmg"
   name "Blender"
@@ -22,7 +22,7 @@ cask "blender-cn" do
       # Check the directory listing page for the highest major/minor version
       directory_page = Homebrew::Livecheck::Strategy.page_content(
         URI.join(@url, "Blender#{major_minor_versions.last}/").to_s,
-       )[:content]
+      )[:content]
       next if directory_page.blank?
 
       directory_page.scan(regex).map { |match| match[0] }
@@ -47,6 +47,7 @@ cask "blender-cn" do
 
   zap trash: [
     "~/Library/Application Support/Blender",
+    "~/Library/Caches/Blender",
     "~/Library/Saved Application State/org.blenderfoundation.blender.savedState",
   ]
 end
